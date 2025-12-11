@@ -5,6 +5,8 @@ export const description = "A sidebar with collapsible sections."
 
 <script setup lang="ts">
 import AppSidebar from "@/components/Sidebar.vue"
+import { computed } from "vue"
+import { useRoute } from "vue-router"
 import {
   Breadcrumb,
   BreadcrumbItem,
@@ -19,6 +21,22 @@ import {
   SidebarProvider,
   SidebarTrigger,
 } from "@/components/ui/sidebar"
+
+const route = useRoute()
+const titleMap: Record<string, string> = {
+  "/": "Home",
+  "/badges": "Badges",
+  "/accordion": "Accordion",
+  "/breadcrumbs": "Breadcrumbs",
+  "/buttons": "Buttons",
+  "/checkboxes": "Checkboxes",
+  "/detail-lists": "Detail Lists",
+  "/dividers": "Dividers",
+  "/dropdowns": "Dropdowns",
+}
+
+const pageTitle = computed(() => route.meta?.title || titleMap[route.path] || "Page")
+const rootTitle = computed(() => (route.path === "/" ? "Home" : "Components"))
 </script>
 
 <template>
@@ -31,13 +49,13 @@ import {
         <Breadcrumb>
           <BreadcrumbList>
             <BreadcrumbItem class="hidden md:block">
-              <BreadcrumbLink href="#">
-                Componenets
+              <BreadcrumbLink href="/">
+                {{ rootTitle }}
               </BreadcrumbLink>
             </BreadcrumbItem>
             <BreadcrumbSeparator class="hidden md:block" />
             <BreadcrumbItem>
-              <BreadcrumbPage>Badges</BreadcrumbPage>
+              <BreadcrumbPage>{{ pageTitle }}</BreadcrumbPage>
             </BreadcrumbItem>
           </BreadcrumbList>
         </Breadcrumb>

@@ -31,8 +31,36 @@ const data = {
       url: "#",
       items: [
         {
-          title: "Button",
-          url: "#",
+          title: "Accordion",
+          url: "/accordion",
+        },
+         {
+          title: "Badges",
+          url: "/badges",
+        },
+         {
+          title: "Breadcrumbs",
+          url: "/breadcrumbs",
+        },
+         {
+          title: "Buttons",
+          url: "/buttons",
+        },
+         {
+          title: "Checkboxes",
+          url: "/checkboxes",
+        },
+         {
+          title: "Detail Lists",
+          url: "/detail-lists",
+        },
+         {
+          title: "Dividers",
+          url: "/dividers",
+        },
+         {
+          title: "Dropdowns",
+          url: "/dropdowns",
         },
      
       ],
@@ -48,38 +76,7 @@ const data = {
      
       ],
     },
-    {
-      title: "Footer",
-      url: "#",
-      items: [
-        {
-          title: "Components",
-          url: "#",
-        },
-       
-      ],
-    },
-    {
-      title: "Ready Website",
-      url: "#",
-      items: [
-        {
-          title: "Accessibility",
-          url: "#",
-        },
-      
-      ],
-    },
-    {
-      title: "Admin",
-      url: "#",
-      items: [
-        {
-          title: "Contribution Guide",
-          url: "#",
-        },
-      ],
-    },
+  
   ],
 }
 </script>
@@ -113,7 +110,7 @@ const data = {
               <SidebarMenu>
                 <SidebarMenuItem v-for="childItem in item.items" :key="childItem.title">
                   <SidebarMenuButton as-child :is-active="childItem.isActive">
-                    <a :href="item.url">{{ childItem.title }}</a>
+                    <a :href="childItem.url">{{ childItem.title }}</a>
                   </SidebarMenuButton>
                 </SidebarMenuItem>
               </SidebarMenu>
