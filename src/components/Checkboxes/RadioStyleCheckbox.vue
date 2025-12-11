@@ -2,35 +2,41 @@
 import PreviewWrapper from "@/components/PreviewWrapper.vue"
 
 const htmlBlock = `
-<div class="space-y-2.5">
-  <label class="flex items-center gap-2.5 cursor-pointer group">
-    <input type="checkbox" class="peer sr-only" checked />
-    <div class="relative h-5 w-5 rounded-full border border-gray-300 bg-white transition-all peer-checked:border-blue-600 peer-checked:bg-blue-600 peer-focus:ring-2 peer-focus:ring-blue-500/20 shadow-sm group-hover:border-gray-400">
-      <div class="absolute inset-0 flex items-center justify-center">
-        <div class="h-1.5 w-1.5 rounded-full bg-white transition-all peer-checked:scale-100 scale-0"></div>
-      </div>
+<div class="space-y-3">
+  <label class="flex items-center gap-3 cursor-pointer group p-3 rounded-lg border border-transparent hover:bg-white hover:shadow-sm hover:border-gray-200 transition-all">
+    <div class="relative flex items-center justify-center">
+      <input type="checkbox" class="peer sr-only" checked />
+      <div class="h-5 w-5 rounded-full border border-gray-300 bg-white transition-all peer-checked:border-blue-600 peer-checked:bg-blue-600 group-hover:border-gray-400"></div>
+      <div class="absolute h-2.5 w-2.5 rounded-full bg-white scale-0 transition-transform peer-checked:scale-100"></div>
     </div>
-    <span class="text-sm text-gray-700 group-hover:text-gray-900">Standard deployment</span>
+    <div class="flex flex-col">
+      <span class="text-sm font-medium text-gray-900 group-hover:text-blue-700 transition-colors">Standard Deployment</span>
+      <span class="text-xs text-gray-500">Deploy to a single availability zone.</span>
+    </div>
   </label>
   
-  <label class="flex items-center gap-2.5 cursor-pointer group">
-    <input type="checkbox" class="peer sr-only" />
-    <div class="relative h-5 w-5 rounded-full border border-gray-300 bg-white transition-all peer-checked:border-purple-600 peer-checked:bg-purple-600 peer-focus:ring-2 peer-focus:ring-purple-500/20 shadow-sm group-hover:border-gray-400">
-      <div class="absolute inset-0 flex items-center justify-center">
-        <div class="h-1.5 w-1.5 rounded-full bg-white transition-all peer-checked:scale-100 scale-0"></div>
-      </div>
+  <label class="flex items-center gap-3 cursor-pointer group p-3 rounded-lg border border-transparent hover:bg-white hover:shadow-sm hover:border-gray-200 transition-all">
+    <div class="relative flex items-center justify-center">
+      <input type="checkbox" class="peer sr-only" />
+      <div class="h-5 w-5 rounded-full border border-gray-300 bg-white transition-all peer-checked:border-purple-600 peer-checked:bg-purple-600 group-hover:border-gray-400"></div>
+      <div class="absolute h-2.5 w-2.5 rounded-full bg-white scale-0 transition-transform peer-checked:scale-100"></div>
     </div>
-    <span class="text-sm text-gray-700 group-hover:text-gray-900">Canary release</span>
+    <div class="flex flex-col">
+      <span class="text-sm font-medium text-gray-900 group-hover:text-purple-700 transition-colors">Canary Release</span>
+      <span class="text-xs text-gray-500">Gradual rollout to 10% of users.</span>
+    </div>
   </label>
   
-  <label class="flex items-center gap-2.5 cursor-pointer group">
-    <input type="checkbox" class="peer sr-only" />
-    <div class="relative h-5 w-5 rounded-full border border-gray-300 bg-white transition-all peer-checked:border-emerald-600 peer-checked:bg-emerald-600 peer-focus:ring-2 peer-focus:ring-emerald-500/20 shadow-sm group-hover:border-gray-400">
-      <div class="absolute inset-0 flex items-center justify-center">
-        <div class="h-1.5 w-1.5 rounded-full bg-white transition-all peer-checked:scale-100 scale-0"></div>
-      </div>
+  <label class="flex items-center gap-3 cursor-pointer group p-3 rounded-lg border border-transparent hover:bg-white hover:shadow-sm hover:border-gray-200 transition-all">
+    <div class="relative flex items-center justify-center">
+      <input type="checkbox" class="peer sr-only" />
+      <div class="h-5 w-5 rounded-full border border-gray-300 bg-white transition-all peer-checked:border-emerald-600 peer-checked:bg-emerald-600 group-hover:border-gray-400"></div>
+      <div class="absolute h-2.5 w-2.5 rounded-full bg-white scale-0 transition-transform peer-checked:scale-100"></div>
     </div>
-    <span class="text-sm text-gray-700 group-hover:text-gray-900">Blue-green deployment</span>
+    <div class="flex flex-col">
+      <span class="text-sm font-medium text-gray-900 group-hover:text-emerald-700 transition-colors">Blue-Green Deployment</span>
+      <span class="text-xs text-gray-500">Zero downtime release strategy.</span>
+    </div>
   </label>
 </div>`
 </script>
@@ -38,39 +44,44 @@ const htmlBlock = `
 <template>
   <PreviewWrapper
     title="Radio-Style Checkboxes"
-    description="Circular checkboxes with dot indicators."
+    description="Checkboxes disguised as radio buttons with nice hover states."
     :html-block="htmlBlock"
-    default-viewport="full"
   >
-    <div class="space-y-2.5">
-      <label class="flex items-center gap-2.5 cursor-pointer group">
-        <input type="checkbox" class="peer sr-only" checked />
-        <div class="relative h-5 w-5 rounded-full border border-gray-300 bg-white transition-all peer-checked:border-blue-600 peer-checked:bg-blue-600 peer-focus:ring-2 peer-focus:ring-blue-500/20 shadow-sm group-hover:border-gray-400">
-          <div class="absolute inset-0 flex items-center justify-center">
-            <div class="h-1.5 w-1.5 rounded-full bg-white transition-all peer-checked:scale-100 scale-0"></div>
-          </div>
+    <div class="space-y-3">
+      <label class="flex items-center gap-3 cursor-pointer group p-3 rounded-lg border border-transparent hover:bg-white hover:shadow-sm hover:border-gray-200 transition-all">
+        <div class="relative flex items-center justify-center">
+          <input type="checkbox" class="peer sr-only" checked />
+          <div class="h-5 w-5 rounded-full border border-gray-300 bg-white transition-all peer-checked:border-blue-600 peer-checked:bg-blue-600 group-hover:border-gray-400"></div>
+          <div class="absolute h-2.5 w-2.5 rounded-full bg-white scale-0 transition-transform peer-checked:scale-100"></div>
         </div>
-        <span class="text-sm text-gray-700 group-hover:text-gray-900">Standard deployment</span>
+        <div class="flex flex-col">
+          <span class="text-sm font-medium text-gray-900 group-hover:text-blue-700 transition-colors">Standard Deployment</span>
+          <span class="text-xs text-gray-500">Deploy to a single availability zone.</span>
+        </div>
       </label>
       
-      <label class="flex items-center gap-2.5 cursor-pointer group">
-        <input type="checkbox" class="peer sr-only" />
-        <div class="relative h-5 w-5 rounded-full border border-gray-300 bg-white transition-all peer-checked:border-purple-600 peer-checked:bg-purple-600 peer-focus:ring-2 peer-focus:ring-purple-500/20 shadow-sm group-hover:border-gray-400">
-          <div class="absolute inset-0 flex items-center justify-center">
-            <div class="h-1.5 w-1.5 rounded-full bg-white transition-all peer-checked:scale-100 scale-0"></div>
-          </div>
+      <label class="flex items-center gap-3 cursor-pointer group p-3 rounded-lg border border-transparent hover:bg-white hover:shadow-sm hover:border-gray-200 transition-all">
+        <div class="relative flex items-center justify-center">
+          <input type="checkbox" class="peer sr-only" />
+          <div class="h-5 w-5 rounded-full border border-gray-300 bg-white transition-all peer-checked:border-purple-600 peer-checked:bg-purple-600 group-hover:border-gray-400"></div>
+          <div class="absolute h-2.5 w-2.5 rounded-full bg-white scale-0 transition-transform peer-checked:scale-100"></div>
         </div>
-        <span class="text-sm text-gray-700 group-hover:text-gray-900">Canary release</span>
+        <div class="flex flex-col">
+          <span class="text-sm font-medium text-gray-900 group-hover:text-purple-700 transition-colors">Canary Release</span>
+          <span class="text-xs text-gray-500">Gradual rollout to 10% of users.</span>
+        </div>
       </label>
       
-      <label class="flex items-center gap-2.5 cursor-pointer group">
-        <input type="checkbox" class="peer sr-only" />
-        <div class="relative h-5 w-5 rounded-full border border-gray-300 bg-white transition-all peer-checked:border-emerald-600 peer-checked:bg-emerald-600 peer-focus:ring-2 peer-focus:ring-emerald-500/20 shadow-sm group-hover:border-gray-400">
-          <div class="absolute inset-0 flex items-center justify-center">
-            <div class="h-1.5 w-1.5 rounded-full bg-white transition-all peer-checked:scale-100 scale-0"></div>
-          </div>
+      <label class="flex items-center gap-3 cursor-pointer group p-3 rounded-lg border border-transparent hover:bg-white hover:shadow-sm hover:border-gray-200 transition-all">
+        <div class="relative flex items-center justify-center">
+          <input type="checkbox" class="peer sr-only" />
+          <div class="h-5 w-5 rounded-full border border-gray-300 bg-white transition-all peer-checked:border-emerald-600 peer-checked:bg-emerald-600 group-hover:border-gray-400"></div>
+          <div class="absolute h-2.5 w-2.5 rounded-full bg-white scale-0 transition-transform peer-checked:scale-100"></div>
         </div>
-        <span class="text-sm text-gray-700 group-hover:text-gray-900">Blue-green deployment</span>
+        <div class="flex flex-col">
+          <span class="text-sm font-medium text-gray-900 group-hover:text-emerald-700 transition-colors">Blue-Green Deployment</span>
+          <span class="text-xs text-gray-500">Zero downtime release strategy.</span>
+        </div>
       </label>
     </div>
   </PreviewWrapper>

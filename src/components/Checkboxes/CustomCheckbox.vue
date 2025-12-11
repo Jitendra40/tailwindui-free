@@ -2,45 +2,44 @@
 import PreviewWrapper from "@/components/PreviewWrapper.vue"
 
 const htmlBlock = `
-<div class="space-y-2">
-  <label class="group flex items-center gap-2.5 cursor-pointer">
-    <input type="checkbox" class="peer sr-only" checked />
-    <div class="relative h-4 w-4 rounded border border-gray-300 bg-white shadow-sm transition-all peer-checked:border-blue-600 peer-checked:bg-blue-600 peer-focus:ring-2 peer-focus:ring-blue-500/20 group-hover:border-gray-400">
-      <svg class="absolute inset-0 h-4 w-4 text-white opacity-0 transition-opacity peer-checked:opacity-100" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path>
-      </svg>
+<div class="space-y-4">
+  <label class="group flex items-center gap-4 p-3 rounded-xl border border-gray-100 bg-white cursor-pointer transition-all hover:bg-gray-50 has-[:checked]:border-blue-500 has-[:checked]:bg-blue-50/20 has-[:checked]:shadow-lg has-[:checked]:shadow-blue-500/10">
+    <div class="relative flex items-center justify-center">
+      <input type="checkbox" class="peer sr-only" checked />
+      <div class="h-6 w-6 rounded-lg bg-gray-100 transition-all peer-checked:bg-blue-600 peer-checked:scale-110"></div>
+      <svg class="absolute w-3.5 h-3.5 text-white opacity-0 transition-opacity delay-100 peer-checked:opacity-100" viewBox="0 0 14 14" fill="none"><path d="M11.6666 3.5L5.24992 9.91667L2.33325 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
     </div>
-    <span class="text-sm font-medium text-gray-700 group-hover:text-gray-900 transition-colors">AI-powered insights</span>
+    <div class="flex-1">
+      <div class="flex items-center justify-between">
+        <span class="text-sm font-semibold text-gray-900">AI-powered insights</span>
+        <span class="px-2 py-0.5 rounded text-[10px] font-bold bg-blue-100 text-blue-700 uppercase tracking-wide">Beta</span>
+      </div>
+      <p class="text-xs text-gray-500 mt-0.5">Unlock predictive analytics for your data.</p>
+    </div>
   </label>
   
-  <label class="group flex items-center gap-2.5 cursor-pointer">
-    <input type="checkbox" class="peer sr-only" />
-    <div class="relative h-4 w-4 rounded border border-gray-300 bg-white shadow-sm transition-all peer-checked:border-purple-600 peer-checked:bg-purple-600 peer-focus:ring-2 peer-focus:ring-purple-500/20 group-hover:border-gray-400">
-      <svg class="absolute inset-0 h-4 w-4 text-white opacity-0 transition-opacity peer-checked:opacity-100" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path>
-      </svg>
+  <label class="group flex items-center gap-4 p-3 rounded-xl border border-gray-100 bg-white cursor-pointer transition-all hover:bg-gray-50 has-[:checked]:border-purple-500 has-[:checked]:bg-purple-50/20 has-[:checked]:shadow-lg has-[:checked]:shadow-purple-500/10">
+    <div class="relative flex items-center justify-center">
+      <input type="checkbox" class="peer sr-only" />
+      <div class="h-6 w-6 rounded-lg bg-gray-100 transition-all peer-checked:bg-purple-600 peer-checked:scale-110"></div>
+      <svg class="absolute w-3.5 h-3.5 text-white opacity-0 transition-opacity delay-100 peer-checked:opacity-100" viewBox="0 0 14 14" fill="none"><path d="M11.6666 3.5L5.24992 9.91667L2.33325 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
     </div>
-    <span class="text-sm font-medium text-gray-700 group-hover:text-gray-900 transition-colors">Automated workflows</span>
+    <div class="flex-1">
+      <span class="text-sm font-semibold text-gray-900 block">Automated workflows</span>
+      <p class="text-xs text-gray-500 mt-0.5">Streamline repetitive tasks with ease.</p>
+    </div>
   </label>
   
-  <label class="group flex items-center gap-2.5 cursor-pointer">
-    <input type="checkbox" class="peer sr-only" />
-    <div class="relative h-4 w-4 rounded border border-gray-300 bg-white shadow-sm transition-all peer-checked:border-emerald-600 peer-checked:bg-emerald-600 peer-focus:ring-2 peer-focus:ring-emerald-500/20 group-hover:border-gray-400">
-      <svg class="absolute inset-0 h-4 w-4 text-white opacity-0 transition-opacity peer-checked:opacity-100" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path>
-      </svg>
+  <label class="group flex items-center gap-4 p-3 rounded-xl border border-gray-100 bg-white cursor-pointer transition-all hover:bg-gray-50 has-[:checked]:border-emerald-500 has-[:checked]:bg-emerald-50/20 has-[:checked]:shadow-lg has-[:checked]:shadow-emerald-500/10">
+    <div class="relative flex items-center justify-center">
+      <input type="checkbox" class="peer sr-only" />
+      <div class="h-6 w-6 rounded-lg bg-gray-100 transition-all peer-checked:bg-emerald-600 peer-checked:scale-110"></div>
+      <svg class="absolute w-3.5 h-3.5 text-white opacity-0 transition-opacity delay-100 peer-checked:opacity-100" viewBox="0 0 14 14" fill="none"><path d="M11.6666 3.5L5.24992 9.91667L2.33325 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
     </div>
-    <span class="text-sm font-medium text-gray-700 group-hover:text-gray-900 transition-colors">Data encryption</span>
-  </label>
-  
-  <label class="flex items-center gap-2.5 cursor-not-allowed opacity-50">
-    <input type="checkbox" class="peer sr-only" disabled />
-    <div class="relative h-4 w-4 rounded border border-gray-300 bg-gray-50 shadow-sm">
-      <svg class="absolute inset-0 h-4 w-4 text-gray-400 opacity-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path>
-      </svg>
+    <div class="flex-1">
+      <span class="text-sm font-semibold text-gray-900 block">Data encryption</span>
+      <p class="text-xs text-gray-500 mt-0.5">End-to-end security for your files.</p>
     </div>
-    <span class="text-sm font-medium text-gray-500">Enterprise features (Contact sales)</span>
   </label>
 </div>`
 </script>
@@ -48,49 +47,47 @@ const htmlBlock = `
 <template>
   <PreviewWrapper
     title="Premium Checkboxes"
-    description="Elegant checkboxes with subtle animations and professional styling."
+    description="Custom checkboxes with smooth scale animations and detailed layouts."
     :html-block="htmlBlock"
-    default-viewport="full"
   >
-    <div class="space-y-2">
-      <label class="group flex items-center gap-2.5 cursor-pointer">
-        <input type="checkbox" class="peer sr-only" checked />
-        <div class="relative h-4 w-4 rounded border border-gray-300 bg-white shadow-sm transition-all peer-checked:border-blue-600 peer-checked:bg-blue-600 peer-focus:ring-2 peer-focus:ring-blue-500/20 group-hover:border-gray-400">
-          <svg class="absolute inset-0 h-4 w-4 text-white opacity-0 transition-opacity peer-checked:opacity-100" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path>
-          </svg>
+    <div class="space-y-4">
+      <label class="group flex items-center gap-4 p-3 rounded-xl border border-gray-100 bg-white cursor-pointer transition-all hover:bg-gray-50 has-[:checked]:border-blue-500 has-[:checked]:bg-blue-50/20 has-[:checked]:shadow-lg has-[:checked]:shadow-blue-500/10">
+        <div class="relative flex items-center justify-center">
+          <input type="checkbox" class="peer sr-only" checked />
+          <div class="h-6 w-6 rounded-lg bg-gray-100 transition-all peer-checked:bg-blue-600 peer-checked:scale-110"></div>
+          <svg class="absolute w-3.5 h-3.5 text-white opacity-0 transition-opacity delay-100 peer-checked:opacity-100" viewBox="0 0 14 14" fill="none"><path d="M11.6666 3.5L5.24992 9.91667L2.33325 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
         </div>
-        <span class="text-sm font-medium text-gray-700 group-hover:text-gray-900 transition-colors">AI-powered insights</span>
+        <div class="flex-1">
+          <div class="flex items-center justify-between">
+            <span class="text-sm font-semibold text-gray-900">AI-powered insights</span>
+            <span class="px-2 py-0.5 rounded text-[10px] font-bold bg-blue-100 text-blue-700 uppercase tracking-wide">Beta</span>
+          </div>
+          <p class="text-xs text-gray-500 mt-0.5">Unlock predictive analytics for your data.</p>
+        </div>
       </label>
       
-      <label class="group flex items-center gap-2.5 cursor-pointer">
-        <input type="checkbox" class="peer sr-only" />
-        <div class="relative h-4 w-4 rounded border border-gray-300 bg-white shadow-sm transition-all peer-checked:border-purple-600 peer-checked:bg-purple-600 peer-focus:ring-2 peer-focus:ring-purple-500/20 group-hover:border-gray-400">
-          <svg class="absolute inset-0 h-4 w-4 text-white opacity-0 transition-opacity peer-checked:opacity-100" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path>
-          </svg>
+      <label class="group flex items-center gap-4 p-3 rounded-xl border border-gray-100 bg-white cursor-pointer transition-all hover:bg-gray-50 has-[:checked]:border-purple-500 has-[:checked]:bg-purple-50/20 has-[:checked]:shadow-lg has-[:checked]:shadow-purple-500/10">
+        <div class="relative flex items-center justify-center">
+          <input type="checkbox" class="peer sr-only" />
+          <div class="h-6 w-6 rounded-lg bg-gray-100 transition-all peer-checked:bg-purple-600 peer-checked:scale-110"></div>
+          <svg class="absolute w-3.5 h-3.5 text-white opacity-0 transition-opacity delay-100 peer-checked:opacity-100" viewBox="0 0 14 14" fill="none"><path d="M11.6666 3.5L5.24992 9.91667L2.33325 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
         </div>
-        <span class="text-sm font-medium text-gray-700 group-hover:text-gray-900 transition-colors">Automated workflows</span>
+        <div class="flex-1">
+          <span class="text-sm font-semibold text-gray-900 block">Automated workflows</span>
+          <p class="text-xs text-gray-500 mt-0.5">Streamline repetitive tasks with ease.</p>
+        </div>
       </label>
       
-      <label class="group flex items-center gap-2.5 cursor-pointer">
-        <input type="checkbox" class="peer sr-only" />
-        <div class="relative h-4 w-4 rounded border border-gray-300 bg-white shadow-sm transition-all peer-checked:border-emerald-600 peer-checked:bg-emerald-600 peer-focus:ring-2 peer-focus:ring-emerald-500/20 group-hover:border-gray-400">
-          <svg class="absolute inset-0 h-4 w-4 text-white opacity-0 transition-opacity peer-checked:opacity-100" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path>
-          </svg>
+      <label class="group flex items-center gap-4 p-3 rounded-xl border border-gray-100 bg-white cursor-pointer transition-all hover:bg-gray-50 has-[:checked]:border-emerald-500 has-[:checked]:bg-emerald-50/20 has-[:checked]:shadow-lg has-[:checked]:shadow-emerald-500/10">
+        <div class="relative flex items-center justify-center">
+          <input type="checkbox" class="peer sr-only" />
+          <div class="h-6 w-6 rounded-lg bg-gray-100 transition-all peer-checked:bg-emerald-600 peer-checked:scale-110"></div>
+          <svg class="absolute w-3.5 h-3.5 text-white opacity-0 transition-opacity delay-100 peer-checked:opacity-100" viewBox="0 0 14 14" fill="none"><path d="M11.6666 3.5L5.24992 9.91667L2.33325 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
         </div>
-        <span class="text-sm font-medium text-gray-700 group-hover:text-gray-900 transition-colors">Data encryption</span>
-      </label>
-      
-      <label class="flex items-center gap-2.5 cursor-not-allowed opacity-50">
-        <input type="checkbox" class="peer sr-only" disabled />
-        <div class="relative h-4 w-4 rounded border border-gray-300 bg-gray-50 shadow-sm">
-          <svg class="absolute inset-0 h-4 w-4 text-gray-400 opacity-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path>
-          </svg>
+        <div class="flex-1">
+          <span class="text-sm font-semibold text-gray-900 block">Data encryption</span>
+          <p class="text-xs text-gray-500 mt-0.5">End-to-end security for your files.</p>
         </div>
-        <span class="text-sm font-medium text-gray-500">Enterprise features (Contact sales)</span>
       </label>
     </div>
   </PreviewWrapper>

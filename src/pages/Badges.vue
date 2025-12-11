@@ -5,7 +5,7 @@ import LeadStatus from "@/components/Badges/LeadStatus.vue"
 import SalesPipeline from "@/components/Badges/SalesPipeline.vue"
 import RealEstate from "@/components/Badges/RealEstate.vue"
 import Saas from "@/components/Badges/Saas.vue"
-import BadgeCount from "@/components/Badges/badgeCount.vue"
+import BadgeCount from "@/components/Badges/BadgeCount.vue"
 </script>
 
 <template>

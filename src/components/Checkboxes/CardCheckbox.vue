@@ -2,32 +2,39 @@
 import PreviewWrapper from "@/components/PreviewWrapper.vue"
 
 const htmlBlock = `
-<div class="space-y-2.5">
-  <label class="group relative flex items-center gap-3 rounded-lg border border-gray-200 bg-white p-3 cursor-pointer transition-all hover:border-blue-400 hover:shadow-sm has-[:checked]:border-blue-500 has-[:checked]:bg-blue-50/50 has-[:checked]:shadow-sm">
-    <input type="checkbox" class="peer h-4 w-4 rounded border-gray-300 text-blue-600 focus:ring-2 focus:ring-blue-500/20 focus:ring-offset-0 transition-all" checked />
-    <div class="flex-1 min-w-0">
-      <div class="text-sm font-semibold text-gray-900">Business Plan</div>
-      <p class="text-xs text-gray-600">10 team members • Advanced analytics</p>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+  <label class="relative flex flex-col p-4 rounded-xl border border-gray-200 bg-white cursor-pointer transition-all hover:border-blue-300 hover:shadow-md has-[:checked]:border-blue-500 has-[:checked]:shadow-blue-500/10 has-[:checked]:ring-1 has-[:checked]:ring-blue-500">
+    <div class="flex items-center justify-between gap-4 mb-2">
+      <div class="h-10 w-10 rounded-lg bg-blue-50 flex items-center justify-center text-blue-600">
+        <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" /></svg>
+      </div>
+      <input type="checkbox" class="peer h-5 w-5 rounded border-gray-300 text-blue-600 focus:ring-0 transition-all checked:bg-blue-600 checked:border-transparent" checked />
     </div>
-    <div class="text-xs font-semibold text-gray-700">$49/mo</div>
+    <div class="flex-1">
+      <h3 class="font-semibold text-gray-900 group-hover:text-blue-700">Startup Plan</h3>
+      <p class="text-sm text-gray-500 mt-1">Perfect for small teams and early-stage startups.</p>
+    </div>
+    <div class="mt-4 pt-3 border-t border-gray-100 flex items-baseline gap-1">
+      <span class="text-lg font-bold text-gray-900">$29</span>
+      <span class="text-xs text-gray-500 font-medium">/month</span>
+    </div>
   </label>
   
-  <label class="group relative flex items-center gap-3 rounded-lg border border-gray-200 bg-white p-3 cursor-pointer transition-all hover:border-purple-400 hover:shadow-sm has-[:checked]:border-purple-500 has-[:checked]:bg-purple-50/50 has-[:checked]:shadow-sm">
-    <input type="checkbox" class="peer h-4 w-4 rounded border-gray-300 text-purple-600 focus:ring-2 focus:ring-purple-500/20 focus:ring-offset-0 transition-all" />
-    <div class="flex-1 min-w-0">
-      <div class="text-sm font-semibold text-gray-900">Enterprise</div>
-      <p class="text-xs text-gray-600">Unlimited • Custom integrations</p>
+  <label class="relative flex flex-col p-4 rounded-xl border border-gray-200 bg-white cursor-pointer transition-all hover:border-purple-300 hover:shadow-md has-[:checked]:border-purple-500 has-[:checked]:shadow-purple-500/10 has-[:checked]:ring-1 has-[:checked]:ring-purple-500">
+    <div class="flex items-center justify-between gap-4 mb-2">
+      <div class="h-10 w-10 rounded-lg bg-purple-50 flex items-center justify-center text-purple-600">
+        <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" /></svg>
+      </div>
+      <input type="checkbox" class="peer h-5 w-5 rounded border-gray-300 text-purple-600 focus:ring-0 transition-all checked:bg-purple-600 checked:border-transparent" />
     </div>
-    <div class="text-xs font-semibold text-gray-700">$99/mo</div>
-  </label>
-  
-  <label class="group relative flex items-center gap-3 rounded-lg border border-gray-200 bg-white p-3 cursor-pointer transition-all hover:border-emerald-400 hover:shadow-sm has-[:checked]:border-emerald-500 has-[:checked]:bg-emerald-50/50 has-[:checked]:shadow-sm">
-    <input type="checkbox" class="peer h-4 w-4 rounded border-gray-300 text-emerald-600 focus:ring-2 focus:ring-emerald-500/20 focus:ring-offset-0 transition-all" />
-    <div class="flex-1 min-w-0">
-      <div class="text-sm font-semibold text-gray-900">Add-ons</div>
-      <p class="text-xs text-gray-600">Premium features & integrations</p>
+    <div class="flex-1">
+      <h3 class="font-semibold text-gray-900 group-hover:text-purple-700">Business Plan</h3>
+      <p class="text-sm text-gray-500 mt-1">For growing businesses needing advanced features.</p>
     </div>
-    <div class="text-xs font-semibold text-gray-700">+$15/mo</div>
+    <div class="mt-4 pt-3 border-t border-gray-100 flex items-baseline gap-1">
+      <span class="text-lg font-bold text-gray-900">$99</span>
+      <span class="text-xs text-gray-500 font-medium">/month</span>
+    </div>
   </label>
 </div>`
 </script>
@@ -35,36 +42,42 @@ const htmlBlock = `
 <template>
   <PreviewWrapper
     title="Card Checkboxes"
-    description="Compact checkbox cards with descriptions for plan selection."
+    description="Rich content selection cards with custom graphics and states."
     :html-block="htmlBlock"
-    default-viewport="full"
   >
-    <div class="space-y-2.5">
-      <label class="group relative flex items-center gap-3 rounded-lg border border-gray-200 bg-white p-3 cursor-pointer transition-all hover:border-blue-400 hover:shadow-sm has-[:checked]:border-blue-500 has-[:checked]:bg-blue-50/50 has-[:checked]:shadow-sm">
-        <input type="checkbox" class="peer h-4 w-4 rounded border-gray-300 text-blue-600 focus:ring-2 focus:ring-blue-500/20 focus:ring-offset-0 transition-all" checked />
-        <div class="flex-1 min-w-0">
-          <div class="text-sm font-semibold text-gray-900">Business Plan</div>
-          <p class="text-xs text-gray-600">10 team members • Advanced analytics</p>
+    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+      <label class="relative flex flex-col p-4 rounded-xl border border-gray-200 bg-white cursor-pointer transition-all hover:border-blue-300 hover:shadow-md has-[:checked]:border-blue-500 has-[:checked]:shadow-blue-500/10 has-[:checked]:ring-1 has-[:checked]:ring-blue-500">
+        <div class="flex items-center justify-between gap-4 mb-2">
+          <div class="h-10 w-10 rounded-lg bg-blue-50 flex items-center justify-center text-blue-600">
+            <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" /></svg>
+          </div>
+          <input type="checkbox" class="peer h-5 w-5 rounded border-gray-300 text-blue-600 focus:ring-0 transition-all checked:bg-blue-600 checked:border-transparent" checked />
         </div>
-        <div class="text-xs font-semibold text-gray-700">$49/mo</div>
+        <div class="flex-1">
+          <h3 class="font-semibold text-gray-900 group-hover:text-blue-700">Startup Plan</h3>
+          <p class="text-sm text-gray-500 mt-1">Perfect for small teams and early-stage startups.</p>
+        </div>
+        <div class="mt-4 pt-3 border-t border-gray-100 flex items-baseline gap-1">
+          <span class="text-lg font-bold text-gray-900">$29</span>
+          <span class="text-xs text-gray-500 font-medium">/month</span>
+        </div>
       </label>
       
-      <label class="group relative flex items-center gap-3 rounded-lg border border-gray-200 bg-white p-3 cursor-pointer transition-all hover:border-purple-400 hover:shadow-sm has-[:checked]:border-purple-500 has-[:checked]:bg-purple-50/50 has-[:checked]:shadow-sm">
-        <input type="checkbox" class="peer h-4 w-4 rounded border-gray-300 text-purple-600 focus:ring-2 focus:ring-purple-500/20 focus:ring-offset-0 transition-all" />
-        <div class="flex-1 min-w-0">
-          <div class="text-sm font-semibold text-gray-900">Enterprise</div>
-          <p class="text-xs text-gray-600">Unlimited • Custom integrations</p>
+      <label class="relative flex flex-col p-4 rounded-xl border border-gray-200 bg-white cursor-pointer transition-all hover:border-purple-300 hover:shadow-md has-[:checked]:border-purple-500 has-[:checked]:shadow-purple-500/10 has-[:checked]:ring-1 has-[:checked]:ring-purple-500">
+        <div class="flex items-center justify-between gap-4 mb-2">
+          <div class="h-10 w-10 rounded-lg bg-purple-50 flex items-center justify-center text-purple-600">
+            <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" /></svg>
+          </div>
+          <input type="checkbox" class="peer h-5 w-5 rounded border-gray-300 text-purple-600 focus:ring-0 transition-all checked:bg-purple-600 checked:border-transparent" />
         </div>
-        <div class="text-xs font-semibold text-gray-700">$99/mo</div>
-      </label>
-      
-      <label class="group relative flex items-center gap-3 rounded-lg border border-gray-200 bg-white p-3 cursor-pointer transition-all hover:border-emerald-400 hover:shadow-sm has-[:checked]:border-emerald-500 has-[:checked]:bg-emerald-50/50 has-[:checked]:shadow-sm">
-        <input type="checkbox" class="peer h-4 w-4 rounded border-gray-300 text-emerald-600 focus:ring-2 focus:ring-emerald-500/20 focus:ring-offset-0 transition-all" />
-        <div class="flex-1 min-w-0">
-          <div class="text-sm font-semibold text-gray-900">Add-ons</div>
-          <p class="text-xs text-gray-600">Premium features & integrations</p>
+        <div class="flex-1">
+          <h3 class="font-semibold text-gray-900 group-hover:text-purple-700">Business Plan</h3>
+          <p class="text-sm text-gray-500 mt-1">For growing businesses needing advanced features.</p>
         </div>
-        <div class="text-xs font-semibold text-gray-700">+$15/mo</div>
+        <div class="mt-4 pt-3 border-t border-gray-100 flex items-baseline gap-1">
+          <span class="text-lg font-bold text-gray-900">$99</span>
+          <span class="text-xs text-gray-500 font-medium">/month</span>
+        </div>
       </label>
     </div>
   </PreviewWrapper>

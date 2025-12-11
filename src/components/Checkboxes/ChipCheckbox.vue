@@ -2,35 +2,35 @@
 import PreviewWrapper from "@/components/PreviewWrapper.vue"
 
 const htmlBlock = `
-<div class="flex flex-wrap gap-2">
-  <label class="inline-flex items-center rounded-full border border-gray-300 bg-white px-3 py-1.5 cursor-pointer transition-all shadow-sm hover:border-blue-400 hover:shadow has-[:checked]:border-blue-600 has-[:checked]:bg-blue-600 has-[:checked]:text-white has-[:checked]:shadow-blue-200">
+<div class="flex flex-wrap gap-2.5">
+  <label class="inline-flex items-center cursor-pointer">
     <input type="checkbox" class="sr-only peer" checked />
-    <span class="text-xs font-medium">TypeScript</span>
+    <span class="px-3.5 py-1.5 rounded-full text-xs font-semibold bg-gray-100 text-gray-600 border border-transparent transition-all peer-checked:bg-blue-600 peer-checked:text-white peer-checked:shadow-lg peer-checked:shadow-blue-500/30 hover:bg-gray-200">TypeScript</span>
   </label>
   
-  <label class="inline-flex items-center rounded-full border border-gray-300 bg-white px-3 py-1.5 cursor-pointer transition-all shadow-sm hover:border-purple-400 hover:shadow has-[:checked]:border-purple-600 has-[:checked]:bg-purple-600 has-[:checked]:text-white has-[:checked]:shadow-purple-200">
+  <label class="inline-flex items-center cursor-pointer">
     <input type="checkbox" class="sr-only peer" checked />
-    <span class="text-xs font-medium">React</span>
+    <span class="px-3.5 py-1.5 rounded-full text-xs font-semibold bg-gray-100 text-gray-600 border border-transparent transition-all peer-checked:bg-purple-600 peer-checked:text-white peer-checked:shadow-lg peer-checked:shadow-purple-500/30 hover:bg-gray-200">React</span>
   </label>
   
-  <label class="inline-flex items-center rounded-full border border-gray-300 bg-white px-3 py-1.5 cursor-pointer transition-all shadow-sm hover:border-emerald-400 hover:shadow has-[:checked]:border-emerald-600 has-[:checked]:bg-emerald-600 has-[:checked]:text-white has-[:checked]:shadow-emerald-200">
+  <label class="inline-flex items-center cursor-pointer">
     <input type="checkbox" class="sr-only peer" />
-    <span class="text-xs font-medium">Vue</span>
+    <span class="px-3.5 py-1.5 rounded-full text-xs font-semibold bg-gray-100 text-gray-600 border border-transparent transition-all peer-checked:bg-emerald-600 peer-checked:text-white peer-checked:shadow-lg peer-checked:shadow-emerald-500/30 hover:bg-gray-200">Vue</span>
   </label>
   
-  <label class="inline-flex items-center rounded-full border border-gray-300 bg-white px-3 py-1.5 cursor-pointer transition-all shadow-sm hover:border-orange-400 hover:shadow has-[:checked]:border-orange-600 has-[:checked]:bg-orange-600 has-[:checked]:text-white has-[:checked]:shadow-orange-200">
+  <label class="inline-flex items-center cursor-pointer">
     <input type="checkbox" class="sr-only peer" />
-    <span class="text-xs font-medium">Svelte</span>
+    <span class="px-3.5 py-1.5 rounded-full text-xs font-semibold bg-gray-100 text-gray-600 border border-transparent transition-all peer-checked:bg-orange-600 peer-checked:text-white peer-checked:shadow-lg peer-checked:shadow-orange-500/30 hover:bg-gray-200">Svelte</span>
   </label>
   
-  <label class="inline-flex items-center rounded-full border border-gray-300 bg-white px-3 py-1.5 cursor-pointer transition-all shadow-sm hover:border-cyan-400 hover:shadow has-[:checked]:border-cyan-600 has-[:checked]:bg-cyan-600 has-[:checked]:text-white has-[:checked]:shadow-cyan-200">
+  <label class="inline-flex items-center cursor-pointer">
     <input type="checkbox" class="sr-only peer" />
-    <span class="text-xs font-medium">Tailwind</span>
+    <span class="px-3.5 py-1.5 rounded-full text-xs font-semibold bg-gray-100 text-gray-600 border border-transparent transition-all peer-checked:bg-cyan-600 peer-checked:text-white peer-checked:shadow-lg peer-checked:shadow-cyan-500/30 hover:bg-gray-200">Tailwind</span>
   </label>
   
-  <label class="inline-flex items-center rounded-full border border-gray-300 bg-white px-3 py-1.5 cursor-pointer transition-all shadow-sm hover:border-rose-400 hover:shadow has-[:checked]:border-rose-600 has-[:checked]:bg-rose-600 has-[:checked]:text-white has-[:checked]:shadow-rose-200">
+  <label class="inline-flex items-center cursor-pointer">
     <input type="checkbox" class="sr-only peer" />
-    <span class="text-xs font-medium">Vite</span>
+    <span class="px-3.5 py-1.5 rounded-full text-xs font-semibold bg-gray-100 text-gray-600 border border-transparent transition-all peer-checked:bg-rose-600 peer-checked:text-white peer-checked:shadow-lg peer-checked:shadow-rose-500/30 hover:bg-gray-200">Vite</span>
   </label>
 </div>`
 </script>
@@ -38,39 +38,38 @@ const htmlBlock = `
 <template>
   <PreviewWrapper
     title="Chip Checkboxes"
-    description="Compact tag-style checkboxes for filters and categories."
+    description="Modern pill-shaped selection chips for filters."
     :html-block="htmlBlock"
-    default-viewport="full"
   >
-    <div class="flex flex-wrap gap-2">
-      <label class="inline-flex items-center rounded-full border border-gray-300 bg-white px-3 py-1.5 cursor-pointer transition-all shadow-sm hover:border-blue-400 hover:shadow has-[:checked]:border-blue-600 has-[:checked]:bg-blue-600 has-[:checked]:text-white has-[:checked]:shadow-blue-200">
+    <div class="flex flex-wrap gap-2.5">
+      <label class="inline-flex items-center cursor-pointer">
         <input type="checkbox" class="sr-only peer" checked />
-        <span class="text-xs font-medium">TypeScript</span>
+        <span class="px-3.5 py-1.5 rounded-full text-xs font-semibold bg-gray-100 text-gray-600 border border-transparent transition-all peer-checked:bg-blue-600 peer-checked:text-white peer-checked:shadow-lg peer-checked:shadow-blue-500/30 hover:bg-gray-200">TypeScript</span>
       </label>
       
-      <label class="inline-flex items-center rounded-full border border-gray-300 bg-white px-3 py-1.5 cursor-pointer transition-all shadow-sm hover:border-purple-400 hover:shadow has-[:checked]:border-purple-600 has-[:checked]:bg-purple-600 has-[:checked]:text-white has-[:checked]:shadow-purple-200">
+      <label class="inline-flex items-center cursor-pointer">
         <input type="checkbox" class="sr-only peer" checked />
-        <span class="text-xs font-medium">React</span>
+        <span class="px-3.5 py-1.5 rounded-full text-xs font-semibold bg-gray-100 text-gray-600 border border-transparent transition-all peer-checked:bg-purple-600 peer-checked:text-white peer-checked:shadow-lg peer-checked:shadow-purple-500/30 hover:bg-gray-200">React</span>
       </label>
       
-      <label class="inline-flex items-center rounded-full border border-gray-300 bg-white px-3 py-1.5 cursor-pointer transition-all shadow-sm hover:border-emerald-400 hover:shadow has-[:checked]:border-emerald-600 has-[:checked]:bg-emerald-600 has-[:checked]:text-white has-[:checked]:shadow-emerald-200">
+      <label class="inline-flex items-center cursor-pointer">
         <input type="checkbox" class="sr-only peer" />
-        <span class="text-xs font-medium">Vue</span>
+        <span class="px-3.5 py-1.5 rounded-full text-xs font-semibold bg-gray-100 text-gray-600 border border-transparent transition-all peer-checked:bg-emerald-600 peer-checked:text-white peer-checked:shadow-lg peer-checked:shadow-emerald-500/30 hover:bg-gray-200">Vue</span>
       </label>
       
-      <label class="inline-flex items-center rounded-full border border-gray-300 bg-white px-3 py-1.5 cursor-pointer transition-all shadow-sm hover:border-orange-400 hover:shadow has-[:checked]:border-orange-600 has-[:checked]:bg-orange-600 has-[:checked]:text-white has-[:checked]:shadow-orange-200">
+      <label class="inline-flex items-center cursor-pointer">
         <input type="checkbox" class="sr-only peer" />
-        <span class="text-xs font-medium">Svelte</span>
+        <span class="px-3.5 py-1.5 rounded-full text-xs font-semibold bg-gray-100 text-gray-600 border border-transparent transition-all peer-checked:bg-orange-600 peer-checked:text-white peer-checked:shadow-lg peer-checked:shadow-orange-500/30 hover:bg-gray-200">Svelte</span>
       </label>
       
-      <label class="inline-flex items-center rounded-full border border-gray-300 bg-white px-3 py-1.5 cursor-pointer transition-all shadow-sm hover:border-cyan-400 hover:shadow has-[:checked]:border-cyan-600 has-[:checked]:bg-cyan-600 has-[:checked]:text-white has-[:checked]:shadow-cyan-200">
+      <label class="inline-flex items-center cursor-pointer">
         <input type="checkbox" class="sr-only peer" />
-        <span class="text-xs font-medium">Tailwind</span>
+        <span class="px-3.5 py-1.5 rounded-full text-xs font-semibold bg-gray-100 text-gray-600 border border-transparent transition-all peer-checked:bg-cyan-600 peer-checked:text-white peer-checked:shadow-lg peer-checked:shadow-cyan-500/30 hover:bg-gray-200">Tailwind</span>
       </label>
       
-      <label class="inline-flex items-center rounded-full border border-gray-300 bg-white px-3 py-1.5 cursor-pointer transition-all shadow-sm hover:border-rose-400 hover:shadow has-[:checked]:border-rose-600 has-[:checked]:bg-rose-600 has-[:checked]:text-white has-[:checked]:shadow-rose-200">
+      <label class="inline-flex items-center cursor-pointer">
         <input type="checkbox" class="sr-only peer" />
-        <span class="text-xs font-medium">Vite</span>
+        <span class="px-3.5 py-1.5 rounded-full text-xs font-semibold bg-gray-100 text-gray-600 border border-transparent transition-all peer-checked:bg-rose-600 peer-checked:text-white peer-checked:shadow-lg peer-checked:shadow-rose-500/30 hover:bg-gray-200">Vite</span>
       </label>
     </div>
   </PreviewWrapper>

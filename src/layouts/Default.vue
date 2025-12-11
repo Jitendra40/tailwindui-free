@@ -33,6 +33,23 @@ const titleMap: Record<string, string> = {
   "/detail-lists": "Detail Lists",
   "/dividers": "Dividers",
   "/dropdowns": "Dropdowns",
+  "/empty-states": "Empty States",
+  "/file-uploaders": "File Uploaders",
+  "/filters": "Filters",
+  "/inputs": "Inputs",
+  "/media": "Media",
+  "/pagination": "Pagination",
+  "/progress-bars": "Progress Bars",
+  "/radio-groups": "Radio Groups",
+  "/range-input": "Range Input",
+  "/selects": "Selects",
+  "/skip-link": "Skip Link",
+  "/stats": "Stats",
+  "/steps": "Steps",
+  "/tables": "Tables",
+  "/textareas": "Textareas",
+  "/toggles": "Toggles",
+  "/menus": "Menus",
 }
 
 const pageTitle = computed(() => route.meta?.title || titleMap[route.path] || "Page")

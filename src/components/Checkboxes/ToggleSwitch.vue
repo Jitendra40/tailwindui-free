@@ -2,37 +2,49 @@
 import PreviewWrapper from "@/components/PreviewWrapper.vue"
 
 const htmlBlock = `
-<div class="space-y-2.5">
-  <label class="group inline-flex items-center cursor-pointer">
-    <input type="checkbox" class="sr-only peer" checked />
-    <div class="relative w-9 h-5 bg-gray-200 rounded-full peer-checked:bg-blue-600 peer-focus:ring-2 peer-focus:ring-blue-500/20 transition-all shadow-sm">
-      <div class="absolute top-0.5 left-0.5 bg-white h-4 w-4 rounded-full shadow transition-transform peer-checked:translate-x-4"></div>
+<div class="space-y-6">
+  <label class="flex items-center justify-between gap-4 cursor-pointer group">
+    <div class="flex flex-col">
+      <span class="text-sm font-medium text-gray-900 group-hover:text-blue-700 transition-colors">Email Notifications</span>
+      <span class="text-xs text-gray-500">Get digests and updates.</span>
     </div>
-    <span class="ml-2.5 text-sm text-gray-700 group-hover:text-gray-900">Enable notifications</span>
+    <div class="relative">
+      <input type="checkbox" class="sr-only peer" checked />
+      <div class="w-11 h-6 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-blue-100 rounded-full peer peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:start-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-blue-600"></div>
+    </div>
   </label>
   
-  <label class="group inline-flex items-center cursor-pointer">
-    <input type="checkbox" class="sr-only peer" />
-    <div class="relative w-9 h-5 bg-gray-200 rounded-full peer-checked:bg-emerald-600 peer-focus:ring-2 peer-focus:ring-emerald-500/20 transition-all shadow-sm">
-      <div class="absolute top-0.5 left-0.5 bg-white h-4 w-4 rounded-full shadow transition-transform peer-checked:translate-x-4"></div>
+  <label class="flex items-center justify-between gap-4 cursor-pointer group">
+    <div class="flex flex-col">
+      <span class="text-sm font-medium text-gray-900 group-hover:text-emerald-700 transition-colors">Push Notifications</span>
+      <span class="text-xs text-gray-500">Instant alerts on your device.</span>
     </div>
-    <span class="ml-2.5 text-sm text-gray-700 group-hover:text-gray-900">Auto-sync data</span>
+    <div class="relative">
+      <input type="checkbox" class="sr-only peer" />
+      <div class="w-11 h-6 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-emerald-100 rounded-full peer peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:start-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-emerald-600"></div>
+    </div>
   </label>
   
-  <label class="group inline-flex items-center cursor-pointer">
-    <input type="checkbox" class="sr-only peer" />
-    <div class="relative w-9 h-5 bg-gray-200 rounded-full peer-checked:bg-purple-600 peer-focus:ring-2 peer-focus:ring-purple-500/20 transition-all shadow-sm">
-      <div class="absolute top-0.5 left-0.5 bg-white h-4 w-4 rounded-full shadow transition-transform peer-checked:translate-x-4"></div>
+  <label class="flex items-center justify-between gap-4 cursor-pointer group">
+    <div class="flex flex-col">
+      <span class="text-sm font-medium text-gray-900 group-hover:text-purple-700 transition-colors">Dark Mode</span>
+      <span class="text-xs text-gray-500">Switch to dark theme.</span>
     </div>
-    <span class="ml-2.5 text-sm text-gray-700 group-hover:text-gray-900">Dark mode</span>
+    <div class="relative">
+      <input type="checkbox" class="sr-only peer" />
+      <div class="w-11 h-6 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-purple-100 rounded-full peer peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:start-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-purple-600"></div>
+    </div>
   </label>
   
-  <label class="inline-flex items-center cursor-not-allowed opacity-50">
-    <input type="checkbox" class="sr-only peer" disabled />
-    <div class="relative w-9 h-5 bg-gray-200 rounded-full shadow-sm">
-      <div class="absolute top-0.5 left-0.5 bg-white h-4 w-4 rounded-full shadow"></div>
+  <label class="flex items-center justify-between gap-4 opacity-50 cursor-not-allowed">
+    <div class="flex flex-col">
+      <span class="text-sm font-medium text-gray-500">Beta Features</span>
+      <span class="text-xs text-gray-400">Available on Pro plan.</span>
     </div>
-    <span class="ml-2.5 text-sm text-gray-400">Beta features (Pro)</span>
+    <div class="relative">
+      <input type="checkbox" class="sr-only peer" disabled />
+      <div class="w-11 h-6 bg-gray-200 rounded-full after:content-[''] after:absolute after:top-[2px] after:start-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5"></div>
+    </div>
   </label>
 </div>`
 </script>
@@ -40,41 +52,52 @@ const htmlBlock = `
 <template>
   <PreviewWrapper
     title="Toggle Switches"
-    description="iOS-style toggle switches for settings and preferences."
+    description="Interactive toggle switches with text labels and detailed focusing."
     :html-block="htmlBlock"
-    default-viewport="full"
   >
-    <div class="flex flex-col gap-3">
-      <label class="inline-flex items-center cursor-pointer">
-        <input type="checkbox" class="sr-only peer" checked />
-        <div class="relative w-11 h-6 bg-gray-200 rounded-full peer-checked:bg-blue-600 peer-focus:ring-4 peer-focus:ring-blue-200 transition-colors">
-          <div class="absolute top-0.5 left-0.5 bg-white h-5 w-5 rounded-full transition-transform peer-checked:translate-x-5"></div>
+    <div class="space-y-6">
+      <label class="flex items-center justify-between gap-4 cursor-pointer group">
+        <div class="flex flex-col">
+          <span class="text-sm font-medium text-gray-900 group-hover:text-blue-700 transition-colors">Email Notifications</span>
+          <span class="text-xs text-gray-500">Get digests and updates.</span>
         </div>
-        <span class="ml-3 text-sm font-medium text-gray-700">Email notifications</span>
+        <div class="relative">
+          <input type="checkbox" class="sr-only peer" checked />
+          <div class="w-11 h-6 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-blue-100 rounded-full peer peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:start-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-blue-600"></div>
+        </div>
       </label>
       
-      <label class="inline-flex items-center cursor-pointer">
-        <input type="checkbox" class="sr-only peer" />
-        <div class="relative w-11 h-6 bg-gray-200 rounded-full peer-checked:bg-emerald-600 peer-focus:ring-4 peer-focus:ring-emerald-200 transition-colors">
-          <div class="absolute top-0.5 left-0.5 bg-white h-5 w-5 rounded-full transition-transform peer-checked:translate-x-5"></div>
+      <label class="flex items-center justify-between gap-4 cursor-pointer group">
+        <div class="flex flex-col">
+          <span class="text-sm font-medium text-gray-900 group-hover:text-emerald-700 transition-colors">Push Notifications</span>
+          <span class="text-xs text-gray-500">Instant alerts on your device.</span>
         </div>
-        <span class="ml-3 text-sm font-medium text-gray-700">Push notifications</span>
+        <div class="relative">
+          <input type="checkbox" class="sr-only peer" />
+          <div class="w-11 h-6 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-emerald-100 rounded-full peer peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:start-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-emerald-600"></div>
+        </div>
       </label>
       
-      <label class="inline-flex items-center cursor-pointer">
-        <input type="checkbox" class="sr-only peer" />
-        <div class="relative w-11 h-6 bg-gray-200 rounded-full peer-checked:bg-purple-600 peer-focus:ring-4 peer-focus:ring-purple-200 transition-colors">
-          <div class="absolute top-0.5 left-0.5 bg-white h-5 w-5 rounded-full transition-transform peer-checked:translate-x-5"></div>
+      <label class="flex items-center justify-between gap-4 cursor-pointer group">
+        <div class="flex flex-col">
+          <span class="text-sm font-medium text-gray-900 group-hover:text-purple-700 transition-colors">Dark Mode</span>
+          <span class="text-xs text-gray-500">Switch to dark theme.</span>
         </div>
-        <span class="ml-3 text-sm font-medium text-gray-700">SMS notifications</span>
+        <div class="relative">
+          <input type="checkbox" class="sr-only peer" />
+          <div class="w-11 h-6 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-purple-100 rounded-full peer peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:start-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-purple-600"></div>
+        </div>
       </label>
       
-      <label class="inline-flex items-center cursor-not-allowed opacity-50">
-        <input type="checkbox" class="sr-only peer" disabled />
-        <div class="relative w-11 h-6 bg-gray-200 rounded-full">
-          <div class="absolute top-0.5 left-0.5 bg-white h-5 w-5 rounded-full"></div>
+      <label class="flex items-center justify-between gap-4 opacity-50 cursor-not-allowed">
+        <div class="flex flex-col">
+          <span class="text-sm font-medium text-gray-500">Beta Features</span>
+          <span class="text-xs text-gray-400">Available on Pro plan.</span>
         </div>
-        <span class="ml-3 text-sm font-medium text-gray-400">In-app notifications (disabled)</span>
+        <div class="relative">
+          <input type="checkbox" class="sr-only peer" disabled />
+          <div class="w-11 h-6 bg-gray-200 rounded-full after:content-[''] after:absolute after:top-[2px] after:start-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5"></div>
+        </div>
       </label>
     </div>
   </PreviewWrapper>
