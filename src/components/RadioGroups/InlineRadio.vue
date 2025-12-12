@@ -34,7 +34,6 @@ const htmlBlock = `
 </script>
 
 <template>
-<template>
   <PreviewWrapper title="Inline" description="Horizontal layout for compact spaces." :html-block="htmlBlock">
     <div>
       <label class="text-base font-semibold text-gray-900">Size</label>
@@ -65,5 +64,4 @@ const htmlBlock = `
       </fieldset>
     </div>
   </PreviewWrapper>
-</template>
 </template>

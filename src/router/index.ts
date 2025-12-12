@@ -26,6 +26,28 @@ const Tables = () => import('@/pages/Tables.vue')
 const Textareas = () => import('@/pages/Textareas.vue')
 const Toggles = () => import('@/pages/Toggles.vue')
 const Menus = () => import('@/pages/Menus.vue')
+const Cards = () => import('@/pages/Cards.vue')
+// Marketing
+const Announcements = () => import('@/pages/Announcements.vue')
+const BlogSections = () => import('@/pages/BlogSections.vue')
+const Pricing = () => import('@/pages/Pricing.vue')
+const ContactSections = () => import('@/pages/ContactSections.vue')
+const CTAs = () => import('@/pages/CTAs.vue')
+const TeamSections = () => import('@/pages/TeamSections.vue')
+const Reviews = () => import('@/pages/Reviews.vue')
+const Newsletter = () => import('@/pages/Newsletter.vue')
+const FAQs = () => import('@/pages/FAQs.vue')
+const LogoClouds = () => import('@/pages/LogoClouds.vue')
+const HeroSections = () => import('@/pages/HeroSections.vue')
+const FeatureSections = () => import('@/pages/FeatureSections.vue')
+const Headers = () => import('@/pages/Headers.vue')
+const Footers = () => import('@/pages/Footers.vue')
+// Ecommerce
+const ProductCards = () => import('@/pages/ProductCards.vue')
+const ShoppingCarts = () => import('@/pages/ShoppingCarts.vue')
+const ProductOverviews = () => import('@/pages/ProductOverviews.vue')
+const CategoryPreviews = () => import('@/pages/CategoryPreviews.vue')
+
 
 const routes = [
   {
@@ -90,6 +112,27 @@ const routes = [
     component: Dropdowns,
     meta: { layout: 'Default' }
   },
+  { path: '/cards', component: Cards, meta: { layout: 'Default' } },
+  // Marketing
+  { path: '/announcements', component: Announcements, meta: { layout: 'Default' } },
+  { path: '/blog-sections', component: BlogSections, meta: { layout: 'Default' } },
+  { path: '/pricing', component: Pricing, meta: { layout: 'Default' } },
+  { path: '/contact-sections', component: ContactSections, meta: { layout: 'Default' } },
+  { path: '/ctas', component: CTAs, meta: { layout: 'Default' } },
+  { path: '/team-sections', component: TeamSections, meta: { layout: 'Default' } },
+  { path: '/reviews', component: Reviews, meta: { layout: 'Default' } },
+  { path: '/newsletter', component: Newsletter, meta: { layout: 'Default' } },
+  { path: '/faqs', component: FAQs, meta: { layout: 'Default' } },
+  { path: '/logo-clouds', component: LogoClouds, meta: { layout: 'Default' } },
+  { path: '/hero-sections', component: HeroSections, meta: { layout: 'Default' } },
+  { path: '/feature-sections', component: FeatureSections, meta: { layout: 'Default' } },
+  { path: '/headers', component: Headers, meta: { layout: 'Default' } },
+  { path: '/footers', component: Footers, meta: { layout: 'Default' } },
+  // Ecommerce
+  { path: '/product-cards', component: ProductCards, meta: { layout: 'Default' } },
+  { path: '/shopping-carts', component: ShoppingCarts, meta: { layout: 'Default' } },
+  { path: '/product-overviews', component: ProductOverviews, meta: { layout: 'Default' } },
+  { path: '/category-previews', component: CategoryPreviews, meta: { layout: 'Default' } },
 ]
 
 export const router = createRouter({

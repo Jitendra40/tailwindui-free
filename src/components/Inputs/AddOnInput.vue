@@ -2,11 +2,11 @@
 import PreviewWrapper from "@/components/PreviewWrapper.vue"
 
 const htmlBlock = `
-<div>
-  <label for="website" class="block text-sm font-medium leading-6 text-gray-900">Company Website</label>
-  <div class="mt-2 flex rounded-md shadow-sm">
-    <span class="inline-flex items-center rounded-l-md border border-r-0 border-gray-300 px-3 text-gray-500 sm:text-sm">http://</span>
-    <input type="text" name="website" id="website" class="block w-full min-w-0 flex-1 rounded-none rounded-r-md border-0 py-1.5 text-gray-900 ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6" placeholder="www.example.com" />
+<div class="space-y-3">
+  <label for="website" class="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70 text-foreground">Company Website</label>
+  <div class="flex rounded-md">
+    <span class="inline-flex items-center rounded-l-md border border-r-0 border-input bg-muted px-3 text-sm text-muted-foreground">http://</span>
+    <input type="text" name="website" id="website" class="flex h-10 w-full min-w-0 rounded-none rounded-r-md border border-input bg-white px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50" placeholder="www.example.com" />
   </div>
 </div>
 `
@@ -14,11 +14,11 @@ const htmlBlock = `
 
 <template>
   <PreviewWrapper title="With Add-ons" description="Prefix and suffix elements." :html-block="htmlBlock">
-    <div>
-      <label for="website" class="block text-sm font-medium leading-6 text-gray-900">Company Website</label>
-      <div class="mt-2 flex rounded-md shadow-sm">
-        <span class="inline-flex items-center rounded-l-md border border-r-0 border-gray-300 px-3 text-gray-500 sm:text-sm">http://</span>
-        <input type="text" name="website" id="website" class="block w-full min-w-0 flex-1 rounded-none rounded-r-md border-0 py-1.5 text-gray-900 ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6" placeholder="www.example.com" />
+    <div class="space-y-3">
+      <label for="website" class="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70 text-foreground">Company Website</label>
+      <div class="flex rounded-md">
+        <span class="inline-flex items-center rounded-l-md border border-r-0 border-input bg-muted px-3 text-sm text-muted-foreground">http://</span>
+        <input type="text" name="website" id="website" class="flex h-10 w-full min-w-0 rounded-none rounded-r-md border border-input bg-white px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50" placeholder="www.example.com" />
       </div>
     </div>
   </PreviewWrapper>

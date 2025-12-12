@@ -29,7 +29,6 @@ const htmlBlock = `
 </script>
 
 <template>
-<template>
   <PreviewWrapper title="Color Picker" description="Visual color selection." :html-block="htmlBlock">
     <div>
       <h3 class="text-sm font-medium text-gray-900">Color</h3>
@@ -55,5 +54,4 @@ const htmlBlock = `
       </fieldset>
     </div>
   </PreviewWrapper>
-</template>
 </template>

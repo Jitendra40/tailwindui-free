@@ -39,7 +39,6 @@ const htmlBlock = `
 </script>
 
 <template>
-<template>
   <PreviewWrapper title="Cards" description="Rich options with descriptions and prices." :html-block="htmlBlock">
     <fieldset>
       <legend class="sr-only">Server size</legend>
@@ -75,5 +74,4 @@ const htmlBlock = `
       </div>
     </fieldset>
   </PreviewWrapper>
-</template>
 </template>

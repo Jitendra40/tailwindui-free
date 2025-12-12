@@ -57,7 +57,6 @@ const htmlBlock = `
 </script>
 
 <template>
-<template>
   <PreviewWrapper title="Pricing Plans" description="Grid layout for high-level choices." :html-block="htmlBlock">
     <div class="grid grid-cols-1 gap-y-6 sm:grid-cols-3 sm:gap-x-4">
       <label class="relative flex cursor-pointer rounded-lg border bg-white p-4 shadow-sm focus:outline-none ring-1 ring-gray-300 hover:bg-gray-50 flex-col">
@@ -111,5 +110,4 @@ const htmlBlock = `
       </label>
     </div>
   </PreviewWrapper>
-</template>
 </template>

@@ -59,6 +59,7 @@ const data = {
       url: "#",
       items: [
         { title: "Badges", url: "/badges" },
+        { title: "Cards", url: "/cards" },
         { title: "Tables", url: "/tables" },
         { title: "Filters", url: "/filters" },
         { title: "Stats", url: "/stats" },
@@ -68,6 +69,37 @@ const data = {
         { title: "Dividers", url: "/dividers" },
         { title: "Progress Bars", url: "/progress-bars" },
         { title: "Empty States", url: "/empty-states" },
+      ],
+    },
+    {
+      title: "Marketing",
+      url: "#",
+      items: [
+        { title: "Announcements", url: "/announcements" },
+        { title: "Blog Sections", url: "/blog-sections" },
+        { title: "Pricing", url: "/pricing" },
+        { title: "Contact Sections", url: "/contact-sections" },
+        { title: "CTAs", url: "/ctas" },
+        { title: "Team Sections", url: "/team-sections" },
+        { title: "Reviews", url: "/reviews" },
+        { title: "Newsletter", url: "/newsletter" },
+        { title: "FAQs", url: "/faqs" },
+        { title: "Stats", url: "/stats" },
+        { title: "Logo Clouds", url: "/logo-clouds" },
+        { title: "Hero Sections", url: "/hero-sections" },
+        { title: "Feature Sections", url: "/feature-sections" },
+        { title: "Headers", url: "/headers" },
+        { title: "Footers", url: "/footers" },
+      ],
+    },
+    {
+      title: "Ecommerce",
+      url: "#",
+      items: [
+        { title: "Product Cards", url: "/product-cards" },
+        { title: "Shopping Carts", url: "/shopping-carts" },
+        { title: "Product Overviews", url: "/product-overviews" },
+        { title: "Category Previews", url: "/category-previews" },
       ],
     },
   ],
@@ -112,7 +144,7 @@ const data = {
               <SidebarMenu>
                 <SidebarMenuItem v-for="childItem in item.items" :key="childItem.title">
                   <SidebarMenuButton as-child :is-active="route.path === childItem.url" class="rounded-lg hover:bg-white hover:shadow-sm hover:text-indigo-600 transition-all text-gray-600 px-4 py-2">
-                    <a :href="childItem.url" class="font-medium">{{ childItem.title }}</a>
+                    <RouterLink :to="childItem.url" class="font-medium">{{ childItem.title }}</RouterLink>
                   </SidebarMenuButton>
                 </SidebarMenuItem>
               </SidebarMenu>

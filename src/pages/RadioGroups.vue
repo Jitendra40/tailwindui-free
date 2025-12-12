@@ -13,7 +13,7 @@ import PlanRadio from "@/components/RadioGroups/PlanRadio.vue"
       <p class="text-gray-500">Selection controls for mutually exclusive options.</p>
     </div>
 
-    <div class="grid gap-10">
+    <div class="space-y-3">
       <ListRadio />
       <CardRadio />
       <InlineRadio />

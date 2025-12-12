@@ -9,8 +9,8 @@ import AddOnInput from "@/components/Inputs/AddOnInput.vue"
 <template>
   <div class="space-y-12">
     <div class="space-y-1">
-      <h1 class="text-2xl font-semibold text-gray-900">Inputs</h1>
-      <p class="text-gray-500">Text fields for user input.</p>
+      <h1 class="text-2xl font-semibold text-foreground">Inputs</h1>
+      <p class="text-muted-foreground">Text fields for user input.</p>
     </div>
 
     <div class="grid gap-10">

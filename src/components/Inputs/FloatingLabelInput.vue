@@ -3,8 +3,8 @@ import PreviewWrapper from "@/components/PreviewWrapper.vue"
 
 const htmlBlock = `
 <div class="relative">
-  <input type="text" id="floating_outlined" class="block px-2.5 pb-2.5 pt-4 w-full text-sm text-gray-900 bg-transparent rounded-lg border-1 border-gray-300 appearance-none focus:outline-none focus:ring-0 focus:border-indigo-600 peer" placeholder=" " />
-  <label for="floating_outlined" class="absolute text-sm text-gray-500 duration-300 transform -translate-y-4 scale-75 top-2 z-10 origin-[0] bg-white px-2 peer-focus:px-2 peer-focus:text-indigo-600 peer-placeholder-shown:scale-100 peer-placeholder-shown:-translate-y-1/2 peer-placeholder-shown:top-1/2 peer-focus:top-2 peer-focus:scale-75 peer-focus:-translate-y-4 left-1">Floating Label</label>
+  <input type="text" id="floating_outlined" class="block w-full rounded-md border border-input bg-white px-3 pb-2 pt-5 text-sm text-foreground appearance-none focus:border-primary focus:outline-none focus:ring-0 peer" placeholder=" " />
+  <label for="floating_outlined" class="absolute left-3 top-3.5 z-10 origin-[0] -translate-y-3 scale-75 transform bg-white px-1 text-sm text-muted-foreground duration-300 peer-placeholder-shown:translate-y-0 peer-placeholder-shown:scale-100 peer-focus:-translate-y-3 peer-focus:scale-75 peer-focus:text-primary">Floating Label</label>
 </div>
 `
 </script>
@@ -12,8 +12,8 @@ const htmlBlock = `
 <template>
   <PreviewWrapper title="Floating Label" description="Label moves up when focused." :html-block="htmlBlock">
     <div class="relative">
-      <input type="text" id="floating_outlined" class="block px-2.5 pb-2.5 pt-4 w-full text-sm text-gray-900 bg-transparent rounded-lg border-1 border-gray-300 appearance-none focus:outline-none focus:ring-0 focus:border-indigo-600 peer" placeholder=" " />
-      <label for="floating_outlined" class="absolute text-sm text-gray-500 duration-300 transform -translate-y-4 scale-75 top-2 z-10 origin-[0] bg-white px-2 peer-focus:px-2 peer-focus:text-indigo-600 peer-placeholder-shown:scale-100 peer-placeholder-shown:-translate-y-1/2 peer-placeholder-shown:top-1/2 peer-focus:top-2 peer-focus:scale-75 peer-focus:-translate-y-4 left-1">Floating Label</label>
+      <input type="text" id="floating_outlined" class="block w-full rounded-md border border-input bg-white px-3 pb-2 pt-5 text-sm text-foreground appearance-none focus:border-primary focus:outline-none focus:ring-0 peer" placeholder=" " />
+      <label for="floating_outlined" class="absolute left-3 top-3.5 z-10 origin-[0] -translate-y-3 scale-75 transform bg-white px-1 text-sm text-muted-foreground duration-300 peer-placeholder-shown:translate-y-0 peer-placeholder-shown:scale-100 peer-focus:-translate-y-3 peer-focus:scale-75 peer-focus:text-primary">Floating Label</label>
     </div>
   </PreviewWrapper>
 </template>

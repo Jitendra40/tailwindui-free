@@ -27,7 +27,6 @@ const htmlBlock = `
 </script>
 
 <template>
-<template>
   <PreviewWrapper title="Simple List" description="Standard vertical list of options." :html-block="htmlBlock">
     <div>
       <label class="text-base font-semibold text-gray-900">Notifications</label>
@@ -51,5 +50,4 @@ const htmlBlock = `
       </fieldset>
     </div>
   </PreviewWrapper>
-</template>
 </template>
