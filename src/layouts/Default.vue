@@ -53,25 +53,24 @@ const titleMap: Record<string, string> = {
 }
 
 const pageTitle = computed(() => route.meta?.title || titleMap[route.path] || "Page")
-const rootTitle = computed(() => (route.path === "/" ? "Home" : "Components"))
 </script>
 
 <template>
   <SidebarProvider>
     <AppSidebar />
     <SidebarInset>
-      <header class="bg-background sticky top-0 flex h-16 shrink-0 items-center gap-2 border-b px-4">
+      <header class="bg-background sticky top-0 z-50 flex h-16 shrink-0 items-center gap-2 border-b px-4">
         <SidebarTrigger class="-ml-1" />
         <Separator orientation="vertical" class="mr-2 h-4" />
         <Breadcrumb>
           <BreadcrumbList>
             <BreadcrumbItem class="hidden md:block">
               <BreadcrumbLink href="/">
-                {{ rootTitle }}
+                Home
               </BreadcrumbLink>
             </BreadcrumbItem>
-            <BreadcrumbSeparator class="hidden md:block" />
-            <BreadcrumbItem>
+            <BreadcrumbSeparator class="hidden md:block" v-if="route.path !== '/'" />
+            <BreadcrumbItem v-if="route.path !== '/'">
               <BreadcrumbPage>{{ pageTitle }}</BreadcrumbPage>
             </BreadcrumbItem>
           </BreadcrumbList>

@@ -1,8 +1,8 @@
 <script setup lang="ts">
 import type { SidebarProps } from "@/components/ui/sidebar"
-
 import SearchForm from "@/components/SearchForm.vue"
 import { useRoute } from "vue-router"
+import { ref, computed } from "vue"
 import {
   Collapsible,
   CollapsibleContent,
@@ -24,7 +24,8 @@ import {
 const props = defineProps<SidebarProps>()
 const route = useRoute()
 
-// This is sample data.
+const searchQuery = ref("")
+
 const data = {
   navMain: [
     {
@@ -84,7 +85,6 @@ const data = {
         { title: "Reviews", url: "/reviews" },
         { title: "Newsletter", url: "/newsletter" },
         { title: "FAQs", url: "/faqs" },
-        { title: "Stats", url: "/stats" },
         { title: "Logo Clouds", url: "/logo-clouds" },
         { title: "Hero Sections", url: "/hero-sections" },
         { title: "Feature Sections", url: "/feature-sections" },
@@ -104,33 +104,54 @@ const data = {
     },
   ],
 }
+
+const filteredNavMain = computed(() => {
+  if (!searchQuery.value) return data.navMain
+
+  const query = searchQuery.value.toLowerCase()
+  return data.navMain.map(group => {
+    if (group.title.toLowerCase().includes(query)) {
+      return group
+    }
+    const filteredItems = group.items.filter(item => item.title.toLowerCase().includes(query))
+    return {
+      ...group,
+      items: filteredItems
+    }
+  }).filter(group => group.items.length > 0)
+})
 </script>
 
 <template>
-  <Sidebar v-bind="props" class="bg-gray-50/50 border-r border-gray-200/60">
-    <SidebarHeader class="px-6 py-4">
-      <div class="flex items-center gap-2 mb-4">
-    
-         <span class="font-bold text-lg text-gray-900 tracking-tight">Tailwind UI Free</span>
+  <Sidebar v-bind="props" class="!bg-zinc-950 !border-r !border-zinc-800 text-zinc-100 font-sans">
+    <SidebarHeader class="px-6 py-5 border-b border-zinc-900 bg-zinc-950 z-10">
+      <div class="flex items-center gap-3 mb-6">
+         <RouterLink to="/" class="flex items-center gap-3 group px-2">
+       
+             <div class="flex flex-col">
+                <span class="font-bold text-lg text-white tracking-tight leading-none">Tailwind v4</span>
+                <span class="text-[10px] uppercase tracking-widest text-zinc-500 font-bold">UI Library</span>
+             </div>
+         </RouterLink>
       </div>
-      <SearchForm />
+      <SearchForm v-model="searchQuery" />
     </SidebarHeader>
-    <SidebarContent class="gap-0 px-2">
+    <SidebarContent class="gap-1 px-3 py-6 bg-zinc-950 [&::-webkit-scrollbar]:w-1.5 [&::-webkit-scrollbar-track]:bg-transparent [&::-webkit-scrollbar-thumb]:bg-zinc-800 [&::-webkit-scrollbar-thumb]:rounded-full hover:[&::-webkit-scrollbar-thumb]:bg-zinc-700">
       <Collapsible
-        v-for="item in data.navMain"
+        v-for="item in filteredNavMain"
         :key="item.title"
         :title="item.title"
         default-open
-        class="group/collapsible mb-4"
+        class="group/collapsible mb-6"
       >
         <SidebarGroup>
           <SidebarGroupLabel
             as-child
-            class="group/label text-xs font-semibold text-gray-400 uppercase tracking-wider mb-2 px-4"
+            class="group/label flex items-center justify-between text-[11px] font-bold text-zinc-500 uppercase tracking-widest mb-3 px-3 cursor-pointer select-none hover:text-zinc-300 transition-colors"
           >
             <CollapsibleTrigger class="flex items-center w-full">
               {{ item.title }}
-              <svg class="ml-auto w-4 h-4 transition-transform group-data-[state=open]/collapsible:rotate-90 opacity-50" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <svg class="ml-auto w-3.5 h-3.5 transition-transform duration-300 group-data-[state=open]/collapsible:rotate-90 text-zinc-600 group-hover/label:text-zinc-400" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                 <path d="m9 18 6-6-6-6"/>
               </svg>
             </CollapsibleTrigger>
@@ -139,8 +160,17 @@ const data = {
             <SidebarGroupContent>
               <SidebarMenu>
                 <SidebarMenuItem v-for="childItem in item.items" :key="childItem.title">
-                  <SidebarMenuButton as-child :is-active="route.path === childItem.url" class="rounded-lg hover:bg-white hover:shadow-sm hover:text-indigo-600 transition-all text-gray-600 px-4 py-2">
-                    <RouterLink :to="childItem.url" class="font-medium">{{ childItem.title }}</RouterLink>
+                  <SidebarMenuButton 
+                    as-child 
+                    :is-active="route.path === childItem.url" 
+                    class="
+                      w-full rounded-md px-3 py-2 text-sm font-medium transition-all duration-200
+                      hover:bg-zinc-900 hover:text-white hover:translate-x-1
+                      data-[active=true]:bg-indigo-600 data-[active=true]:text-white data-[active=true]:shadow-md data-[active=true]:shadow-indigo-900/20 data-[active=true]:translate-x-0
+                      text-zinc-400
+                    "
+                  >
+                    <RouterLink :to="childItem.url" class="line-clamp-1">{{ childItem.title }}</RouterLink>
                   </SidebarMenuButton>
                 </SidebarMenuItem>
               </SidebarMenu>
@@ -148,6 +178,14 @@ const data = {
           </CollapsibleContent>
         </SidebarGroup>
       </Collapsible>
+      
+      <div v-if="filteredNavMain.length === 0" class="px-6 py-8 text-center">
+         <div class="inline-flex h-12 w-12 items-center justify-center rounded-full bg-zinc-900 text-zinc-500 mb-3">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg>
+         </div>
+         <p class="text-sm font-medium text-zinc-400">No components found</p>
+         <p class="text-xs text-zinc-600 mt-1">Try searching for something else.</p>
+      </div>
     </SidebarContent>
     <SidebarRail />
   </Sidebar>

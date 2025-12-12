@@ -1,57 +1,153 @@
 <script setup lang="ts">
-import { ArrowRight, Component, Zap, Play } from 'lucide-vue-next'
+import { 
+  Type, 
+  Shield, 
+  ChevronRight, 
+  MousePointer2, 
+  CheckSquare, 
+  List, 
+  SeparatorHorizontal, 
+  Menu, 
+  Box, 
+  UploadCloud, 
+  Filter, 
+  FileText, 
+  Image, 
+  MoreHorizontal, 
+  ArrowLeftRight, 
+  CreditCard, 
+  BarChart3, 
+  ListOrdered, 
+  ToggleLeft, 
+  Layout, 
+  Megaphone,
+  Newspaper,
+  Bell,
+  FormInput,
+  Indent,
+  HelpCircle,
+  LayoutTemplate,
+  PanelBottom,
+  PanelTop,
+  MonitorPlay,
+  Mail,
+  ShoppingBag,
+  Star,
+  Table2,
+  Users,
+  Check
+} from 'lucide-vue-next'
+
+const categories = [
+  { name: 'Accordions', count: '4 variants', href: '/accordion', icon: List, color: 'text-blue-500', bg: 'bg-blue-50' },
+  { name: 'Announcements', count: '3 variants', href: '/announcements', icon: Megaphone, color: 'text-orange-500', bg: 'bg-orange-50' },
+  { name: 'Badges', count: '8 variants', href: '/badges', icon: Shield, color: 'text-purple-500', bg: 'bg-purple-50' },
+  { name: 'Blog Sections', count: '5 variants', href: '/blog-sections', icon: Newspaper, color: 'text-pink-500', bg: 'bg-pink-50' },
+  { name: 'Breadcrumbs', count: '3 variants', href: '/breadcrumbs', icon: ChevronRight, color: 'text-indigo-500', bg: 'bg-indigo-50' },
+  { name: 'Buttons', count: '12 variants', href: '/buttons', icon: MousePointer2, color: 'text-sky-500', bg: 'bg-sky-50' },
+  { name: 'CTAs', count: '6 variants', href: '/ctas', icon: Bell, color: 'text-yellow-500', bg: 'bg-yellow-50' },
+  { name: 'Cards', count: '5 variants', href: '/cards', icon: Layout, color: 'text-gray-500', bg: 'bg-gray-50' },
+  { name: 'Checkboxes', count: '6 variants', href: '/checkboxes', icon: CheckSquare, color: 'text-emerald-500', bg: 'bg-emerald-50' },
+  { name: 'Contact Components', count: '4 variants', href: '/contact-sections', icon: Mail, color: 'text-teal-500', bg: 'bg-teal-50' },
+  { name: 'Detail Lists', count: '8 variants', href: '/detail-lists', icon: Indent, color: 'text-cyan-500', bg: 'bg-cyan-50' },
+  { name: 'Dividers', count: '4 variants', href: '/dividers', icon: SeparatorHorizontal, color: 'text-slate-500', bg: 'bg-slate-50' },
+  { name: 'Dropdowns', count: '6 variants', href: '/dropdowns', icon: Menu, color: 'text-violet-500', bg: 'bg-violet-50' },
+  { name: 'Empty States', count: '5 variants', href: '/empty-states', icon: Box, color: 'text-zinc-500', bg: 'bg-zinc-50' },
+  { name: 'FAQs', count: '4 variants', href: '/faqs', icon: HelpCircle, color: 'text-lime-500', bg: 'bg-lime-50' },
+  { name: 'Features', count: '8 variants', href: '/feature-sections', icon: LayoutTemplate, color: 'text-fuchsia-500', bg: 'bg-fuchsia-50' },
+  { name: 'File Uploaders', count: '4 variants', href: '/file-uploaders', icon: UploadCloud, color: 'text-blue-600', bg: 'bg-blue-50' },
+  { name: 'Filters', count: '4 variants', href: '/filters', icon: Filter, color: 'text-rose-500', bg: 'bg-rose-50' },
+  { name: 'Footers', count: '5 variants', href: '/footers', icon: PanelBottom, color: 'text-indigo-600', bg: 'bg-indigo-50' },
+  { name: 'Headers', count: '4 variants', href: '/headers', icon: PanelTop, color: 'text-sky-600', bg: 'bg-sky-50' },
+  { name: 'Hero Sections', count: '6 variants', href: '/hero-sections', icon: MonitorPlay, color: 'text-purple-600', bg: 'bg-purple-50' },
+  { name: 'Inputs', count: '10 variants', href: '/inputs', icon: FormInput, color: 'text-orange-600', bg: 'bg-orange-50' },
+  { name: 'Media', count: '6 variants', href: '/media', icon: Image, color: 'text-amber-500', bg: 'bg-amber-50' },
+  { name: 'Menus', count: '5 variants', href: '/menus', icon: MoreHorizontal, color: 'text-blue-400', bg: 'bg-blue-50' },
+  { name: 'Pagination', count: '6 variants', href: '/pagination', icon: ArrowLeftRight, color: 'text-green-500', bg: 'bg-green-50' },
+  { name: 'Pricing', count: '4 variants', href: '/pricing', icon: CreditCard, color: 'text-emerald-600', bg: 'bg-emerald-50' },
+  { name: 'Progress Bars', count: '6 variants', href: '/progress-bars', icon: BarChart3, color: 'text-cyan-600', bg: 'bg-cyan-50' },
+  { name: 'Radio Groups', count: '5 variants', href: '/radio-groups', icon: ListOrdered, color: 'text-pink-600', bg: 'bg-pink-50' },
+  { name: 'Reviews', count: '3 variants', href: '/reviews', icon: Star, color: 'text-yellow-400', bg: 'bg-yellow-50' },
+  { name: 'Selects', count: '8 variants', href: '/selects', icon: CheckSquare, color: 'text-indigo-400', bg: 'bg-indigo-50' },
+  { name: 'Stats', count: '4 variants', href: '/stats', icon: BarChart3, color: 'text-violet-600', bg: 'bg-violet-50' },
+  { name: 'Steps', count: '5 variants', href: '/steps', icon: ListOrdered, color: 'text-teal-600', bg: 'bg-teal-50' },
+  { name: 'Tables', count: '4 variants', href: '/tables', icon: Table2, color: 'text-gray-600', bg: 'bg-gray-100' },
+  { name: 'Team Sections', count: '3 variants', href: '/team-sections', icon: Users, color: 'text-blue-700', bg: 'bg-blue-50' },
+  { name: 'Textareas', count: '6 variants', href: '/textareas', icon: Type, color: 'text-stone-500', bg: 'bg-stone-50' },
+  { name: 'Toggles', count: '6 variants', href: '/toggles', icon: ToggleLeft, color: 'text-green-600', bg: 'bg-green-50' },
+]
 </script>
 
 <template>
-  <div class="max-w-4xl mx-auto py-20 text-center space-y-12">
-    
-    <!-- Hero Section -->
-    <div class="space-y-6">
-      <h1 class="text-5xl sm:text-6xl font-extrabold tracking-tight text-gray-900 leading-tight">
-        Just <span class="text-transparent bg-clip-text bg-gradient-to-r from-indigo-600 to-violet-600">copy & paste</span> <br/> Tailwind CSS.
-      </h1>
+  <div class="max-w-[1400px] mx-auto px-4 py-12">
+    <div class="relative overflow-hidden rounded-3xl bg-slate-950 py-20 text-center lg:py-32 shadow-2xl isolate ring-1 ring-white/10 mb-16">
       
-      <p class="text-xl text-gray-600 leading-relaxed max-w-2xl mx-auto">
-        Beautifully designed components that you can copy and paste into your apps. Accessible. Customizable. Open Source.
-      </p>
+      <!-- Techy Grid Background -->
+      <div class="absolute inset-0 -z-10 h-full w-full bg-[linear-gradient(to_right,#80808012_1px,transparent_1px),linear-gradient(to_bottom,#80808012_1px,transparent_1px)] bg-[size:24px_24px] [mask-image:radial-gradient(ellipse_60%_50%_at_50%_0%,#000_70%,transparent_100%)]"></div>
+      
+      <!-- Gradient Glows -->
+      <div class="absolute top-0 left-0 -z-10 h-64 w-64 bg-indigo-500/20 blur-[100px]"></div>
+      <div class="absolute bottom-0 right-0 -z-10 h-64 w-64 bg-fuchsia-500/20 blur-[100px]"></div>
+      
+      <div class="mx-auto max-w-4xl px-6 relative z-10 space-y-8">
+        <div class="inline-flex items-center rounded-full border border-indigo-500/30 bg-indigo-500/10 px-3 py-1 text-sm font-medium text-indigo-300 backdrop-blur-sm mb-4">
+           <span class="flex h-2 w-2 rounded-full bg-indigo-400 mr-2 animate-pulse"></span>
+           v4.0 Ready
+        </div>
 
-      <div class="flex flex-wrap items-center justify-center gap-4 pt-4">
-        <a href="/inputs" class="inline-flex items-center justify-center px-8 py-4 text-base font-semibold text-white transition-all bg-gray-900 rounded-lg hover:bg-gray-800 hover:shadow-lg hover:-translate-y-0.5 active:translate-y-0">
-          Get Started
-          <ArrowRight class="w-5 h-5 ml-2" />
-        </a>
-         <a href="https://tailwindcss.com/docs/installation" target="_blank" class="inline-flex items-center justify-center px-8 py-4 text-base font-semibold text-gray-700 transition-all bg-white border border-gray-200 rounded-lg hover:bg-gray-50 hover:border-gray-300">
-          Documentation
-        </a>
+        <h1 class="text-5xl font-extrabold tracking-tight text-white sm:text-7xl leading-tight">
+          Free Open Source <br/> 
+          <span class="text-transparent bg-clip-text bg-gradient-to-r from-indigo-300 via-purple-300 to-pink-300">Tailwind CSS v4 Components</span>
+        </h1>
+        
+        <p class="mx-auto max-w-2xl text-lg text-gray-400 leading-relaxed">
+          A collection of free, copy-paste Tailwind CSS components for building modern web applications. From marketing pages to admin dashboards, find ready-to-use UI components that speed up your development. No installation required.
+        </p>
+        
+        <div class="flex flex-wrap justify-center gap-x-8 gap-y-4 pt-4">
+          <div class="flex items-center gap-2 text-sm font-semibold text-white">
+            <div class="flex h-6 w-6 items-center justify-center rounded-full bg-green-500/20 ring-1 ring-green-500/50 text-green-400">
+              <Check class="h-3.5 w-3.5" />
+            </div>
+            No config
+          </div>
+          <div class="flex items-center gap-2 text-sm font-semibold text-white">
+            <div class="flex h-6 w-6 items-center justify-center rounded-full bg-blue-500/20 ring-1 ring-blue-500/50 text-blue-400">
+              <Check class="h-3.5 w-3.5" />
+            </div>
+            No install
+          </div>
+          <div class="flex items-center gap-2 text-sm font-semibold text-white">
+            <div class="flex h-6 w-6 items-center justify-center rounded-full bg-purple-500/20 ring-1 ring-purple-500/50 text-purple-400">
+              <Check class="h-3.5 w-3.5" />
+            </div>
+            No setup
+          </div>
+        </div>
       </div>
     </div>
-
-    <!-- Simple Features (Optional, keeping it very high level as per request to remove details) -->
-    <div class="pt-12 border-t border-gray-100">
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-left">
-          <div class="space-y-3">
-             <div class="w-10 h-10 rounded-lg bg-blue-50 flex items-center justify-center text-blue-600">
-                <Component class="w-5 h-5" />
-             </div>
-             <h3 class="font-bold text-gray-900">Modular Components</h3>
-             <p class="text-sm text-gray-600">Independent, reusable components that drop directly into your project.</p>
-          </div>
-           <div class="space-y-3">
-             <div class="w-10 h-10 rounded-lg bg-amber-50 flex items-center justify-center text-amber-600">
-                <Zap class="w-5 h-5" />
-             </div>
-             <h3 class="font-bold text-gray-900">Modern Aesthetics</h3>
-             <p class="text-sm text-gray-600">Designed with modern trends: subtle shadows and vibrant accents.</p>
-          </div>
-           <div class="space-y-3">
-             <div class="w-10 h-10 rounded-lg bg-emerald-50 flex items-center justify-center text-emerald-600">
-                <Play class="w-5 h-5" />
-             </div>
-             <h3 class="font-bold text-gray-900">Interactive Demos</h3>
-             <p class="text-sm text-gray-600">Live preview wrappers with instant source code copying.</p>
-          </div>
-      </div>
+    
+    <div class="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
+      <a 
+        v-for="category in categories" 
+        :key="category.name"
+        :href="category.href"
+        class="group relative flex flex-col justify-between rounded-2xl border border-gray-200 bg-white p-6 shadow-sm transition-all hover:border-gray-300 hover:shadow-md hover:-translate-y-1"
+      >
+        <div class="flex items-start justify-between">
+           <div class="flex flex-col">
+              <span class="mb-4 inline-flex h-12 w-12 items-center justify-center rounded-xl transition-transform group-hover:scale-110" :class="category.bg">
+                <component :is="category.icon" class="h-6 w-6" :class="category.color" />
+              </span>
+              <h3 class="font-semibold text-gray-900 text-lg">{{ category.name }}</h3>
+           </div>
+        </div>
+        
+        <div class="mt-4 flex items-center justify-between">
+          <p class="text-sm text-gray-500 font-medium">{{ category.count }}</p>
+          <ChevronRight class="h-5 w-5 text-gray-300 transition-colors group-hover:text-gray-900" />
+        </div>
+      </a>
     </div>
-
   </div>
 </template>
