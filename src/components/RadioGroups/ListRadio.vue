@@ -2,50 +2,77 @@
 import PreviewWrapper from "@/components/PreviewWrapper.vue"
 
 const htmlBlock = `
-<div>
-  <label class="text-base font-semibold text-gray-900">Notifications</label>
-  <p class="text-sm text-gray-500">How do you prefer to receive notifications?</p>
-  <fieldset class="mt-4">
-    <legend class="sr-only">Notification method</legend>
-    <div class="space-y-4">
-      <div class="flex items-center">
-        <input id="email" name="notification-method" type="radio" checked class="h-4 w-4 border-gray-300 text-indigo-600 focus:ring-indigo-600 cursor-pointer" />
-        <label for="email" class="ml-3 block text-sm font-medium leading-6 text-gray-900 cursor-pointer">Email</label>
+<fieldset>
+  <legend class="sr-only">Notification method</legend>
+  <div class="space-y-3">
+    <label class="relative flex cursor-pointer items-start gap-3 rounded-xl border border-gray-200 bg-white p-4 shadow-sm transition-all duration-200 hover:bg-gray-50 has-[:checked]:border-indigo-600 has-[:checked]:bg-indigo-50/30 has-[:checked]:ring-1 has-[:checked]:ring-indigo-600">
+      <div class="flex h-6 items-center">
+        <input id="email" name="notification-method" type="radio" checked class="h-4 w-4 border-gray-300 text-indigo-600 focus:ring-indigo-600" />
       </div>
-      <div class="flex items-center">
-        <input id="sms" name="notification-method" type="radio" class="h-4 w-4 border-gray-300 text-indigo-600 focus:ring-indigo-600 cursor-pointer" />
-        <label for="sms" class="ml-3 block text-sm font-medium leading-6 text-gray-900 cursor-pointer">Phone (SMS)</label>
+      <div class="text-sm leading-6">
+        <span class="font-medium text-gray-900">Email</span>
+        <span class="block text-gray-500">Get notified via email.</span>
       </div>
-      <div class="flex items-center">
-        <input id="push" name="notification-method" type="radio" class="h-4 w-4 border-gray-300 text-indigo-600 focus:ring-indigo-600 cursor-pointer" />
-        <label for="push" class="ml-3 block text-sm font-medium leading-6 text-gray-900 cursor-pointer">Push notification</label>
+    </label>
+    <label class="relative flex cursor-pointer items-start gap-3 rounded-xl border border-gray-200 bg-white p-4 shadow-sm transition-all duration-200 hover:bg-gray-50 has-[:checked]:border-indigo-600 has-[:checked]:bg-indigo-50/30 has-[:checked]:ring-1 has-[:checked]:ring-indigo-600">
+      <div class="flex h-6 items-center">
+        <input id="sms" name="notification-method" type="radio" class="h-4 w-4 border-gray-300 text-indigo-600 focus:ring-indigo-600" />
       </div>
-    </div>
-  </fieldset>
-</div>
+      <div class="text-sm leading-6">
+        <span class="font-medium text-gray-900">Phone (SMS)</span>
+        <span class="block text-gray-500">Get notified via SMS.</span>
+      </div>
+    </label>
+    <label class="relative flex cursor-pointer items-start gap-3 rounded-xl border border-gray-200 bg-white p-4 shadow-sm transition-all duration-200 hover:bg-gray-50 has-[:checked]:border-indigo-600 has-[:checked]:bg-indigo-50/30 has-[:checked]:ring-1 has-[:checked]:ring-indigo-600">
+      <div class="flex h-6 items-center">
+        <input id="push" name="notification-method" type="radio" class="h-4 w-4 border-gray-300 text-indigo-600 focus:ring-indigo-600" />
+      </div>
+      <div class="text-sm leading-6">
+        <span class="font-medium text-gray-900">Push notification</span>
+        <span class="block text-gray-500">Get notified via push.</span>
+      </div>
+    </label>
+  </div>
+</fieldset>
 `
 </script>
 
 <template>
-  <PreviewWrapper title="Simple List" description="Standard vertical list of options." :html-block="htmlBlock">
-    <div>
-      <label class="text-base font-semibold text-gray-900">Notifications</label>
-      <p class="text-sm text-gray-500">How do you prefer to receive notifications?</p>
-      <fieldset class="mt-4">
+  <PreviewWrapper title="List Group" description="A vertical list with descriptions and enhanced hit areas." :html-block="htmlBlock">
+    <div class="w-full max-w-sm">
+      <fieldset>
         <legend class="sr-only">Notification method</legend>
-        <div class="space-y-4">
-          <div class="flex items-center">
-            <input id="email" name="notification-method" type="radio" checked class="h-4 w-4 border-gray-300 text-indigo-600 focus:ring-indigo-600 cursor-pointer" />
-            <label for="email" class="ml-3 block text-sm font-medium leading-6 text-gray-900 cursor-pointer">Email</label>
-          </div>
-          <div class="flex items-center">
-            <input id="sms" name="notification-method" type="radio" class="h-4 w-4 border-gray-300 text-indigo-600 focus:ring-indigo-600 cursor-pointer" />
-            <label for="sms" class="ml-3 block text-sm font-medium leading-6 text-gray-900 cursor-pointer">Phone (SMS)</label>
-          </div>
-          <div class="flex items-center">
-            <input id="push" name="notification-method" type="radio" class="h-4 w-4 border-gray-300 text-indigo-600 focus:ring-indigo-600 cursor-pointer" />
-            <label for="push" class="ml-3 block text-sm font-medium leading-6 text-gray-900 cursor-pointer">Push notification</label>
-          </div>
+        <div class="space-y-3">
+          <!-- Item 1 -->
+          <label class="relative flex cursor-pointer items-start gap-3 rounded-xl border border-gray-200 bg-white p-4 shadow-sm transition-all duration-200 hover:bg-gray-50 has-[:checked]:border-indigo-600 has-[:checked]:bg-indigo-50/30 has-[:checked]:ring-1 has-[:checked]:ring-indigo-600">
+            <div class="flex h-6 items-center">
+              <input id="email" name="notification-method" type="radio" checked class="h-4 w-4 border-gray-300 text-indigo-600 focus:ring-indigo-600" />
+            </div>
+            <div class="text-sm leading-6">
+              <span class="font-medium text-gray-900">Email</span>
+              <span class="block text-gray-500">Get notified via email.</span>
+            </div>
+          </label>
+          <!-- Item 2 -->
+          <label class="relative flex cursor-pointer items-start gap-3 rounded-xl border border-gray-200 bg-white p-4 shadow-sm transition-all duration-200 hover:bg-gray-50 has-[:checked]:border-indigo-600 has-[:checked]:bg-indigo-50/30 has-[:checked]:ring-1 has-[:checked]:ring-indigo-600">
+            <div class="flex h-6 items-center">
+              <input id="sms" name="notification-method" type="radio" class="h-4 w-4 border-gray-300 text-indigo-600 focus:ring-indigo-600" />
+            </div>
+            <div class="text-sm leading-6">
+              <span class="font-medium text-gray-900">Phone (SMS)</span>
+              <span class="block text-gray-500">Get notified via SMS.</span>
+            </div>
+          </label>
+          <!-- Item 3 -->
+          <label class="relative flex cursor-pointer items-start gap-3 rounded-xl border border-gray-200 bg-white p-4 shadow-sm transition-all duration-200 hover:bg-gray-50 has-[:checked]:border-indigo-600 has-[:checked]:bg-indigo-50/30 has-[:checked]:ring-1 has-[:checked]:ring-indigo-600">
+            <div class="flex h-6 items-center">
+              <input id="push" name="notification-method" type="radio" class="h-4 w-4 border-gray-300 text-indigo-600 focus:ring-indigo-600" />
+            </div>
+            <div class="text-sm leading-6">
+              <span class="font-medium text-gray-900">Push notification</span>
+              <span class="block text-gray-500">Get notified via push.</span>
+            </div>
+          </label>
         </div>
       </fieldset>
     </div>

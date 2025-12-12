@@ -3,30 +3,30 @@ import PreviewWrapper from "@/components/PreviewWrapper.vue"
 
 const htmlBlock = `
 <div>
-  <label class="text-base font-semibold text-gray-900">Size</label>
-  <fieldset class="mt-4">
+  <label class="text-sm font-medium text-gray-900">Select Size</label>
+  <fieldset class="mt-3">
     <legend class="sr-only">Choose a size</legend>
-    <div class="flex items-center space-x-3">
-      <div class="flex items-center">
-          <input id="size-xs" name="size" type="radio" class="h-4 w-4 border-gray-300 text-indigo-600 focus:ring-indigo-600" />
-          <label for="size-xs" class="ml-2 block text-sm font-medium leading-6 text-gray-900">XS</label>
-      </div>
-      <div class="flex items-center">
-          <input id="size-s" name="size" type="radio" class="h-4 w-4 border-gray-300 text-indigo-600 focus:ring-indigo-600" />
-          <label for="size-s" class="ml-2 block text-sm font-medium leading-6 text-gray-900">S</label>
-      </div>
-      <div class="flex items-center">
-          <input id="size-m" name="size" type="radio" checked class="h-4 w-4 border-gray-300 text-indigo-600 focus:ring-indigo-600" />
-          <label for="size-m" class="ml-2 block text-sm font-medium leading-6 text-gray-900">M</label>
-      </div>
-      <div class="flex items-center">
-          <input id="size-l" name="size" type="radio" class="h-4 w-4 border-gray-300 text-indigo-600 focus:ring-indigo-600" />
-          <label for="size-l" class="ml-2 block text-sm font-medium leading-6 text-gray-900">L</label>
-      </div>
-       <div class="flex items-center">
-          <input id="size-xl" name="size" type="radio" class="h-4 w-4 border-gray-300 text-indigo-600 focus:ring-indigo-600" />
-          <label for="size-xl" class="ml-2 block text-sm font-medium leading-6 text-gray-900">XL</label>
-      </div>
+    <div class="flex flex-wrap gap-3">
+      <label class="group relative flex cursor-pointer items-center justify-center rounded-lg border border-gray-200 bg-white px-4 py-2 text-sm font-medium text-gray-900 shadow-sm transition-all duration-200 hover:bg-gray-50 focus-within:ring-2 focus-within:ring-indigo-600 focus-within:ring-offset-2 has-[:checked]:border-indigo-600 has-[:checked]:bg-indigo-600 has-[:checked]:text-white">
+          <input type="radio" name="size" value="XS" class="sr-only" />
+          <span>XS</span>
+      </label>
+      <label class="group relative flex cursor-pointer items-center justify-center rounded-lg border border-gray-200 bg-white px-4 py-2 text-sm font-medium text-gray-900 shadow-sm transition-all duration-200 hover:bg-gray-50 focus-within:ring-2 focus-within:ring-indigo-600 focus-within:ring-offset-2 has-[:checked]:border-indigo-600 has-[:checked]:bg-indigo-600 has-[:checked]:text-white">
+          <input type="radio" name="size" value="S" class="sr-only" />
+          <span>S</span>
+      </label>
+      <label class="group relative flex cursor-pointer items-center justify-center rounded-lg border border-gray-200 bg-white px-4 py-2 text-sm font-medium text-gray-900 shadow-sm transition-all duration-200 hover:bg-gray-50 focus-within:ring-2 focus-within:ring-indigo-600 focus-within:ring-offset-2 has-[:checked]:border-indigo-600 has-[:checked]:bg-indigo-600 has-[:checked]:text-white">
+          <input type="radio" name="size" value="M" checked class="sr-only" />
+          <span>M</span>
+      </label>
+      <label class="group relative flex cursor-pointer items-center justify-center rounded-lg border border-gray-200 bg-white px-4 py-2 text-sm font-medium text-gray-900 shadow-sm transition-all duration-200 hover:bg-gray-50 focus-within:ring-2 focus-within:ring-indigo-600 focus-within:ring-offset-2 has-[:checked]:border-indigo-600 has-[:checked]:bg-indigo-600 has-[:checked]:text-white">
+          <input type="radio" name="size" value="L" class="sr-only" />
+          <span>L</span>
+      </label>
+      <label class="group relative flex cursor-pointer items-center justify-center rounded-lg border border-gray-200 bg-white px-4 py-2 text-sm font-medium text-gray-900 shadow-sm transition-all duration-200 hover:bg-gray-50 focus-within:ring-2 focus-within:ring-indigo-600 focus-within:ring-offset-2 has-[:checked]:border-indigo-600 has-[:checked]:bg-indigo-600 has-[:checked]:text-white">
+          <input type="radio" name="size" value="XL" class="sr-only" />
+          <span>XL</span>
+      </label>
     </div>
   </fieldset>
 </div>
@@ -34,32 +34,32 @@ const htmlBlock = `
 </script>
 
 <template>
-  <PreviewWrapper title="Inline" description="Horizontal layout for compact spaces." :html-block="htmlBlock">
+  <PreviewWrapper title="Inline Chips" description="Compact selection chips." :html-block="htmlBlock">
     <div>
-      <label class="text-base font-semibold text-gray-900">Size</label>
-      <fieldset class="mt-4">
+      <label class="text-sm font-medium text-gray-900">Select Size</label>
+      <fieldset class="mt-3">
         <legend class="sr-only">Choose a size</legend>
-        <div class="flex items-center space-x-3">
-          <div class="flex items-center">
-              <input id="size-xs" name="size" type="radio" class="h-4 w-4 border-gray-300 text-indigo-600 focus:ring-indigo-600" />
-              <label for="size-xs" class="ml-2 block text-sm font-medium leading-6 text-gray-900">XS</label>
-          </div>
-          <div class="flex items-center">
-              <input id="size-s" name="size" type="radio" class="h-4 w-4 border-gray-300 text-indigo-600 focus:ring-indigo-600" />
-              <label for="size-s" class="ml-2 block text-sm font-medium leading-6 text-gray-900">S</label>
-          </div>
-          <div class="flex items-center">
-              <input id="size-m" name="size" type="radio" checked class="h-4 w-4 border-gray-300 text-indigo-600 focus:ring-indigo-600" />
-              <label for="size-m" class="ml-2 block text-sm font-medium leading-6 text-gray-900">M</label>
-          </div>
-          <div class="flex items-center">
-              <input id="size-l" name="size" type="radio" class="h-4 w-4 border-gray-300 text-indigo-600 focus:ring-indigo-600" />
-              <label for="size-l" class="ml-2 block text-sm font-medium leading-6 text-gray-900">L</label>
-          </div>
-           <div class="flex items-center">
-              <input id="size-xl" name="size" type="radio" class="h-4 w-4 border-gray-300 text-indigo-600 focus:ring-indigo-600" />
-              <label for="size-xl" class="ml-2 block text-sm font-medium leading-6 text-gray-900">XL</label>
-          </div>
+        <div class="flex flex-wrap gap-3">
+          <label class="group relative flex cursor-pointer items-center justify-center rounded-lg border border-gray-200 bg-white px-4 py-2 text-sm font-medium text-gray-900 shadow-sm transition-all duration-200 hover:bg-gray-50 focus-within:ring-2 focus-within:ring-indigo-600 focus-within:ring-offset-2 has-[:checked]:border-indigo-600 has-[:checked]:bg-indigo-600 has-[:checked]:text-white">
+              <input type="radio" name="size" value="XS" class="sr-only" />
+              <span>XS</span>
+          </label>
+          <label class="group relative flex cursor-pointer items-center justify-center rounded-lg border border-gray-200 bg-white px-4 py-2 text-sm font-medium text-gray-900 shadow-sm transition-all duration-200 hover:bg-gray-50 focus-within:ring-2 focus-within:ring-indigo-600 focus-within:ring-offset-2 has-[:checked]:border-indigo-600 has-[:checked]:bg-indigo-600 has-[:checked]:text-white">
+              <input type="radio" name="size" value="S" class="sr-only" />
+              <span>S</span>
+          </label>
+          <label class="group relative flex cursor-pointer items-center justify-center rounded-lg border border-gray-200 bg-white px-4 py-2 text-sm font-medium text-gray-900 shadow-sm transition-all duration-200 hover:bg-gray-50 focus-within:ring-2 focus-within:ring-indigo-600 focus-within:ring-offset-2 has-[:checked]:border-indigo-600 has-[:checked]:bg-indigo-600 has-[:checked]:text-white">
+              <input type="radio" name="size" value="M" checked class="sr-only" />
+              <span>M</span>
+          </label>
+          <label class="group relative flex cursor-pointer items-center justify-center rounded-lg border border-gray-200 bg-white px-4 py-2 text-sm font-medium text-gray-900 shadow-sm transition-all duration-200 hover:bg-gray-50 focus-within:ring-2 focus-within:ring-indigo-600 focus-within:ring-offset-2 has-[:checked]:border-indigo-600 has-[:checked]:bg-indigo-600 has-[:checked]:text-white">
+              <input type="radio" name="size" value="L" class="sr-only" />
+              <span>L</span>
+          </label>
+          <label class="group relative flex cursor-pointer items-center justify-center rounded-lg border border-gray-200 bg-white px-4 py-2 text-sm font-medium text-gray-900 shadow-sm transition-all duration-200 hover:bg-gray-50 focus-within:ring-2 focus-within:ring-indigo-600 focus-within:ring-offset-2 has-[:checked]:border-indigo-600 has-[:checked]:bg-indigo-600 has-[:checked]:text-white">
+              <input type="radio" name="size" value="XL" class="sr-only" />
+              <span>XL</span>
+          </label>
         </div>
       </fieldset>
     </div>

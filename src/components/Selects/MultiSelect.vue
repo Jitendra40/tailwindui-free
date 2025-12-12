@@ -2,62 +2,68 @@
 import PreviewWrapper from "@/components/PreviewWrapper.vue"
 
 const htmlBlock = `
-<div>
-   <label class="block text-sm font-medium leading-6 text-gray-900">Skills</label>
-   <div class="mt-2 w-full rounded-md border-0 p-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 focus-within:ring-2 focus-within:ring-indigo-600 bg-white min-h-[42px] flex flex-wrap gap-2">
-       <span class="inline-flex items-center gap-x-0.5 rounded-md bg-gray-100 px-2 py-1 text-xs font-medium text-gray-600">
+<div class="max-w-lg w-full">
+   <label class="block text-sm font-medium leading-6 text-gray-900 mb-2">Technologie Stack</label>
+   <div class="w-full rounded-xl border border-gray-200 bg-white p-2 shadow-sm focus-within:ring-2 focus-within:ring-indigo-600 focus-within:border-indigo-600 transition-all">
+      <div class="flex flex-wrap gap-2">
+         <!-- Tag 1 -->
+         <span class="inline-flex items-center gap-x-1 ro rounded-lg bg-indigo-50 px-2.5 py-1.5 text-xs font-semibold text-indigo-700 ring-1 ring-inset ring-indigo-700/10">
            Vue.js
-           <button type="button" class="group relative -mr-1 h-3.5 w-3.5 rounded-sm hover:bg-gray-500/20">
+           <button type="button" class="group relative -mr-1 h-4 w-4 rounded-md hover:bg-indigo-600/20">
              <span class="sr-only">Remove</span>
-             <svg class="h-3.5 w-3.5 stroke-gray-600/50 group-hover:stroke-gray-600" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M18 6 6 18"/>
-                <path d="m6 6 12 12"/>
+             <svg class="h-4 w-4 stroke-indigo-600/70 group-hover:stroke-indigo-600" viewBox="0 0 14 14" fill="none">
+               <path d="M4 4l6 6m0-6l-6 6" stroke-width="1.5" stroke-linecap="round" />
              </svg>
            </button>
-       </span>
-        <span class="inline-flex items-center gap-x-0.5 rounded-md bg-gray-100 px-2 py-1 text-xs font-medium text-gray-600">
-           TypeScript
-            <button type="button" class="group relative -mr-1 h-3.5 w-3.5 rounded-sm hover:bg-gray-500/20">
+         </span>
+         <!-- Tag 2 -->
+         <span class="inline-flex items-center gap-x-1 rounded-lg bg-indigo-50 px-2.5 py-1.5 text-xs font-semibold text-indigo-700 ring-1 ring-inset ring-indigo-700/10">
+            Tailwind CSS
+            <button type="button" class="group relative -mr-1 h-4 w-4 rounded-md hover:bg-indigo-600/20">
              <span class="sr-only">Remove</span>
-             <svg class="h-3.5 w-3.5 stroke-gray-600/50 group-hover:stroke-gray-600" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M18 6 6 18"/>
-                <path d="m6 6 12 12"/>
+             <svg class="h-4 w-4 stroke-indigo-600/70 group-hover:stroke-indigo-600" viewBox="0 0 14 14" fill="none">
+               <path d="M4 4l6 6m0-6l-6 6" stroke-width="1.5" stroke-linecap="round" />
              </svg>
            </button>
-       </span>
-       <input type="text" class="flex-1 border-0 bg-transparent p-0 text-gray-900 placeholder:text-gray-400 focus:ring-0 sm:text-sm sm:leading-6 min-w-[100px]" placeholder="Add skill..." />
+        </span>
+         <input type="text" class="flex-1 border-0 bg-transparent py-1.5 pl-1 text-gray-900 placeholder:text-gray-400 focus:ring-0 sm:text-sm sm:leading-6 min-w-[120px]" placeholder="Add a framework..." />
+      </div>
    </div>
+   <p class="mt-2 text-xs text-gray-500">Press Enter to add a tag.</p>
 </div>
 `
 </script>
 
 <template>
-  <PreviewWrapper title="Multi-Select" description="Input field with chip display for multiple values." :html-block="htmlBlock">
-   <div>
-      <label class="block text-sm font-medium leading-6 text-gray-900">Skills</label>
-      <div class="mt-2 w-full rounded-md border-0 p-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 focus-within:ring-2 focus-within:ring-indigo-600 bg-white min-h-[42px] flex flex-wrap gap-2">
-          <span class="inline-flex items-center gap-x-0.5 rounded-md bg-gray-100 px-2 py-1 text-xs font-medium text-gray-600">
-              Vue.js
-              <button type="button" class="group relative -mr-1 h-3.5 w-3.5 rounded-sm hover:bg-gray-500/20">
-                <span class="sr-only">Remove</span>
-                <svg class="h-3.5 w-3.5 stroke-gray-600/50 group-hover:stroke-gray-600" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                  <path d="M18 6 6 18"/>
-                  <path d="m6 6 12 12"/>
-                </svg>
-              </button>
-          </span>
-           <span class="inline-flex items-center gap-x-0.5 rounded-md bg-gray-100 px-2 py-1 text-xs font-medium text-gray-600">
-              TypeScript
-               <button type="button" class="group relative -mr-1 h-3.5 w-3.5 rounded-sm hover:bg-gray-500/20">
-                <span class="sr-only">Remove</span>
-                <svg class="h-3.5 w-3.5 stroke-gray-600/50 group-hover:stroke-gray-600" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                  <path d="M18 6 6 18"/>
-                  <path d="m6 6 12 12"/>
-                </svg>
-              </button>
-          </span>
-          <input type="text" class="flex-1 border-0 bg-transparent p-0 text-gray-900 placeholder:text-gray-400 focus:ring-0 sm:text-sm sm:leading-6 min-w-[100px]" placeholder="Add skill..." />
-      </div>
-   </div>
+  <PreviewWrapper title="Multi-Select Tags" description="Modern tag inputs with distinct remove actions." :html-block="htmlBlock">
+    <div class="max-w-lg w-full">
+       <label class="block text-sm font-medium leading-6 text-gray-900 mb-2">Technologie Stack</label>
+       <div class="w-full rounded-xl border border-gray-200 bg-white p-2 shadow-sm focus-within:ring-2 focus-within:ring-indigo-600 focus-within:border-indigo-600 transition-all">
+          <div class="flex flex-wrap gap-2">
+             <!-- Tag 1 -->
+             <span class="inline-flex items-center gap-x-1 rounded-lg bg-indigo-50 px-2.5 py-1.5 text-xs font-semibold text-indigo-700 ring-1 ring-inset ring-indigo-700/10">
+               Vue.js
+               <button type="button" class="group relative -mr-1 h-4 w-4 rounded-md flex items-center justify-center hover:bg-indigo-600/20 transition-colors">
+                 <span class="sr-only">Remove</span>
+                 <svg class="h-3.5 w-3.5 stroke-indigo-600/70 group-hover:stroke-indigo-600" viewBox="0 0 14 14" fill="none">
+                   <path d="M4 4l6 6m0-6l-6 6" stroke-width="1.5" stroke-linecap="round" />
+                 </svg>
+               </button>
+             </span>
+             <!-- Tag 2 -->
+             <span class="inline-flex items-center gap-x-1 rounded-lg bg-indigo-50 px-2.5 py-1.5 text-xs font-semibold text-indigo-700 ring-1 ring-inset ring-indigo-700/10">
+                Tailwind CSS
+                <button type="button" class="group relative -mr-1 h-4 w-4 rounded-md flex items-center justify-center hover:bg-indigo-600/20 transition-colors">
+                 <span class="sr-only">Remove</span>
+                 <svg class="h-3.5 w-3.5 stroke-indigo-600/70 group-hover:stroke-indigo-600" viewBox="0 0 14 14" fill="none">
+                   <path d="M4 4l6 6m0-6l-6 6" stroke-width="1.5" stroke-linecap="round" />
+                 </svg>
+               </button>
+            </span>
+             <input type="text" class="flex-1 border-0 bg-transparent py-1.5 pl-1 text-gray-900 placeholder:text-gray-400 focus:ring-0 sm:text-sm sm:leading-6 min-w-[120px]" placeholder="Add a framework..." />
+          </div>
+       </div>
+       <p class="mt-2 text-xs text-gray-500">Press Enter to add a tag.</p>
+    </div>
   </PreviewWrapper>
 </template>

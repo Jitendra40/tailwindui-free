@@ -2,111 +2,108 @@
 import PreviewWrapper from "@/components/PreviewWrapper.vue"
 
 const htmlBlock = `
-<div class="grid grid-cols-1 gap-y-6 sm:grid-cols-3 sm:gap-x-4">
-  <label class="relative flex cursor-pointer rounded-lg border bg-white p-4 shadow-sm focus:outline-none ring-1 ring-gray-300 hover:bg-gray-50 flex-col">
-     <div class="flex items-center justify-between w-full mb-4">
-          <span class="block text-sm font-semibold text-gray-900">Hobby</span>
-           <svg class="h-5 w-5 text-gray-400" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-            <circle cx="12" cy="12" r="10"/>
-            <path d="m9 12 2 2 4-4"/>
-          </svg>
-     </div>
-     <div class="mt-auto">
-           <span class="text-2xl font-bold tracking-tight text-gray-900">$15</span>
-          <span class="text-sm font-semibold leading-6 text-gray-600">/month</span>
-     </div>
-     <input type="radio" name="plan" value="Hobby" class="sr-only" aria-labelledby="plan-0-label" />
-     <span class="pointer-events-none absolute -inset-px rounded-lg border-2 border-transparent peer-checked:border-indigo-600" aria-hidden="true"></span>
+<div class="grid grid-cols-1 gap-6 sm:grid-cols-3">
+  <!-- Plan 1 -->
+  <label class="relative flex flex-col cursor-pointer rounded-2xl border border-gray-200 bg-white p-6 shadow-sm transition-all duration-200 hover:border-indigo-300 hover:shadow-md focus-within:ring-2 focus-within:ring-indigo-600 focus-within:ring-offset-2 has-[:checked]:border-indigo-600 has-[:checked]:ring-1 has-[:checked]:ring-indigo-600">
+    <div class="mb-4 flex items-center justify-between">
+      <span class="text-sm font-semibold leading-6 text-gray-900">Hobby</span>
+      <input type="radio" name="plan" value="Hobby" class="h-4 w-4 border-gray-300 text-indigo-600 focus:ring-indigo-600" />
+    </div>
+    <p class="mb-6 text-sm text-gray-500">Essential features for personal projects.</p>
+    <div class="mt-auto">
+       <div class="flex items-baseline gap-x-2">
+         <span class="text-4xl font-bold tracking-tight text-gray-900">$15</span>
+         <span class="text-sm font-semibold leading-6 text-gray-600">/mo</span>
+       </div>
+    </div>
   </label>
 
-  <label class="relative flex cursor-pointer rounded-lg border bg-indigo-50 border-indigo-200 p-4 shadow-sm focus:outline-none ring-1 ring-indigo-200 flex-col">
-     <div class="flex items-center justify-between w-full mb-4">
-          <span class="block text-sm font-semibold text-indigo-900">Freelancer</span>
-          <div class="flex-shrink-0 ml-4">
-          <svg class="h-6 w-6 text-indigo-600" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-              <circle cx="12" cy="12" r="10"/>
-              <path d="m9 12 2 2 4-4"/>
-          </svg>
-      </div>
+  <!-- Plan 2 (Popular) -->
+  <label class="relative flex flex-col cursor-pointer rounded-2xl border border-indigo-200 bg-white p-6 shadow-sm transition-all duration-200 hover:border-indigo-300 hover:shadow-md focus-within:ring-2 focus-within:ring-indigo-600 focus-within:ring-offset-2 has-[:checked]:border-indigo-600 has-[:checked]:ring-1 has-[:checked]:ring-indigo-600">
+     <!-- Badge -->
+     <div class="absolute -top-3 left-1/2 -translate-x-1/2 rounded-full bg-indigo-600 px-3 py-0.5 text-xs font-semibold text-white shadow-sm">
+       Popular
      </div>
-     <div class="mt-auto">
-           <span class="text-2xl font-bold tracking-tight text-indigo-900">$30</span>
-          <span class="text-sm font-semibold leading-6 text-indigo-600">/month</span>
-     </div>
-     <input type="radio" name="plan" value="Freelancer" checked class="sr-only" aria-labelledby="plan-1-label" />
-     <span class="pointer-events-none absolute -inset-px rounded-lg border-2 border-indigo-600" aria-hidden="true"></span>
+    <div class="mb-4 flex items-center justify-between">
+      <span class="text-sm font-semibold leading-6 text-indigo-600">Freelancer</span>
+      <input type="radio" name="plan" value="Freelancer" checked class="h-4 w-4 border-gray-300 text-indigo-600 focus:ring-indigo-600" />
+    </div>
+    <p class="mb-6 text-sm text-gray-500">Perfect for growing businesses.</p>
+    <div class="mt-auto">
+       <div class="flex items-baseline gap-x-2">
+         <span class="text-4xl font-bold tracking-tight text-gray-900">$30</span>
+         <span class="text-sm font-semibold leading-6 text-gray-600">/mo</span>
+       </div>
+    </div>
   </label>
 
-   <label class="relative flex cursor-pointer rounded-lg border bg-white p-4 shadow-sm focus:outline-none ring-1 ring-gray-300 hover:bg-gray-50 flex-col">
-     <div class="flex items-center justify-between w-full mb-4">
-          <span class="block text-sm font-semibold text-gray-900">Startup</span>
-           <svg class="h-5 w-5 text-gray-400" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-            <circle cx="12" cy="12" r="10"/>
-            <path d="m9 12 2 2 4-4"/>
-          </svg>
-     </div>
-     <div class="mt-auto">
-           <span class="text-2xl font-bold tracking-tight text-gray-900">$60</span>
-          <span class="text-sm font-semibold leading-6 text-gray-600">/month</span>
-     </div>
-     <input type="radio" name="plan" value="Startup" class="sr-only" aria-labelledby="plan-0-label" />
-     <span class="pointer-events-none absolute -inset-px rounded-lg border-2 border-transparent peer-checked:border-indigo-600" aria-hidden="true"></span>
+  <!-- Plan 3 -->
+  <label class="relative flex flex-col cursor-pointer rounded-2xl border border-gray-200 bg-white p-6 shadow-sm transition-all duration-200 hover:border-indigo-300 hover:shadow-md focus-within:ring-2 focus-within:ring-indigo-600 focus-within:ring-offset-2 has-[:checked]:border-indigo-600 has-[:checked]:ring-1 has-[:checked]:ring-indigo-600">
+    <div class="mb-4 flex items-center justify-between">
+      <span class="text-sm font-semibold leading-6 text-gray-900">Startup</span>
+      <input type="radio" name="plan" value="Startup" class="h-4 w-4 border-gray-300 text-indigo-600 focus:ring-indigo-600" />
+    </div>
+    <p class="mb-6 text-sm text-gray-500">Advanced features for scaling teams.</p>
+    <div class="mt-auto">
+       <div class="flex items-baseline gap-x-2">
+         <span class="text-4xl font-bold tracking-tight text-gray-900">$60</span>
+         <span class="text-sm font-semibold leading-6 text-gray-600">/mo</span>
+       </div>
+    </div>
   </label>
 </div>
 `
 </script>
 
 <template>
-  <PreviewWrapper title="Pricing Plans" description="Grid layout for high-level choices." :html-block="htmlBlock">
-    <div class="grid grid-cols-1 gap-y-6 sm:grid-cols-3 sm:gap-x-4">
-      <label class="relative flex cursor-pointer rounded-lg border bg-white p-4 shadow-sm focus:outline-none ring-1 ring-gray-300 hover:bg-gray-50 flex-col">
-         <div class="flex items-center justify-between w-full mb-4">
-              <span class="block text-sm font-semibold text-gray-900">Hobby</span>
-               <svg class="h-5 w-5 text-gray-400" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <circle cx="12" cy="12" r="10"/>
-                <path d="m9 12 2 2 4-4"/>
-              </svg>
-         </div>
-         <div class="mt-auto">
-               <span class="text-2xl font-bold tracking-tight text-gray-900">$15</span>
-              <span class="text-sm font-semibold leading-6 text-gray-600">/month</span>
-         </div>
-         <input type="radio" name="plan" value="Hobby" class="sr-only" aria-labelledby="plan-0-label" />
-         <span class="pointer-events-none absolute -inset-px rounded-lg border-2 border-transparent peer-checked:border-indigo-600" aria-hidden="true"></span>
+  <PreviewWrapper title="Pricing Cards" description="Comparison cards with a 'Popular' badge." :html-block="htmlBlock">
+    <div class="grid grid-cols-1 gap-6 sm:grid-cols-3">
+      <!-- Plan 1 -->
+      <label class="relative flex flex-col cursor-pointer rounded-2xl border border-gray-200 bg-white p-6 shadow-sm transition-all duration-200 hover:border-indigo-300 hover:shadow-md focus-within:ring-2 focus-within:ring-indigo-600 focus-within:ring-offset-2 has-[:checked]:border-indigo-600 has-[:checked]:ring-1 has-[:checked]:ring-indigo-600">
+        <div class="mb-4 flex items-center justify-between">
+          <span class="text-sm font-semibold leading-6 text-gray-900">Hobby</span>
+          <input type="radio" name="plan" value="Hobby" class="h-4 w-4 border-gray-300 text-indigo-600 focus:ring-indigo-600" />
+        </div>
+        <p class="mb-6 text-sm text-gray-500">Essential features for personal projects.</p>
+        <div class="mt-auto">
+           <div class="flex items-baseline gap-x-2">
+             <span class="text-4xl font-bold tracking-tight text-gray-900">$15</span>
+             <span class="text-sm font-semibold leading-6 text-gray-600">/mo</span>
+           </div>
+        </div>
       </label>
 
-      <label class="relative flex cursor-pointer rounded-lg border bg-indigo-50 border-indigo-200 p-4 shadow-sm focus:outline-none ring-1 ring-indigo-200 flex-col">
-         <div class="flex items-center justify-between w-full mb-4">
-              <span class="block text-sm font-semibold text-indigo-900">Freelancer</span>
-              <div class="flex-shrink-0 ml-4">
-              <svg class="h-6 w-6 text-indigo-600" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                  <circle cx="12" cy="12" r="10"/>
-                  <path d="m9 12 2 2 4-4"/>
-              </svg>
-          </div>
+      <!-- Plan 2 (Popular) -->
+      <label class="relative flex flex-col cursor-pointer rounded-2xl border border-indigo-200 bg-white p-6 shadow-sm transition-all duration-200 hover:border-indigo-300 hover:shadow-md focus-within:ring-2 focus-within:ring-indigo-600 focus-within:ring-offset-2 has-[:checked]:border-indigo-600 has-[:checked]:ring-1 has-[:checked]:ring-indigo-600">
+         <div class="absolute -top-3 left-1/2 -translate-x-1/2 rounded-full bg-indigo-600 px-3 py-0.5 text-xs font-semibold text-white shadow-sm">
+           Popular
          </div>
-         <div class="mt-auto">
-               <span class="text-2xl font-bold tracking-tight text-indigo-900">$30</span>
-              <span class="text-sm font-semibold leading-6 text-indigo-600">/month</span>
-         </div>
-         <input type="radio" name="plan" value="Freelancer" checked class="sr-only" aria-labelledby="plan-1-label" />
-         <span class="pointer-events-none absolute -inset-px rounded-lg border-2 border-indigo-600" aria-hidden="true"></span>
+        <div class="mb-4 flex items-center justify-between">
+          <span class="text-sm font-semibold leading-6 text-indigo-600">Freelancer</span>
+          <input type="radio" name="plan" value="Freelancer" checked class="h-4 w-4 border-gray-300 text-indigo-600 focus:ring-indigo-600" />
+        </div>
+        <p class="mb-6 text-sm text-gray-500">Perfect for growing businesses.</p>
+        <div class="mt-auto">
+           <div class="flex items-baseline gap-x-2">
+             <span class="text-4xl font-bold tracking-tight text-gray-900">$30</span>
+             <span class="text-sm font-semibold leading-6 text-gray-600">/mo</span>
+           </div>
+        </div>
       </label>
 
-       <label class="relative flex cursor-pointer rounded-lg border bg-white p-4 shadow-sm focus:outline-none ring-1 ring-gray-300 hover:bg-gray-50 flex-col">
-         <div class="flex items-center justify-between w-full mb-4">
-              <span class="block text-sm font-semibold text-gray-900">Startup</span>
-               <svg class="h-5 w-5 text-gray-400" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <circle cx="12" cy="12" r="10"/>
-                <path d="m9 12 2 2 4-4"/>
-              </svg>
-         </div>
-         <div class="mt-auto">
-               <span class="text-2xl font-bold tracking-tight text-gray-900">$60</span>
-              <span class="text-sm font-semibold leading-6 text-gray-600">/month</span>
-         </div>
-         <input type="radio" name="plan" value="Startup" class="sr-only" aria-labelledby="plan-0-label" />
-         <span class="pointer-events-none absolute -inset-px rounded-lg border-2 border-transparent peer-checked:border-indigo-600" aria-hidden="true"></span>
+      <!-- Plan 3 -->
+      <label class="relative flex flex-col cursor-pointer rounded-2xl border border-gray-200 bg-white p-6 shadow-sm transition-all duration-200 hover:border-indigo-300 hover:shadow-md focus-within:ring-2 focus-within:ring-indigo-600 focus-within:ring-offset-2 has-[:checked]:border-indigo-600 has-[:checked]:ring-1 has-[:checked]:ring-indigo-600">
+        <div class="mb-4 flex items-center justify-between">
+          <span class="text-sm font-semibold leading-6 text-gray-900">Startup</span>
+          <input type="radio" name="plan" value="Startup" class="h-4 w-4 border-gray-300 text-indigo-600 focus:ring-indigo-600" />
+        </div>
+        <p class="mb-6 text-sm text-gray-500">Advanced features for scaling teams.</p>
+        <div class="mt-auto">
+           <div class="flex items-baseline gap-x-2">
+             <span class="text-4xl font-bold tracking-tight text-gray-900">$60</span>
+             <span class="text-sm font-semibold leading-6 text-gray-600">/mo</span>
+           </div>
+        </div>
       </label>
     </div>
   </PreviewWrapper>

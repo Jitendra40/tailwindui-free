@@ -2,68 +2,77 @@
 import PreviewWrapper from "@/components/PreviewWrapper.vue"
 
 const htmlBlock = `
-<div class="rounded-lg border border-gray-200 bg-white shadow-sm overflow-hidden">
-    <div class="px-4 py-3 border-b border-gray-200 bg-gray-50/50 flex justify-between items-center">
-       <h4 class="text-sm font-semibold text-gray-900">Attached Files (2)</h4>
-       <button class="text-xs font-medium text-indigo-600 hover:text-indigo-500">Download All</button>
+<div class="overflow-hidden rounded-xl border border-gray-200 bg-white shadow-sm transition-all hover:shadow-md">
+    <div class="flex items-center justify-between border-b border-gray-100 bg-gray-50/50 px-5 py-4">
+       <div class="flex items-center gap-2">
+           <h4 class="text-sm font-semibold text-gray-900">Attached Files</h4>
+           <span class="inline-flex items-center rounded-md bg-gray-100 px-2 py-1 text-xs font-medium text-gray-600 ring-1 ring-inset ring-gray-500/10">2</span>
+       </div>
+       <button class="text-xs font-semibold text-indigo-600 hover:text-indigo-500 hover:underline">Download All</button>
     </div>
     <ul role="list" class="divide-y divide-gray-100">
-      <li class="flex items-center justify-between py-4 pl-4 pr-5 text-sm leading-6 hover:bg-gray-50 transition-colors group">
-        <div class="flex w-0 flex-1 items-center">
-          <svg class="h-5 w-5 flex-shrink-0 text-gray-400" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-      <path d="m21.44 11.05-9.19 9.19a6 6 0 0 1-8.49-8.49l9.19-9.19a4 4 0 0 1 5.66 5.66l-9.2 9.19a2 2 0 0 1-2.83-2.83l8.49-8.48"/>
-    </svg>
-          <div class="ml-4 flex min-w-0 flex-1 gap-2 flex-col">
-            <span class="truncate font-medium text-gray-900">resume_frontend_dev.pdf</span>
-            <span class="flex-shrink-0 text-gray-500 text-xs">2.4 MB • Uploaded just now</span>
+      <!-- File 1 -->
+      <li class="group flex items-center justify-between p-4 hover:bg-gray-50 transition-colors">
+        <div class="flex items-center gap-4">
+           <div class="flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-lg bg-red-50 text-red-600 ring-1 ring-inset ring-red-100">
+             <svg class="h-6 w-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                <polyline points="14 2 14 8 20 8"></polyline>
+                <line x1="16" y1="13" x2="8" y2="13"></line>
+                <line x1="16" y1="17" x2="8" y2="17"></line>
+                <polyline points="10 9 9 9 8 9"></polyline>
+            </svg>
+           </div>
+          <div class="flex min-w-0 flex-col">
+            <p class="truncate text-sm font-medium text-gray-900">resume_frontend_dev.pdf</p>
+            <p class="text-xs text-gray-500">2.4 MB • Uploaded just now</p>
           </div>
         </div>
-        <div class="ml-4 flex-shrink-0 flex items-center gap-2 opacity-0 group-hover:opacity-100 transition-opacity">
-          <button type="button" class="p-1 rounded-md text-gray-400 hover:text-indigo-600 hover:bg-indigo-50">
-              <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <div class="flex items-center gap-2 opacity-0 transition-opacity group-hover:opacity-100">
+          <button type="button" class="rounded-lg p-2 text-gray-400 hover:bg-gray-100 hover:text-indigo-600 transition-colors" title="Download">
+              <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                 <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
                 <polyline points="7 10 12 15 17 10"/>
                 <line x1="12" x2="12" y1="15" y2="3"/>
               </svg>
           </button>
-           <div class="w-px h-4 bg-gray-200"></div>
-          <button type="button" class="p-1 rounded-md text-gray-400 hover:text-red-600 hover:bg-red-50">
-              <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <button type="button" class="rounded-lg p-2 text-gray-400 hover:bg-red-50 hover:text-red-600 transition-colors" title="Delete">
+              <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                 <path d="M3 6h18"/>
-                <path d="M19 6v14c0 1-1 2-2 2H7c-1 0-2-1-2-2V6"/>
-                <path d="M8 6V4c0-1 1-2 2-2h4c1 0 2 1 2 2v2"/>
-                <line x1="10" x2="10" y1="11" y2="17"/>
-                <line x1="14" x2="14" y1="11" y2="17"/>
+                <path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"/>
               </svg>
           </button>
         </div>
       </li>
-       <li class="flex items-center justify-between py-4 pl-4 pr-5 text-sm leading-6 hover:bg-gray-50 transition-colors group">
-        <div class="flex w-0 flex-1 items-center">
-          <svg class="h-5 w-5 flex-shrink-0 text-gray-400" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-      <path d="m21.44 11.05-9.19 9.19a6 6 0 0 1-8.49-8.49l9.19-9.19a4 4 0 0 1 5.66 5.66l-9.2 9.19a2 2 0 0 1-2.83-2.83l8.49-8.48"/>
-    </svg>
-          <div class="ml-4 flex min-w-0 flex-1 gap-2 flex-col">
-            <span class="truncate font-medium text-gray-900">cover_letter_v2.docx</span>
-            <span class="flex-shrink-0 text-gray-500 text-xs">142 KB • Uploaded 2h ago</span>
+      <!-- File 2 -->
+       <li class="group flex items-center justify-between p-4 hover:bg-gray-50 transition-colors">
+        <div class="flex items-center gap-4">
+           <div class="flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-lg bg-blue-50 text-blue-600 ring-1 ring-inset ring-blue-100">
+              <svg class="h-6 w-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z"/>
+                <polyline points="14 2 14 8 20 8"/>
+                <line x1="16" y1="13" x2="8" y2="13"/>
+                <line x1="16" y1="17" x2="8" y2="17"/>
+                <line x1="10" y1="9" x2="8" y2="9"/>
+              </svg>
+           </div>
+          <div class="flex min-w-0 flex-col">
+            <p class="truncate text-sm font-medium text-gray-900">cover_letter_v2.docx</p>
+            <p class="text-xs text-gray-500">142 KB • Uploaded 2h ago</p>
           </div>
         </div>
-        <div class="ml-4 flex-shrink-0 flex items-center gap-2 opacity-0 group-hover:opacity-100 transition-opacity">
-          <button type="button" class="p-1 rounded-md text-gray-400 hover:text-indigo-600 hover:bg-indigo-50">
-              <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <div class="flex items-center gap-2 opacity-0 transition-opacity group-hover:opacity-100">
+          <button type="button" class="rounded-lg p-2 text-gray-400 hover:bg-gray-100 hover:text-indigo-600 transition-colors" title="Download">
+              <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                 <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
                 <polyline points="7 10 12 15 17 10"/>
                 <line x1="12" x2="12" y1="15" y2="3"/>
               </svg>
           </button>
-           <div class="w-px h-4 bg-gray-200"></div>
-          <button type="button" class="p-1 rounded-md text-gray-400 hover:text-red-600 hover:bg-red-50">
-              <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <button type="button" class="rounded-lg p-2 text-gray-400 hover:bg-red-50 hover:text-red-600 transition-colors" title="Delete">
+              <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                 <path d="M3 6h18"/>
-                <path d="M19 6v14c0 1-1 2-2 2H7c-1 0-2-1-2-2V6"/>
-                <path d="M8 6V4c0-1 1-2 2-2h4c1 0 2 1 2 2v2"/>
-                <line x1="10" x2="10" y1="11" y2="17"/>
-                <line x1="14" x2="14" y1="11" y2="17"/>
+                <path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"/>
               </svg>
           </button>
         </div>
@@ -74,69 +83,76 @@ const htmlBlock = `
 </script>
 
 <template>
-  <PreviewWrapper title="File List" description="Display of uploaded files with actions." :html-block="htmlBlock">
+  <PreviewWrapper title="FileList" description="Clean file list with distinct icons and prominent actions." :html-block="htmlBlock">
     <div class="rounded-lg border border-gray-200 bg-white shadow-sm overflow-hidden">
-        <div class="px-4 py-3 border-b border-gray-200 bg-gray-50/50 flex justify-between items-center">
-           <h4 class="text-sm font-semibold text-gray-900">Attached Files (2)</h4>
-           <button class="text-xs font-medium text-indigo-600 hover:text-indigo-500">Download All</button>
+        <div class="flex items-center justify-between border-b border-gray-100 bg-gray-50/50 px-5 py-4">
+           <div class="flex items-center gap-2">
+               <h4 class="text-sm font-semibold text-gray-900">Attached Files</h4>
+               <span class="inline-flex items-center rounded-md bg-gray-100 px-2 py-1 text-xs font-medium text-gray-600 ring-1 ring-inset ring-gray-500/10">2</span>
+           </div>
+           <button class="text-xs font-semibold text-indigo-600 hover:text-indigo-500 hover:underline">Download All</button>
         </div>
         <ul role="list" class="divide-y divide-gray-100">
-          <li class="flex items-center justify-between py-4 pl-4 pr-5 text-sm leading-6 hover:bg-gray-50 transition-colors group">
-            <div class="flex w-0 flex-1 items-center">
-              <svg class="h-5 w-5 flex-shrink-0 text-gray-400" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-          <path d="m21.44 11.05-9.19 9.19a6 6 0 0 1-8.49-8.49l9.19-9.19a4 4 0 0 1 5.66 5.66l-9.2 9.19a2 2 0 0 1-2.83-2.83l8.49-8.48"/>
-        </svg>
-              <div class="ml-4 flex min-w-0 flex-1 gap-2 flex-col">
-                <span class="truncate font-medium text-gray-900">resume_frontend_dev.pdf</span>
-                <span class="flex-shrink-0 text-gray-500 text-xs">2.4 MB • Uploaded just now</span>
+          <li class="group flex items-center justify-between p-4 hover:bg-gray-50 transition-colors">
+            <div class="flex items-center gap-4">
+               <div class="flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-lg bg-red-50 text-red-600 ring-1 ring-inset ring-red-100">
+                 <svg class="h-6 w-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                    <polyline points="14 2 14 8 20 8"></polyline>
+                    <line x1="16" y1="13" x2="8" y2="13"></line>
+                    <line x1="16" y1="17" x2="8" y2="17"></line>
+                    <polyline points="10 9 9 9 8 9"></polyline>
+                </svg>
+               </div>
+              <div class="flex min-w-0 flex-col">
+                <p class="truncate text-sm font-medium text-gray-900">resume_frontend_dev.pdf</p>
+                <p class="text-xs text-gray-500">2.4 MB • Uploaded just now</p>
               </div>
             </div>
-            <div class="ml-4 flex-shrink-0 flex items-center gap-2 opacity-0 group-hover:opacity-100 transition-opacity">
-              <button type="button" class="p-1 rounded-md text-gray-400 hover:text-indigo-600 hover:bg-indigo-50">
-                  <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <div class="flex items-center gap-2 opacity-0 transition-opacity group-hover:opacity-100">
+              <button type="button" class="rounded-lg p-2 text-gray-400 hover:bg-gray-100 hover:text-indigo-600 transition-colors" title="Download">
+                  <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                     <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
                     <polyline points="7 10 12 15 17 10"/>
                     <line x1="12" x2="12" y1="15" y2="3"/>
                   </svg>
               </button>
-               <div class="w-px h-4 bg-gray-200"></div>
-              <button type="button" class="p-1 rounded-md text-gray-400 hover:text-red-600 hover:bg-red-50">
-                  <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <button type="button" class="rounded-lg p-2 text-gray-400 hover:bg-red-50 hover:text-red-600 transition-colors" title="Delete">
+                  <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                     <path d="M3 6h18"/>
-                    <path d="M19 6v14c0 1-1 2-2 2H7c-1 0-2-1-2-2V6"/>
-                    <path d="M8 6V4c0-1 1-2 2-2h4c1 0 2 1 2 2v2"/>
-                    <line x1="10" x2="10" y1="11" y2="17"/>
-                    <line x1="14" x2="14" y1="11" y2="17"/>
+                    <path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"/>
                   </svg>
               </button>
             </div>
           </li>
-           <li class="flex items-center justify-between py-4 pl-4 pr-5 text-sm leading-6 hover:bg-gray-50 transition-colors group">
-            <div class="flex w-0 flex-1 items-center">
-              <svg class="h-5 w-5 flex-shrink-0 text-gray-400" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-          <path d="m21.44 11.05-9.19 9.19a6 6 0 0 1-8.49-8.49l9.19-9.19a4 4 0 0 1 5.66 5.66l-9.2 9.19a2 2 0 0 1-2.83-2.83l8.49-8.48"/>
-        </svg>
-              <div class="ml-4 flex min-w-0 flex-1 gap-2 flex-col">
-                <span class="truncate font-medium text-gray-900">cover_letter_v2.docx</span>
-                <span class="flex-shrink-0 text-gray-500 text-xs">142 KB • Uploaded 2h ago</span>
+           <li class="group flex items-center justify-between p-4 hover:bg-gray-50 transition-colors">
+            <div class="flex items-center gap-4">
+               <div class="flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-lg bg-blue-50 text-blue-600 ring-1 ring-inset ring-blue-100">
+                  <svg class="h-6 w-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z"/>
+                    <polyline points="14 2 14 8 20 8"/>
+                    <line x1="16" y1="13" x2="8" y2="13"/>
+                    <line x1="16" y1="17" x2="8" y2="17"/>
+                    <line x1="10" y1="9" x2="8" y2="9"/>
+                  </svg>
+               </div>
+              <div class="flex min-w-0 flex-col">
+                <p class="truncate text-sm font-medium text-gray-900">cover_letter_v2.docx</p>
+                <p class="text-xs text-gray-500">142 KB • Uploaded 2h ago</p>
               </div>
             </div>
-            <div class="ml-4 flex-shrink-0 flex items-center gap-2 opacity-0 group-hover:opacity-100 transition-opacity">
-              <button type="button" class="p-1 rounded-md text-gray-400 hover:text-indigo-600 hover:bg-indigo-50">
-                  <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <div class="flex items-center gap-2 opacity-0 transition-opacity group-hover:opacity-100">
+              <button type="button" class="rounded-lg p-2 text-gray-400 hover:bg-gray-100 hover:text-indigo-600 transition-colors" title="Download">
+                  <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                     <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
                     <polyline points="7 10 12 15 17 10"/>
                     <line x1="12" x2="12" y1="15" y2="3"/>
                   </svg>
               </button>
-               <div class="w-px h-4 bg-gray-200"></div>
-              <button type="button" class="p-1 rounded-md text-gray-400 hover:text-red-600 hover:bg-red-50">
-                  <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <button type="button" class="rounded-lg p-2 text-gray-400 hover:bg-red-50 hover:text-red-600 transition-colors" title="Delete">
+                  <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                     <path d="M3 6h18"/>
-                    <path d="M19 6v14c0 1-1 2-2 2H7c-1 0-2-1-2-2V6"/>
-                    <path d="M8 6V4c0-1 1-2 2-2h4c1 0 2 1 2 2v2"/>
-                    <line x1="10" x2="10" y1="11" y2="17"/>
-                    <line x1="14" x2="14" y1="11" y2="17"/>
+                    <path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"/>
                   </svg>
               </button>
             </div>
