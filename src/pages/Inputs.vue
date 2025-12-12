@@ -7,6 +7,8 @@ import AddOnInput from "@/components/Inputs/AddOnInput.vue"
 import SelectInput from "@/components/Inputs/SelectInput.vue"
 import RangeInput from "@/components/Inputs/RangeInput.vue"
 import DateInput from "@/components/Inputs/DateInput.vue"
+import RatingInput from "@/components/Inputs/RatingInput.vue"
+import ToggleInput from "@/components/Inputs/ToggleInput.vue"
 </script>
 
 <template>
@@ -25,6 +27,8 @@ import DateInput from "@/components/Inputs/DateInput.vue"
       <SelectInput />
       <RangeInput />
       <DateInput />
+      <ToggleInput />
+      <RatingInput />
     </div>
   </div>
 </template>
