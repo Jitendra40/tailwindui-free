@@ -110,12 +110,8 @@ const data = {
   <Sidebar v-bind="props" class="bg-gray-50/50 border-r border-gray-200/60">
     <SidebarHeader class="px-6 py-4">
       <div class="flex items-center gap-2 mb-4">
-         <div class="w-8 h-8 rounded-lg bg-indigo-600 flex items-center justify-center text-white shadow-lg shadow-indigo-500/30">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-5 h-5">
-              <path fill-rule="evenodd" d="M3 6a3 3 0 013-3h2.25a3 3 0 013 3v2.25a3 3 0 01-3 3H6a3 3 0 01-3-3V6zm9.75 0a3 3 0 013-3H18a3 3 0 013 3v2.25a3 3 0 01-3 3h-2.25a3 3 0 01-3-3V6zM3 15.75a3 3 0 013-3h2.25a3 3 0 013 3V18a3 3 0 01-3 3H6a3 3 0 01-3-3v-2.25zm9.75 0a3 3 0 013-3H18a3 3 0 013 3V18a3 3 0 01-3 3h-2.25a3 3 0 01-3-3v-2.25z" clip-rule="evenodd" />
-            </svg>
-         </div>
-         <span class="font-bold text-lg text-gray-900 tracking-tight">Tailwind UI</span>
+    
+         <span class="font-bold text-lg text-gray-900 tracking-tight">Tailwind UI Free</span>
       </div>
       <SearchForm />
     </SidebarHeader>
