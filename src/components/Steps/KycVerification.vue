@@ -3,13 +3,13 @@ import PreviewWrapper from "@/components/PreviewWrapper.vue"
 
 const htmlBlock = `
 <!-- KYC Verification Flow -->
-<div class="w-full overflow-x-auto pb-2">
-  <nav aria-label="Progress" class="min-w-[700px] xl:min-w-0">
+<div class="w-full">
+  <nav aria-label="Progress">
     <ol role="list" class="overflow-hidden rounded-xl bg-white border border-gray-200 shadow-sm md:flex md:divide-y-0 md:divide-x divide-gray-200">
       
       <!-- Step 1: Verified -->
       <li class="relative md:flex md:flex-1">
-        <a href="#" class="group flex items-center w-full px-6 py-4 hover:bg-gray-50 transition-colors">
+        <a href="#" class="group flex items-center w-full px-6 py-4 hover:bg-gray-50 transition-colors border-b md:border-b-0 border-gray-100">
           <div class="flex flex-col w-full">
             <div class="flex items-center justify-between">
               <span class="text-sm font-medium text-green-700">Personal Info</span>
@@ -22,7 +22,7 @@ const htmlBlock = `
 
       <!-- Step 2: Verified -->
       <li class="relative md:flex md:flex-1">
-        <a href="#" class="group flex items-center w-full px-6 py-4 hover:bg-gray-50 transition-colors">
+        <a href="#" class="group flex items-center w-full px-6 py-4 hover:bg-gray-50 transition-colors border-b md:border-b-0 border-gray-100">
           <div class="flex flex-col w-full">
              <div class="flex items-center justify-between">
               <span class="text-sm font-medium text-green-700">PAN Verification</span>
@@ -35,7 +35,7 @@ const htmlBlock = `
 
       <!-- Step 3: Current -->
       <li class="relative md:flex md:flex-1">
-        <a href="#" class="group flex items-center w-full px-6 py-4 bg-indigo-50/30">
+        <a href="#" class="group flex items-center w-full px-6 py-4 bg-indigo-50/30 border-b md:border-b-0 border-gray-100">
           <div class="flex flex-col w-full">
              <div class="flex items-center justify-between">
               <span class="text-sm font-medium text-indigo-600">Aadhaar / Video KYC</span>
@@ -48,7 +48,7 @@ const htmlBlock = `
 
       <!-- Step 4: Pending -->
       <li class="relative md:flex md:flex-1">
-        <a href="#" class="group flex items-center w-full px-6 py-4 hover:bg-gray-50 transition-colors">
+        <a href="#" class="group flex items-center w-full px-6 py-4 hover:bg-gray-50 transition-colors border-b md:border-b-0 border-gray-100">
           <div class="flex flex-col w-full">
              <div class="flex items-center justify-between">
               <span class="text-sm font-medium text-gray-500">Document Upload</span>

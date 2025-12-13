@@ -3,8 +3,8 @@ import PreviewWrapper from "@/components/PreviewWrapper.vue"
 
 const htmlBlock = `
 <!-- Course Enrollment (EdTech) -->
-<div class="w-full overflow-x-auto pb-4">
-  <nav aria-label="Progress" class="min-w-[800px] xl:min-w-0">
+<div class="w-full">
+  <nav aria-label="Progress">
     <ol role="list" class="divide-y divide-gray-200 rounded-xl border border-gray-200 bg-white md:flex md:divide-y-0 shadow-sm">
       
       <!-- Step 1: Complete -->
