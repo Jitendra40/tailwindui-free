@@ -1,34 +1,32 @@
 <script setup lang="ts">
-import BasicInput from "@/components/Inputs/BasicInput.vue"
-import FloatingLabelInput from "@/components/Inputs/FloatingLabelInput.vue"
-import IconInput from "@/components/Inputs/IconInput.vue"
-import ValidationInput from "@/components/Inputs/ValidationInput.vue"
-import AddOnInput from "@/components/Inputs/AddOnInput.vue"
-import SelectInput from "@/components/Inputs/SelectInput.vue"
-import RangeInput from "@/components/Inputs/RangeInput.vue"
-import DateInput from "@/components/Inputs/DateInput.vue"
-import RatingInput from "@/components/Inputs/RatingInput.vue"
-import ToggleInput from "@/components/Inputs/ToggleInput.vue"
+import IdentityInputs from "@/components/Inputs/IdentityInputs.vue"
+import SecurityInputs from "@/components/Inputs/SecurityInputs.vue"
+import AddressInputs from "@/components/Inputs/AddressInputs.vue"
+import FintechInputs from "@/components/Inputs/FintechInputs.vue"
+import BusinessInputs from "@/components/Inputs/BusinessInputs.vue"
+import DateTimeInputs from "@/components/Inputs/DateTimeInputs.vue"
+import SelectionInputs from "@/components/Inputs/SelectionInputs.vue"
+import ContentInputs from "@/components/Inputs/ContentInputs.vue"
+import MediaInputs from "@/components/Inputs/MediaInputs.vue"
 </script>
 
 <template>
-  <div class="space-y-8">
+  <div class="space-y-12">
     <div class="space-y-1">
       <h1 class="text-2xl font-semibold text-foreground">Inputs</h1>
-      <p class="text-muted-foreground">Text fields for user input.</p>
+      <p class="text-muted-foreground">Comprehensive collection of input fields for various data types.</p>
     </div>
 
-    <div class="grid gap-8">
-      <BasicInput />
-      <FloatingLabelInput />
-      <IconInput />
-      <ValidationInput />
-      <AddOnInput />
-      <SelectInput />
-      <RangeInput />
-      <DateInput />
-      <ToggleInput />
-      <RatingInput />
+    <div class="space-y-12">
+      <IdentityInputs />
+      <SecurityInputs />
+      <AddressInputs />
+      <FintechInputs />
+      <BusinessInputs />
+      <DateTimeInputs />
+      <SelectionInputs />
+      <ContentInputs />
+      <MediaInputs />
     </div>
   </div>
 </template>
