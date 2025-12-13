@@ -3,7 +3,7 @@ import { VIEWPORT_SIZES, usePreviewControls } from "@/composables/usePreviewCont
 import Prism from 'prismjs'
 import 'prismjs/components/prism-markup'
 import 'prismjs/themes/prism-tomorrow.css'
-import { ref, watch } from 'vue'
+import { ref, watch, onMounted, computed } from 'vue'
 
 const props = defineProps<{
     title?: string
@@ -17,17 +17,79 @@ const {
     showCode,
     copied,
     activeViewport,
-    previewWidthClass,
+    previewWidthStyle,
     setPreview,
     setCode,
     copyMarkup,
 } = usePreviewControls(props.htmlBlock, props.defaultViewport)
 
 const highlightedCode = ref('')
+const extractedStyles = ref('')
+
 watch(() => props.htmlBlock, (newCode) => {
     const grammar = Prism.languages.markup || Prism.languages.html || {}
     highlightedCode.value = Prism.highlight(newCode, grammar, 'markup')
 }, { immediate: true })
+
+onMounted(() => {
+    // Capture global styles to inject into iframe
+    const styleElements = Array.from(document.querySelectorAll('style, link[rel="stylesheet"]'))
+    extractedStyles.value = styleElements.map(el => el.outerHTML).join('\n')
+})
+
+const iframeSrcDoc = computed(() => {
+    return `
+        <!DOCTYPE html>
+        <html class="antialiased">
+        <head>
+            <meta charset="utf-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+            <script src="https://cdn.tailwindcss.com"><\/script>
+            ${extractedStyles.value}
+            <style>
+                body { background-color: transparent; padding: 1.5rem; }
+                /* Hide main scrollbar */
+                ::-webkit-scrollbar { width: 0; background: transparent; }
+            </style>
+            <script>
+                tailwind.config = {
+                     theme: {
+                        extend: {
+                            colors: {
+                                border: "hsl(var(--border))",
+                                input: "hsl(var(--input))",
+                                ring: "hsl(var(--ring))",
+                                background: "hsl(var(--background))",
+                                foreground: "hsl(var(--foreground))",
+                            }
+                        }
+                    }
+                }
+            <\/script>
+        </head>
+        <body class="bg-gray-50/50 min-h-screen">
+            <div id="app-content">
+                ${props.htmlBlock}
+            </div>
+            
+            <script>
+                function updateHeight() {
+                    const app = document.getElementById('app-content');
+                    if (app) {
+                        const height = app.scrollHeight + 80;
+                        window.frameElement.style.height = height + 'px';
+                    }
+                }
+                setTimeout(updateHeight, 100);
+                window.addEventListener('load', updateHeight);
+                window.addEventListener('resize', updateHeight);
+                new ResizeObserver(updateHeight).observe(document.body);
+            <\/script>
+        </body>
+        </html>
+    `
+})
+
 </script>
 
 <template>
@@ -76,22 +138,19 @@ watch(() => props.htmlBlock, (newCode) => {
             </div>
         </div>
         
-        <div v-if="showPreview" class="relative group/preview">
-            <div :class="['mx-auto w-full transition-all duration-300 ease-in-out', previewWidthClass]">
-                <div class="rounded-xl border border-gray-200 bg-gray-50/50 p-6 min-h-[200px] flex items-center justify-center relative overflow-hidden">
-                    <div class="absolute inset-0 opacity-[0.03]" style="background-image: radial-gradient(#64748b 1px, transparent 1px); background-size: 16px 16px;"></div>
-                    <div class="w-full relative z-10">
-                        <slot />
-                    </div>
-                </div>
+        <div v-if="showPreview" class="relative group/preview bg-gray-100/50 rounded-xl border border-gray-200 overflow-hidden">
+            <div class="w-full flex justify-center py-8 min-h-[300px] overflow-x-auto">
+                <iframe
+                    :srcdoc="iframeSrcDoc"
+                    class="transition-all duration-300 ease-in-out bg-white shadow-sm rounded-lg border border-gray-200"
+                    :style="[previewWidthStyle, { minHeight: '300px' }]"
+                ></iframe>
             </div>
         </div>
         
         <div v-else-if="showCode"
             class="rounded-xl border border-gray-800 bg-[#1e1e1e] p-4 overflow-y-auto overflow-x-hidden max-h-[500px] shadow-inner">
-            <pre class="whitespace-pre-wrap wrap-break-word break-all text-xs leading-relaxed font-mono w-full text-gray-300">
-                <code v-html="highlightedCode" class="whitespace-pre-wrap wrap-break-word break-all text-xs leading-relaxed font-mono w-full"></code>
-            </pre>
+            <pre class="whitespace-pre-wrap wrap-break-word break-all text-xs leading-relaxed font-mono w-full text-gray-300"><code v-html="highlightedCode" class="whitespace-pre-wrap wrap-break-word break-all text-xs leading-relaxed font-mono w-full"></code></pre>
         </div>
     </section>
 </template>

@@ -3,12 +3,12 @@ import { computed, ref } from "vue"
 export const VIEWPORT_SIZES = ["Mobile", "small", "medium", "large", "full"] as const
 export type ViewportSize = typeof VIEWPORT_SIZES[number]
 
-const viewportWidths: Record<ViewportSize, string> = {
-	Mobile: "max-w-xs",
-	small: "max-w-sm",
-	medium: "max-w-lg",
-	large: "max-w-2xl",
-	full: "w-full",
+const viewportStyles: Record<ViewportSize, string> = {
+	Mobile: "width: 375px;",
+	small: "width: 640px;",
+	medium: "width: 768px;",
+	large: "width: 1024px;",
+	full: "width: 100%;",
 }
 
 export function usePreviewControls(htmlBlock: string, defaultViewport: ViewportSize = "full") {
@@ -17,7 +17,8 @@ export function usePreviewControls(htmlBlock: string, defaultViewport: ViewportS
 	const copied = ref(false)
 	const activeViewport = ref<ViewportSize>(defaultViewport)
 
-	const previewWidthClass = computed(() => viewportWidths[activeViewport.value] ?? viewportWidths.full)
+	// Return a style string instead of a class
+	const previewWidthStyle = computed(() => viewportStyles[activeViewport.value] ?? viewportStyles.full)
 
 	const setPreview = () => {
 		showPreview.value = true
@@ -46,7 +47,7 @@ export function usePreviewControls(htmlBlock: string, defaultViewport: ViewportS
 		showCode,
 		copied,
 		activeViewport,
-		previewWidthClass,
+		previewWidthStyle,
 		setPreview,
 		setCode,
 		copyMarkup,
