@@ -18,11 +18,11 @@ const { setItems } = useTOC()
 
 onMounted(() => {
   setItems([
+    { id: 'utility-actions', label: 'Utility Actions' },
     { id: 'primary-actions', label: 'Primary Actions' },
     { id: 'engagement-actions', label: 'Engagement Actions' },
     { id: 'management-actions', label: 'Management Actions' },
     { id: 'navigation-actions', label: 'Navigation Actions' },
-    { id: 'utility-actions', label: 'Utility Actions' },
     { id: 'saas-bonus', label: 'SaaS Bonus' },
     { id: 'gradient-buttons', label: 'Gradient Buttons' },
     { id: 'animated-buttons', label: 'Animated Buttons' },
@@ -39,6 +39,9 @@ onMounted(() => {
       <p class="text-sm text-muted-foreground">Action-oriented button suites for every context.</p>
     </div>
     <div class="space-y-8">
+            <div id="utility-actions" class="scroll-mt-24">
+        <UtilityActions />
+      </div>
       <div id="primary-actions" class="scroll-mt-24">
         <PrimaryActions />
       </div>
@@ -51,9 +54,7 @@ onMounted(() => {
       <div id="navigation-actions" class="scroll-mt-24">
         <NavigationActions />
       </div>
-      <div id="utility-actions" class="scroll-mt-24">
-        <UtilityActions />
-      </div>
+
       <div id="saas-bonus" class="scroll-mt-24">
         <SaasBonus />
       </div>

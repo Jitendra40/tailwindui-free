@@ -23,6 +23,8 @@ import {
   SidebarProvider,
   SidebarTrigger,
 } from "@/components/ui/sidebar"
+import { Button } from "@/components/ui/button"
+import { Github } from "lucide-vue-next"
 
 const route = useRoute()
 const titleMap: Record<string, string> = {
@@ -85,6 +87,12 @@ watch(() => route.path, () => {
             </BreadcrumbItem>
           </BreadcrumbList>
         </Breadcrumb>
+        <div class="ml-auto flex items-center gap-2">
+            <Button as="a" href="https://github.com/Jitendra40/tailwindui-free" target="_blank" variant="outline" size="sm">
+              <Github class="mr-2 h-4 w-4" />
+              Star on GitHub
+            </Button>
+        </div>
       </header>
       <div class="flex flex-1 flex-col gap-4 p-4">
         <main class="flex w-full max-w-[1600px] mx-auto items-start gap-4">
