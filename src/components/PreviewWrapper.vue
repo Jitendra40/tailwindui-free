@@ -25,8 +25,10 @@ const {
 
 const highlightedCode = ref('')
 const extractedStyles = ref('')
+const isLoading = ref(true)
 
 watch(() => props.htmlBlock, (newCode) => {
+    isLoading.value = true
     const grammar = Prism.languages.markup || Prism.languages.html || {}
     highlightedCode.value = Prism.highlight(newCode, grammar, 'markup')
 }, { immediate: true })
@@ -139,11 +141,23 @@ const iframeSrcDoc = computed(() => {
         </div>
         
         <div v-if="showPreview" class="relative group/preview bg-gray-100/50 rounded-xl border border-gray-200 overflow-hidden">
-            <div class="w-full flex justify-center py-8 min-h-[300px] overflow-x-auto">
+        <div class="w-full flex justify-center py-8 min-h-[300px] overflow-x-auto relative">
+                <div v-if="isLoading" class="absolute inset-0 z-10 flex items-center justify-center bg-gray-50/50">
+                    <div class="w-full max-w-lg p-4 space-y-4">
+                        <div class="h-8 bg-gray-200 rounded w-1/4 animate-pulse"></div>
+                        <div class="space-y-2">
+                            <div class="h-4 bg-gray-200 rounded animate-pulse"></div>
+                            <div class="h-4 bg-gray-200 rounded w-5/6 animate-pulse"></div>
+                            <div class="h-4 bg-gray-200 rounded w-4/6 animate-pulse"></div>
+                        </div>
+                    </div>
+                </div>
                 <iframe
                     :srcdoc="iframeSrcDoc"
                     class="transition-all duration-300 ease-in-out bg-white shadow-sm rounded-lg border border-gray-200"
+                    :class="{ 'opacity-0': isLoading }"
                     :style="[previewWidthStyle, { minHeight: '300px' }]"
+                    @load="isLoading = false"
                 ></iframe>
             </div>
         </div>
