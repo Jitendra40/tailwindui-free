@@ -4,7 +4,9 @@
 ![Vue](https://img.shields.io/badge/Vue.js-3.x-green.svg)
 ![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-v4.0-38bdf8.svg)
 
-A collection of free, open-source UI components built with **Vue 3** and **Tailwind CSS v4**. This project aims to provide high-quality, copy-paste friendly components that you can use in your projects without any configuration or installation hassles.
+A collection of free, open-source UI components built with **Vue 3** and **Tailwind CSS v4**. Free Tailwind CSS v4 components for your next project, designed to enhance your web development with the latest features and styles 🚀.
+
+**Live Demo:** [https://tailwindui-free.vercel.app](https://tailwindui-free.vercel.app)
 
 ## 🚀 Features
 

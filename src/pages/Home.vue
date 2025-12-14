@@ -35,7 +35,8 @@ import {
   Star,
   Table2,
   Users,
-  Check
+  Check,
+  Github
 } from 'lucide-vue-next'
 
 const categories = [
@@ -123,6 +124,14 @@ const categories = [
             </div>
             No setup
           </div>
+        </div>
+
+        <div class="flex justify-center mt-8">
+           <a href="https://github.com/Jitendra40/tailwindui-free" target="_blank" class="inline-flex items-center gap-2 px-6 py-3 text-base font-semibold text-white transition-all bg-gray-900 rounded-lg hover:bg-gray-800 hover:scale-105 focus:outline-none focus:ring-2 focus:ring-gray-400 focus:ring-offset-2 ring-offset-slate-950">
+              <Github class="w-5 h-5" />
+              <span>Star on GitHub</span>
+              <span class="flex items-center justify-center px-1.5 py-0.5 ml-2 text-xs font-semibold text-gray-900 bg-white rounded-full">Free</span>
+           </a>
         </div>
       </div>
     </div>
