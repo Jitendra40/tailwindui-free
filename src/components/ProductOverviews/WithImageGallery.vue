@@ -31,18 +31,18 @@ const htmlBlock = `
     <!-- Image gallery -->
     <div class="mx-auto mt-6 max-w-2xl sm:px-6 lg:grid lg:max-w-7xl lg:grid-cols-3 lg:gap-x-8 lg:px-8">
       <div class="aspect-h-4 aspect-w-3 hidden overflow-hidden rounded-lg lg:block">
-        <img src="https://tailwindui.com/plus/img/ecommerce-images/product-page-02-secondary-product-shot.jpg" alt="Two each of gray, white, and black shirts laying flat." class="h-full w-full object-cover object-center">
+        <img src="https://images.unsplash.com/photo-1521572267360-ee0c2909d518?auto=format&fit=crop&w=900&q=80" alt="Two each of gray, white, and black shirts laying flat." class="h-full w-full object-cover object-center">
       </div>
       <div class="hidden lg:grid lg:grid-cols-1 lg:gap-y-8">
         <div class="aspect-h-2 aspect-w-3 overflow-hidden rounded-lg">
-          <img src="https://tailwindui.com/plus/img/ecommerce-images/product-page-02-tertiary-product-shot-01.jpg" alt="Model wearing plain black basic tee." class="h-full w-full object-cover object-center">
+          <img src="https://images.unsplash.com/photo-1521572267360-ee0c2909d518?auto=format&fit=crop&w=900&q=80&sat=-10" alt="Model wearing plain black basic tee." class="h-full w-full object-cover object-center">
         </div>
         <div class="aspect-h-2 aspect-w-3 overflow-hidden rounded-lg">
-          <img src="https://tailwindui.com/plus/img/ecommerce-images/product-page-02-tertiary-product-shot-02.jpg" alt="Model wearing plain gray basic tee." class="h-full w-full object-cover object-center">
+          <img src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?auto=format&fit=crop&w=900&q=80" alt="Model wearing plain gray basic tee." class="h-full w-full object-cover object-center">
         </div>
       </div>
       <div class="aspect-h-5 aspect-w-4 lg:aspect-h-4 lg:aspect-w-3 sm:overflow-hidden sm:rounded-lg">
-        <img src="https://tailwindui.com/plus/img/ecommerce-images/product-page-02-featured-product-shot.jpg" alt="Model wearing plain white basic tee." class="h-full w-full object-cover object-center">
+        <img src="https://images.unsplash.com/photo-1521572267360-ee0c2909d518?auto=format&fit=crop&w=1200&q=80&sat=5" alt="Model wearing plain white basic tee." class="h-full w-full object-cover object-center">
       </div>
     </div>
 
@@ -176,18 +176,18 @@ const htmlBlock = `
         <!-- Image gallery -->
         <div class="mx-auto mt-6 max-w-2xl sm:px-6 lg:grid lg:max-w-7xl lg:grid-cols-3 lg:gap-x-8 lg:px-8">
           <div class="aspect-h-4 aspect-w-3 hidden overflow-hidden rounded-lg lg:block">
-            <img src="https://tailwindui.com/plus/img/ecommerce-images/product-page-02-secondary-product-shot.jpg" alt="Two each of gray, white, and black shirts laying flat." class="h-full w-full object-cover object-center">
+            <img src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?auto=format&fit=crop&w=900&q=80&sat=10" alt="Two each of gray, white, and black shirts laying flat." class="h-full w-full object-cover object-center">
           </div>
           <div class="hidden lg:grid lg:grid-cols-1 lg:gap-y-8">
             <div class="aspect-h-2 aspect-w-3 overflow-hidden rounded-lg">
-              <img src="https://tailwindui.com/plus/img/ecommerce-images/product-page-02-tertiary-product-shot-01.jpg" alt="Model wearing plain black basic tee." class="h-full w-full object-cover object-center">
+              <img src="https://images.unsplash.com/photo-1521572267360-ee0c2909d518?auto=format&fit=crop&w=900&q=80&sat=-5" alt="Model wearing plain black basic tee." class="h-full w-full object-cover object-center">
             </div>
             <div class="aspect-h-2 aspect-w-3 overflow-hidden rounded-lg">
-              <img src="https://tailwindui.com/plus/img/ecommerce-images/product-page-02-tertiary-product-shot-02.jpg" alt="Model wearing plain gray basic tee." class="h-full w-full object-cover object-center">
+              <img src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?auto=format&fit=crop&w=900&q=80&sat=0" alt="Model wearing plain gray basic tee." class="h-full w-full object-cover object-center">
             </div>
           </div>
           <div class="aspect-h-5 aspect-w-4 lg:aspect-h-4 lg:aspect-w-3 sm:overflow-hidden sm:rounded-lg">
-            <img src="https://tailwindui.com/plus/img/ecommerce-images/product-page-02-featured-product-shot.jpg" alt="Model wearing plain white basic tee." class="h-full w-full object-cover object-center">
+            <img src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?auto=format&fit=crop&w=1200&q=80" alt="Model wearing plain white basic tee." class="h-full w-full object-cover object-center">
           </div>
         </div>
 

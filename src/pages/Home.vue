@@ -79,6 +79,7 @@ const categories = [
 </script>
 
 <template>
+  
   <div class="max-w-[1400px] mx-auto">
     <div class="relative overflow-hidden rounded-2xl bg-slate-950 py-10 text-center lg:py-16 shadow-2xl isolate ring-1 ring-white/10 mb-8">
       

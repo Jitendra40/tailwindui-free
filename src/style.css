@@ -36,6 +36,20 @@
   --color-sidebar-primary: var(--sidebar-primary);
   --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
   --color-sidebar-accent: var(--sidebar-accent);
+
+    /* Ensure Tailwind gradient stop tokens exist (v4 uses CSS vars for colors) */
+    --color-blue-600: #2563eb;
+    --color-indigo-600: #4f46e5;
+    --color-purple-600: #9333ea;
+    --color-pink-600: #db2777;
+    --color-emerald-600: #059669;
+    --color-teal-600: #0d9488;
+    --color-orange-500: #f97316;
+    --color-red-600: #dc2626;
+    --color-cyan-500: #06b6d4;
+    --color-violet-500: #8b5cf6;
+    --color-green-500: #22c55e;
+    --color-emerald-500: #10b981;
   --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
   --color-sidebar-border: var(--sidebar-border);
   --color-sidebar-ring: var(--sidebar-ring);

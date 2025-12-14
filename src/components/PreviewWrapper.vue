@@ -46,28 +46,12 @@ const iframeSrcDoc = computed(() => {
         <head>
             <meta charset="utf-8">
             <meta name="viewport" content="width=device-width, initial-scale=1">
-            <script src="https://cdn.tailwindcss.com"><\/script>
             ${extractedStyles.value}
             <style>
                 body { background-color: transparent; padding: 1.5rem; }
                 /* Hide main scrollbar */
                 ::-webkit-scrollbar { width: 0; background: transparent; }
             </style>
-            <script>
-                tailwind.config = {
-                     theme: {
-                        extend: {
-                            colors: {
-                                border: "hsl(var(--border))",
-                                input: "hsl(var(--input))",
-                                ring: "hsl(var(--ring))",
-                                background: "hsl(var(--background))",
-                                foreground: "hsl(var(--foreground))",
-                            }
-                        }
-                    }
-                }
-            <\/script>
         </head>
         <body class="bg-gray-50/50 min-h-screen">
             <div id="app-content">

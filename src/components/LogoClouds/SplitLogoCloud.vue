@@ -14,12 +14,12 @@ const htmlBlock = `
         </div>
       </div>
       <div class="mx-auto grid w-full max-w-xl grid-cols-2 items-center gap-y-12 sm:gap-y-14 lg:mx-0 lg:max-w-none lg:pl-8">
-        <img class="max-h-12 w-full object-contain object-left" src="https://tailwindui.com/plus/img/logos/tuple-logo-white.svg" alt="Tuple" width="105" height="48">
-        <img class="max-h-12 w-full object-contain object-left" src="https://tailwindui.com/plus/img/logos/reform-logo-white.svg" alt="Reform" width="104" height="48">
-        <img class="max-h-12 w-full object-contain object-left" src="https://tailwindui.com/plus/img/logos/savvycal-logo-white.svg" alt="SavvyCal" width="140" height="48">
-        <img class="max-h-12 w-full object-contain object-left" src="https://tailwindui.com/plus/img/logos/laravel-logo-white.svg" alt="Laravel" width="136" height="48">
-        <img class="max-h-12 w-full object-contain object-left" src="https://tailwindui.com/plus/img/logos/transistor-logo-white.svg" alt="Transistor" width="158" height="48">
-        <img class="max-h-12 w-full object-contain object-left" src="https://tailwindui.com/plus/img/logos/statamic-logo-white.svg" alt="Statamic" width="147" height="48">
+        <img class="max-h-12 w-full object-contain object-left" src="https://images.unsplash.com/featured?auto=format&fit=crop&w=220&q=80&sig=11" alt="Tuple" width="105" height="48">
+        <img class="max-h-12 w-full object-contain object-left" src="https://images.unsplash.com/featured?auto=format&fit=crop&w=220&q=80&sig=12" alt="Reform" width="104" height="48">
+        <img class="max-h-12 w-full object-contain object-left" src="https://images.unsplash.com/featured?auto=format&fit=crop&w=220&q=80&sig=13" alt="SavvyCal" width="140" height="48">
+        <img class="max-h-12 w-full object-contain object-left" src="https://images.unsplash.com/featured?auto=format&fit=crop&w=220&q=80&sig=14" alt="Laravel" width="136" height="48">
+        <img class="max-h-12 w-full object-contain object-left" src="https://images.unsplash.com/featured?auto=format&fit=crop&w=220&q=80&sig=15" alt="Transistor" width="158" height="48">
+        <img class="max-h-12 w-full object-contain object-left" src="https://images.unsplash.com/featured?auto=format&fit=crop&w=220&q=80&sig=16" alt="Statamic" width="147" height="48">
       </div>
     </div>
   </div>
@@ -41,12 +41,12 @@ const htmlBlock = `
             </div>
           </div>
           <div class="mx-auto grid w-full max-w-xl grid-cols-2 items-center gap-y-12 sm:gap-y-14 lg:mx-0 lg:max-w-none lg:pl-8">
-            <img class="max-h-12 w-full object-contain object-left" src="https://tailwindui.com/plus/img/logos/tuple-logo-white.svg" alt="Tuple" width="105" height="48">
-            <img class="max-h-12 w-full object-contain object-left" src="https://tailwindui.com/plus/img/logos/reform-logo-white.svg" alt="Reform" width="104" height="48">
-            <img class="max-h-12 w-full object-contain object-left" src="https://tailwindui.com/plus/img/logos/savvycal-logo-white.svg" alt="SavvyCal" width="140" height="48">
-            <img class="max-h-12 w-full object-contain object-left" src="https://tailwindui.com/plus/img/logos/laravel-logo-white.svg" alt="Laravel" width="136" height="48">
-            <img class="max-h-12 w-full object-contain object-left" src="https://tailwindui.com/plus/img/logos/transistor-logo-white.svg" alt="Transistor" width="158" height="48">
-            <img class="max-h-12 w-full object-contain object-left" src="https://tailwindui.com/plus/img/logos/statamic-logo-white.svg" alt="Statamic" width="147" height="48">
+            <img class="max-h-12 w-full object-contain object-left" src="https://images.unsplash.com/featured?auto=format&fit=crop&w=220&q=80&sig=17" alt="Tuple" width="105" height="48">
+            <img class="max-h-12 w-full object-contain object-left" src="https://images.unsplash.com/featured?auto=format&fit=crop&w=220&q=80&sig=18" alt="Reform" width="104" height="48">
+            <img class="max-h-12 w-full object-contain object-left" src="https://images.unsplash.com/featured?auto=format&fit=crop&w=220&q=80&sig=19" alt="SavvyCal" width="140" height="48">
+            <img class="max-h-12 w-full object-contain object-left" src="https://images.unsplash.com/featured?auto=format&fit=crop&w=220&q=80&sig=20" alt="Laravel" width="136" height="48">
+            <img class="max-h-12 w-full object-contain object-left" src="https://images.unsplash.com/featured?auto=format&fit=crop&w=220&q=80&sig=21" alt="Transistor" width="158" height="48">
+            <img class="max-h-12 w-full object-contain object-left" src="https://images.unsplash.com/featured?auto=format&fit=crop&w=220&q=80&sig=22" alt="Statamic" width="147" height="48">
           </div>
         </div>
       </div>
