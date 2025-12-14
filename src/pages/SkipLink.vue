@@ -6,6 +6,21 @@ import GhostSkipLink from "@/components/SkipLink/GhostSkipLink.vue"
 import ButtonSkipLink from "@/components/SkipLink/ButtonSkipLink.vue"
 import PreviewWrapper from "@/components/PreviewWrapper.vue"
 
+import { useTOC } from '@/composables/useTOC'
+import { onMounted } from 'vue'
+
+const { setItems } = useTOC()
+
+onMounted(() => {
+  setItems([
+    { id: 'basic', label: 'Basic Pop-in' },
+    { id: 'slide', label: 'Full Width Slide' },
+    { id: 'fixed', label: 'Fixed Position' },
+    { id: 'ghost', label: 'Ghost Style' },
+    { id: 'button', label: 'Center Button' },
+  ])
+})
+
 const basicCode = `<div class="relative h-16 bg-gray-100 flex items-center justify-center border border-dashed border-gray-300">
   <span class="text-sm text-gray-500 absolute">Tab into this area to see the link</span>
   <a href="#" class="absolute z-50 px-4 py-2 bg-indigo-600 text-white font-medium rounded-md shadow-lg outline-none focus:outline-none transition-transform duration-200 transform -translate-y-20 focus:translate-y-0">
@@ -45,25 +60,35 @@ const buttonCode = `<div class="relative h-16 bg-gray-100 flex items-center just
     </div>
 
     <div class="grid gap-10">
-      <PreviewWrapper title="Basic Pop-in" description="Drops down when focused." :html-block="basicCode">
-        <BasicSkipLink />
-      </PreviewWrapper>
+      <div id="basic" class="scroll-mt-24">
+        <PreviewWrapper title="Basic Pop-in" description="Drops down when focused." :html-block="basicCode">
+          <BasicSkipLink />
+        </PreviewWrapper>
+      </div>
 
-      <PreviewWrapper title="Full Width Slide" description="Slides down from the top." :html-block="slideCode">
-        <SlideSkipLink />
-      </PreviewWrapper>
+      <div id="slide" class="scroll-mt-24">
+        <PreviewWrapper title="Full Width Slide" description="Slides down from the top." :html-block="slideCode">
+          <SlideSkipLink />
+        </PreviewWrapper>
+      </div>
 
-      <PreviewWrapper title="Fixed Position" description="Appears fixed in the viewport corner (Click then Tab)." :html-block="fixedCode">
-        <FixedSkipLink />
-      </PreviewWrapper>
+      <div id="fixed" class="scroll-mt-24">
+        <PreviewWrapper title="Fixed Position" description="Appears fixed in the viewport corner (Click then Tab)." :html-block="fixedCode">
+          <FixedSkipLink />
+        </PreviewWrapper>
+      </div>
 
-      <PreviewWrapper title="Ghost Style" description="Subtle style for dark backgrounds." :html-block="ghostCode">
-        <GhostSkipLink />
-      </PreviewWrapper>
+      <div id="ghost" class="scroll-mt-24">
+        <PreviewWrapper title="Ghost Style" description="Subtle style for dark backgrounds." :html-block="ghostCode">
+          <GhostSkipLink />
+        </PreviewWrapper>
+      </div>
 
-      <PreviewWrapper title="Center Button" description="Prominent call to action style." :html-block="buttonCode">
-        <ButtonSkipLink />
-      </PreviewWrapper>
+      <div id="button" class="scroll-mt-24">
+        <PreviewWrapper title="Center Button" description="Prominent call to action style." :html-block="buttonCode">
+          <ButtonSkipLink />
+        </PreviewWrapper>
+      </div>
     </div>
   </div>
 </template>

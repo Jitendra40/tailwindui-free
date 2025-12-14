@@ -4,6 +4,21 @@ import StripedTable from "@/components/Tables/StripedTable.vue"
 import SortableTable from "@/components/Tables/SortableTable.vue"
 import ActionTable from "@/components/Tables/ActionTable.vue"
 import AvatarTable from "@/components/Tables/AvatarTable.vue"
+
+import { useTOC } from '@/composables/useTOC'
+import { onMounted } from 'vue'
+
+const { setItems } = useTOC()
+
+onMounted(() => {
+  setItems([
+    { id: 'simple', label: 'Simple Table' },
+    { id: 'striped', label: 'Striped Table' },
+    { id: 'sortable', label: 'Sortable Table' },
+    { id: 'action', label: 'Action Table' },
+    { id: 'avatar', label: 'Avatar Table' },
+  ])
+})
 </script>
 
 <template>
@@ -14,11 +29,21 @@ import AvatarTable from "@/components/Tables/AvatarTable.vue"
     </div>
 
     <div class="grid gap-10">
-      <SimpleTable />
-      <StripedTable />
-      <SortableTable />
-      <ActionTable />
-      <AvatarTable />
+      <div id="simple" class="scroll-mt-24">
+        <SimpleTable />
+      </div>
+      <div id="striped" class="scroll-mt-24">
+        <StripedTable />
+      </div>
+      <div id="sortable" class="scroll-mt-24">
+        <SortableTable />
+      </div>
+      <div id="action" class="scroll-mt-24">
+        <ActionTable />
+      </div>
+      <div id="avatar" class="scroll-mt-24">
+        <AvatarTable />
+      </div>
     </div>
   </div>
 </template>

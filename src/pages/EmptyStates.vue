@@ -4,6 +4,21 @@ import ActionEmptyState from "@/components/EmptyStates/ActionEmptyState.vue"
 import SearchEmptyState from "@/components/EmptyStates/SearchEmptyState.vue"
 import IllustratedEmptyState from "@/components/EmptyStates/IllustratedEmptyState.vue"
 import NewProjectEmptyState from "@/components/EmptyStates/NewProjectEmptyState.vue"
+
+import { useTOC } from '@/composables/useTOC'
+import { onMounted } from 'vue'
+
+const { setItems } = useTOC()
+
+onMounted(() => {
+  setItems([
+    { id: 'simple', label: 'Simple Empty State' },
+    { id: 'action', label: 'Action Empty State' },
+    { id: 'search', label: 'Search Empty State' },
+    { id: 'illustrated', label: 'Illustrated Empty State' },
+    { id: 'new-project', label: 'New Project Empty State' },
+  ])
+})
 </script>
 
 <template>
@@ -14,11 +29,21 @@ import NewProjectEmptyState from "@/components/EmptyStates/NewProjectEmptyState.
     </div>
 
     <div class="grid gap-10">
-      <SimpleEmptyState />
-      <ActionEmptyState />
-      <SearchEmptyState />
-      <IllustratedEmptyState />
-      <NewProjectEmptyState />
+      <div id="simple" class="scroll-mt-24">
+        <SimpleEmptyState />
+      </div>
+      <div id="action" class="scroll-mt-24">
+        <ActionEmptyState />
+      </div>
+      <div id="search" class="scroll-mt-24">
+        <SearchEmptyState />
+      </div>
+      <div id="illustrated" class="scroll-mt-24">
+        <IllustratedEmptyState />
+      </div>
+      <div id="new-project" class="scroll-mt-24">
+        <NewProjectEmptyState />
+      </div>
     </div>
   </div>
 </template>

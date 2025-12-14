@@ -4,6 +4,21 @@ import PharmaCard from "@/components/Cards/Pharma.vue"
 import HRCard from "@/components/Cards/HR.vue"
 import JobCard from "@/components/Cards/Job.vue"
 import SalesCard from "@/components/Cards/Sales.vue"
+
+import { useTOC } from '@/composables/useTOC'
+import { onMounted } from 'vue'
+
+const { setItems } = useTOC()
+
+onMounted(() => {
+  setItems([
+    { id: 'real-estate', label: 'Real Estate' },
+    { id: 'pharma', label: 'Pharma' },
+    { id: 'hr', label: 'HR' },
+    { id: 'job', label: 'Job' },
+    { id: 'sales', label: 'Sales' },
+  ])
+})
 </script>
 
 <template>
@@ -13,12 +28,22 @@ import SalesCard from "@/components/Cards/Sales.vue"
       <p class="text-gray-500">Niche-specific card examples for real-world applications.</p>
     </div>
 
-    <div class="space-y-3">
-      <RealEstateCard />
-      <PharmaCard />
-      <HRCard />
-      <JobCard />
-      <SalesCard />
+    <div class="space-y-8">
+      <div id="real-estate" class="scroll-mt-24">
+        <RealEstateCard />
+      </div>
+      <div id="pharma" class="scroll-mt-24">
+        <PharmaCard />
+      </div>
+      <div id="hr" class="scroll-mt-24">
+        <HRCard />
+      </div>
+      <div id="job" class="scroll-mt-24">
+        <JobCard />
+      </div>
+      <div id="sales" class="scroll-mt-24">
+        <SalesCard />
+      </div>
     </div>
   </div>
 </template>

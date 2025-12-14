@@ -3,6 +3,20 @@ import SimpleHeader from "@/components/Headers/SimpleHeader.vue"
 import CenteredHeader from "@/components/Headers/CenteredHeader.vue"
 import WithSearchHeader from "@/components/Headers/WithSearchHeader.vue"
 import DarkHeader from "@/components/Headers/DarkHeader.vue"
+
+import { useTOC } from '@/composables/useTOC'
+import { onMounted } from 'vue'
+
+const { setItems } = useTOC()
+
+onMounted(() => {
+  setItems([
+    { id: 'simple', label: 'Simple Header' },
+    { id: 'centered', label: 'Centered Header' },
+    { id: 'with-search', label: 'With Search Header' },
+    { id: 'dark', label: 'Dark Header' },
+  ])
+})
 </script>
 
 <template>
@@ -13,10 +27,18 @@ import DarkHeader from "@/components/Headers/DarkHeader.vue"
     </div>
 
     <div class="grid gap-10">
-      <SimpleHeader />
-      <CenteredHeader />
-      <WithSearchHeader />
-      <DarkHeader />
+      <div id="simple" class="scroll-mt-24">
+        <SimpleHeader />
+      </div>
+      <div id="centered" class="scroll-mt-24">
+        <CenteredHeader />
+      </div>
+      <div id="with-search" class="scroll-mt-24">
+        <WithSearchHeader />
+      </div>
+      <div id="dark" class="scroll-mt-24">
+        <DarkHeader />
+      </div>
     </div>
   </div>
 </template>

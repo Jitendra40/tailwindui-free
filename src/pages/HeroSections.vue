@@ -3,6 +3,20 @@ import SimpleCentered from "@/components/HeroSections/SimpleCentered.vue"
 import SplitWithImage from "@/components/HeroSections/SplitWithImage.vue"
 import DarkWithImage from "@/components/HeroSections/DarkWithImage.vue"
 import WithAppScreenshot from "@/components/HeroSections/WithAppScreenshot.vue"
+
+import { useTOC } from '@/composables/useTOC'
+import { onMounted } from 'vue'
+
+const { setItems } = useTOC()
+
+onMounted(() => {
+  setItems([
+    { id: 'simple-centered', label: 'Simple Centered' },
+    { id: 'split-with-image', label: 'Split With Image' },
+    { id: 'dark-with-image', label: 'Dark With Image' },
+    { id: 'with-app-screenshot', label: 'With App Screenshot' },
+  ])
+})
 </script>
 
 <template>
@@ -13,10 +27,18 @@ import WithAppScreenshot from "@/components/HeroSections/WithAppScreenshot.vue"
     </div>
 
     <div class="grid gap-10">
-      <SimpleCentered />
-      <SplitWithImage />
-      <DarkWithImage />
-      <WithAppScreenshot />
+      <div id="simple-centered" class="scroll-mt-24">
+        <SimpleCentered />
+      </div>
+      <div id="split-with-image" class="scroll-mt-24">
+        <SplitWithImage />
+      </div>
+      <div id="dark-with-image" class="scroll-mt-24">
+        <DarkWithImage />
+      </div>
+      <div id="with-app-screenshot" class="scroll-mt-24">
+        <WithAppScreenshot />
+      </div>
     </div>
   </div>
 </template>

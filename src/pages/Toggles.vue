@@ -4,6 +4,21 @@ import LabelToggle from "@/components/Toggles/LabelToggle.vue"
 import IconToggle from "@/components/Toggles/IconToggle.vue"
 import ShortToggle from "@/components/Toggles/ShortToggle.vue"
 import NamedToggle from "@/components/Toggles/NamedToggle.vue"
+
+import { useTOC } from '@/composables/useTOC'
+import { onMounted } from 'vue'
+
+const { setItems } = useTOC()
+
+onMounted(() => {
+  setItems([
+    { id: 'simple', label: 'Simple Toggle' },
+    { id: 'label', label: 'Label Toggle' },
+    { id: 'icon', label: 'Icon Toggle' },
+    { id: 'short', label: 'Short Toggle' },
+    { id: 'named', label: 'Named Toggle' },
+  ])
+})
 </script>
 
 <template>
@@ -14,11 +29,21 @@ import NamedToggle from "@/components/Toggles/NamedToggle.vue"
     </div>
 
     <div class="grid gap-10">
-      <SimpleToggle />
-      <LabelToggle />
-      <IconToggle />
-      <ShortToggle />
-      <NamedToggle />
+      <div id="simple" class="scroll-mt-24">
+        <SimpleToggle />
+      </div>
+      <div id="label" class="scroll-mt-24">
+        <LabelToggle />
+      </div>
+      <div id="icon" class="scroll-mt-24">
+        <IconToggle />
+      </div>
+      <div id="short" class="scroll-mt-24">
+        <ShortToggle />
+      </div>
+      <div id="named" class="scroll-mt-24">
+        <NamedToggle />
+      </div>
     </div>
   </div>
 </template>

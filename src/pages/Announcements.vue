@@ -4,6 +4,21 @@ import BottomFixedAnnouncement from "@/components/Announcements/BottomFixedAnnou
 import FloatingAnnouncement from "@/components/Announcements/FloatingAnnouncement.vue"
 import SimpleColorAnnouncement from "@/components/Announcements/SimpleColorAnnouncement.vue"
 import InlineBadgeAnnouncement from "@/components/Announcements/InlineBadgeAnnouncement.vue"
+
+import { useTOC } from '@/composables/useTOC'
+import { onMounted } from 'vue'
+
+const { setItems } = useTOC()
+
+onMounted(() => {
+  setItems([
+    { id: 'top-banner', label: 'Top Banner' },
+    { id: 'bottom-fixed', label: 'Bottom Fixed' },
+    { id: 'floating', label: 'Floating' },
+    { id: 'simple-color', label: 'Simple Color' },
+    { id: 'inline-badge', label: 'Inline Badge' },
+  ])
+})
 </script>
 
 <template>
@@ -14,11 +29,21 @@ import InlineBadgeAnnouncement from "@/components/Announcements/InlineBadgeAnnou
     </div>
 
     <div class="grid gap-10">
-      <TopBannerAnnouncement />
-      <BottomFixedAnnouncement />
-      <FloatingAnnouncement />
-      <SimpleColorAnnouncement />
-      <InlineBadgeAnnouncement />
+      <div id="top-banner" class="scroll-mt-24">
+        <TopBannerAnnouncement />
+      </div>
+      <div id="bottom-fixed" class="scroll-mt-24">
+        <BottomFixedAnnouncement />
+      </div>
+      <div id="floating" class="scroll-mt-24">
+        <FloatingAnnouncement />
+      </div>
+      <div id="simple-color" class="scroll-mt-24">
+        <SimpleColorAnnouncement />
+      </div>
+      <div id="inline-badge" class="scroll-mt-24">
+        <InlineBadgeAnnouncement />
+      </div>
     </div>
   </div>
 </template>

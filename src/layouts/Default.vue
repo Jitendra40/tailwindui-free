@@ -5,7 +5,9 @@ export const description = "A sidebar with collapsible sections."
 
 <script setup lang="ts">
 import AppSidebar from "@/components/Sidebar.vue"
-import { computed } from "vue"
+import RightSidebar from "@/components/RightSidebar.vue"
+import { computed, watch } from "vue"
+import { useTOC } from '@/composables/useTOC'
 import { useRoute } from "vue-router"
 import {
   Breadcrumb,
@@ -53,6 +55,14 @@ const titleMap: Record<string, string> = {
 }
 
 const pageTitle = computed(() => route.meta?.title || titleMap[route.path] || "Page")
+
+
+const { setItems } = useTOC()
+
+watch(() => route.path, () => {
+  setItems([])
+})
+
 </script>
 
 <template>
@@ -76,13 +86,14 @@ const pageTitle = computed(() => route.meta?.title || titleMap[route.path] || "P
           </BreadcrumbList>
         </Breadcrumb>
       </header>
-      <div class="flex flex-1 flex-col gap-4 p-4 ">
-        <main class="flex items-center justify-center p-6 w-full ">
-          <section class="w-full">
-            <article class="bg-white ">
+      <div class="flex flex-1 flex-col gap-4 p-4">
+        <main class="flex w-full max-w-[1600px] mx-auto items-start gap-4">
+          <section class="w-full min-w-0 p-6">
+            <article class="bg-white">
               <slot />
             </article>
           </section>
+          <RightSidebar />
         </main>
       </div>
     </SidebarInset>

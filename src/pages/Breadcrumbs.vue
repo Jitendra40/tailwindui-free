@@ -5,6 +5,22 @@ import BackgroundBreadcrumb from "@/components/Breadcrumbs/BackgroundBreadcrumb.
 import PillBreadcrumb from "@/components/Breadcrumbs/PillBreadcrumb.vue"
 import CollapsedBreadcrumb from "@/components/Breadcrumbs/CollapsedBreadcrumb.vue"
 import IconBreadcrumb from "@/components/Breadcrumbs/IconBreadcrumb.vue"
+
+import { useTOC } from '@/composables/useTOC'
+import { onMounted } from 'vue'
+
+const { setItems } = useTOC()
+
+onMounted(() => {
+  setItems([
+    { id: 'base', label: 'Base Style' },
+    { id: 'chevron', label: 'Chevron' },
+    { id: 'background', label: 'Background' },
+    { id: 'pill', label: 'Pill' },
+    { id: 'collapsed', label: 'Collapsed' },
+    { id: 'icon', label: 'Icon' },
+  ])
+})
 </script>
 
 <template>
@@ -13,13 +29,25 @@ import IconBreadcrumb from "@/components/Breadcrumbs/IconBreadcrumb.vue"
       <h1 class="text-lg font-semibold">Breadcrumbs</h1>
       <p class="text-sm text-muted-foreground">Navigation trail with separators and current state.</p>
     </div>
-    <div class="space-y-3">
-      <BreadcrumbsBase />
-      <ChevronBreadcrumb />
-      <BackgroundBreadcrumb />
-      <PillBreadcrumb />
-      <CollapsedBreadcrumb />
-      <IconBreadcrumb />
+    <div class="space-y-8">
+      <div id="base" class="scroll-mt-24">
+        <BreadcrumbsBase />
+      </div>
+      <div id="chevron" class="scroll-mt-24">
+        <ChevronBreadcrumb />
+      </div>
+      <div id="background" class="scroll-mt-24">
+        <BackgroundBreadcrumb />
+      </div>
+      <div id="pill" class="scroll-mt-24">
+        <PillBreadcrumb />
+      </div>
+      <div id="collapsed" class="scroll-mt-24">
+        <CollapsedBreadcrumb />
+      </div>
+      <div id="icon" class="scroll-mt-24">
+        <IconBreadcrumb />
+      </div>
     </div>
   </div>
 </template>

@@ -3,6 +3,20 @@ import SimpleReview from "@/components/Reviews/SimpleReview.vue"
 import GridReviews from "@/components/Reviews/GridReviews.vue"
 import SideBySide from "@/components/Reviews/SideBySide.vue"
 import DarkReview from "@/components/Reviews/DarkReview.vue"
+
+import { useTOC } from '@/composables/useTOC'
+import { onMounted } from 'vue'
+
+const { setItems } = useTOC()
+
+onMounted(() => {
+  setItems([
+    { id: 'simple', label: 'Simple Review' },
+    { id: 'grid', label: 'Grid Reviews' },
+    { id: 'side-by-side', label: 'Side By Side' },
+    { id: 'dark', label: 'Dark Review' },
+  ])
+})
 </script>
 
 <template>
@@ -13,10 +27,18 @@ import DarkReview from "@/components/Reviews/DarkReview.vue"
     </div>
 
     <div class="grid gap-10">
-      <SimpleReview />
-      <GridReviews />
-      <SideBySide />
-      <DarkReview />
+      <div id="simple" class="scroll-mt-24">
+        <SimpleReview />
+      </div>
+      <div id="grid" class="scroll-mt-24">
+        <GridReviews />
+      </div>
+      <div id="side-by-side" class="scroll-mt-24">
+        <SideBySide />
+      </div>
+      <div id="dark" class="scroll-mt-24">
+        <DarkReview />
+      </div>
     </div>
   </div>
 </template>

@@ -4,6 +4,21 @@ import SimpleJustified from "@/components/CTAs/SimpleJustified.vue"
 import BrandPanel from "@/components/CTAs/BrandPanel.vue"
 import SplitWithImageCTA from "@/components/CTAs/SplitWithImageCTA.vue"
 import TwoColumnCTA from "@/components/CTAs/TwoColumnCTA.vue"
+
+import { useTOC } from '@/composables/useTOC'
+import { onMounted } from 'vue'
+
+const { setItems } = useTOC()
+
+onMounted(() => {
+  setItems([
+    { id: 'simple-centered', label: 'Simple Centered' },
+    { id: 'simple-justified', label: 'Simple Justified' },
+    { id: 'brand-panel', label: 'Brand Panel' },
+    { id: 'split-with-image', label: 'Split With Image' },
+    { id: 'two-column', label: 'Two Column' },
+  ])
+})
 </script>
 
 <template>
@@ -14,11 +29,21 @@ import TwoColumnCTA from "@/components/CTAs/TwoColumnCTA.vue"
     </div>
 
     <div class="grid gap-10">
-      <SimpleCentered />
-      <SimpleJustified />
-      <BrandPanel />
-      <SplitWithImageCTA />
-      <TwoColumnCTA />
+      <div id="simple-centered" class="scroll-mt-24">
+        <SimpleCentered />
+      </div>
+      <div id="simple-justified" class="scroll-mt-24">
+        <SimpleJustified />
+      </div>
+      <div id="brand-panel" class="scroll-mt-24">
+        <BrandPanel />
+      </div>
+      <div id="split-with-image" class="scroll-mt-24">
+        <SplitWithImageCTA />
+      </div>
+      <div id="two-column" class="scroll-mt-24">
+        <TwoColumnCTA />
+      </div>
     </div>
   </div>
 </template>

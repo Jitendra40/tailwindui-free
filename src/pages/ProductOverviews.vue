@@ -1,5 +1,16 @@
 <script setup lang="ts">
 import WithImageGallery from "@/components/ProductOverviews/WithImageGallery.vue"
+
+import { useTOC } from '@/composables/useTOC'
+import { onMounted } from 'vue'
+
+const { setItems } = useTOC()
+
+onMounted(() => {
+  setItems([
+    { id: 'with-image-gallery', label: 'With Image Gallery' },
+  ])
+})
 </script>
 
 <template>
@@ -10,7 +21,9 @@ import WithImageGallery from "@/components/ProductOverviews/WithImageGallery.vue
     </div>
 
     <div class="grid gap-10">
-      <WithImageGallery />
+      <div id="with-image-gallery" class="scroll-mt-24">
+        <WithImageGallery />
+      </div>
     </div>
   </div>
 </template>

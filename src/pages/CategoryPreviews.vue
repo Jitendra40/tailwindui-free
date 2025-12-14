@@ -1,5 +1,16 @@
 <script setup lang="ts">
 import ThreeColumnCategory from "@/components/CategoryPreviews/ThreeColumnCategory.vue"
+
+import { useTOC } from '@/composables/useTOC'
+import { onMounted } from 'vue'
+
+const { setItems } = useTOC()
+
+onMounted(() => {
+  setItems([
+    { id: 'three-column', label: 'Three Column Category' },
+  ])
+})
 </script>
 
 <template>
@@ -10,7 +21,9 @@ import ThreeColumnCategory from "@/components/CategoryPreviews/ThreeColumnCatego
     </div>
 
     <div class="grid gap-10">
-      <ThreeColumnCategory />
+      <div id="three-column" class="scroll-mt-24">
+        <ThreeColumnCategory />
+      </div>
     </div>
   </div>
 </template>

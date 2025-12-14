@@ -2,6 +2,19 @@
 import SimpleStats from "@/components/Stats/SimpleStats.vue"
 import DarkStats from "@/components/Stats/DarkStats.vue"
 import StatsWithDescription from "@/components/Stats/StatsWithDescription.vue"
+
+import { useTOC } from '@/composables/useTOC'
+import { onMounted } from 'vue'
+
+const { setItems } = useTOC()
+
+onMounted(() => {
+  setItems([
+    { id: 'simple', label: 'Simple Stats' },
+    { id: 'dark', label: 'Dark Stats' },
+    { id: 'with-description', label: 'Stats With Description' },
+  ])
+})
 </script>
 
 <template>
@@ -12,9 +25,15 @@ import StatsWithDescription from "@/components/Stats/StatsWithDescription.vue"
     </div>
 
     <div class="grid gap-10">
-      <SimpleStats />
-      <DarkStats />
-      <StatsWithDescription />
+      <div id="simple" class="scroll-mt-24">
+        <SimpleStats />
+      </div>
+      <div id="dark" class="scroll-mt-24">
+        <DarkStats />
+      </div>
+      <div id="with-description" class="scroll-mt-24">
+        <StatsWithDescription />
+      </div>
     </div>
   </div>
 </template>

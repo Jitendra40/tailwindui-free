@@ -3,6 +3,20 @@ import SimpleCenteredNewsletter from "@/components/Newsletter/SimpleCenteredNews
 import CardNewsletter from "@/components/Newsletter/CardNewsletter.vue"
 import SideBySideNewsletter from "@/components/Newsletter/SideBySideNewsletter.vue"
 import DarkNewsletter from "@/components/Newsletter/DarkNewsletter.vue"
+
+import { useTOC } from '@/composables/useTOC'
+import { onMounted } from 'vue'
+
+const { setItems } = useTOC()
+
+onMounted(() => {
+  setItems([
+    { id: 'simple-centered', label: 'Simple Centered' },
+    { id: 'card', label: 'Card Newsletter' },
+    { id: 'side-by-side', label: 'Side By Side' },
+    { id: 'dark', label: 'Dark Newsletter' },
+  ])
+})
 </script>
 
 <template>
@@ -13,10 +27,18 @@ import DarkNewsletter from "@/components/Newsletter/DarkNewsletter.vue"
     </div>
 
     <div class="grid gap-10">
-      <SimpleCenteredNewsletter />
-      <CardNewsletter />
-      <SideBySideNewsletter />
-      <DarkNewsletter />
+      <div id="simple-centered" class="scroll-mt-24">
+        <SimpleCenteredNewsletter />
+      </div>
+      <div id="card" class="scroll-mt-24">
+        <CardNewsletter />
+      </div>
+      <div id="side-by-side" class="scroll-mt-24">
+        <SideBySideNewsletter />
+      </div>
+      <div id="dark" class="scroll-mt-24">
+        <DarkNewsletter />
+      </div>
     </div>
   </div>
 </template>

@@ -4,6 +4,21 @@ import GridWithLargeImages from "@/components/TeamSections/GridWithLargeImages.v
 import WithSmallImages from "@/components/TeamSections/WithSmallImages.vue"
 import DarkTeam from "@/components/TeamSections/DarkTeam.vue"
 import FullWidth from "@/components/TeamSections/FullWidth.vue"
+
+import { useTOC } from '@/composables/useTOC'
+import { onMounted } from 'vue'
+
+const { setItems } = useTOC()
+
+onMounted(() => {
+  setItems([
+    { id: 'simple', label: 'Simple Grid' },
+    { id: 'large-images', label: 'Grid With Large Images' },
+    { id: 'small-images', label: 'With Small Images' },
+    { id: 'dark', label: 'Dark Team' },
+    { id: 'full-width', label: 'Full Width' },
+  ])
+})
 </script>
 
 <template>
@@ -14,11 +29,21 @@ import FullWidth from "@/components/TeamSections/FullWidth.vue"
     </div>
 
     <div class="grid gap-10">
-      <SimpleGrid />
-      <GridWithLargeImages />
-      <WithSmallImages />
-      <DarkTeam />
-      <FullWidth />
+      <div id="simple" class="scroll-mt-24">
+        <SimpleGrid />
+      </div>
+      <div id="large-images" class="scroll-mt-24">
+        <GridWithLargeImages />
+      </div>
+      <div id="small-images" class="scroll-mt-24">
+        <WithSmallImages />
+      </div>
+      <div id="dark" class="scroll-mt-24">
+        <DarkTeam />
+      </div>
+      <div id="full-width" class="scroll-mt-24">
+        <FullWidth />
+      </div>
     </div>
   </div>
 </template>

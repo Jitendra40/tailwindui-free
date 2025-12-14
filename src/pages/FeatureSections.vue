@@ -3,6 +3,20 @@ import SimpleThreeColumn from "@/components/FeatureSections/SimpleThreeColumn.vu
 import GridWithIcons from "@/components/FeatureSections/GridWithIcons.vue"
 import SplitWithScreenshot from "@/components/FeatureSections/SplitWithScreenshot.vue"
 import DarkFeatureList from "@/components/FeatureSections/DarkFeatureList.vue"
+
+import { useTOC } from '@/composables/useTOC'
+import { onMounted } from 'vue'
+
+const { setItems } = useTOC()
+
+onMounted(() => {
+  setItems([
+    { id: 'simple-three-column', label: 'Simple Three Column' },
+    { id: 'grid-with-icons', label: 'Grid With Icons' },
+    { id: 'split-with-screenshot', label: 'Split With Screenshot' },
+    { id: 'dark-feature-list', label: 'Dark Feature List' },
+  ])
+})
 </script>
 
 <template>
@@ -13,10 +27,18 @@ import DarkFeatureList from "@/components/FeatureSections/DarkFeatureList.vue"
     </div>
 
     <div class="grid gap-10">
-      <SimpleThreeColumn />
-      <GridWithIcons />
-      <SplitWithScreenshot />
-      <DarkFeatureList />
+      <div id="simple-three-column" class="scroll-mt-24">
+        <SimpleThreeColumn />
+      </div>
+      <div id="grid-with-icons" class="scroll-mt-24">
+        <GridWithIcons />
+      </div>
+      <div id="split-with-screenshot" class="scroll-mt-24">
+        <SplitWithScreenshot />
+      </div>
+      <div id="dark-feature-list" class="scroll-mt-24">
+        <DarkFeatureList />
+      </div>
     </div>
   </div>
 </template>
