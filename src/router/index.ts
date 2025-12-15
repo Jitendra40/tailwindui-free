@@ -27,6 +27,10 @@ const Textareas = () => import('@/pages/Textareas.vue')
 const Toggles = () => import('@/pages/Toggles.vue')
 const Menus = () => import('@/pages/Menus.vue')
 const Cards = () => import('@/pages/Cards.vue')
+const Modals = () => import('@/pages/Modals.vue')
+const Auth = () => import('@/pages/Auth.vue')
+const Dashboards = () => import('@/pages/Dashboards.vue')
+const Settings = () => import('@/pages/Settings.vue')
 // Marketing
 const Announcements = () => import('@/pages/Announcements.vue')
 const BlogSections = () => import('@/pages/BlogSections.vue')
@@ -112,7 +116,12 @@ const routes = [
     component: Dropdowns,
     meta: { layout: 'Default' }
   },
+  { path: '/dropdowns', component: Dropdowns, meta: { layout: 'Default' } },
   { path: '/cards', component: Cards, meta: { layout: 'Default' } },
+  { path: '/modals', component: Modals, meta: { layout: 'Default' } },
+  { path: '/auth', component: Auth, meta: { layout: 'Default' } },
+  { path: '/dashboards', component: Dashboards, meta: { layout: 'Default' } },
+  { path: '/settings', component: Settings, meta: { layout: 'Default' } },
   // Marketing
   { path: '/announcements', component: Announcements, meta: { layout: 'Default' } },
   { path: '/blog-sections', component: BlogSections, meta: { layout: 'Default' } },
@@ -138,7 +147,7 @@ const routes = [
 export const router = createRouter({
   history: createWebHistory(),
   routes,
-  scrollBehavior(to, from, savedPosition) {
+  scrollBehavior(_to, _from, savedPosition) {
     if (savedPosition) {
       return savedPosition
     }

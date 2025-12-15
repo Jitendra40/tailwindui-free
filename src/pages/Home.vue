@@ -1,81 +1,26 @@
 <script setup lang="ts">
-import { 
-  Type, 
-  Shield, 
-  ChevronRight, 
-  MousePointer2, 
-  CheckSquare, 
-  List, 
-  SeparatorHorizontal, 
-  Menu, 
-  Box, 
-  UploadCloud, 
-  Filter, 
- 
-  Image, 
-  MoreHorizontal, 
-  ArrowLeftRight, 
-  CreditCard, 
-  BarChart3, 
-  ListOrdered, 
-  ToggleLeft, 
-  Layout, 
-  Megaphone,
-  Newspaper,
-  Bell,
-  FormInput,
-  Indent,
-  HelpCircle,
-  LayoutTemplate,
-  PanelBottom,
-  PanelTop,
-  MonitorPlay,
-  Mail,
+import { computed } from 'vue'
+import { navigationData } from '@/lib/navigation'
 
-  Star,
-  Table2,
-  Users,
-  Check,
-} from 'lucide-vue-next'
+const componentFiles = import.meta.glob('../components/**/*.vue')
 
-const categories = [
-  { name: 'Accordions', count: '4 variants', href: '/accordion', icon: List, color: 'text-blue-500', bg: 'bg-blue-50' },
-  { name: 'Announcements', count: '3 variants', href: '/announcements', icon: Megaphone, color: 'text-orange-500', bg: 'bg-orange-50' },
-  { name: 'Badges', count: '8 variants', href: '/badges', icon: Shield, color: 'text-purple-500', bg: 'bg-purple-50' },
-  { name: 'Blog Sections', count: '5 variants', href: '/blog-sections', icon: Newspaper, color: 'text-pink-500', bg: 'bg-pink-50' },
-  { name: 'Breadcrumbs', count: '3 variants', href: '/breadcrumbs', icon: ChevronRight, color: 'text-indigo-500', bg: 'bg-indigo-50' },
-  { name: 'Buttons', count: '12 variants', href: '/buttons', icon: MousePointer2, color: 'text-sky-500', bg: 'bg-sky-50' },
-  { name: 'CTAs', count: '6 variants', href: '/ctas', icon: Bell, color: 'text-yellow-500', bg: 'bg-yellow-50' },
-  { name: 'Cards', count: '5 variants', href: '/cards', icon: Layout, color: 'text-gray-500', bg: 'bg-gray-50' },
-  { name: 'Checkboxes', count: '6 variants', href: '/checkboxes', icon: CheckSquare, color: 'text-emerald-500', bg: 'bg-emerald-50' },
-  { name: 'Contact Components', count: '4 variants', href: '/contact-sections', icon: Mail, color: 'text-teal-500', bg: 'bg-teal-50' },
-  { name: 'Detail Lists', count: '8 variants', href: '/detail-lists', icon: Indent, color: 'text-cyan-500', bg: 'bg-cyan-50' },
-  { name: 'Dividers', count: '4 variants', href: '/dividers', icon: SeparatorHorizontal, color: 'text-slate-500', bg: 'bg-slate-50' },
-  { name: 'Dropdowns', count: '6 variants', href: '/dropdowns', icon: Menu, color: 'text-violet-500', bg: 'bg-violet-50' },
-  { name: 'Empty States', count: '5 variants', href: '/empty-states', icon: Box, color: 'text-zinc-500', bg: 'bg-zinc-50' },
-  { name: 'FAQs', count: '4 variants', href: '/faqs', icon: HelpCircle, color: 'text-lime-500', bg: 'bg-lime-50' },
-  { name: 'Features', count: '8 variants', href: '/feature-sections', icon: LayoutTemplate, color: 'text-fuchsia-500', bg: 'bg-fuchsia-50' },
-  { name: 'File Uploaders', count: '4 variants', href: '/file-uploaders', icon: UploadCloud, color: 'text-blue-600', bg: 'bg-blue-50' },
-  { name: 'Filters', count: '4 variants', href: '/filters', icon: Filter, color: 'text-rose-500', bg: 'bg-rose-50' },
-  { name: 'Footers', count: '5 variants', href: '/footers', icon: PanelBottom, color: 'text-indigo-600', bg: 'bg-indigo-50' },
-  { name: 'Headers', count: '4 variants', href: '/headers', icon: PanelTop, color: 'text-sky-600', bg: 'bg-sky-50' },
-  { name: 'Hero Sections', count: '6 variants', href: '/hero-sections', icon: MonitorPlay, color: 'text-purple-600', bg: 'bg-purple-50' },
-  { name: 'Inputs', count: '10 variants', href: '/inputs', icon: FormInput, color: 'text-orange-600', bg: 'bg-orange-50' },
-  { name: 'Media', count: '6 variants', href: '/media', icon: Image, color: 'text-amber-500', bg: 'bg-amber-50' },
-  { name: 'Menus', count: '5 variants', href: '/menus', icon: MoreHorizontal, color: 'text-blue-400', bg: 'bg-blue-50' },
-  { name: 'Pagination', count: '6 variants', href: '/pagination', icon: ArrowLeftRight, color: 'text-green-500', bg: 'bg-green-50' },
-  { name: 'Pricing', count: '4 variants', href: '/pricing', icon: CreditCard, color: 'text-emerald-600', bg: 'bg-emerald-50' },
-  { name: 'Progress Bars', count: '6 variants', href: '/progress-bars', icon: BarChart3, color: 'text-cyan-600', bg: 'bg-cyan-50' },
-  { name: 'Radio Groups', count: '5 variants', href: '/radio-groups', icon: ListOrdered, color: 'text-pink-600', bg: 'bg-pink-50' },
-  { name: 'Reviews', count: '3 variants', href: '/reviews', icon: Star, color: 'text-yellow-400', bg: 'bg-yellow-50' },
-  { name: 'Selects', count: '8 variants', href: '/selects', icon: CheckSquare, color: 'text-indigo-400', bg: 'bg-indigo-50' },
-  { name: 'Stats', count: '4 variants', href: '/stats', icon: BarChart3, color: 'text-violet-600', bg: 'bg-violet-50' },
-  { name: 'Steps', count: '5 variants', href: '/steps', icon: ListOrdered, color: 'text-teal-600', bg: 'bg-teal-50' },
-  { name: 'Tables', count: '4 variants', href: '/tables', icon: Table2, color: 'text-gray-600', bg: 'bg-gray-100' },
-  { name: 'Team Sections', count: '3 variants', href: '/team-sections', icon: Users, color: 'text-blue-700', bg: 'bg-blue-50' },
-  { name: 'Textareas', count: '6 variants', href: '/textareas', icon: Type, color: 'text-stone-500', bg: 'bg-stone-50' },
-  { name: 'Toggles', count: '6 variants', href: '/toggles', icon: ToggleLeft, color: 'text-green-600', bg: 'bg-green-50' },
-]
+const getComponentCount = (path: string) => {
+  if (!path) return 0
+  const folderName = path.substring(1).split('-').map(part => part.charAt(0).toUpperCase() + part.slice(1)).join('')
+  
+  // Count files that are in the specific component folder
+  // case-insensitive check to handle CTAs vs Ctas vs ctas
+  const count = Object.keys(componentFiles).filter(file => {
+    return file.toLowerCase().includes(`/components/${folderName.toLowerCase()}/`)
+  }).length
+
+  return count || 0
+}
+
+const categories = computed(() => {
+  return navigationData.flatMap(group => group.items).sort((a, b) => a.name.localeCompare(b.name))
+})
+
 </script>
 
 <template>
@@ -131,10 +76,10 @@ const categories = [
     </div>
     
     <div class="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-4">
-      <a 
+      <RouterLink 
         v-for="category in categories" 
         :key="category.name"
-        :href="category.href"
+        :to="category.href"
         class="group relative flex flex-col justify-between rounded-xl border border-gray-200 bg-white p-4 shadow-sm transition-all hover:border-gray-300 hover:shadow-md hover:-translate-y-1"
       >
         <div class="flex items-start justify-between">
@@ -147,10 +92,10 @@ const categories = [
         </div>
         
         <div class="mt-2 flex items-center justify-between">
-          <p class="text-sm text-gray-500 font-medium">{{ category.count }}</p>
+          <p class="text-sm text-gray-500 font-medium">{{ getComponentCount(category.href) }} variants</p>
           <ChevronRight class="h-5 w-5 text-gray-300 transition-colors group-hover:text-gray-900" />
         </div>
-      </a>
+      </RouterLink>
     </div>
   </div>
 </template>

@@ -21,88 +21,35 @@ import {
   SidebarRail,
 } from "@/components/ui/sidebar"
 
+const componentFiles = import.meta.glob('@/components/**/*.vue')
+
+const getComponentCount = (path: string) => {
+  if (!path || path === '#') return 0
+  const folderName = path.substring(1).split('-').map(part => part.charAt(0).toUpperCase() + part.slice(1)).join('')
+  
+  const count = Object.keys(componentFiles).filter(file => {
+    return file.toLowerCase().includes(`/components/${folderName.toLowerCase()}/`)
+  }).length
+
+  return count || 0
+}
+
 const props = defineProps<SidebarProps>()
 const route = useRoute()
 
 const searchQuery = ref("")
 
+import { navigationData } from '@/lib/navigation'
+
 const data = {
-  navMain: [
-    {
-      title: "Forms",
-      url: "#",
-      items: [
-        { title: "Buttons", url: "/buttons" },
-        { title: "Checkboxes", url: "/checkboxes" },
-        { title: "Inputs", url: "/inputs" },
-        { title: "Textareas", url: "/textareas" },
-        { title: "Selects", url: "/selects" },
-        { title: "Radio Groups", url: "/radio-groups" },
-        { title: "Toggles", url: "/toggles" },
-        { title: "File Uploaders", url: "/file-uploaders" },
-        { title: "Range Input", url: "/range-input" },
-      ],
-    },
-    {
-      title: "Navigation",
-      url: "#",
-      items: [
-        { title: "Breadcrumbs", url: "/breadcrumbs" },
-        { title: "Pagination", url: "/pagination" },
-        { title: "Steps", url: "/steps" },
-        { title: "Skip Link", url: "/skip-link" },
-        { title: "Menus", url: "/menus" },
-        { title: "Dropdowns", url: "/dropdowns" },
-      ],
-    },
-    {
-      title: "Data Display",
-      url: "#",
-      items: [
-        { title: "Badges", url: "/badges" },
-        { title: "Cards", url: "/cards" },
-        { title: "Tables", url: "/tables" },
-        { title: "Filters", url: "/filters" },
-        { title: "Stats", url: "/stats" },
-        { title: "Detail Lists", url: "/detail-lists" },
-        { title: "Media", url: "/media" },
-        { title: "Accordion", url: "/accordion" },
-        { title: "Dividers", url: "/dividers" },
-        { title: "Progress Bars", url: "/progress-bars" },
-        { title: "Empty States", url: "/empty-states" },
-      ],
-    },
-    {
-      title: "Marketing",
-      url: "#",
-      items: [
-        { title: "Announcements", url: "/announcements" },
-        { title: "Blog Sections", url: "/blog-sections" },
-        { title: "Pricing", url: "/pricing" },
-        { title: "Contact Sections", url: "/contact-sections" },
-        { title: "CTAs", url: "/ctas" },
-        { title: "Team Sections", url: "/team-sections" },
-        { title: "Reviews", url: "/reviews" },
-        { title: "Newsletter", url: "/newsletter" },
-        { title: "FAQs", url: "/faqs" },
-        { title: "Logo Clouds", url: "/logo-clouds" },
-        { title: "Hero Sections", url: "/hero-sections" },
-        { title: "Feature Sections", url: "/feature-sections" },
-        { title: "Headers", url: "/headers" },
-        { title: "Footers", url: "/footers" },
-      ],
-    },
-    {
-      title: "Ecommerce",
-      url: "#",
-      items: [
-        { title: "Product Cards", url: "/product-cards" },
-        { title: "Shopping Carts", url: "/shopping-carts" },
-        { title: "Product Overviews", url: "/product-overviews" },
-        { title: "Category Previews", url: "/category-previews" },
-      ],
-    },
-  ],
+  navMain: navigationData.map(group => ({
+    title: group.title,
+    url: '#',
+    items: group.items.map(item => ({
+      title: item.name,
+      url: item.href
+    }))
+  }))
 }
 
 const filteredNavMain = computed(() => {
@@ -168,9 +115,15 @@ const filteredNavMain = computed(() => {
                       hover:bg-zinc-900 hover:text-white hover:translate-x-1
                       data-[active=true]:bg-indigo-600 data-[active=true]:text-white data-[active=true]:shadow-md data-[active=true]:shadow-indigo-900/20 data-[active=true]:translate-x-0
                       text-zinc-400
+                      group
                     "
                   >
-                    <RouterLink :to="childItem.url" class="line-clamp-1">{{ childItem.title }}</RouterLink>
+                    <RouterLink :to="childItem.url" class="flex items-center !justify-between w-full">
+                      <span class="line-clamp-1 flex-1">{{ childItem.title }}</span>
+                      <span v-if="getComponentCount(childItem.url) > 0" class="shrink-0 ml-2 text-xs font-mono font-medium bg-zinc-800 text-zinc-400 py-0.5 px-2 rounded-full group-hover:bg-zinc-700 group-hover:text-zinc-200 group-data-[active=true]:bg-indigo-500/20 group-data-[active=true]:text-indigo-200 transition-colors">
+                        {{ getComponentCount(childItem.url) }}
+                      </span>
+                    </RouterLink>
                   </SidebarMenuButton>
                 </SidebarMenuItem>
               </SidebarMenu>

@@ -8,6 +8,13 @@ import DateTimeInputs from "@/components/Inputs/DateTimeInputs.vue"
 import SelectionInputs from "@/components/Inputs/SelectionInputs.vue"
 import ContentInputs from "@/components/Inputs/ContentInputs.vue"
 import MediaInputs from "@/components/Inputs/MediaInputs.vue"
+import AddOnInput from "@/components/Inputs/AddOnInput.vue"
+import IconInput from "@/components/Inputs/IconInput.vue"
+import FloatingLabelInput from "@/components/Inputs/FloatingLabelInput.vue"
+import ToggleInput from "@/components/Inputs/ToggleInput.vue"
+import RangeInput from "@/components/Inputs/RangeInput.vue"
+import RatingInput from "@/components/Inputs/RatingInput.vue"
+import ValidationInput from "@/components/Inputs/ValidationInput.vue"
 
 import { useTOC } from '@/composables/useTOC'
 import { onMounted } from 'vue'
@@ -25,6 +32,9 @@ onMounted(() => {
     { id: 'selection', label: 'Selection Inputs' },
     { id: 'content', label: 'Content Inputs' },
     { id: 'media', label: 'Media Inputs' },
+    { id: 'structure', label: 'Input Structure' },
+    { id: 'interactive', label: 'Interactive Inputs' },
+    { id: 'validation', label: 'Validation & States' },
   ])
 })
 </script>
@@ -63,6 +73,19 @@ onMounted(() => {
       </div>
       <div id="media" class="scroll-mt-24">
         <MediaInputs />
+      </div>
+      <div id="structure" class="scroll-mt-24 space-y-12">
+        <IconInput />
+        <AddOnInput />
+        <FloatingLabelInput />
+      </div>
+      <div id="interactive" class="scroll-mt-24 space-y-12">
+        <ToggleInput />
+        <RangeInput />
+        <RatingInput />
+      </div>
+      <div id="validation" class="scroll-mt-24">
+        <ValidationInput />
       </div>
     </div>
   </div>
