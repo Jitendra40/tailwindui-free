@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import { computed } from 'vue'
 import { navigationData } from '@/lib/navigation'
+import { Check, ChevronRight } from 'lucide-vue-next'
 
 const componentFiles = import.meta.glob('../components/**/*.vue')
 

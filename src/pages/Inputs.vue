@@ -11,6 +11,8 @@ import MediaInputs from "@/components/Inputs/MediaInputs.vue"
 import AddOnInput from "@/components/Inputs/AddOnInput.vue"
 import IconInput from "@/components/Inputs/IconInput.vue"
 import FloatingLabelInput from "@/components/Inputs/FloatingLabelInput.vue"
+import LineInput from "@/components/Inputs/LineInput.vue"
+import FloatingLineInput from "@/components/Inputs/FloatingLineInput.vue"
 import ToggleInput from "@/components/Inputs/ToggleInput.vue"
 import RangeInput from "@/components/Inputs/RangeInput.vue"
 import RatingInput from "@/components/Inputs/RatingInput.vue"
@@ -78,6 +80,8 @@ onMounted(() => {
         <IconInput />
         <AddOnInput />
         <FloatingLabelInput />
+        <LineInput />
+        <FloatingLineInput />
       </div>
       <div id="interactive" class="scroll-mt-24 space-y-12">
         <ToggleInput />
