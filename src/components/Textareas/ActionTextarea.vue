@@ -2,68 +2,44 @@
 import PreviewWrapper from "@/components/PreviewWrapper.vue"
 
 const htmlBlock = `
-<form action="#" class="relative max-w-lg w-full">
-  <div class="overflow-hidden rounded-xl border border-gray-200 shadow-sm focus-within:border-indigo-600 focus-within:ring-1 focus-within:ring-indigo-600 transition-all bg-white">
-    <label for="description" class="sr-only">Description</label>
-    <textarea rows="3" name="description" id="description" class="block w-full resize-none border-0 py-3 text-gray-900 placeholder:text-gray-400 focus:ring-0 sm:text-sm sm:leading-6" placeholder="Write a description..." ></textarea>
+<div class="w-full  mx-auto">
+  <form action="#" class="relative flex items-center w-full p-3 bg-white border border-gray-200  rounded-xl focus-within:ring-2 focus-within:ring-black/5 focus-within:border-gray-300 transition-all">
+    <!-- Attachment Button -->
+    <label class="p-2 mr-2 text-gray-400 transition-colors rounded-full cursor-pointer hover:bg-gray-100 hover:text-gray-600" title="Attach file">
+      <input type="file" class="sr-only" />
+      <svg xmlns="http://www.w3.org/2000/svg" class="size-5" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" >
+        <path stroke-linecap="round" stroke-linejoin="round" d="m18.375 12.739-7.693 7.693a4.5 4.5 0 0 1-6.364-6.364l10.94-10.94A3 3 0 1 1 19.5 7.372L8.552 18.32m.009-.01-.01.01m5.699-9.941-7.81 7.81a1.5 1.5 0 0 0 2.112 2.13" />
+      </svg>
+      <span class="sr-only">Attach file</span>
+    </label>
 
-    <!-- Toolbar -->
-    <div class="flex items-center justify-between border-t border-gray-100 bg-gray-50/50 px-2 py-2">
-       <div class="flex items-center gap-1">
-          <button type="button" class="group inline-flex items-center justify-center rounded-lg p-1.5 text-gray-500 hover:bg-gray-200 hover:text-gray-900 transition-colors">
-            <svg class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-               <path d="M21.44 11.05l-9.19 9.19a6 6 0 0 1-8.49-8.49l9.19-9.19a4 4 0 0 1 5.66 5.66l-9.2 9.19a2 2 0 0 1-2.83-2.83l8.49-8.48"></path>
-            </svg>
-            <span class="sr-only">Attach a file</span>
-          </button>
-           <button type="button" class="group inline-flex items-center justify-center rounded-lg p-1.5 text-gray-500 hover:bg-gray-200 hover:text-gray-900 transition-colors">
-              <svg class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z"/><text transform="matrix(1 0 0 1 7.5 16)" font-family="Arial" font-size="12">@</text>
-              </svg>
-             <span class="sr-only">Mention someone</span>
-           </button>
-       </div>
-       <button type="submit" class="inline-flex items-center rounded-lg bg-indigo-600 px-3 py-1.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 transition-colors">
-         Post Update
-       </button>
-    </div>
+    <!-- Textarea -->
+    <textarea 
+      rows="1" 
+      name="prompt" 
+      id="prompt" 
+      class="w-full p-3 bg-transparent border-0 resize-none focus:ring-0 max-h-64 placeholder:text-gray-400 text-gray-900 sm:text-sm sm:leading-6" 
+      placeholder="Message ChatGPT..."
+      style="min-height: 44px;"
+    ></textarea>
+
+    <!-- Send Button -->
+    <button type="submit" class="p-2 ml-2 text-white transition-colors bg-black rounded-full hover:bg-gray-800 disabled:opacity-50 disabled:cursor-not-allowed mb-1">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-5 h-5">
+        <path d="M3.478 2.404a.75.75 0 0 0-.926.941l2.432 7.905H13.5a.75.75 0 0 1 0 1.5H4.984l-2.432 7.905a.75.75 0 0 0 .926.94 60.519 60.519 0 0 0 18.445-8.986.75.75 0 0 0 0-1.218A60.517 60.517 0 0 0 3.478 2.404Z" />
+      </svg>
+      <span class="sr-only">Send message</span>
+    </button>
+  </form>
+  <div class="mt-2 text-center">
+    <p class="text-xs text-center text-gray-500">ChatGPT can make mistakes. Consider checking important information.</p>
   </div>
-</form>
+</div>
 `
 </script>
 
 <template>
-  <PreviewWrapper title="Action Textarea" description="Textarea with integrated bottom toolbar." :html-block="htmlBlock">
-    <form action="#" class="relative max-w-lg w-full">
-      <div class="overflow-hidden rounded-xl border border-gray-200 shadow-sm focus-within:border-indigo-600 focus-within:ring-1 focus-within:ring-indigo-600 transition-all bg-white">
-        <label for="description" class="sr-only">Description</label>
-        <textarea rows="3" name="description" id="description" class="block w-full resize-none border-0 py-3 text-gray-900 placeholder:text-gray-400 focus:ring-0 sm:text-sm sm:leading-6" placeholder="Write a description..." ></textarea>
+  <PreviewWrapper title="Chat Input" description="ChatGPT-style rounded input with attachment and send buttons." :html-block="htmlBlock">
 
-        <!-- Toolbar -->
-        <div class="flex items-center justify-between border-t border-gray-100 bg-gray-50/50 px-2 py-2">
-           <div class="flex items-center gap-1">
-              <button type="button" class="group inline-flex items-center justify-center rounded-lg p-1.5 text-gray-500 hover:bg-gray-200 hover:text-gray-900 transition-colors">
-                <svg class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                   <path d="M21.44 11.05l-9.19 9.19a6 6 0 0 1-8.49-8.49l9.19-9.19a4 4 0 0 1 5.66 5.66l-9.2 9.19a2 2 0 0 1-2.83-2.83l8.49-8.48"></path>
-                </svg>
-                <span class="sr-only">Attach a file</span>
-              </button>
-               <button type="button" class="group inline-flex items-center justify-center rounded-lg p-1.5 text-gray-500 hover:bg-gray-200 hover:text-gray-900 transition-colors">
-                  <svg class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                     <circle cx="12" cy="12" r="10"></circle>
-                     <path d="M8 12h8"></path>
-                     <path d="M12 8v8"></path>
-                  </svg>
-                 <span class="sr-only">Add tag</span>
-               </button>
-           </div>
-           <div class="flex items-start">
-             <button type="submit" class="inline-flex items-center rounded-lg bg-indigo-600 px-3 py-1.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 transition-colors">
-               Post
-             </button>
-           </div>
-        </div>
-      </div>
-    </form>
   </PreviewWrapper>
 </template>

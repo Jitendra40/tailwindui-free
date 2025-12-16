@@ -2,15 +2,32 @@
 import PreviewWrapper from "@/components/PreviewWrapper.vue"
 
 const htmlBlock = `
-<div class="bg-gray-900 py-24 sm:py-32">
-  <div class="mx-auto max-w-7xl px-6 lg:px-8">
-    <h2 class="text-center text-lg font-semibold leading-8 text-white">Trusted by the world’s most innovative teams</h2>
-    <div class="mx-auto mt-10 grid max-w-lg grid-cols-4 items-center gap-x-8 gap-y-10 sm:max-w-xl sm:grid-cols-6 sm:gap-x-10 lg:mx-0 lg:max-w-none lg:grid-cols-5">
-      <img class="col-span-2 max-h-12 w-full object-contain lg:col-span-1" src="https://images.unsplash.com/featured?auto=format&fit=crop&w=260&q=80&sig=41" alt="Transistor" width="158" height="48">
-      <img class="col-span-2 max-h-12 w-full object-contain lg:col-span-1" src="https://images.unsplash.com/featured?auto=format&fit=crop&w=260&q=80&sig=42" alt="Reform" width="158" height="48">
-      <img class="col-span-2 max-h-12 w-full object-contain lg:col-span-1" src="https://images.unsplash.com/featured?auto=format&fit=crop&w=260&q=80&sig=43" alt="Tuple" width="158" height="48">
-      <img class="col-span-2 max-h-12 w-full object-contain sm:col-start-2 lg:col-span-1" src="https://images.unsplash.com/featured?auto=format&fit=crop&w=260&q=80&sig=44" alt="SavvyCal" width="158" height="48">
-      <img class="col-span-2 max-h-12 w-full object-contain col-start-2 sm:col-start-auto lg:col-span-1" src="https://images.unsplash.com/featured?auto=format&fit=crop&w=260&q=80&sig=45" alt="Statamic" width="158" height="48">
+<div class="bg-gray-950 py-14">
+  <div class="mx-auto max-w-5xl px-6">
+    <div class="text-center">
+      <p class="text-xs font-semibold uppercase tracking-[0.2em] text-indigo-200">Partners</p>
+      <h2 class="mt-2 text-xl font-semibold text-white">Compact logo cloud on charcoal</h2>
+      <p class="mt-2 text-sm text-gray-300">Keeps trust badges tidy without taking over the hero.</p>
+    </div>
+    <div class="mt-8 flex flex-wrap items-center justify-center gap-5 sm:gap-6">
+      <div class="flex h-12 w-28 items-center justify-center rounded-md bg-white/5 px-3 ring-1 ring-white/10">
+        <img class="h-8 w-auto object-contain" src="https://images.unsplash.com/featured?auto=format&fit=crop&w=200&h=80&q=80&sig=301" alt="Placeholder 1" width="140" height="64">
+      </div>
+      <div class="flex h-12 w-28 items-center justify-center rounded-md bg-white/5 px-3 ring-1 ring-white/10">
+        <img class="h-8 w-auto object-contain" src="https://images.unsplash.com/featured?auto=format&fit=crop&w=200&h=80&q=80&sig=302" alt="Placeholder 2" width="140" height="64">
+      </div>
+      <div class="flex h-12 w-28 items-center justify-center rounded-md bg-white/5 px-3 ring-1 ring-white/10">
+        <img class="h-8 w-auto object-contain" src="https://images.unsplash.com/featured?auto=format&fit=crop&w=200&h=80&q=80&sig=303" alt="Placeholder 3" width="140" height="64">
+      </div>
+      <div class="flex h-12 w-28 items-center justify-center rounded-md bg-white/5 px-3 ring-1 ring-white/10">
+        <img class="h-8 w-auto object-contain" src="https://images.unsplash.com/featured?auto=format&fit=crop&w=200&h=80&q=80&sig=304" alt="Placeholder 4" width="140" height="64">
+      </div>
+      <div class="flex h-12 w-28 items-center justify-center rounded-md bg-white/5 px-3 ring-1 ring-white/10">
+        <img class="h-8 w-auto object-contain" src="https://images.unsplash.com/featured?auto=format&fit=crop&w=200&h=80&q=80&sig=305" alt="Placeholder 5" width="140" height="64">
+      </div>
+      <div class="flex h-12 w-28 items-center justify-center rounded-md bg-white/5 px-3 ring-1 ring-white/10">
+        <img class="h-8 w-auto object-contain" src="https://images.unsplash.com/featured?auto=format&fit=crop&w=200&h=80&q=80&sig=306" alt="Placeholder 6" width="140" height="64">
+      </div>
     </div>
   </div>
 </div>
@@ -19,15 +36,32 @@ const htmlBlock = `
 
 <template>
   <PreviewWrapper title="Dark Logo Cloud" description="Logo cloud on dark background." :html-block="htmlBlock">
-    <div class="bg-gray-900 py-24 sm:py-32">
-      <div class="mx-auto max-w-7xl px-6 lg:px-8">
-        <h2 class="text-center text-lg font-semibold leading-8 text-white">Trusted by the world’s most innovative teams</h2>
-        <div class="mx-auto mt-10 grid max-w-lg grid-cols-4 items-center gap-x-8 gap-y-10 sm:max-w-xl sm:grid-cols-6 sm:gap-x-10 lg:mx-0 lg:max-w-none lg:grid-cols-5">
-          <img class="col-span-2 max-h-12 w-full object-contain lg:col-span-1" src="https://images.unsplash.com/featured?auto=format&fit=crop&w=260&q=80&sig=46" alt="Transistor" width="158" height="48">
-          <img class="col-span-2 max-h-12 w-full object-contain lg:col-span-1" src="https://images.unsplash.com/featured?auto=format&fit=crop&w=260&q=80&sig=47" alt="Reform" width="158" height="48">
-          <img class="col-span-2 max-h-12 w-full object-contain lg:col-span-1" src="https://images.unsplash.com/featured?auto=format&fit=crop&w=260&q=80&sig=48" alt="Tuple" width="158" height="48">
-          <img class="col-span-2 max-h-12 w-full object-contain sm:col-start-2 lg:col-span-1" src="https://images.unsplash.com/featured?auto=format&fit=crop&w=260&q=80&sig=49" alt="SavvyCal" width="158" height="48">
-          <img class="col-span-2 max-h-12 w-full object-contain col-start-2 sm:col-start-auto lg:col-span-1" src="https://images.unsplash.com/featured?auto=format&fit=crop&w=260&q=80&sig=50" alt="Statamic" width="158" height="48">
+    <div class="bg-gray-950 py-14">
+      <div class="mx-auto max-w-5xl px-6">
+        <div class="text-center">
+          <p class="text-xs font-semibold uppercase tracking-[0.2em] text-indigo-200">Partners</p>
+          <h2 class="mt-2 text-xl font-semibold text-white">Compact logo cloud on charcoal</h2>
+          <p class="mt-2 text-sm text-gray-300">Keeps trust badges tidy without taking over the hero.</p>
+        </div>
+        <div class="mt-8 flex flex-wrap items-center justify-center gap-5 sm:gap-6">
+          <div class="flex h-12 w-28 items-center justify-center rounded-md bg-white/5 px-3 ring-1 ring-white/10">
+            <img class="h-8 w-auto object-contain" src="https://images.unsplash.com/featured?auto=format&fit=crop&w=200&h=80&q=80&sig=311" alt="Placeholder 1" width="140" height="64">
+          </div>
+          <div class="flex h-12 w-28 items-center justify-center rounded-md bg-white/5 px-3 ring-1 ring-white/10">
+            <img class="h-8 w-auto object-contain" src="https://images.unsplash.com/featured?auto=format&fit=crop&w=200&h=80&q=80&sig=312" alt="Placeholder 2" width="140" height="64">
+          </div>
+          <div class="flex h-12 w-28 items-center justify-center rounded-md bg-white/5 px-3 ring-1 ring-white/10">
+            <img class="h-8 w-auto object-contain" src="https://images.unsplash.com/featured?auto=format&fit=crop&w=200&h=80&q=80&sig=313" alt="Placeholder 3" width="140" height="64">
+          </div>
+          <div class="flex h-12 w-28 items-center justify-center rounded-md bg-white/5 px-3 ring-1 ring-white/10">
+            <img class="h-8 w-auto object-contain" src="https://images.unsplash.com/featured?auto=format&fit=crop&w=200&h=80&q=80&sig=314" alt="Placeholder 4" width="140" height="64">
+          </div>
+          <div class="flex h-12 w-28 items-center justify-center rounded-md bg-white/5 px-3 ring-1 ring-white/10">
+            <img class="h-8 w-auto object-contain" src="https://images.unsplash.com/featured?auto=format&fit=crop&w=200&h=80&q=80&sig=315" alt="Placeholder 5" width="140" height="64">
+          </div>
+          <div class="flex h-12 w-28 items-center justify-center rounded-md bg-white/5 px-3 ring-1 ring-white/10">
+            <img class="h-8 w-auto object-contain" src="https://images.unsplash.com/featured?auto=format&fit=crop&w=200&h=80&q=80&sig=316" alt="Placeholder 6" width="140" height="64">
+          </div>
         </div>
       </div>
     </div>

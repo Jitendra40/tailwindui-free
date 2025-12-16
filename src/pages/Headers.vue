@@ -3,6 +3,8 @@ import SimpleHeader from "@/components/Headers/SimpleHeader.vue"
 import CenteredHeader from "@/components/Headers/CenteredHeader.vue"
 import WithSearchHeader from "@/components/Headers/WithSearchHeader.vue"
 import DarkHeader from "@/components/Headers/DarkHeader.vue"
+import EcommerceHeader from "@/components/Headers/EcommerceHeader.vue"
+import DocsHeader from "@/components/Headers/DocsHeader.vue"
 
 import { useTOC } from '@/composables/useTOC'
 import { onMounted } from 'vue'
@@ -11,10 +13,12 @@ const { setItems } = useTOC()
 
 onMounted(() => {
   setItems([
-    { id: 'simple', label: 'Simple Header' },
-    { id: 'centered', label: 'Centered Header' },
-    { id: 'with-search', label: 'With Search Header' },
-    { id: 'dark', label: 'Dark Header' },
+    { id: 'simple', label: 'Compact SaaS Header' },
+    { id: 'centered', label: 'Centered Minimal Header' },
+    { id: 'with-search', label: 'Search-First Header' },
+    { id: 'dark', label: 'Dark Studio Header' },
+    { id: 'ecommerce', label: 'Ecommerce Header' },
+    { id: 'docs', label: 'Docs Header' },
   ])
 })
 </script>
@@ -38,6 +42,12 @@ onMounted(() => {
       </div>
       <div id="dark" class="scroll-mt-24">
         <DarkHeader />
+      </div>
+      <div id="ecommerce" class="scroll-mt-24">
+        <EcommerceHeader />
+      </div>
+      <div id="docs" class="scroll-mt-24">
+        <DocsHeader />
       </div>
     </div>
   </div>

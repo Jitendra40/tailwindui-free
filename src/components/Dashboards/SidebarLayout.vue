@@ -2,7 +2,7 @@
 import PreviewWrapper from "@/components/PreviewWrapper.vue"
 
 const htmlBlock = `
-<div class="flex h-screen bg-gray-100">
+<div class="flex h-auto bg-gray-100">
     <!-- Sidebar -->
     <div class="hidden md:flex md:w-64 md:flex-col">
         <div class="flex flex-col flex-1 min-h-0 bg-gray-800">

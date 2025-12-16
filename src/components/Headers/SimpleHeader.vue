@@ -2,63 +2,68 @@
 import PreviewWrapper from "@/components/PreviewWrapper.vue"
 
 const htmlBlock = `
-<header class="bg-white">
-  <nav class="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8" aria-label="Global">
-    <div class="flex lg:flex-1">
-      <a href="#" class="-m-1.5 p-1.5">
-        <span class="sr-only">Your Company</span>
-        <img class="h-8 w-auto" src="https://tailwindui.com/plus/img/logos/mark.svg?color=indigo&shade=600" alt="">
-      </a>
+<header class="bg-white/90 shadow-sm">
+  <nav class="mx-auto flex max-w-6xl items-center justify-between px-4 py-3 lg:px-6" aria-label="Global">
+    <div class="flex items-center gap-8">
+      <div class="flex items-center gap-2">
+        <svg class="h-8 w-8 text-indigo-600" viewBox="0 0 32 32" fill="currentColor" aria-hidden="true">
+          <path d="M6 10.5 16 6l10 4.5v11L16 26l-10-4.5v-11Z" fill-opacity="0.12"/>
+          <path d="M16 6v20" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+          <path d="M6 10.5 16 15l10-4.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        <div class="text-sm font-semibold text-gray-900">Northwind</div>
+      </div>
+      <div class="hidden md:flex items-center gap-6 text-sm font-medium text-gray-700">
+        <a href="#" class="hover:text-indigo-600">Product</a>
+        <a href="#" class="hover:text-indigo-600">Pricing</a>
+        <a href="#" class="hover:text-indigo-600">Customers</a>
+        <a href="#" class="hover:text-indigo-600">Docs</a>
+      </div>
     </div>
-    <div class="flex lg:hidden">
-      <button type="button" class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700">
+    <div class="flex items-center gap-3">
+      <a href="#" class="hidden sm:inline-flex text-sm font-medium text-gray-700 hover:text-indigo-600">Sign in</a>
+      <a href="#" class="inline-flex items-center rounded-full bg-indigo-600 px-3 py-1.5 text-xs font-semibold text-white shadow hover:bg-indigo-500">Start trial</a>
+      <button type="button" class="md:hidden inline-flex items-center rounded-md p-2 text-gray-600 ring-1 ring-gray-200">
         <span class="sr-only">Open main menu</span>
-        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
-          <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+        <svg class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke-width="1.6" stroke="currentColor" aria-hidden="true">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M4 7h16M4 12h16M4 17h16" />
         </svg>
       </button>
     </div>
-    <div class="hidden lg:flex lg:gap-x-12">
-      <a href="#" class="text-sm font-semibold leading-6 text-gray-900">Product</a>
-      <a href="#" class="text-sm font-semibold leading-6 text-gray-900">Features</a>
-      <a href="#" class="text-sm font-semibold leading-6 text-gray-900">Marketplace</a>
-      <a href="#" class="text-sm font-semibold leading-6 text-gray-900">Company</a>
-    </div>
-    <div class="hidden lg:flex lg:flex-1 lg:justify-end">
-      <a href="#" class="text-sm font-semibold leading-6 text-gray-900">Log in <span aria-hidden="true">&rarr;</span></a>
-    </div>
   </nav>
-  <!-- Mobile menu, show/hide based on menu open state. Not shown in static preview. -->
 </header>
 `
 </script>
 
 <template>
-  <PreviewWrapper title="Simple Header" description="Logo, nav links, and login." :html-block="htmlBlock">
-    <header class="bg-white">
-      <nav class="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8" aria-label="Global">
-        <div class="flex lg:flex-1">
-          <a href="#" class="-m-1.5 p-1.5">
-            <span class="sr-only">Your Company</span>
-            <img class="h-8 w-auto" src="https://tailwindui.com/plus/img/logos/mark.svg?color=indigo&shade=600" alt="">
-          </a>
+  <PreviewWrapper title="Compact SaaS Header" description="Tighter nav with CTA pill." :html-block="htmlBlock">
+    <header class="bg-white/90 shadow-sm">
+      <nav class="mx-auto flex max-w-6xl items-center justify-between px-4 py-3 lg:px-6" aria-label="Global">
+        <div class="flex items-center gap-8">
+          <div class="flex items-center gap-2">
+            <svg class="h-8 w-8 text-indigo-600" viewBox="0 0 32 32" fill="currentColor" aria-hidden="true">
+              <path d="M6 10.5 16 6l10 4.5v11L16 26l-10-4.5v-11Z" fill-opacity="0.12"/>
+              <path d="M16 6v20" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+              <path d="M6 10.5 16 15l10-4.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            <div class="text-sm font-semibold text-gray-900">Northwind</div>
+          </div>
+          <div class="hidden md:flex items-center gap-6 text-sm font-medium text-gray-700">
+            <a href="#" class="hover:text-indigo-600">Product</a>
+            <a href="#" class="hover:text-indigo-600">Pricing</a>
+            <a href="#" class="hover:text-indigo-600">Customers</a>
+            <a href="#" class="hover:text-indigo-600">Docs</a>
+          </div>
         </div>
-        <div class="flex lg:hidden">
-          <button type="button" class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700">
+        <div class="flex items-center gap-3">
+          <a href="#" class="hidden sm:inline-flex text-sm font-medium text-gray-700 hover:text-indigo-600">Sign in</a>
+          <a href="#" class="inline-flex items-center rounded-full bg-indigo-600 px-3 py-1.5 text-xs font-semibold text-white shadow hover:bg-indigo-500">Start trial</a>
+          <button type="button" class="md:hidden inline-flex items-center rounded-md p-2 text-gray-600 ring-1 ring-gray-200">
             <span class="sr-only">Open main menu</span>
-            <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
-              <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+            <svg class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke-width="1.6" stroke="currentColor" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M4 7h16M4 12h16M4 17h16" />
             </svg>
           </button>
-        </div>
-        <div class="hidden lg:flex lg:gap-x-12">
-          <a href="#" class="text-sm font-semibold leading-6 text-gray-900">Product</a>
-          <a href="#" class="text-sm font-semibold leading-6 text-gray-900">Features</a>
-          <a href="#" class="text-sm font-semibold leading-6 text-gray-900">Marketplace</a>
-          <a href="#" class="text-sm font-semibold leading-6 text-gray-900">Company</a>
-        </div>
-        <div class="hidden lg:flex lg:flex-1 lg:justify-end">
-          <a href="#" class="text-sm font-semibold leading-6 text-gray-900">Log in <span aria-hidden="true">&rarr;</span></a>
         </div>
       </nav>
     </header>

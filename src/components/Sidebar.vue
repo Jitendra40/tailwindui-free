@@ -70,7 +70,7 @@ const filteredNavMain = computed(() => {
 </script>
 
 <template>
-  <Sidebar v-bind="props" class="!bg-zinc-950 !border-r !border-zinc-800 text-zinc-100 font-sans">
+  <Sidebar v-bind="props" class="!bg-zinc-850 !border-r !border-zinc-800 text-zinc-100 font-sans">
     <SidebarHeader class="px-6 py-5 border-b border-zinc-900 bg-zinc-950 z-10">
       <div class="flex items-center gap-3 mb-6">
          <RouterLink to="/" class="flex items-center gap-3 group px-2">

@@ -2,89 +2,64 @@
 import PreviewWrapper from "@/components/PreviewWrapper.vue"
 
 const htmlBlock = `
-<footer class="bg-gray-900" aria-labelledby="footer-heading">
+<footer class="bg-gray-950 text-white" aria-labelledby="footer-heading">
   <h2 id="footer-heading" class="sr-only">Footer</h2>
-  <div class="mx-auto max-w-7xl px-6 pb-8 pt-16 sm:pt-24 lg:px-8 lg:pt-32">
-    <div class="xl:grid xl:grid-cols-3 xl:gap-8">
-      <div class="grid grid-cols-2 gap-8 xl:col-span-2">
-        <div class="md:grid md:grid-cols-2 md:gap-8">
-          <div>
-            <h3 class="text-sm font-semibold leading-6 text-white">Solutions</h3>
-            <ul role="list" class="mt-6 space-y-4">
-              <li>
-                <a href="#" class="text-sm leading-6 text-gray-300 hover:text-white">Marketing</a>
-              </li>
-              <li>
-                <a href="#" class="text-sm leading-6 text-gray-300 hover:text-white">Analytics</a>
-              </li>
-              <li>
-                <a href="#" class="text-sm leading-6 text-gray-300 hover:text-white">Commerce</a>
-              </li>
-              <li>
-                <a href="#" class="text-sm leading-6 text-gray-300 hover:text-white">Insights</a>
-              </li>
-            </ul>
-          </div>
-          <div class="mt-10 md:mt-0">
-            <h3 class="text-sm font-semibold leading-6 text-white">Support</h3>
-            <ul role="list" class="mt-6 space-y-4">
-              <li>
-                <a href="#" class="text-sm leading-6 text-gray-300 hover:text-white">Pricing</a>
-              </li>
-              <li>
-                <a href="#" class="text-sm leading-6 text-gray-300 hover:text-white">Documentation</a>
-              </li>
-              <li>
-                <a href="#" class="text-sm leading-6 text-gray-300 hover:text-white">Guides</a>
-              </li>
-            </ul>
-          </div>
+  <div class="mx-auto max-w-6xl px-4 py-14 lg:px-6">
+    <div class="grid gap-10 lg:grid-cols-4 lg:items-start">
+      <div class="space-y-4 lg:col-span-1">
+        <div class="flex items-center gap-2 text-sm font-semibold">
+          <svg class="h-8 w-8 text-indigo-300" viewBox="0 0 32 32" fill="none" aria-hidden="true">
+            <rect x="6" y="6" width="20" height="20" rx="5" fill="currentColor" fill-opacity="0.18" />
+            <path d="M12 16h8" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+            <path d="M16 12v8" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+          </svg>
+          <span>Northwind</span>
         </div>
-        <div class="md:grid md:grid-cols-2 md:gap-8">
-          <div>
-            <h3 class="text-sm font-semibold leading-6 text-white">Company</h3>
-            <ul role="list" class="mt-6 space-y-4">
-              <li>
-                <a href="#" class="text-sm leading-6 text-gray-300 hover:text-white">About</a>
-              </li>
-              <li>
-                <a href="#" class="text-sm leading-6 text-gray-300 hover:text-white">Blog</a>
-              </li>
-              <li>
-                <a href="#" class="text-sm leading-6 text-gray-300 hover:text-white">Jobs</a>
-              </li>
-            </ul>
-          </div>
-          <div class="mt-10 md:mt-0">
-            <h3 class="text-sm font-semibold leading-6 text-white">Legal</h3>
-            <ul role="list" class="mt-6 space-y-4">
-              <li>
-                <a href="#" class="text-sm leading-6 text-gray-300 hover:text-white">Claim</a>
-              </li>
-              <li>
-                <a href="#" class="text-sm leading-6 text-gray-300 hover:text-white">Privacy</a>
-              </li>
-              <li>
-                <a href="#" class="text-sm leading-6 text-gray-300 hover:text-white">Terms</a>
-              </li>
-            </ul>
-          </div>
+        <p class="text-sm text-gray-300">Weekly notes on product, growth, and shipping calmly.</p>
+      </div>
+      <div class="grid gap-8 sm:grid-cols-2 lg:col-span-2 lg:grid-cols-3">
+        <div>
+          <h3 class="text-sm font-semibold">Product</h3>
+          <ul class="mt-3 space-y-2 text-sm text-gray-300">
+            <li><a href="#" class="hover:text-indigo-200">Overview</a></li>
+            <li><a href="#" class="hover:text-indigo-200">Pricing</a></li>
+            <li><a href="#" class="hover:text-indigo-200">Integrations</a></li>
+            <li><a href="#" class="hover:text-indigo-200">Status</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="text-sm font-semibold">Company</h3>
+          <ul class="mt-3 space-y-2 text-sm text-gray-300">
+            <li><a href="#" class="hover:text-indigo-200">About</a></li>
+            <li><a href="#" class="hover:text-indigo-200">Careers</a></li>
+            <li><a href="#" class="hover:text-indigo-200">Press</a></li>
+            <li><a href="#" class="hover:text-indigo-200">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="text-sm font-semibold">Legal</h3>
+          <ul class="mt-3 space-y-2 text-sm text-gray-300">
+            <li><a href="#" class="hover:text-indigo-200">Privacy</a></li>
+            <li><a href="#" class="hover:text-indigo-200">Terms</a></li>
+            <li><a href="#" class="hover:text-indigo-200">DPA</a></li>
+          </ul>
         </div>
       </div>
-      <div class="mt-10 xl:mt-0">
-        <h3 class="text-sm font-semibold leading-6 text-white">Subscribe to our newsletter</h3>
-        <p class="mt-2 text-sm leading-6 text-gray-300">The latest news, articles, and resources, sent to your inbox weekly.</p>
-        <form class="mt-6 sm:flex sm:max-w-md">
+      <div class="space-y-3">
+        <h3 class="text-sm font-semibold">Subscribe</h3>
+        <p class="text-sm text-gray-300">Join 14,000 founders reading our Friday digest.</p>
+        <form class="flex flex-col gap-3 sm:flex-row sm:items-center">
           <label for="email-address" class="sr-only">Email address</label>
-          <input type="email" name="email-address" id="email-address" autocomplete="email" required class="w-full min-w-0 appearance-none rounded-md border-0 bg-white/5 px-3 py-1.5 text-base text-white shadow-sm ring-1 ring-inset ring-white/10 placeholder:text-gray-500 focus:ring-2 focus:ring-inset focus:ring-indigo-500 sm:w-64 sm:text-sm sm:leading-6 xl:w-full" placeholder="Enter your email">
-          <div class="mt-4 sm:ml-4 sm:mt-0 sm:flex-shrink-0">
-            <button type="submit" class="flex w-full items-center justify-center rounded-md bg-indigo-500 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-indigo-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-500">Subscribe</button>
-          </div>
+          <input type="email" name="email-address" id="email-address" autocomplete="email" required class="w-full rounded-md border border-white/10 bg-white/5 px-3 py-2 text-sm text-white placeholder:text-gray-400 focus:border-indigo-300 focus:outline-none focus:ring-2 focus:ring-indigo-400/70" placeholder="you@example.com">
+          <button type="submit" class="inline-flex justify-center rounded-md bg-indigo-500 px-3 py-2 text-sm font-semibold text-white shadow hover:bg-indigo-400">Subscribe</button>
         </form>
       </div>
     </div>
-    <div class="mt-16 border-t border-white/10 pt-8 sm:mt-20 lg:mt-24">
-      <p class="text-xs leading-5 text-gray-400">&copy; 2020 Your Company, Inc. All rights reserved.</p>
+    <div class="mt-12 flex flex-wrap items-center gap-3 text-xs text-gray-400">
+      <span>&copy; 2025 Northwind</span>
+      <span class="text-gray-600">•</span>
+      <a href="#" class="hover:text-indigo-200">Security</a>
+      <a href="#" class="hover:text-indigo-200">Cookie policy</a>
     </div>
   </div>
 </footer>
@@ -92,90 +67,65 @@ const htmlBlock = `
 </script>
 
 <template>
-  <PreviewWrapper title="Footer with Newsletter" description="Footer with subscription form." :html-block="htmlBlock">
-    <footer class="bg-gray-900" aria-labelledby="footer-heading">
+  <PreviewWrapper title="Newsletter Footer" description="Dark footer with signup and compact links." :html-block="htmlBlock">
+    <footer class="bg-gray-950 text-white" aria-labelledby="footer-heading">
       <h2 id="footer-heading" class="sr-only">Footer</h2>
-      <div class="mx-auto max-w-7xl px-6 pb-8 pt-16 sm:pt-24 lg:px-8 lg:pt-32">
-        <div class="xl:grid xl:grid-cols-3 xl:gap-8">
-          <div class="grid grid-cols-2 gap-8 xl:col-span-2">
-            <div class="md:grid md:grid-cols-2 md:gap-8">
-              <div>
-                <h3 class="text-sm font-semibold leading-6 text-white">Solutions</h3>
-                <ul role="list" class="mt-6 space-y-4">
-                  <li>
-                    <a href="#" class="text-sm leading-6 text-gray-300 hover:text-white">Marketing</a>
-                  </li>
-                  <li>
-                    <a href="#" class="text-sm leading-6 text-gray-300 hover:text-white">Analytics</a>
-                  </li>
-                  <li>
-                    <a href="#" class="text-sm leading-6 text-gray-300 hover:text-white">Commerce</a>
-                  </li>
-                  <li>
-                    <a href="#" class="text-sm leading-6 text-gray-300 hover:text-white">Insights</a>
-                  </li>
-                </ul>
-              </div>
-              <div class="mt-10 md:mt-0">
-                <h3 class="text-sm font-semibold leading-6 text-white">Support</h3>
-                <ul role="list" class="mt-6 space-y-4">
-                  <li>
-                    <a href="#" class="text-sm leading-6 text-gray-300 hover:text-white">Pricing</a>
-                  </li>
-                  <li>
-                    <a href="#" class="text-sm leading-6 text-gray-300 hover:text-white">Documentation</a>
-                  </li>
-                  <li>
-                    <a href="#" class="text-sm leading-6 text-gray-300 hover:text-white">Guides</a>
-                  </li>
-                </ul>
-              </div>
+      <div class="mx-auto max-w-6xl px-4 py-14 lg:px-6">
+        <div class="grid gap-10 lg:grid-cols-4 lg:items-start">
+          <div class="space-y-4 lg:col-span-1">
+            <div class="flex items-center gap-2 text-sm font-semibold">
+              <svg class="h-8 w-8 text-indigo-300" viewBox="0 0 32 32" fill="none" aria-hidden="true">
+                <rect x="6" y="6" width="20" height="20" rx="5" fill="currentColor" fill-opacity="0.18" />
+                <path d="M12 16h8" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+                <path d="M16 12v8" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+              </svg>
+              <span>Northwind</span>
             </div>
-            <div class="md:grid md:grid-cols-2 md:gap-8">
-              <div>
-                <h3 class="text-sm font-semibold leading-6 text-white">Company</h3>
-                <ul role="list" class="mt-6 space-y-4">
-                  <li>
-                    <a href="#" class="text-sm leading-6 text-gray-300 hover:text-white">About</a>
-                  </li>
-                  <li>
-                    <a href="#" class="text-sm leading-6 text-gray-300 hover:text-white">Blog</a>
-                  </li>
-                  <li>
-                    <a href="#" class="text-sm leading-6 text-gray-300 hover:text-white">Jobs</a>
-                  </li>
-                </ul>
-              </div>
-              <div class="mt-10 md:mt-0">
-                <h3 class="text-sm font-semibold leading-6 text-white">Legal</h3>
-                <ul role="list" class="mt-6 space-y-4">
-                  <li>
-                    <a href="#" class="text-sm leading-6 text-gray-300 hover:text-white">Claim</a>
-                  </li>
-                  <li>
-                    <a href="#" class="text-sm leading-6 text-gray-300 hover:text-white">Privacy</a>
-                  </li>
-                  <li>
-                    <a href="#" class="text-sm leading-6 text-gray-300 hover:text-white">Terms</a>
-                  </li>
-                </ul>
-              </div>
+            <p class="text-sm text-gray-300">Weekly notes on product, growth, and shipping calmly.</p>
+          </div>
+          <div class="grid gap-8 sm:grid-cols-2 lg:col-span-2 lg:grid-cols-3">
+            <div>
+              <h3 class="text-sm font-semibold">Product</h3>
+              <ul class="mt-3 space-y-2 text-sm text-gray-300">
+                <li><a href="#" class="hover:text-indigo-200">Overview</a></li>
+                <li><a href="#" class="hover:text-indigo-200">Pricing</a></li>
+                <li><a href="#" class="hover:text-indigo-200">Integrations</a></li>
+                <li><a href="#" class="hover:text-indigo-200">Status</a></li>
+              </ul>
+            </div>
+            <div>
+              <h3 class="text-sm font-semibold">Company</h3>
+              <ul class="mt-3 space-y-2 text-sm text-gray-300">
+                <li><a href="#" class="hover:text-indigo-200">About</a></li>
+                <li><a href="#" class="hover:text-indigo-200">Careers</a></li>
+                <li><a href="#" class="hover:text-indigo-200">Press</a></li>
+                <li><a href="#" class="hover:text-indigo-200">Contact</a></li>
+              </ul>
+            </div>
+            <div>
+              <h3 class="text-sm font-semibold">Legal</h3>
+              <ul class="mt-3 space-y-2 text-sm text-gray-300">
+                <li><a href="#" class="hover:text-indigo-200">Privacy</a></li>
+                <li><a href="#" class="hover:text-indigo-200">Terms</a></li>
+                <li><a href="#" class="hover:text-indigo-200">DPA</a></li>
+              </ul>
             </div>
           </div>
-          <div class="mt-10 xl:mt-0">
-            <h3 class="text-sm font-semibold leading-6 text-white">Subscribe to our newsletter</h3>
-            <p class="mt-2 text-sm leading-6 text-gray-300">The latest news, articles, and resources, sent to your inbox weekly.</p>
-            <form class="mt-6 sm:flex sm:max-w-md">
+          <div class="space-y-3">
+            <h3 class="text-sm font-semibold">Subscribe</h3>
+            <p class="text-sm text-gray-300">Join 14,000 founders reading our Friday digest.</p>
+            <form class="flex flex-col gap-3 sm:flex-row sm:items-center">
               <label for="email-address" class="sr-only">Email address</label>
-              <input type="email" name="email-address" id="email-address" autocomplete="email" required class="w-full min-w-0 appearance-none rounded-md border-0 bg-white/5 px-3 py-1.5 text-base text-white shadow-sm ring-1 ring-inset ring-white/10 placeholder:text-gray-500 focus:ring-2 focus:ring-inset focus:ring-indigo-500 sm:w-64 sm:text-sm sm:leading-6 xl:w-full" placeholder="Enter your email">
-              <div class="mt-4 sm:ml-4 sm:mt-0 sm:flex-shrink-0">
-                <button type="submit" class="flex w-full items-center justify-center rounded-md bg-indigo-500 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-indigo-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-500">Subscribe</button>
-              </div>
+              <input type="email" name="email-address" id="email-address" autocomplete="email" required class="w-full rounded-md border border-white/10 bg-white/5 px-3 py-2 text-sm text-white placeholder:text-gray-400 focus:border-indigo-300 focus:outline-none focus:ring-2 focus:ring-indigo-400/70" placeholder="you@example.com">
+              <button type="submit" class="inline-flex justify-center rounded-md bg-indigo-500 px-3 py-2 text-sm font-semibold text-white shadow hover:bg-indigo-400">Subscribe</button>
             </form>
           </div>
         </div>
-        <div class="mt-16 border-t border-white/10 pt-8 sm:mt-20 lg:mt-24">
-          <p class="text-xs leading-5 text-gray-400">&copy; 2020 Your Company, Inc. All rights reserved.</p>
+        <div class="mt-12 flex flex-wrap items-center gap-3 text-xs text-gray-400">
+          <span>&copy; 2025 Northwind</span>
+          <span class="text-gray-600">•</span>
+          <a href="#" class="hover:text-indigo-200">Security</a>
+          <a href="#" class="hover:text-indigo-200">Cookie policy</a>
         </div>
       </div>
     </footer>

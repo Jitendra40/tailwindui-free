@@ -60,7 +60,7 @@ export const navigationData = [
             { name: 'Steps', href: '/steps', icon: ListOrdered, color: 'text-teal-600', bg: 'bg-teal-50' },
             { name: 'Skip Link', href: '/skip-link', icon: ArrowLeftRight, color: 'text-purple-500', bg: 'bg-purple-50' },
             { name: 'Menus', href: '/menus', icon: MoreHorizontal, color: 'text-blue-400', bg: 'bg-blue-50' },
-            { name: 'Dropdowns', href: '/dropdowns', icon: Menu, color: 'text-violet-500', bg: 'bg-violet-50' },
+
         ]
     },
     {
@@ -115,6 +115,12 @@ export const navigationData = [
             { name: 'Shopping Carts', href: '/shopping-carts', icon: Layout, color: 'text-indigo-500', bg: 'bg-indigo-50' },
             { name: 'Product Overviews', href: '/product-overviews', icon: Layout, color: 'text-indigo-500', bg: 'bg-indigo-50' },
             { name: 'Category Previews', href: '/category-previews', icon: Layout, color: 'text-indigo-500', bg: 'bg-indigo-50' },
+        ]
+    },
+    {
+        title: "Pages",
+        items: [
+            { name: 'Pages', href: '/pages', icon: Layout, color: 'text-indigo-500', bg: 'bg-indigo-50' },
         ]
     }
 ]

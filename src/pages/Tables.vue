@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import SimpleTable from "@/components/Tables/SimpleTable.vue"
+import EnhancedTable from "@/components/Tables/EnhancedTable.vue"
 import StripedTable from "@/components/Tables/StripedTable.vue"
 import SortableTable from "@/components/Tables/SortableTable.vue"
 import ActionTable from "@/components/Tables/ActionTable.vue"
@@ -20,6 +21,7 @@ const { setItems } = useTOC()
 onMounted(() => {
   setItems([
     { id: 'simple', label: 'Simple Table' },
+    { id: 'enhanced', label: 'Enhanced Table' },
     { id: 'striped', label: 'Striped Table' },
     { id: 'sortable', label: 'Sortable Table' },
     { id: 'action', label: 'Action Table' },
@@ -45,6 +47,9 @@ onMounted(() => {
     <div class="grid gap-10">
       <div id="simple" class="scroll-mt-24">
         <SimpleTable />
+      </div>
+      <div id="enhanced" class="scroll-mt-24">
+        <EnhancedTable />
       </div>
       <div id="striped" class="scroll-mt-24">
         <StripedTable />

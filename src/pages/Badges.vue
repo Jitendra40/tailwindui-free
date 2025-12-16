@@ -1,5 +1,8 @@
 <script setup lang="ts">
 import BaseBadges from "@/components/Badges/Base.vue"
+import AnimatedFill from "@/components/Badges/AnimatedFill.vue"
+import Glass from "@/components/Badges/Glass.vue"
+import Closable from "@/components/Badges/Closable.vue"
 import BadgeIconLight from "@/components/Badges/BadgeIconLight.vue"
 import LeadStatus from "@/components/Badges/LeadStatus.vue"
 import SalesPipeline from "@/components/Badges/SalesPipeline.vue"
@@ -15,6 +18,9 @@ const { setItems } = useTOC()
 onMounted(() => {
   setItems([
     { id: 'base', label: 'Base Badges' },
+    { id: 'animated-fill', label: 'Animated Fill' },
+    { id: 'glass', label: 'Glassmorphism' },
+    { id: 'closable', label: 'Closable / Tags' },
     { id: 'count', label: 'Badge Count' },
     { id: 'icon-light', label: 'Icon Light' },
     { id: 'lead-status', label: 'Lead Status' },
@@ -35,6 +41,15 @@ onMounted(() => {
     <div class="space-y-8">
       <div id="base" class="scroll-mt-24">
         <BaseBadges />
+      </div>
+      <div id="animated-fill" class="scroll-mt-24">
+        <AnimatedFill />
+      </div>
+      <div id="glass" class="scroll-mt-24">
+        <Glass />
+      </div>
+      <div id="closable" class="scroll-mt-24">
+        <Closable />
       </div>
       <div id="count" class="scroll-mt-24">
         <BadgeCount />

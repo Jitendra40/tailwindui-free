@@ -2,82 +2,53 @@
 import PreviewWrapper from "@/components/PreviewWrapper.vue"
 
 const htmlBlock = `
-<section class="bg-gray-900 py-24 sm:py-32">
-  <div class="mx-auto max-w-7xl px-6 lg:px-8">
-    <div class="mx-auto grid max-w-2xl grid-cols-1 lg:mx-0 lg:max-w-none lg:grid-cols-2">
-      <div class="flex flex-col pb-10 sm:pb-16 lg:pb-0 lg:pr-8 xl:pr-20">
-        <img class="h-12 self-start" src="https://images.unsplash.com/featured?auto=format&fit=crop&w=220&q=80&sig=61" alt="">
-        <figure class="mt-10 flex flex-auto flex-col justify-between">
-          <blockquote class="text-lg leading-8 text-white">
-            <p>“Amet amet eget scelerisque tellus sit neque faucibus non eleifend. Integer eu praesent at a. Ornare arcu gravida natoque erat et cursus tortor consequat at. Vulputate gravida sociis enim nullam ultricies habitant malesuada lorem ac.”</p>
-          </blockquote>
-          <figcaption class="mt-10 flex items-center gap-x-6">
-            <img class="h-14 w-14 rounded-full bg-gray-800" src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt="">
-            <div class="text-base">
-              <div class="font-semibold text-white">Judith Black</div>
-              <div class="mt-1 text-gray-400">CEO of Tuple</div>
+<div class="space-y-4">
+  <!-- Review 1 -->
+  <div class="flex gap-4 rounded-lg bg-gray-50 p-4 transition-colors hover:bg-gray-100">
+     <div class="flex-none">
+        <img class="h-10 w-10 rounded-full bg-gray-100 object-cover" src="https://images.unsplash.com/photo-1595152772835-219674b2a8a6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt="" />
+     </div>
+     <div class="flex-1">
+        <div class="flex items-center justify-between">
+            <h4 class="text-xs font-bold text-gray-900">Mark Edwards</h4>
+            <div class="flex items-center gap-1">
+               <span class="inline-flex items-center rounded-sm bg-green-50 px-1 py-0.5 text-[0.6rem] font-medium text-green-700 ring-1 ring-inset ring-green-600/20">Verified</span>
             </div>
-          </figcaption>
-        </figure>
-      </div>
-      <div class="flex flex-col border-t border-white/10 pt-10 sm:pt-16 lg:border-l lg:border-t-0 lg:pl-8 lg:pt-0 xl:pl-20">
-        <img class="h-12 self-start" src="https://images.unsplash.com/featured?auto=format&fit=crop&w=220&q=80&sig=62" alt="">
-        <figure class="mt-10 flex flex-auto flex-col justify-between">
-          <blockquote class="text-lg leading-8 text-white">
-            <p>“Excepteur veniam labore ullamco eiusmod. Pariatur consequat proident duis dolore nulla veniam reprehenderit nisi officia voluptate incididunt exercitation exercitation elit. Nostrud veniam sint dolor nisi repudiandae.”</p>
-          </blockquote>
-          <figcaption class="mt-10 flex items-center gap-x-6">
-            <img class="h-14 w-14 rounded-full bg-gray-800" src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt="">
-            <div class="text-base">
-              <div class="font-semibold text-white">Joseph Rodriguez</div>
-              <div class="mt-1 text-gray-400">CEO of Reform</div>
-            </div>
-          </figcaption>
-        </figure>
-      </div>
-    </div>
+        </div>
+        <div class="mt-1 flex items-center text-[0.65rem] text-gray-500">
+           <span>Product:</span>
+           <span class="ml-1 font-medium text-gray-700">Enterprise License</span>
+        </div>
+        <p class="mt-2 text-xs leading-snug text-gray-600">"The scalability of this platform is unmatched. We migrated our entire database over the weekend without a hitch."</p>
+     </div>
   </div>
-</section>
+
+  <!-- Review 2 -->
+    <div class="flex gap-4 rounded-lg bg-gray-50 p-4 transition-colors hover:bg-gray-100">
+     <div class="flex-none">
+        <div class="flex h-10 w-10 items-center justify-center rounded-full bg-indigo-100 text-xs font-bold text-indigo-700">JL</div>
+     </div>
+     <div class="flex-1">
+        <div class="flex items-center justify-between">
+            <h4 class="text-xs font-bold text-gray-900">Jessica Lee</h4>
+             <span class="text-[0.65rem] text-gray-400">Mar 12</span>
+        </div>
+         <div class="mt-1 flex items-center text-[0.65rem] text-gray-500">
+           <span>Product:</span>
+           <span class="ml-1 font-medium text-gray-700">Team Plan</span>
+        </div>
+        <p class="mt-2 text-xs leading-snug text-gray-600">"Simple, effective, and beautifully designed. It just works."</p>
+     </div>
+  </div>
+</div>
 `
 </script>
 
 <template>
-  <PreviewWrapper title="Side-by-Side Reviews" description="Two dark themed reviews." :html-block="htmlBlock">
-    <div class="bg-gray-900 py-24 sm:py-32">
-      <div class="mx-auto max-w-7xl px-6 lg:px-8">
-        <div class="mx-auto grid max-w-2xl grid-cols-1 lg:mx-0 lg:max-w-none lg:grid-cols-2">
-          <div class="flex flex-col pb-10 sm:pb-16 lg:pb-0 lg:pr-8 xl:pr-20">
-            <img class="h-12 self-start" src="https://images.unsplash.com/featured?auto=format&fit=crop&w=220&q=80&sig=63" alt="">
-            <figure class="mt-10 flex flex-auto flex-col justify-between">
-              <blockquote class="text-lg leading-8 text-white">
-                <p>“Amet amet eget scelerisque tellus sit neque faucibus non eleifend. Integer eu praesent at a. Ornare arcu gravida natoque erat et cursus tortor consequat at. Vulputate gravida sociis enim nullam ultricies habitant malesuada lorem ac.”</p>
-              </blockquote>
-              <figcaption class="mt-10 flex items-center gap-x-6">
-                <img class="h-14 w-14 rounded-full bg-gray-800" src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt="">
-                <div class="text-base">
-                  <div class="font-semibold text-white">Judith Black</div>
-                  <div class="mt-1 text-gray-400">CEO of Tuple</div>
-                </div>
-              </figcaption>
-            </figure>
-          </div>
-          <div class="flex flex-col border-t border-white/10 pt-10 sm:pt-16 lg:border-l lg:border-t-0 lg:pl-8 lg:pt-0 xl:pl-20">
-            <img class="h-12 self-start" src="https://images.unsplash.com/featured?auto=format&fit=crop&w=220&q=80&sig=64" alt="">
-            <figure class="mt-10 flex flex-auto flex-col justify-between">
-              <blockquote class="text-lg leading-8 text-white">
-                <p>“Excepteur veniam labore ullamco eiusmod. Pariatur consequat proident duis dolore nulla veniam reprehenderit nisi officia voluptate incididunt exercitation exercitation elit. Nostrud veniam sint dolor nisi repudiandae.”</p>
-              </blockquote>
-              <figcaption class="mt-10 flex items-center gap-x-6">
-                <img class="h-14 w-14 rounded-full bg-gray-800" src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt="">
-                <div class="text-base">
-                  <div class="font-semibold text-white">Joseph Rodriguez</div>
-                  <div class="mt-1 text-gray-400">CEO of Reform</div>
-                </div>
-              </figcaption>
-            </figure>
-          </div>
-        </div>
-      </div>
-    </div>
-  </PreviewWrapper>
+  <PreviewWrapper 
+    title="Compact List Reviews" 
+    description="Minimalist list-style reviews great for comment sections or activity feeds." 
+    :html-block="htmlBlock" 
+    default-viewport="full"
+  />
 </template>

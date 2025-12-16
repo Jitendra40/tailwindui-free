@@ -2,6 +2,7 @@
 import SimpleStats from "@/components/Stats/SimpleStats.vue"
 import DarkGridStats from "@/components/Stats/DarkGridStats.vue"
 import SplitImageStats from "@/components/Stats/SplitImageStats.vue"
+import IconStat from "@/components/Stats/IconStat.vue"
 
 import { useTOC } from '@/composables/useTOC'
 import { onMounted } from 'vue'
@@ -11,8 +12,9 @@ const { setItems } = useTOC()
 onMounted(() => {
   setItems([
     { id: 'simple', label: 'Simple Stats' },
+    { id: 'icon', label: 'Stats with Action' },
     { id: 'dark-grid', label: 'Dark Grid' },
-    { id: 'split-image', label: 'Split with Image' },
+    { id: 'split-image', label: 'Mixed Media' },
   ])
 })
 </script>
@@ -27,6 +29,9 @@ onMounted(() => {
     <div class="space-y-8">
       <div id="simple" class="scroll-mt-24">
         <SimpleStats />
+      </div>
+      <div id="icon" class="scroll-mt-24">
+        <IconStat />
       </div>
       <div id="dark-grid" class="scroll-mt-24">
         <DarkGridStats />

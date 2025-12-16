@@ -11,10 +11,10 @@ const { setItems } = useTOC()
 
 onMounted(() => {
   setItems([
-    { id: 'simple', label: 'Simple Review' },
-    { id: 'grid', label: 'Grid Reviews' },
-    { id: 'side-by-side', label: 'Side By Side' },
-    { id: 'dark', label: 'Dark Review' },
+    { id: 'simple', label: 'Compact Single' },
+    { id: 'grid', label: 'Compact Grid' },
+    { id: 'side-by-side', label: 'Compact List' },
+    { id: 'dark', label: 'Dark Social Post' },
   ])
 })
 </script>

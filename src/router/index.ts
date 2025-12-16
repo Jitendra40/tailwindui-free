@@ -8,7 +8,6 @@ const Buttons = () => import('@/pages/Buttons.vue')
 const Checkboxes = () => import('@/pages/Checkboxes.vue')
 const DetailLists = () => import('@/pages/DetailLists.vue')
 const Dividers = () => import('@/pages/Dividers.vue')
-const Dropdowns = () => import('@/pages/Dropdowns.vue')
 const EmptyStates = () => import('@/pages/EmptyStates.vue')
 const FileUploaders = () => import('@/pages/FileUploaders.vue')
 const Filters = () => import('@/pages/Filters.vue')
@@ -51,6 +50,7 @@ const ProductCards = () => import('@/pages/ProductCards.vue')
 const ShoppingCarts = () => import('@/pages/ShoppingCarts.vue')
 const ProductOverviews = () => import('@/pages/ProductOverviews.vue')
 const CategoryPreviews = () => import('@/pages/CategoryPreviews.vue')
+const Pages = () => import('@/pages/Pages/Pages.vue')
 
 
 const routes = [
@@ -111,12 +111,7 @@ const routes = [
     component: Dividers,
     meta: { layout: 'Default' }
   },
-  {
-    path: '/dropdowns',
-    component: Dropdowns,
-    meta: { layout: 'Default' }
-  },
-  { path: '/dropdowns', component: Dropdowns, meta: { layout: 'Default' } },
+
   { path: '/cards', component: Cards, meta: { layout: 'Default' } },
   { path: '/modals', component: Modals, meta: { layout: 'Default' } },
   { path: '/auth', component: Auth, meta: { layout: 'Default' } },
@@ -142,6 +137,7 @@ const routes = [
   { path: '/shopping-carts', component: ShoppingCarts, meta: { layout: 'Default' } },
   { path: '/product-overviews', component: ProductOverviews, meta: { layout: 'Default' } },
   { path: '/category-previews', component: CategoryPreviews, meta: { layout: 'Default' } },
+  { path: '/pages', component: Pages, meta: { layout: 'Default' } },
 ]
 
 export const router = createRouter({

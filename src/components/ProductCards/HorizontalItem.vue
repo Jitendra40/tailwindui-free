@@ -2,27 +2,27 @@
 import PreviewWrapper from "@/components/PreviewWrapper.vue"
 
 const htmlBlock = `
-<div class="flex py-6 border-b border-gray-200">
-  <div class="h-24 w-24 flex-shrink-0 overflow-hidden rounded-md border border-gray-200 flex items-center justify-center bg-gray-100 text-gray-400">
-    <svg class="h-10 w-10" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>
+<div class="flex w-full max-w-md items-center gap-4 rounded-2xl border border-gray-200 bg-white p-4 shadow-sm">
+  <div class="relative h-24 w-24 overflow-hidden rounded-xl">
+    <img src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?auto=format&fit=crop&w=700&q=80" alt="Weekender bag" class="h-full w-full object-cover">
+    <span class="absolute left-2 top-2 rounded-full bg-white/90 px-2 py-0.5 text-[11px] font-semibold text-gray-900 shadow">Carry</span>
   </div>
-
-  <div class="ml-4 flex flex-1 flex-col">
-    <div>
-      <div class="flex justify-between text-base font-medium text-gray-900">
-        <h3>
-          <a href="#">Throwback Hip Bag</a>
-        </h3>
-        <p class="ml-4">$90.00</p>
+  <div class="flex flex-1 flex-col gap-2">
+    <div class="flex items-start justify-between gap-3">
+      <div>
+        <h3 class="text-sm font-semibold text-gray-900">Weekender Duffel</h3>
+        <p class="text-sm text-gray-500">Recycled nylon · 28L</p>
       </div>
-      <p class="mt-1 text-sm text-gray-500">Salmon</p>
+      <span class="rounded-full bg-gray-100 px-3 py-1 text-xs font-semibold text-gray-900">$98</span>
     </div>
-    <div class="flex flex-1 items-end justify-between text-sm">
-      <p class="text-gray-500">Qty 1</p>
-
-      <div class="flex">
-        <button type="button" class="font-medium text-indigo-600 hover:text-indigo-500">Remove</button>
+    <div class="flex items-center justify-between text-sm text-gray-500">
+      <div class="flex items-center gap-2">
+        <span class="h-2 w-2 rounded-full bg-emerald-500"></span>
+        <span>In stock</span>
+        <span class="text-gray-400">•</span>
+        <span>Qty 1</span>
       </div>
+      <button class="text-sm font-semibold text-indigo-600 hover:text-indigo-500">Move to bag</button>
     </div>
   </div>
 </div>
@@ -31,28 +31,28 @@ const htmlBlock = `
 
 <template>
   <PreviewWrapper title="Horizontal Item" description="Cart item style." :html-block="htmlBlock">
-    <div class="w-full max-w-sm">
-      <div class="flex py-6 border-b border-gray-200 bg-white">
-        <div class="h-24 w-24 flex-shrink-0 overflow-hidden rounded-md border border-gray-200 flex items-center justify-center bg-gray-100 text-gray-400">
-          <svg class="h-10 w-10" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>
+    <div class="flex justify-center">
+      <div class="flex w-full max-w-md items-center gap-4 rounded-2xl border border-gray-200 bg-white p-4 shadow-sm">
+        <div class="relative h-24 w-24 overflow-hidden rounded-xl">
+          <img src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?auto=format&fit=crop&w=700&q=80" alt="Weekender bag" class="h-full w-full object-cover">
+          <span class="absolute left-2 top-2 rounded-full bg-white/90 px-2 py-0.5 text-[11px] font-semibold text-gray-900 shadow">Carry</span>
         </div>
-
-        <div class="ml-4 flex flex-1 flex-col">
-          <div>
-            <div class="flex justify-between text-base font-medium text-gray-900">
-              <h3>
-                <a href="#">Throwback Hip Bag</a>
-              </h3>
-              <p class="ml-4">$90.00</p>
+        <div class="flex flex-1 flex-col gap-2">
+          <div class="flex items-start justify-between gap-3">
+            <div>
+              <h3 class="text-sm font-semibold text-gray-900">Weekender Duffel</h3>
+              <p class="text-sm text-gray-500">Recycled nylon · 28L</p>
             </div>
-            <p class="mt-1 text-sm text-gray-500">Salmon</p>
+            <span class="rounded-full bg-gray-100 px-3 py-1 text-xs font-semibold text-gray-900">$98</span>
           </div>
-          <div class="flex flex-1 items-end justify-between text-sm">
-            <p class="text-gray-500">Qty 1</p>
-
-            <div class="flex">
-              <button type="button" class="font-medium text-indigo-600 hover:text-indigo-500">Remove</button>
+          <div class="flex items-center justify-between text-sm text-gray-500">
+            <div class="flex items-center gap-2">
+              <span class="h-2 w-2 rounded-full bg-emerald-500"></span>
+              <span>In stock</span>
+              <span class="text-gray-400">•</span>
+              <span>Qty 1</span>
             </div>
+            <button class="text-sm font-semibold text-indigo-600 hover:text-indigo-500">Move to bag</button>
           </div>
         </div>
       </div>

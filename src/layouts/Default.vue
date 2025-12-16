@@ -24,7 +24,6 @@ import {
   SidebarTrigger,
 } from "@/components/ui/sidebar"
 import { Button } from "@/components/ui/button"
-import { Github } from "lucide-vue-next"
 
 const route = useRoute()
 const titleMap: Record<string, string> = {
@@ -54,6 +53,7 @@ const titleMap: Record<string, string> = {
   "/textareas": "Textareas",
   "/toggles": "Toggles",
   "/menus": "Menus",
+  "/pages": "Pages",
 }
 
 const pageTitle = computed(() => route.meta?.title || titleMap[route.path] || "Page")
@@ -89,8 +89,8 @@ watch(() => route.path, () => {
         </Breadcrumb>
         <div class="ml-auto flex items-center gap-2">
             <Button as="a" href="https://github.com/Jitendra40/tailwindui-free" target="_blank" variant="outline" size="sm">
-              <Github class="mr-2 h-4 w-4" />
-              Star on GitHub
+              
+              Open in GitHub
             </Button>
         </div>
       </header>

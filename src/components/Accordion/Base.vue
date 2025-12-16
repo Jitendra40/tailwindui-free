@@ -2,108 +2,60 @@
 import PreviewWrapper from "@/components/PreviewWrapper.vue"
 
 const htmlBlock = `
-<div class="max-w-2xl mx-auto space-y-3">
-  <details class="group rounded-xl border border-gray-200 bg-white shadow-sm open:ring-1 open:ring-blue-500/20 transition-all">
-    <summary class="flex cursor-pointer list-none items-center justify-between p-4 font-semibold text-gray-900 marker:hidden">
-      <span>How does the free trial work?</span>
-      <span class="flex items-center justify-center w-8 h-8 rounded-full bg-gray-50 text-gray-500 transition-all group-hover:bg-gray-100 group-open:bg-blue-600 group-open:text-white group-open:rotate-180">
-        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor" class="w-4 h-4">
-          <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
-        </svg>
-      </span>
+<div class="mx-auto max-w-lg divide-y divide-gray-100 overflow-hidden rounded-lg border border-gray-200 bg-white shadow-sm">
+  <details class="group">
+    <summary class="flex cursor-pointer items-center justify-between gap-1.5 p-4 text-gray-900 marker:hidden hover:bg-gray-50/50 transition-colors">
+      <h2 class="text-xs font-semibold uppercase tracking-wider text-gray-500">Project Settings</h2>
+      <svg class="h-4 w-4 text-gray-500 transition-transform duration-200 group-open:rotate-180" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
+      </svg>
     </summary>
-    <div class="px-4 pb-4 pt-1">
-      <p class="text-sm text-gray-600 leading-relaxed">You get 14 days of full access to all features. No credit card required. At the end of the trial, you can choose a plan or stay on the free tier.</p>
+    <div class="px-4 pb-4">
+      <p class="text-sm text-gray-600">Configure your project name, repository URL, and basic deployment settings here.</p>
     </div>
   </details>
 
-  <details class="group rounded-xl border border-gray-200 bg-white shadow-sm open:ring-1 open:ring-blue-500/20 transition-all" open>
-    <summary class="flex cursor-pointer list-none items-center justify-between p-4 font-semibold text-gray-900 marker:hidden">
-      <span>Can I change plans later?</span>
-      <span class="flex items-center justify-center w-8 h-8 rounded-full bg-gray-50 text-gray-500 transition-all group-hover:bg-gray-100 group-open:bg-blue-600 group-open:text-white group-open:rotate-180">
-        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor" class="w-4 h-4">
-          <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
-        </svg>
-      </span>
+  <details class="group" open>
+    <summary class="flex cursor-pointer items-center justify-between gap-1.5 p-4 text-gray-900 marker:hidden hover:bg-gray-50/50 transition-colors">
+      <h2 class="text-xs font-semibold uppercase tracking-wider text-indigo-600">Environment Variables</h2>
+      <svg class="h-4 w-4 text-indigo-600 transition-transform duration-200 group-open:rotate-180" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
+      </svg>
     </summary>
-    <div class="px-4 pb-4 pt-1">
-      <p class="text-sm text-gray-600 leading-relaxed">Yes, you can upgrade or downgrade your plan at any time from your account settings. Prorated charges will apply immediately.</p>
-      <div class="mt-3 flex gap-3">
-        <a href="#" class="text-sm font-medium text-blue-600 hover:text-blue-700">View pricing</a>
-        <a href="#" class="text-sm font-medium text-blue-600 hover:text-blue-700">Contact sales</a>
+    <div class="px-4 pb-4">
+      <div class="space-y-3">
+        <div class="flex items-center justify-between rounded-md bg-gray-50 px-3 py-2 text-xs">
+          <span class="font-mono text-gray-600">API_KEY</span>
+          <span class="font-mono text-gray-400">••••••••••••••••</span>
+        </div>
+        <div class="flex items-center justify-between rounded-md bg-gray-50 px-3 py-2 text-xs">
+          <span class="font-mono text-gray-600">DATABASE_URL</span>
+          <span class="font-mono text-gray-400">postgres://...</span>
+        </div>
       </div>
     </div>
   </details>
-  
-  <details class="group rounded-xl border border-gray-200 bg-white shadow-sm open:ring-1 open:ring-blue-500/20 transition-all">
-    <summary class="flex cursor-pointer list-none items-center justify-between p-4 font-semibold text-gray-900 marker:hidden">
-      <span>Is my data secure?</span>
-      <span class="flex items-center justify-center w-8 h-8 rounded-full bg-gray-50 text-gray-500 transition-all group-hover:bg-gray-100 group-open:bg-blue-600 group-open:text-white group-open:rotate-180">
-        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor" class="w-4 h-4">
-          <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
-        </svg>
-      </span>
+
+  <details class="group">
+    <summary class="flex cursor-pointer items-center justify-between gap-1.5 p-4 text-gray-900 marker:hidden hover:bg-gray-50/50 transition-colors">
+      <h2 class="text-xs font-semibold uppercase tracking-wider text-gray-500">Integrations</h2>
+      <svg class="h-4 w-4 text-gray-500 transition-transform duration-200 group-open:rotate-180" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
+      </svg>
     </summary>
-    <div class="px-4 pb-4 pt-1">
-      <p class="text-sm text-gray-600 leading-relaxed">We use industry-standard encryption for data in transit and at rest. We are SOC 2 compliant.</p>
+    <div class="px-4 pb-4">
+      <p class="text-sm text-gray-600">Connect third-party services like Slack, GitHub, or Jira to streamline your workflow.</p>
     </div>
   </details>
-</div>`
+</div>
+`
 </script>
 
 <template>
   <PreviewWrapper
-    title="Standard Accordion"
-    description="Clean, bordered accordion with circular toggle indicators."
+    title="Compact Accordion"
+    description="Minimalist, dense accordion group perfect for settings sidebar or tool panels."
     :html-block="htmlBlock"
     default-viewport="full"
-  >
-    <div class="max-w-2xl mx-auto space-y-3">
-      <details class="group rounded-xl border border-gray-200 bg-white shadow-sm open:ring-1 open:ring-blue-500/20 transition-all">
-        <summary class="flex cursor-pointer list-none items-center justify-between p-4 font-semibold text-gray-900 marker:hidden">
-          <span>How does the free trial work?</span>
-          <span class="flex items-center justify-center w-8 h-8 rounded-full bg-gray-50 text-gray-500 transition-all group-hover:bg-gray-100 group-open:bg-blue-600 group-open:text-white group-open:rotate-180">
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor" class="w-4 h-4">
-              <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
-            </svg>
-          </span>
-        </summary>
-        <div class="px-4 pb-4 pt-1">
-          <p class="text-sm text-gray-600 leading-relaxed">You get 14 days of full access to all features. No credit card required. At the end of the trial, you can choose a plan or stay on the free tier.</p>
-        </div>
-      </details>
-    
-      <details class="group rounded-xl border border-gray-200 bg-white shadow-sm open:ring-1 open:ring-blue-500/20 transition-all" open>
-        <summary class="flex cursor-pointer list-none items-center justify-between p-4 font-semibold text-gray-900 marker:hidden">
-          <span>Can I change plans later?</span>
-          <span class="flex items-center justify-center w-8 h-8 rounded-full bg-gray-50 text-gray-500 transition-all group-hover:bg-gray-100 group-open:bg-blue-600 group-open:text-white group-open:rotate-180">
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor" class="w-4 h-4">
-              <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
-            </svg>
-          </span>
-        </summary>
-        <div class="px-4 pb-4 pt-1">
-          <p class="text-sm text-gray-600 leading-relaxed">Yes, you can upgrade or downgrade your plan at any time from your account settings. Prorated charges will apply immediately.</p>
-          <div class="mt-3 flex gap-3">
-            <a href="#" class="text-sm font-medium text-blue-600 hover:text-blue-700">View pricing</a>
-            <a href="#" class="text-sm font-medium text-blue-600 hover:text-blue-700">Contact sales</a>
-          </div>
-        </div>
-      </details>
-      
-      <details class="group rounded-xl border border-gray-200 bg-white shadow-sm open:ring-1 open:ring-blue-500/20 transition-all">
-        <summary class="flex cursor-pointer list-none items-center justify-between p-4 font-semibold text-gray-900 marker:hidden">
-          <span>Is my data secure?</span>
-          <span class="flex items-center justify-center w-8 h-8 rounded-full bg-gray-50 text-gray-500 transition-all group-hover:bg-gray-100 group-open:bg-blue-600 group-open:text-white group-open:rotate-180">
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor" class="w-4 h-4">
-              <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
-            </svg>
-          </span>
-        </summary>
-        <div class="px-4 pb-4 pt-1">
-          <p class="text-sm text-gray-600 leading-relaxed">We use industry-standard encryption for data in transit and at rest. We are SOC 2 compliant.</p>
-        </div>
-      </details>
-    </div>
-  </PreviewWrapper>
+  />
 </template>
