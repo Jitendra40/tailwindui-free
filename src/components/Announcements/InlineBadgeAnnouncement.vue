@@ -7,7 +7,7 @@ const htmlBlock = `
     <div class="flex items-center gap-x-3">
         <span class="inline-flex items-center rounded-md bg-green-50 px-2 py-1 text-xs font-medium text-green-700 ring-1 ring-inset ring-green-600/20">New</span>
         <p class="text-sm leading-6 text-gray-900">
-           Welcome to the new dashboard! <a href="#" class="whitespace-nowrap font-semibold">Take a tour <span aria-hidden="true">&rarr;</span></a>
+           Welcome to the new dashboard! <a href="javascript:void(0)" class="whitespace-nowrap font-semibold">Take a tour <span aria-hidden="true">&rarr;</span></a>
         </p>
     </div>
     <div class="flex flex-1 justify-end">
@@ -30,7 +30,7 @@ const htmlBlock = `
         <div class="flex items-center gap-x-3">
             <span class="inline-flex items-center rounded-md bg-green-50 px-2 py-1 text-xs font-medium text-green-700 ring-1 ring-inset ring-green-600/20">New</span>
             <p class="text-sm leading-6 text-gray-900">
-               Welcome to the new dashboard! <a href="#" class="whitespace-nowrap font-semibold">Take a tour <span aria-hidden="true">&rarr;</span></a>
+               Welcome to the new dashboard! <a href="javascript:void(0)" class="whitespace-nowrap font-semibold">Take a tour <span aria-hidden="true">&rarr;</span></a>
             </p>
         </div>
         <div class="flex flex-1 justify-end">

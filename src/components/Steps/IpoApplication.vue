@@ -8,7 +8,7 @@ const htmlBlock = `
     
     <!-- Step 1: Complete -->
     <li class="relative md:flex md:flex-1">
-      <a href="#" class="group flex w-full items-center">
+      <a href="javascript:void(0)" class="group flex w-full items-center">
         <span class="flex items-center px-4 py-3 sm:px-6 sm:py-4 text-sm font-medium">
           <span class="flex h-8 w-8 sm:h-10 sm:w-10 flex-shrink-0 items-center justify-center rounded-full bg-indigo-600 group-hover:bg-indigo-700 transition-colors">
             <svg class="h-5 w-5 sm:h-6 sm:w-6 text-white" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true">
@@ -28,7 +28,7 @@ const htmlBlock = `
 
     <!-- Step 2: Current -->
     <li class="relative md:flex md:flex-1">
-      <a href="#" class="flex items-center px-4 py-3 sm:px-6 sm:py-4 text-sm font-medium" aria-current="step">
+      <a href="javascript:void(0)" class="flex items-center px-4 py-3 sm:px-6 sm:py-4 text-sm font-medium" aria-current="step">
         <span class="flex h-8 w-8 sm:h-10 sm:w-10 flex-shrink-0 items-center justify-center rounded-full border-2 border-indigo-600">
           <span class="text-indigo-600 font-bold">02</span>
         </span>
@@ -44,7 +44,7 @@ const htmlBlock = `
 
     <!-- Step 3: Upcoming -->
     <li class="relative md:flex md:flex-1">
-      <a href="#" class="group flex items-center">
+      <a href="javascript:void(0)" class="group flex items-center">
         <span class="flex items-center px-4 py-3 sm:px-6 sm:py-4 text-sm font-medium">
           <span class="flex h-8 w-8 sm:h-10 sm:w-10 flex-shrink-0 items-center justify-center rounded-full border-2 border-gray-200 group-hover:border-gray-300 transition-colors">
             <span class="text-gray-500 group-hover:text-gray-700">03</span>
@@ -62,7 +62,7 @@ const htmlBlock = `
 
     <!-- Step 4: Upcoming -->
     <li class="relative md:flex md:flex-1">
-      <a href="#" class="group flex items-center">
+      <a href="javascript:void(0)" class="group flex items-center">
         <span class="flex items-center px-4 py-3 sm:px-6 sm:py-4 text-sm font-medium">
           <span class="flex h-8 w-8 sm:h-10 sm:w-10 flex-shrink-0 items-center justify-center rounded-full border-2 border-gray-200 group-hover:border-gray-300 transition-colors">
             <span class="text-gray-500 group-hover:text-gray-700">04</span>
@@ -80,7 +80,7 @@ const htmlBlock = `
 
     <!-- Step 5: Upcoming -->
     <li class="relative md:flex md:flex-1">
-      <a href="#" class="group flex items-center">
+      <a href="javascript:void(0)" class="group flex items-center">
         <span class="flex items-center px-4 py-3 sm:px-6 sm:py-4 text-sm font-medium">
           <span class="flex h-8 w-8 sm:h-10 sm:w-10 flex-shrink-0 items-center justify-center rounded-full border-2 border-gray-200 group-hover:border-gray-300 transition-colors">
             <span class="text-gray-500 group-hover:text-gray-700">05</span>

@@ -13,7 +13,7 @@ const htmlBlock = `
     <div class="flex items-center justify-between border-t border-gray-200 pt-4">
       <dt class="flex items-center text-sm text-gray-600">
         <span>Shipping estimate</span>
-        <a href="#" class="ml-2 flex-shrink-0 text-gray-400 hover:text-gray-500">
+        <a href="javascript:void(0)" class="ml-2 flex-shrink-0 text-gray-400 hover:text-gray-500">
           <span class="sr-only">Learn more about how shipping is calculated</span>
           <svg class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
             <path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zM8.94 6.94a.75.75 0 111.06-1.06 5.345 5.345 0 010 7.12.75.75 0 01-1.06-1.06 3.845 3.845 0 000-5zm2.44 6.44a.75.75 0 00-1.06-1.06 6.345 6.345 0 000 8.48.75.75 0 001.06-1.06 4.845 4.845 0 010-6.36z" clip-rule="evenodd" />
@@ -27,7 +27,7 @@ const htmlBlock = `
     <div class="flex items-center justify-between border-t border-gray-200 pt-4">
       <dt class="flex text-sm text-gray-600">
         <span>Tax estimate</span>
-        <a href="#" class="ml-2 flex-shrink-0 text-gray-400 hover:text-gray-500">
+        <a href="javascript:void(0)" class="ml-2 flex-shrink-0 text-gray-400 hover:text-gray-500">
           <span class="sr-only">Learn more about how tax is calculated</span>
           <svg class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
             <path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-8-3a1 1 0 00-.867.5 1 1 0 111.731-1A3 3 0 0113 8a3.001 3.001 0 01-2 2.83V11a1 1 0 11-2 0v-1a1 1 0 011-1 1 1 0 100-2zm0 8a1 1 0 100-2 1 1 0 000 2z" clip-rule="evenodd" />
@@ -63,7 +63,7 @@ const htmlBlock = `
           <div class="flex items-center justify-between border-t border-gray-200 pt-4">
             <dt class="flex items-center text-sm text-gray-600">
               <span>Shipping estimate</span>
-              <a href="#" class="ml-2 flex-shrink-0 text-gray-400 hover:text-gray-500">
+              <a href="javascript:void(0)" class="ml-2 flex-shrink-0 text-gray-400 hover:text-gray-500">
                 <span class="sr-only">Learn more about how shipping is calculated</span>
                 <svg class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
                   <path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-8-3a1 1 0 00-.867.5 1 1 0 111.731-1A3 3 0 0113 8a3.001 3.001 0 01-2 2.83V11a1 1 0 11-2 0v-1a1 1 0 011-1 1 1 0 100-2zm0 8a1 1 0 100-2 1 1 0 000 2z" clip-rule="evenodd" />
@@ -75,7 +75,7 @@ const htmlBlock = `
           <div class="flex items-center justify-between border-t border-gray-200 pt-4">
             <dt class="flex text-sm text-gray-600">
               <span>Tax estimate</span>
-              <a href="#" class="ml-2 flex-shrink-0 text-gray-400 hover:text-gray-500">
+              <a href="javascript:void(0)" class="ml-2 flex-shrink-0 text-gray-400 hover:text-gray-500">
                 <span class="sr-only">Learn more about how tax is calculated</span>
                   <svg class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
                   <path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-8-3a1 1 0 00-.867.5 1 1 0 111.731-1A3 3 0 0113 8a3.001 3.001 0 01-2 2.83V11a1 1 0 11-2 0v-1a1 1 0 011-1 1 1 0 100-2zm0 8a1 1 0 100-2 1 1 0 000 2z" clip-rule="evenodd" />

@@ -17,9 +17,9 @@ const htmlBlock = `
           <p class="truncate text-sm font-bold text-gray-900 mt-0.5">tom@example.com</p>
         </div>
         <div class="p-1.5 space-y-0.5">
-          <a href="#" class="block rounded-xl px-4 py-2.5 text-sm font-medium text-gray-600 hover:bg-gray-50 hover:text-gray-900 transition-colors">Account settings</a>
-          <a href="#" class="block rounded-xl px-4 py-2.5 text-sm font-medium text-gray-600 hover:bg-gray-50 hover:text-gray-900 transition-colors">Support</a>
-          <a href="#" class="block rounded-xl px-4 py-2.5 text-sm font-medium text-gray-600 hover:bg-gray-50 hover:text-gray-900 transition-colors">License</a>
+          <a href="javascript:void(0)" class="block rounded-xl px-4 py-2.5 text-sm font-medium text-gray-600 hover:bg-gray-50 hover:text-gray-900 transition-colors">Account settings</a>
+          <a href="javascript:void(0)" class="block rounded-xl px-4 py-2.5 text-sm font-medium text-gray-600 hover:bg-gray-50 hover:text-gray-900 transition-colors">Support</a>
+          <a href="javascript:void(0)" class="block rounded-xl px-4 py-2.5 text-sm font-medium text-gray-600 hover:bg-gray-50 hover:text-gray-900 transition-colors">License</a>
         </div>
         <div class="p-1.5 bg-gray-50/50 border-t border-gray-100">
           <form method="POST" action="#">

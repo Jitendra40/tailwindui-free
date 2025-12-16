@@ -15,11 +15,11 @@ const htmlBlock = `
         
          <div class="absolute right-0 z-10 mt-2 w-48 origin-top-right rounded-2xl bg-white shadow-2xl ring-1 ring-black/5 focus:outline-none p-1.5 transform opacity-0 scale-95 -translate-y-2 duration-200 ease-out group-open:opacity-100 group-open:scale-100 group-open:translate-y-0 transition-all">
             <div class="space-y-0.5">
-                <a href="#" class="block rounded-xl px-4 py-2.5 text-sm font-medium text-gray-600 hover:bg-gray-50 hover:text-gray-900 transition-colors">View profile</a>
-                <a href="#" class="block rounded-xl px-4 py-2.5 text-sm font-medium text-gray-600 hover:bg-gray-50 hover:text-gray-900 transition-colors">Copy URL</a>
+                <a href="javascript:void(0)" class="block rounded-xl px-4 py-2.5 text-sm font-medium text-gray-600 hover:bg-gray-50 hover:text-gray-900 transition-colors">View profile</a>
+                <a href="javascript:void(0)" class="block rounded-xl px-4 py-2.5 text-sm font-medium text-gray-600 hover:bg-gray-50 hover:text-gray-900 transition-colors">Copy URL</a>
             </div>
             <div class="mt-1.5 pt-1.5 border-t border-gray-100">
-                <a href="#" class="block rounded-xl px-4 py-2.5 text-sm font-medium text-red-600 hover:bg-red-50 transition-colors">Block user</a>
+                <a href="javascript:void(0)" class="block rounded-xl px-4 py-2.5 text-sm font-medium text-red-600 hover:bg-red-50 transition-colors">Block user</a>
             </div>
         </div>
    </details>

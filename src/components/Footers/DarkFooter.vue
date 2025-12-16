@@ -13,16 +13,16 @@ const htmlBlock = `
             <h3 class="text-sm font-semibold leading-6 text-white">Solutions</h3>
             <ul role="list" class="mt-6 space-y-4">
               <li>
-                <a href="#" class="text-sm leading-6 text-gray-300 hover:text-white">Marketing</a>
+                <a href="javascript:void(0)" class="text-sm leading-6 text-gray-300 hover:text-white">Marketing</a>
               </li>
               <li>
-                <a href="#" class="text-sm leading-6 text-gray-300 hover:text-white">Analytics</a>
+                <a href="javascript:void(0)" class="text-sm leading-6 text-gray-300 hover:text-white">Analytics</a>
               </li>
               <li>
-                <a href="#" class="text-sm leading-6 text-gray-300 hover:text-white">Commerce</a>
+                <a href="javascript:void(0)" class="text-sm leading-6 text-gray-300 hover:text-white">Commerce</a>
               </li>
               <li>
-                <a href="#" class="text-sm leading-6 text-gray-300 hover:text-white">Insights</a>
+                <a href="javascript:void(0)" class="text-sm leading-6 text-gray-300 hover:text-white">Insights</a>
               </li>
             </ul>
           </div>
@@ -30,16 +30,16 @@ const htmlBlock = `
             <h3 class="text-sm font-semibold leading-6 text-white">Support</h3>
             <ul role="list" class="mt-6 space-y-4">
               <li>
-                <a href="#" class="text-sm leading-6 text-gray-300 hover:text-white">Pricing</a>
+                <a href="javascript:void(0)" class="text-sm leading-6 text-gray-300 hover:text-white">Pricing</a>
               </li>
               <li>
-                <a href="#" class="text-sm leading-6 text-gray-300 hover:text-white">Documentation</a>
+                <a href="javascript:void(0)" class="text-sm leading-6 text-gray-300 hover:text-white">Documentation</a>
               </li>
               <li>
-                <a href="#" class="text-sm leading-6 text-gray-300 hover:text-white">Guides</a>
+                <a href="javascript:void(0)" class="text-sm leading-6 text-gray-300 hover:text-white">Guides</a>
               </li>
               <li>
-                <a href="#" class="text-sm leading-6 text-gray-300 hover:text-white">API Status</a>
+                <a href="javascript:void(0)" class="text-sm leading-6 text-gray-300 hover:text-white">API Status</a>
               </li>
             </ul>
           </div>
@@ -49,16 +49,16 @@ const htmlBlock = `
             <h3 class="text-sm font-semibold leading-6 text-white">Company</h3>
             <ul role="list" class="mt-6 space-y-4">
               <li>
-                <a href="#" class="text-sm leading-6 text-gray-300 hover:text-white">About</a>
+                <a href="javascript:void(0)" class="text-sm leading-6 text-gray-300 hover:text-white">About</a>
               </li>
               <li>
-                <a href="#" class="text-sm leading-6 text-gray-300 hover:text-white">Blog</a>
+                <a href="javascript:void(0)" class="text-sm leading-6 text-gray-300 hover:text-white">Blog</a>
               </li>
               <li>
-                <a href="#" class="text-sm leading-6 text-gray-300 hover:text-white">Jobs</a>
+                <a href="javascript:void(0)" class="text-sm leading-6 text-gray-300 hover:text-white">Jobs</a>
               </li>
               <li>
-                <a href="#" class="text-sm leading-6 text-gray-300 hover:text-white">Press</a>
+                <a href="javascript:void(0)" class="text-sm leading-6 text-gray-300 hover:text-white">Press</a>
               </li>
             </ul>
           </div>
@@ -66,13 +66,13 @@ const htmlBlock = `
             <h3 class="text-sm font-semibold leading-6 text-white">Legal</h3>
             <ul role="list" class="mt-6 space-y-4">
               <li>
-                <a href="#" class="text-sm leading-6 text-gray-300 hover:text-white">Claim</a>
+                <a href="javascript:void(0)" class="text-sm leading-6 text-gray-300 hover:text-white">Claim</a>
               </li>
               <li>
-                <a href="#" class="text-sm leading-6 text-gray-300 hover:text-white">Privacy</a>
+                <a href="javascript:void(0)" class="text-sm leading-6 text-gray-300 hover:text-white">Privacy</a>
               </li>
               <li>
-                <a href="#" class="text-sm leading-6 text-gray-300 hover:text-white">Terms</a>
+                <a href="javascript:void(0)" class="text-sm leading-6 text-gray-300 hover:text-white">Terms</a>
               </li>
             </ul>
           </div>
@@ -97,16 +97,16 @@ const htmlBlock = `
                 <h3 class="text-sm font-semibold leading-6 text-white">Solutions</h3>
                 <ul role="list" class="mt-6 space-y-4">
                   <li>
-                    <a href="#" class="text-sm leading-6 text-gray-300 hover:text-white">Marketing</a>
+                    <a href="javascript:void(0)" class="text-sm leading-6 text-gray-300 hover:text-white">Marketing</a>
                   </li>
                   <li>
-                    <a href="#" class="text-sm leading-6 text-gray-300 hover:text-white">Analytics</a>
+                    <a href="javascript:void(0)" class="text-sm leading-6 text-gray-300 hover:text-white">Analytics</a>
                   </li>
                   <li>
-                    <a href="#" class="text-sm leading-6 text-gray-300 hover:text-white">Commerce</a>
+                    <a href="javascript:void(0)" class="text-sm leading-6 text-gray-300 hover:text-white">Commerce</a>
                   </li>
                   <li>
-                    <a href="#" class="text-sm leading-6 text-gray-300 hover:text-white">Insights</a>
+                    <a href="javascript:void(0)" class="text-sm leading-6 text-gray-300 hover:text-white">Insights</a>
                   </li>
                 </ul>
               </div>
@@ -114,16 +114,16 @@ const htmlBlock = `
                 <h3 class="text-sm font-semibold leading-6 text-white">Support</h3>
                 <ul role="list" class="mt-6 space-y-4">
                   <li>
-                    <a href="#" class="text-sm leading-6 text-gray-300 hover:text-white">Pricing</a>
+                    <a href="javascript:void(0)" class="text-sm leading-6 text-gray-300 hover:text-white">Pricing</a>
                   </li>
                   <li>
-                    <a href="#" class="text-sm leading-6 text-gray-300 hover:text-white">Documentation</a>
+                    <a href="javascript:void(0)" class="text-sm leading-6 text-gray-300 hover:text-white">Documentation</a>
                   </li>
                   <li>
-                    <a href="#" class="text-sm leading-6 text-gray-300 hover:text-white">Guides</a>
+                    <a href="javascript:void(0)" class="text-sm leading-6 text-gray-300 hover:text-white">Guides</a>
                   </li>
                   <li>
-                    <a href="#" class="text-sm leading-6 text-gray-300 hover:text-white">API Status</a>
+                    <a href="javascript:void(0)" class="text-sm leading-6 text-gray-300 hover:text-white">API Status</a>
                   </li>
                 </ul>
               </div>
@@ -133,16 +133,16 @@ const htmlBlock = `
                 <h3 class="text-sm font-semibold leading-6 text-white">Company</h3>
                 <ul role="list" class="mt-6 space-y-4">
                   <li>
-                    <a href="#" class="text-sm leading-6 text-gray-300 hover:text-white">About</a>
+                    <a href="javascript:void(0)" class="text-sm leading-6 text-gray-300 hover:text-white">About</a>
                   </li>
                   <li>
-                    <a href="#" class="text-sm leading-6 text-gray-300 hover:text-white">Blog</a>
+                    <a href="javascript:void(0)" class="text-sm leading-6 text-gray-300 hover:text-white">Blog</a>
                   </li>
                   <li>
-                    <a href="#" class="text-sm leading-6 text-gray-300 hover:text-white">Jobs</a>
+                    <a href="javascript:void(0)" class="text-sm leading-6 text-gray-300 hover:text-white">Jobs</a>
                   </li>
                   <li>
-                    <a href="#" class="text-sm leading-6 text-gray-300 hover:text-white">Press</a>
+                    <a href="javascript:void(0)" class="text-sm leading-6 text-gray-300 hover:text-white">Press</a>
                   </li>
                 </ul>
               </div>
@@ -150,13 +150,13 @@ const htmlBlock = `
                 <h3 class="text-sm font-semibold leading-6 text-white">Legal</h3>
                 <ul role="list" class="mt-6 space-y-4">
                   <li>
-                    <a href="#" class="text-sm leading-6 text-gray-300 hover:text-white">Claim</a>
+                    <a href="javascript:void(0)" class="text-sm leading-6 text-gray-300 hover:text-white">Claim</a>
                   </li>
                   <li>
-                    <a href="#" class="text-sm leading-6 text-gray-300 hover:text-white">Privacy</a>
+                    <a href="javascript:void(0)" class="text-sm leading-6 text-gray-300 hover:text-white">Privacy</a>
                   </li>
                   <li>
-                    <a href="#" class="text-sm leading-6 text-gray-300 hover:text-white">Terms</a>
+                    <a href="javascript:void(0)" class="text-sm leading-6 text-gray-300 hover:text-white">Terms</a>
                   </li>
                 </ul>
               </div>

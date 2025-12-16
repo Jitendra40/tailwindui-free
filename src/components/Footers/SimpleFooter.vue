@@ -13,10 +13,10 @@ const htmlBlock = `
       <span>Northwind</span>
     </div>
     <div class="flex flex-wrap items-center justify-center gap-4 text-xs font-medium text-gray-600">
-      <a href="#" class="hover:text-indigo-600">Terms</a>
-      <a href="#" class="hover:text-indigo-600">Privacy</a>
-      <a href="#" class="hover:text-indigo-600">Security</a>
-      <a href="#" class="hover:text-indigo-600">Status</a>
+      <a href="javascript:void(0)" class="hover:text-indigo-600">Terms</a>
+      <a href="javascript:void(0)" class="hover:text-indigo-600">Privacy</a>
+      <a href="javascript:void(0)" class="hover:text-indigo-600">Security</a>
+      <a href="javascript:void(0)" class="hover:text-indigo-600">Status</a>
     </div>
     <p class="text-center text-xs text-gray-500">&copy; 2025 Northwind. All rights reserved.</p>
   </div>
@@ -37,10 +37,10 @@ const htmlBlock = `
           <span>Northwind</span>
         </div>
         <div class="flex flex-wrap items-center justify-center gap-4 text-xs font-medium text-gray-600">
-          <a href="#" class="hover:text-indigo-600">Terms</a>
-          <a href="#" class="hover:text-indigo-600">Privacy</a>
-          <a href="#" class="hover:text-indigo-600">Security</a>
-          <a href="#" class="hover:text-indigo-600">Status</a>
+          <a href="javascript:void(0)" class="hover:text-indigo-600">Terms</a>
+          <a href="javascript:void(0)" class="hover:text-indigo-600">Privacy</a>
+          <a href="javascript:void(0)" class="hover:text-indigo-600">Security</a>
+          <a href="javascript:void(0)" class="hover:text-indigo-600">Status</a>
         </div>
         <p class="text-center text-xs text-gray-500">&copy; 2025 Northwind. All rights reserved.</p>
       </div>

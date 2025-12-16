@@ -12,9 +12,9 @@ const htmlBlock = `
         </summary>
 
         <div class="absolute right-0 z-10 mt-3 w-56 origin-top-right rounded-2xl bg-white shadow-2xl ring-1 ring-black/5 focus:outline-none p-2 transform opacity-0 scale-95 -translate-y-2 duration-200 ease-out group-open:opacity-100 group-open:scale-100 group-open:translate-y-0 transition-all">
-          <a href="#" class="block rounded-xl px-4 py-2.5 text-sm font-medium text-gray-600 hover:bg-gray-50 hover:text-gray-900 transition-colors">Account settings</a>
-          <a href="#" class="block rounded-xl px-4 py-2.5 text-sm font-medium text-gray-600 hover:bg-gray-50 hover:text-gray-900 transition-colors">Support</a>
-          <a href="#" class="block rounded-xl px-4 py-2.5 text-sm font-medium text-gray-600 hover:bg-gray-50 hover:text-gray-900 transition-colors">License</a>
+          <a href="javascript:void(0)" class="block rounded-xl px-4 py-2.5 text-sm font-medium text-gray-600 hover:bg-gray-50 hover:text-gray-900 transition-colors">Account settings</a>
+          <a href="javascript:void(0)" class="block rounded-xl px-4 py-2.5 text-sm font-medium text-gray-600 hover:bg-gray-50 hover:text-gray-900 transition-colors">Support</a>
+          <a href="javascript:void(0)" class="block rounded-xl px-4 py-2.5 text-sm font-medium text-gray-600 hover:bg-gray-50 hover:text-gray-900 transition-colors">License</a>
           <div class="my-1.5 h-px bg-gray-100 mx-2"></div>
           <form method="POST" action="#">
             <button type="submit" class="block w-full rounded-xl px-4 py-2.5 text-left text-sm font-medium text-gray-600 hover:bg-red-50 hover:text-red-600 transition-colors">Sign out</button>

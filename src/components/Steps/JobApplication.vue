@@ -9,7 +9,7 @@ const htmlBlock = `
     <!-- Step 1: Complete -->
     <li class="relative pb-10">
       <div class="absolute left-4 top-4 -ml-px h-full w-0.5 bg-indigo-600" aria-hidden="true"></div>
-      <a href="#" class="group relative flex items-start">
+      <a href="javascript:void(0)" class="group relative flex items-start">
         <span class="flex h-9 items-center">
           <span class="relative z-10 flex h-8 w-8 items-center justify-center rounded-full bg-indigo-600 group-hover:bg-indigo-700 transition-colors shadow-sm">
             <svg class="h-5 w-5 text-white" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true">
@@ -27,7 +27,7 @@ const htmlBlock = `
     <!-- Step 2: Complete -->
     <li class="relative pb-10">
       <div class="absolute left-4 top-4 -ml-px h-full w-0.5 bg-gray-200" aria-hidden="true"></div>
-      <a href="#" class="group relative flex items-start">
+      <a href="javascript:void(0)" class="group relative flex items-start">
         <span class="flex h-9 items-center">
           <span class="relative z-10 flex h-8 w-8 items-center justify-center rounded-full bg-indigo-600 group-hover:bg-indigo-700 transition-colors shadow-sm">
             <svg class="h-5 w-5 text-white" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true">
@@ -45,7 +45,7 @@ const htmlBlock = `
     <!-- Step 3: Current -->
     <li class="relative pb-10">
       <div class="absolute left-4 top-4 -ml-px h-full w-0.5 bg-gray-200" aria-hidden="true"></div>
-      <a href="#" class="group relative flex items-start" aria-current="step">
+      <a href="javascript:void(0)" class="group relative flex items-start" aria-current="step">
         <span class="flex h-9 items-center" aria-hidden="true">
           <span class="relative z-10 flex h-8 w-8 items-center justify-center rounded-full border-2 border-indigo-600 bg-white ring-4 ring-indigo-50">
             <span class="h-2.5 w-2.5 rounded-full bg-indigo-600"></span>
@@ -61,7 +61,7 @@ const htmlBlock = `
     <!-- Step 4: Upcoming -->
     <li class="relative pb-10">
       <div class="absolute left-4 top-4 -ml-px h-full w-0.5 bg-gray-200" aria-hidden="true"></div>
-      <a href="#" class="group relative flex items-start">
+      <a href="javascript:void(0)" class="group relative flex items-start">
         <span class="flex h-9 items-center" aria-hidden="true">
           <span class="relative z-10 flex h-8 w-8 items-center justify-center rounded-full border-2 border-gray-200 bg-white group-hover:border-gray-300 transition-colors">
             <span class="h-2.5 w-2.5 rounded-full bg-transparent group-hover:bg-gray-200"></span>
@@ -76,7 +76,7 @@ const htmlBlock = `
 
     <!-- Step 5: Upcoming -->
     <li class="relative">
-      <a href="#" class="group relative flex items-start">
+      <a href="javascript:void(0)" class="group relative flex items-start">
         <span class="flex h-9 items-center" aria-hidden="true">
           <span class="relative z-10 flex h-8 w-8 items-center justify-center rounded-full border-2 border-gray-200 bg-white group-hover:border-gray-300 transition-colors">
             <span class="h-2.5 w-2.5 rounded-full bg-transparent group-hover:bg-gray-200"></span>

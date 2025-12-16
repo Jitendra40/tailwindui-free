@@ -12,7 +12,7 @@ const htmlBlock = `
     <p class="text-sm text-gray-500">Body content area...</p>
   </div>
   <div class="px-4 py-4 sm:px-6 bg-gray-50 rounded-b-xl">
-    <a href="#" class="text-sm font-semibold text-indigo-600 hover:text-indigo-500">View all members <span aria-hidden="true">&rarr;</span></a>
+    <a href="javascript:void(0)" class="text-sm font-semibold text-indigo-600 hover:text-indigo-500">View all members <span aria-hidden="true">&rarr;</span></a>
   </div>
 </div>
 `
@@ -30,7 +30,7 @@ const htmlBlock = `
         <p class="text-sm text-gray-500">Body content area...</p>
       </div>
       <div class="px-4 py-4 sm:px-6 bg-gray-50 rounded-b-xl">
-        <a href="#" class="text-sm font-semibold text-indigo-600 hover:text-indigo-500">View all members <span aria-hidden="true">&rarr;</span></a>
+        <a href="javascript:void(0)" class="text-sm font-semibold text-indigo-600 hover:text-indigo-500">View all members <span aria-hidden="true">&rarr;</span></a>
       </div>
     </div>
   </PreviewWrapper>

@@ -19,7 +19,7 @@ const htmlBlock = `
                   <div>
                     <div class="flex justify-between">
                       <h3 class="text-sm">
-                        <a href="#" class="font-medium text-gray-700 hover:text-gray-800">Basic Tee</a>
+                        <a href="javascript:void(0)" class="font-medium text-gray-700 hover:text-gray-800">Basic Tee</a>
                       </h3>
                     </div>
                     <div class="mt-1 flex text-sm">
@@ -67,7 +67,7 @@ const htmlBlock = `
         <div class="mt-6 text-center text-sm text-gray-500">
           <p>
             or
-            <a href="#" class="font-medium text-indigo-600 hover:text-indigo-500">
+            <a href="javascript:void(0)" class="font-medium text-indigo-600 hover:text-indigo-500">
               Continue Shopping
               <span aria-hidden="true"> &rarr;</span>
             </a>
@@ -99,7 +99,7 @@ const htmlBlock = `
                       <div>
                         <div class="flex justify-between">
                           <h3 class="text-sm">
-                            <a href="#" class="font-medium text-gray-700 hover:text-gray-800">Basic Tee</a>
+                            <a href="javascript:void(0)" class="font-medium text-gray-700 hover:text-gray-800">Basic Tee</a>
                           </h3>
                         </div>
                         <div class="mt-1 flex text-sm">
@@ -147,7 +147,7 @@ const htmlBlock = `
             <div class="mt-6 text-center text-sm text-gray-500">
               <p>
                 or
-                <a href="#" class="font-medium text-indigo-600 hover:text-indigo-500">
+                <a href="javascript:void(0)" class="font-medium text-indigo-600 hover:text-indigo-500">
                   Continue Shopping
                   <span aria-hidden="true"> &rarr;</span>
                 </a>

@@ -5,7 +5,7 @@ const htmlBlock = `
 <nav aria-label="Breadcrumb" class="w-full mx-auto">
   <ol class="flex items-center gap-2 text-sm text-gray-600">
     <li class="flex items-center gap-2">
-      <a href="#" class="font-medium text-gray-900 hover:text-blue-600 transition-colors">Home</a>
+      <a href="javascript:void(0)" class="font-medium text-gray-900 hover:text-blue-600 transition-colors">Home</a>
       <span class="text-gray-400">/</span>
     </li>
     <li class="flex items-center gap-2">
@@ -17,11 +17,11 @@ const htmlBlock = `
       <span class="text-gray-400">/</span>
     </li>
     <li class="flex items-center gap-2">
-      <a href="#" class="font-medium text-gray-900 hover:text-blue-600 transition-colors">Category</a>
+      <a href="javascript:void(0)" class="font-medium text-gray-900 hover:text-blue-600 transition-colors">Category</a>
       <span class="text-gray-400">/</span>
     </li>
     <li class="flex items-center gap-2">
-      <a href="#" class="font-medium text-gray-900 hover:text-blue-600 transition-colors">Subcategory</a>
+      <a href="javascript:void(0)" class="font-medium text-gray-900 hover:text-blue-600 transition-colors">Subcategory</a>
       <span class="text-gray-400">/</span>
     </li>
     <li class="font-medium text-gray-900" aria-current="page">Current Item</li>

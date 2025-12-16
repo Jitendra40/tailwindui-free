@@ -40,7 +40,7 @@ const htmlBlock = `
               <td class="whitespace-nowrap px-2 py-2 text-sm text-gray-500">10</td>
               <td class="whitespace-nowrap px-2 py-2 text-sm text-gray-500">$1,195.00</td>
               <td class="relative whitespace-nowrap py-2 pl-3 pr-4 text-right text-sm font-medium sm:pr-0">
-                <a href="#" class="text-indigo-600 hover:text-indigo-900">Edit<span class="sr-only">, AAPL</span></a>
+                <a href="javascript:void(0)" class="text-indigo-600 hover:text-indigo-900">Edit<span class="sr-only">, AAPL</span></a>
               </td>
             </tr>
             <tr>
@@ -52,7 +52,7 @@ const htmlBlock = `
               <td class="whitespace-nowrap px-2 py-2 text-sm text-gray-500">2</td>
               <td class="whitespace-nowrap px-2 py-2 text-sm text-gray-500">$4,795.00</td>
               <td class="relative whitespace-nowrap py-2 pl-3 pr-4 text-right text-sm font-medium sm:pr-0">
-                <a href="#" class="text-indigo-600 hover:text-indigo-900">Edit<span class="sr-only">, GOOG</span></a>
+                <a href="javascript:void(0)" class="text-indigo-600 hover:text-indigo-900">Edit<span class="sr-only">, GOOG</span></a>
               </td>
             </tr>
             <tr>
@@ -64,7 +64,7 @@ const htmlBlock = `
               <td class="whitespace-nowrap px-2 py-2 text-sm text-gray-500">20</td>
               <td class="whitespace-nowrap px-2 py-2 text-sm text-gray-500">$4,995.00</td>
               <td class="relative whitespace-nowrap py-2 pl-3 pr-4 text-right text-sm font-medium sm:pr-0">
-                <a href="#" class="text-indigo-600 hover:text-indigo-900">Edit<span class="sr-only">, MSFT</span></a>
+                <a href="javascript:void(0)" class="text-indigo-600 hover:text-indigo-900">Edit<span class="sr-only">, MSFT</span></a>
               </td>
             </tr>
             <tr>
@@ -76,7 +76,7 @@ const htmlBlock = `
               <td class="whitespace-nowrap px-2 py-2 text-sm text-gray-500">5</td>
               <td class="whitespace-nowrap px-2 py-2 text-sm text-gray-500">$3,495.00</td>
               <td class="relative whitespace-nowrap py-2 pl-3 pr-4 text-right text-sm font-medium sm:pr-0">
-                <a href="#" class="text-indigo-600 hover:text-indigo-900">Edit<span class="sr-only">, TSLA</span></a>
+                <a href="javascript:void(0)" class="text-indigo-600 hover:text-indigo-900">Edit<span class="sr-only">, TSLA</span></a>
               </td>
             </tr>
           </tbody>

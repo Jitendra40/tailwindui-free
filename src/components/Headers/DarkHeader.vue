@@ -13,13 +13,13 @@ const htmlBlock = `
       <span class="text-sm font-semibold">Studio Night</span>
     </div>
     <div class="hidden md:flex items-center gap-6 text-sm font-medium text-gray-200">
-      <a href="#" class="text-white">Work</a>
-      <a href="#" class="hover:text-white">Services</a>
-      <a href="#" class="hover:text-white">Blog</a>
-      <a href="#" class="hover:text-white">Contact</a>
+      <a href="javascript:void(0)" class="text-white">Work</a>
+      <a href="javascript:void(0)" class="hover:text-white">Services</a>
+      <a href="javascript:void(0)" class="hover:text-white">Blog</a>
+      <a href="javascript:void(0)" class="hover:text-white">Contact</a>
     </div>
     <div class="flex items-center gap-3">
-      <a href="#" class="hidden sm:inline-flex rounded-full border border-white/10 px-3 py-1.5 text-xs font-semibold text-white hover:border-indigo-400 hover:text-indigo-100">View portfolio</a>
+      <a href="javascript:void(0)" class="hidden sm:inline-flex rounded-full border border-white/10 px-3 py-1.5 text-xs font-semibold text-white hover:border-indigo-400 hover:text-indigo-100">View portfolio</a>
       <button type="button" class="md:hidden inline-flex items-center rounded-md p-2 text-gray-200 ring-1 ring-white/15">
         <span class="sr-only">Open main menu</span>
         <svg class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke-width="1.6" stroke="currentColor" aria-hidden="true">
@@ -45,13 +45,13 @@ const htmlBlock = `
           <span class="text-sm font-semibold">Studio Night</span>
         </div>
         <div class="hidden md:flex items-center gap-6 text-sm font-medium text-gray-200">
-          <a href="#" class="text-white">Work</a>
-          <a href="#" class="hover:text-white">Services</a>
-          <a href="#" class="hover:text-white">Blog</a>
-          <a href="#" class="hover:text-white">Contact</a>
+          <a href="javascript:void(0)" class="text-white">Work</a>
+          <a href="javascript:void(0)" class="hover:text-white">Services</a>
+          <a href="javascript:void(0)" class="hover:text-white">Blog</a>
+          <a href="javascript:void(0)" class="hover:text-white">Contact</a>
         </div>
         <div class="flex items-center gap-3">
-          <a href="#" class="hidden sm:inline-flex rounded-full border border-white/10 px-3 py-1.5 text-xs font-semibold text-white hover:border-indigo-400 hover:text-indigo-100">View portfolio</a>
+          <a href="javascript:void(0)" class="hidden sm:inline-flex rounded-full border border-white/10 px-3 py-1.5 text-xs font-semibold text-white hover:border-indigo-400 hover:text-indigo-100">View portfolio</a>
           <button type="button" class="md:hidden inline-flex items-center rounded-md p-2 text-gray-200 ring-1 ring-white/15">
             <span class="sr-only">Open main menu</span>
             <svg class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke-width="1.6" stroke="currentColor" aria-hidden="true">

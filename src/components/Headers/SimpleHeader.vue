@@ -14,15 +14,15 @@ const htmlBlock = `
         <div class="text-sm font-semibold text-gray-900">Northwind</div>
       </div>
       <div class="hidden md:flex items-center gap-6 text-sm font-medium text-gray-700">
-        <a href="#" class="hover:text-indigo-600">Product</a>
-        <a href="#" class="hover:text-indigo-600">Pricing</a>
-        <a href="#" class="hover:text-indigo-600">Customers</a>
-        <a href="#" class="hover:text-indigo-600">Docs</a>
+        <a href="javascript:void(0)" class="hover:text-indigo-600">Product</a>
+        <a href="javascript:void(0)" class="hover:text-indigo-600">Pricing</a>
+        <a href="javascript:void(0)" class="hover:text-indigo-600">Customers</a>
+        <a href="javascript:void(0)" class="hover:text-indigo-600">Docs</a>
       </div>
     </div>
     <div class="flex items-center gap-3">
-      <a href="#" class="hidden sm:inline-flex text-sm font-medium text-gray-700 hover:text-indigo-600">Sign in</a>
-      <a href="#" class="inline-flex items-center rounded-full bg-indigo-600 px-3 py-1.5 text-xs font-semibold text-white shadow hover:bg-indigo-500">Start trial</a>
+      <a href="javascript:void(0)" class="hidden sm:inline-flex text-sm font-medium text-gray-700 hover:text-indigo-600">Sign in</a>
+      <a href="javascript:void(0)" class="inline-flex items-center rounded-full bg-indigo-600 px-3 py-1.5 text-xs font-semibold text-white shadow hover:bg-indigo-500">Start trial</a>
       <button type="button" class="md:hidden inline-flex items-center rounded-md p-2 text-gray-600 ring-1 ring-gray-200">
         <span class="sr-only">Open main menu</span>
         <svg class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke-width="1.6" stroke="currentColor" aria-hidden="true">
@@ -49,15 +49,15 @@ const htmlBlock = `
             <div class="text-sm font-semibold text-gray-900">Northwind</div>
           </div>
           <div class="hidden md:flex items-center gap-6 text-sm font-medium text-gray-700">
-            <a href="#" class="hover:text-indigo-600">Product</a>
-            <a href="#" class="hover:text-indigo-600">Pricing</a>
-            <a href="#" class="hover:text-indigo-600">Customers</a>
-            <a href="#" class="hover:text-indigo-600">Docs</a>
+            <a href="javascript:void(0)" class="hover:text-indigo-600">Product</a>
+            <a href="javascript:void(0)" class="hover:text-indigo-600">Pricing</a>
+            <a href="javascript:void(0)" class="hover:text-indigo-600">Customers</a>
+            <a href="javascript:void(0)" class="hover:text-indigo-600">Docs</a>
           </div>
         </div>
         <div class="flex items-center gap-3">
-          <a href="#" class="hidden sm:inline-flex text-sm font-medium text-gray-700 hover:text-indigo-600">Sign in</a>
-          <a href="#" class="inline-flex items-center rounded-full bg-indigo-600 px-3 py-1.5 text-xs font-semibold text-white shadow hover:bg-indigo-500">Start trial</a>
+          <a href="javascript:void(0)" class="hidden sm:inline-flex text-sm font-medium text-gray-700 hover:text-indigo-600">Sign in</a>
+          <a href="javascript:void(0)" class="inline-flex items-center rounded-full bg-indigo-600 px-3 py-1.5 text-xs font-semibold text-white shadow hover:bg-indigo-500">Start trial</a>
           <button type="button" class="md:hidden inline-flex items-center rounded-md p-2 text-gray-600 ring-1 ring-gray-200">
             <span class="sr-only">Open main menu</span>
             <svg class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke-width="1.6" stroke="currentColor" aria-hidden="true">

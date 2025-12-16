@@ -35,7 +35,7 @@ const htmlBlock = `
             </li>
           </ul>
         </div>
-        <a href="#" aria-describedby="tier-freelancer" class="mt-8 block rounded-md border border-indigo-600 px-3 py-2 text-center text-sm font-semibold text-indigo-600 hover:bg-indigo-50 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Buy plan</a>
+        <a href="javascript:void(0)" aria-describedby="tier-freelancer" class="mt-8 block rounded-md border border-indigo-600 px-3 py-2 text-center text-sm font-semibold text-indigo-600 hover:bg-indigo-50 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Buy plan</a>
       </div>
       <!-- Tier 2 -->
       <div class="flex flex-col justify-between rounded-3xl bg-white p-8 ring-1 ring-gray-200 xl:p-10 lg:z-10 lg:shadow-xl border-indigo-600">
@@ -64,7 +64,7 @@ const htmlBlock = `
             </li>
           </ul>
         </div>
-        <a href="#" aria-describedby="tier-startup" class="mt-8 block rounded-md bg-indigo-600 px-3 py-2 text-center text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Buy plan</a>
+        <a href="javascript:void(0)" aria-describedby="tier-startup" class="mt-8 block rounded-md bg-indigo-600 px-3 py-2 text-center text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Buy plan</a>
       </div>
       <!-- Tier 3 -->
       <div class="flex flex-col justify-between rounded-3xl bg-white p-8 ring-1 ring-gray-200 xl:p-10">
@@ -92,7 +92,7 @@ const htmlBlock = `
             </li>
           </ul>
         </div>
-        <a href="#" aria-describedby="tier-enterprise" class="mt-8 block rounded-md border border-indigo-600 px-3 py-2 text-center text-sm font-semibold text-indigo-600 hover:bg-indigo-50 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Buy plan</a>
+        <a href="javascript:void(0)" aria-describedby="tier-enterprise" class="mt-8 block rounded-md border border-indigo-600 px-3 py-2 text-center text-sm font-semibold text-indigo-600 hover:bg-indigo-50 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Buy plan</a>
       </div>
     </div>
   </div>
@@ -135,7 +135,7 @@ const htmlBlock = `
                 </li>
               </ul>
             </div>
-            <a href="#" aria-describedby="tier-freelancer" class="mt-8 block rounded-md border border-indigo-600 px-3 py-2 text-center text-sm font-semibold text-indigo-600 hover:bg-indigo-50 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Buy plan</a>
+            <a href="javascript:void(0)" aria-describedby="tier-freelancer" class="mt-8 block rounded-md border border-indigo-600 px-3 py-2 text-center text-sm font-semibold text-indigo-600 hover:bg-indigo-50 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Buy plan</a>
           </div>
           <!-- Tier 2 -->
           <div class="flex flex-col justify-between rounded-3xl bg-white p-8 ring-1 ring-gray-200 xl:p-10 lg:z-10 lg:shadow-xl border-indigo-600">
@@ -164,7 +164,7 @@ const htmlBlock = `
                 </li>
               </ul>
             </div>
-            <a href="#" aria-describedby="tier-startup" class="mt-8 block rounded-md bg-indigo-600 px-3 py-2 text-center text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Buy plan</a>
+            <a href="javascript:void(0)" aria-describedby="tier-startup" class="mt-8 block rounded-md bg-indigo-600 px-3 py-2 text-center text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Buy plan</a>
           </div>
           <!-- Tier 3 -->
           <div class="flex flex-col justify-between rounded-3xl bg-white p-8 ring-1 ring-gray-200 xl:p-10">
@@ -192,7 +192,7 @@ const htmlBlock = `
                 </li>
               </ul>
             </div>
-            <a href="#" aria-describedby="tier-enterprise" class="mt-8 block rounded-md border border-indigo-600 px-3 py-2 text-center text-sm font-semibold text-indigo-600 hover:bg-indigo-50 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Buy plan</a>
+            <a href="javascript:void(0)" aria-describedby="tier-enterprise" class="mt-8 block rounded-md border border-indigo-600 px-3 py-2 text-center text-sm font-semibold text-indigo-600 hover:bg-indigo-50 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Buy plan</a>
           </div>
         </div>
       </div>

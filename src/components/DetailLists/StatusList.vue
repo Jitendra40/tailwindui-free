@@ -5,7 +5,7 @@ const htmlBlock = `
 <div class="bg-white rounded-xl border border-gray-200 shadow-sm">
   <div class="px-6 py-4 border-b border-gray-100 flex items-center justify-between">
     <h3 class="text-sm font-semibold text-gray-900">System Status</h3>
-    <a href="#" class="text-xs font-medium text-gray-500 hover:text-gray-900">View history &rarr;</a>
+    <a href="javascript:void(0)" class="text-xs font-medium text-gray-500 hover:text-gray-900">View history &rarr;</a>
   </div>
   <div class="divide-y divide-gray-100">
     <div class="px-6 py-4 flex items-center justify-between hover:bg-gray-50/30 transition-colors">
@@ -62,7 +62,7 @@ const htmlBlock = `
     <div class="bg-white rounded-xl border border-gray-200 shadow-sm">
       <div class="px-6 py-4 border-b border-gray-100 flex items-center justify-between">
         <h3 class="text-sm font-semibold text-gray-900">System Status</h3>
-        <a href="#" class="text-xs font-medium text-gray-500 hover:text-gray-900">View history &rarr;</a>
+        <a href="javascript:void(0)" class="text-xs font-medium text-gray-500 hover:text-gray-900">View history &rarr;</a>
       </div>
       <div class="divide-y divide-gray-100">
         <div class="px-6 py-4 flex items-center justify-between hover:bg-gray-50/30 transition-colors">

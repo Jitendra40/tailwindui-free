@@ -32,8 +32,8 @@ const htmlBlock = `
               <td class="whitespace-nowrap px-3 py-4 text-sm text-gray-500">Front-end Developer</td>
               <td class="whitespace-nowrap px-3 py-4 text-sm text-gray-500">Active</td>
               <td class="relative whitespace-nowrap py-4 pl-3 pr-4 text-right text-sm font-medium sm:pr-0">
-                <a href="#" class="text-indigo-600 hover:text-indigo-900 mr-4">Edit</a>
-                 <a href="#" class="text-red-600 hover:text-red-900">Delete</a>
+                <a href="javascript:void(0)" class="text-indigo-600 hover:text-indigo-900 mr-4">Edit</a>
+                 <a href="javascript:void(0)" class="text-red-600 hover:text-red-900">Delete</a>
               </td>
             </tr>
             <tr>
@@ -41,8 +41,8 @@ const htmlBlock = `
               <td class="whitespace-nowrap px-3 py-4 text-sm text-gray-500">Designer</td>
               <td class="whitespace-nowrap px-3 py-4 text-sm text-gray-500">Active</td>
               <td class="relative whitespace-nowrap py-4 pl-3 pr-4 text-right text-sm font-medium sm:pr-0">
-                <a href="#" class="text-indigo-600 hover:text-indigo-900 mr-4">Edit</a>
-                 <a href="#" class="text-red-600 hover:text-red-900">Delete</a>
+                <a href="javascript:void(0)" class="text-indigo-600 hover:text-indigo-900 mr-4">Edit</a>
+                 <a href="javascript:void(0)" class="text-red-600 hover:text-red-900">Delete</a>
               </td>
             </tr>
           </tbody>

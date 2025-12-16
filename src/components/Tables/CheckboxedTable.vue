@@ -43,7 +43,7 @@ const htmlBlock = `
                 <td class="whitespace-nowrap px-3 py-4 text-sm text-gray-500">lindsay.walton@example.com</td>
                 <td class="whitespace-nowrap px-3 py-4 text-sm text-gray-500">Member</td>
                 <td class="whitespace-nowrap py-4 pl-3 pr-4 text-right text-sm font-medium sm:pr-0">
-                  <a href="#" class="text-indigo-600 hover:text-indigo-900">Edit<span class="sr-only">, Lindsay Walton</span></a>
+                  <a href="javascript:void(0)" class="text-indigo-600 hover:text-indigo-900">Edit<span class="sr-only">, Lindsay Walton</span></a>
                 </td>
               </tr>
               <tr>
@@ -56,7 +56,7 @@ const htmlBlock = `
                 <td class="whitespace-nowrap px-3 py-4 text-sm text-gray-500">courtney.henry@example.com</td>
                 <td class="whitespace-nowrap px-3 py-4 text-sm text-gray-500">Admin</td>
                 <td class="whitespace-nowrap py-4 pl-3 pr-4 text-right text-sm font-medium sm:pr-0">
-                  <a href="#" class="text-indigo-600 hover:text-indigo-900">Edit<span class="sr-only">, Courtney Henry</span></a>
+                  <a href="javascript:void(0)" class="text-indigo-600 hover:text-indigo-900">Edit<span class="sr-only">, Courtney Henry</span></a>
                 </td>
               </tr>
               <tr>
@@ -69,7 +69,7 @@ const htmlBlock = `
                 <td class="whitespace-nowrap px-3 py-4 text-sm text-gray-500">tom.cook@example.com</td>
                 <td class="whitespace-nowrap px-3 py-4 text-sm text-gray-500">Member</td>
                 <td class="whitespace-nowrap py-4 pl-3 pr-4 text-right text-sm font-medium sm:pr-0">
-                  <a href="#" class="text-indigo-600 hover:text-indigo-900">Edit<span class="sr-only">, Tom Cook</span></a>
+                  <a href="javascript:void(0)" class="text-indigo-600 hover:text-indigo-900">Edit<span class="sr-only">, Tom Cook</span></a>
                 </td>
               </tr>
             </tbody>

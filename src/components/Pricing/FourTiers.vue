@@ -17,7 +17,7 @@ const htmlBlock = `
           <span class="text-4xl font-bold tracking-tight text-gray-900">$5</span>
           <span class="text-sm font-semibold leading-6 text-gray-600">/mo</span>
         </p>
-        <a href="#" aria-describedby="tier-hobby" class="mt-6 block rounded-md py-2 px-3 text-center text-sm font-semibold leading-6 text-indigo-600 ring-1 ring-inset ring-indigo-200 hover:ring-indigo-300 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Buy plan</a>
+        <a href="javascript:void(0)" aria-describedby="tier-hobby" class="mt-6 block rounded-md py-2 px-3 text-center text-sm font-semibold leading-6 text-indigo-600 ring-1 ring-inset ring-indigo-200 hover:ring-indigo-300 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Buy plan</a>
       </div>
       <!-- Tier 2 -->
       <div class="rounded-3xl p-8 ring-1 ring-gray-200">
@@ -27,7 +27,7 @@ const htmlBlock = `
           <span class="text-4xl font-bold tracking-tight text-gray-900">$19</span>
           <span class="text-sm font-semibold leading-6 text-gray-600">/mo</span>
         </p>
-        <a href="#" aria-describedby="tier-freelancer" class="mt-6 block rounded-md py-2 px-3 text-center text-sm font-semibold leading-6 text-indigo-600 ring-1 ring-inset ring-indigo-200 hover:ring-indigo-300 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Buy plan</a>
+        <a href="javascript:void(0)" aria-describedby="tier-freelancer" class="mt-6 block rounded-md py-2 px-3 text-center text-sm font-semibold leading-6 text-indigo-600 ring-1 ring-inset ring-indigo-200 hover:ring-indigo-300 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Buy plan</a>
       </div>
       <!-- Tier 3 -->
       <div class="rounded-3xl p-8 ring-1 ring-gray-200 bg-gray-50">
@@ -37,7 +37,7 @@ const htmlBlock = `
           <span class="text-4xl font-bold tracking-tight text-gray-900">$49</span>
           <span class="text-sm font-semibold leading-6 text-gray-600">/mo</span>
         </p>
-        <a href="#" aria-describedby="tier-startup" class="mt-6 block rounded-md bg-indigo-600 py-2 px-3 text-center text-sm font-semibold leading-6 text-white hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Buy plan</a>
+        <a href="javascript:void(0)" aria-describedby="tier-startup" class="mt-6 block rounded-md bg-indigo-600 py-2 px-3 text-center text-sm font-semibold leading-6 text-white hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Buy plan</a>
       </div>
       <!-- Tier 4 -->
       <div class="rounded-3xl p-8 ring-1 ring-gray-200">
@@ -47,7 +47,7 @@ const htmlBlock = `
           <span class="text-4xl font-bold tracking-tight text-gray-900">$99</span>
           <span class="text-sm font-semibold leading-6 text-gray-600">/mo</span>
         </p>
-        <a href="#" aria-describedby="tier-enterprise" class="mt-6 block rounded-md py-2 px-3 text-center text-sm font-semibold leading-6 text-indigo-600 ring-1 ring-inset ring-indigo-200 hover:ring-indigo-300 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Buy plan</a>
+        <a href="javascript:void(0)" aria-describedby="tier-enterprise" class="mt-6 block rounded-md py-2 px-3 text-center text-sm font-semibold leading-6 text-indigo-600 ring-1 ring-inset ring-indigo-200 hover:ring-indigo-300 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Buy plan</a>
       </div>
     </div>
   </div>
@@ -72,7 +72,7 @@ const htmlBlock = `
               <span class="text-4xl font-bold tracking-tight text-gray-900">$5</span>
               <span class="text-sm font-semibold leading-6 text-gray-600">/mo</span>
             </p>
-            <a href="#" aria-describedby="tier-hobby" class="mt-6 block rounded-md py-2 px-3 text-center text-sm font-semibold leading-6 text-indigo-600 ring-1 ring-inset ring-indigo-200 hover:ring-indigo-300 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Buy plan</a>
+            <a href="javascript:void(0)" aria-describedby="tier-hobby" class="mt-6 block rounded-md py-2 px-3 text-center text-sm font-semibold leading-6 text-indigo-600 ring-1 ring-inset ring-indigo-200 hover:ring-indigo-300 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Buy plan</a>
           </div>
           <!-- Tier 2 -->
           <div class="rounded-3xl p-8 ring-1 ring-gray-200">
@@ -82,7 +82,7 @@ const htmlBlock = `
               <span class="text-4xl font-bold tracking-tight text-gray-900">$19</span>
               <span class="text-sm font-semibold leading-6 text-gray-600">/mo</span>
             </p>
-            <a href="#" aria-describedby="tier-freelancer" class="mt-6 block rounded-md py-2 px-3 text-center text-sm font-semibold leading-6 text-indigo-600 ring-1 ring-inset ring-indigo-200 hover:ring-indigo-300 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Buy plan</a>
+            <a href="javascript:void(0)" aria-describedby="tier-freelancer" class="mt-6 block rounded-md py-2 px-3 text-center text-sm font-semibold leading-6 text-indigo-600 ring-1 ring-inset ring-indigo-200 hover:ring-indigo-300 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Buy plan</a>
           </div>
           <!-- Tier 3 -->
           <div class="rounded-3xl p-8 ring-1 ring-gray-200 bg-gray-50">
@@ -92,7 +92,7 @@ const htmlBlock = `
               <span class="text-4xl font-bold tracking-tight text-gray-900">$49</span>
               <span class="text-sm font-semibold leading-6 text-gray-600">/mo</span>
             </p>
-            <a href="#" aria-describedby="tier-startup" class="mt-6 block rounded-md bg-indigo-600 py-2 px-3 text-center text-sm font-semibold leading-6 text-white hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Buy plan</a>
+            <a href="javascript:void(0)" aria-describedby="tier-startup" class="mt-6 block rounded-md bg-indigo-600 py-2 px-3 text-center text-sm font-semibold leading-6 text-white hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Buy plan</a>
           </div>
           <!-- Tier 4 -->
           <div class="rounded-3xl p-8 ring-1 ring-gray-200">
@@ -102,7 +102,7 @@ const htmlBlock = `
               <span class="text-4xl font-bold tracking-tight text-gray-900">$99</span>
               <span class="text-sm font-semibold leading-6 text-gray-600">/mo</span>
             </p>
-            <a href="#" aria-describedby="tier-enterprise" class="mt-6 block rounded-md py-2 px-3 text-center text-sm font-semibold leading-6 text-indigo-600 ring-1 ring-inset ring-indigo-200 hover:ring-indigo-300 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Buy plan</a>
+            <a href="javascript:void(0)" aria-describedby="tier-enterprise" class="mt-6 block rounded-md py-2 px-3 text-center text-sm font-semibold leading-6 text-indigo-600 ring-1 ring-inset ring-indigo-200 hover:ring-indigo-300 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Buy plan</a>
           </div>
         </div>
       </div>

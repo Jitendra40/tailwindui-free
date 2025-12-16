@@ -6,7 +6,7 @@ const htmlBlock = `
   <div class="mx-auto max-w-7xl px-6 lg:px-8">
     <div class="mx-auto max-w-2xl lg:text-center">
       <h2 class="text-2xl font-bold leading-10 tracking-tight text-white">Frequently asked questions</h2>
-      <p class="mt-6 text-base leading-7 text-indigo-200">Have a different question and can’t find the answer you’re looking for? Reach out to our support team by <a href="#" class="font-semibold text-white hover:text-indigo-50">sending us an email</a> and we’ll get back to you as soon as we can.</p>
+      <p class="mt-6 text-base leading-7 text-indigo-200">Have a different question and canâ€™t find the answer youâ€™re looking for? Reach out to our support team by <a href="javascript:void(0)" class="font-semibold text-white hover:text-indigo-50">sending us an email</a> and weâ€™ll get back to you as soon as we can.</p>
     </div>
     <div class="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-4xl">
       <dl class="grid max-w-xl grid-cols-1 gap-x-8 gap-y-10 lg:max-w-none lg:grid-cols-2 lg:gap-y-16">
@@ -39,7 +39,7 @@ const htmlBlock = `
       <div class="mx-auto max-w-7xl px-6 lg:px-8">
         <div class="mx-auto max-w-2xl lg:text-center">
           <h2 class="text-2xl font-bold leading-10 tracking-tight text-white">Frequently asked questions</h2>
-          <p class="mt-6 text-base leading-7 text-indigo-200">Have a different question and can’t find the answer you’re looking for? Reach out to our support team by <a href="#" class="font-semibold text-white hover:text-indigo-50">sending us an email</a> and we’ll get back to you as soon as we can.</p>
+          <p class="mt-6 text-base leading-7 text-indigo-200">Have a different question and canâ€™t find the answer youâ€™re looking for? Reach out to our support team by <a href="javascript:void(0)" class="font-semibold text-white hover:text-indigo-50">sending us an email</a> and weâ€™ll get back to you as soon as we can.</p>
         </div>
         <div class="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-4xl">
           <dl class="grid max-w-xl grid-cols-1 gap-x-8 gap-y-10 lg:max-w-none lg:grid-cols-2 lg:gap-y-16">

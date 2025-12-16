@@ -2,7 +2,7 @@
 import PreviewWrapper from "@/components/PreviewWrapper.vue"
 
 const htmlBlock = `
-<a href="#" class="block rounded-xl bg-white p-6 shadow-sm shadow-black/5 border border-gray-200 hover:border-pink-500/30 hover:shadow-md hover:scale-[1.01] active:scale-[0.98] transition-all duration-200 sm:w-full sm:max-w-md group">
+<a href="javascript:void(0)" class="block rounded-xl bg-white p-6 shadow-sm shadow-black/5 border border-gray-200 hover:border-pink-500/30 hover:shadow-md hover:scale-[1.01] active:scale-[0.98] transition-all duration-200 sm:w-full sm:max-w-md group">
   <div class="flex items-center space-x-3">
     <span class="inline-flex h-10 w-10 items-center justify-center rounded-xl bg-pink-500 text-white shadow-sm shadow-pink-500/20 group-hover:scale-110 transition-transform">
       <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
@@ -18,7 +18,7 @@ const htmlBlock = `
 
 <template>
   <PreviewWrapper title="Interactive Card" description="Clickable card with hover states." :html-block="htmlBlock">
-    <a href="#" class="block rounded-xl bg-white p-6 shadow-sm shadow-black/5 border border-gray-200 hover:border-pink-500/30 hover:shadow-md hover:scale-[1.01] active:scale-[0.98] transition-all duration-200 sm:w-full sm:max-w-md group">
+    <a href="javascript:void(0)" class="block rounded-xl bg-white p-6 shadow-sm shadow-black/5 border border-gray-200 hover:border-pink-500/30 hover:shadow-md hover:scale-[1.01] active:scale-[0.98] transition-all duration-200 sm:w-full sm:max-w-md group">
       <div class="flex items-center space-x-3">
         <span class="inline-flex h-10 w-10 items-center justify-center rounded-xl bg-pink-500 text-white shadow-sm shadow-pink-500/20 group-hover:scale-110 transition-transform">
           <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">

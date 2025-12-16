@@ -15,7 +15,7 @@ const htmlBlock = `
         <!-- Mobile Connector -->
         <div class="sm:hidden absolute left-4 top-4 -ml-px h-full w-0.5 bg-blue-600" aria-hidden="true"></div>
         
-        <a href="#" class="relative flex items-center sm:justify-center group">
+        <a href="javascript:void(0)" class="relative flex items-center sm:justify-center group">
           <span class="h-8 w-8 rounded-full bg-blue-600 flex items-center justify-center hover:bg-blue-700 transition-colors z-10 ring-8 ring-white sm:ring-0">
             <svg class="h-5 w-5 text-white" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
               <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd" />
@@ -35,7 +35,7 @@ const htmlBlock = `
         <!-- Mobile Connector -->
         <div class="sm:hidden absolute left-4 top-4 -ml-px h-full w-0.5 bg-blue-600" aria-hidden="true"></div>
 
-        <a href="#" class="relative flex items-center sm:justify-center group">
+        <a href="javascript:void(0)" class="relative flex items-center sm:justify-center group">
           <span class="h-8 w-8 rounded-full bg-blue-600 flex items-center justify-center hover:bg-blue-700 transition-colors z-10 ring-8 ring-white sm:ring-0">
             <svg class="h-5 w-5 text-white" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
               <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd" />
@@ -57,7 +57,7 @@ const htmlBlock = `
          <!-- Mobile Connector -->
         <div class="sm:hidden absolute left-4 top-4 -ml-px h-full w-0.5 bg-gray-200" aria-hidden="true"></div>
 
-        <a href="#" class="relative flex items-center sm:justify-center group">
+        <a href="javascript:void(0)" class="relative flex items-center sm:justify-center group">
           <span class="h-8 w-8 rounded-full bg-white border-2 border-blue-600 flex items-center justify-center z-10 ring-8 ring-white sm:ring-0">
             <span class="h-2.5 w-2.5 rounded-full bg-blue-600"></span>
           </span>
@@ -75,7 +75,7 @@ const htmlBlock = `
          <!-- Mobile Connector -->
         <div class="sm:hidden absolute left-4 top-4 -ml-px h-full w-0.5 bg-gray-200" aria-hidden="true"></div>
 
-        <a href="#" class="relative flex items-center sm:justify-center group">
+        <a href="javascript:void(0)" class="relative flex items-center sm:justify-center group">
           <span class="h-8 w-8 rounded-full bg-white border-2 border-gray-300 hover:border-gray-400 transition-colors flex items-center justify-center z-10 ring-8 ring-white sm:ring-0">
              <span class="h-2.5 w-2.5 rounded-full bg-transparent group-hover:bg-gray-300"></span>
           </span>
@@ -87,7 +87,7 @@ const htmlBlock = `
 
       <!-- Step 5: Upcoming -->
       <li class="relative sm:w-auto">
-        <a href="#" class="relative flex items-center sm:justify-center group">
+        <a href="javascript:void(0)" class="relative flex items-center sm:justify-center group">
           <span class="h-8 w-8 rounded-full bg-white border-2 border-gray-300 hover:border-gray-400 transition-colors flex items-center justify-center z-10 ring-8 ring-white sm:ring-0">
              <span class="h-2.5 w-2.5 rounded-full bg-transparent group-hover:bg-gray-300"></span>
           </span>

@@ -51,9 +51,9 @@ const htmlBlock = `
                     <span class="font-medium text-gray-900">Tom Cook</span>
                  </div>
               </td>
-              <td class="whitespace-nowrap px-3 py-4 text-right text-sm text-gray-500">₹1,20,000</td>
+              <td class="whitespace-nowrap px-3 py-4 text-right text-sm text-gray-500">â‚¹1,20,000</td>
               <td class="relative whitespace-nowrap py-4 pl-3 pr-4 text-right text-sm font-medium sm:pr-0">
-                <a href="#" class="text-indigo-600 hover:text-indigo-900">Edit<span class="sr-only">, Lindsay Walton</span></a>
+                <a href="javascript:void(0)" class="text-indigo-600 hover:text-indigo-900">Edit<span class="sr-only">, Lindsay Walton</span></a>
               </td>
             </tr>
             <tr>
@@ -78,9 +78,9 @@ const htmlBlock = `
                     <span class="font-medium text-gray-900">Tom Cook</span>
                  </div>
               </td>
-              <td class="whitespace-nowrap px-3 py-4 text-right text-sm text-gray-500">₹85,000</td>
+              <td class="whitespace-nowrap px-3 py-4 text-right text-sm text-gray-500">â‚¹85,000</td>
               <td class="relative whitespace-nowrap py-4 pl-3 pr-4 text-right text-sm font-medium sm:pr-0">
-                <a href="#" class="text-indigo-600 hover:text-indigo-900">Edit<span class="sr-only">, Michael Foster</span></a>
+                <a href="javascript:void(0)" class="text-indigo-600 hover:text-indigo-900">Edit<span class="sr-only">, Michael Foster</span></a>
               </td>
             </tr>
             <tr>
@@ -105,9 +105,9 @@ const htmlBlock = `
                     <span class="font-medium text-gray-900">Unassigned</span>
                  </div>
               </td>
-              <td class="whitespace-nowrap px-3 py-4 text-right text-sm text-gray-500">₹0</td>
+              <td class="whitespace-nowrap px-3 py-4 text-right text-sm text-gray-500">â‚¹0</td>
               <td class="relative whitespace-nowrap py-4 pl-3 pr-4 text-right text-sm font-medium sm:pr-0">
-                <a href="#" class="text-indigo-600 hover:text-indigo-900">Edit<span class="sr-only">, Dries Vincent</span></a>
+                <a href="javascript:void(0)" class="text-indigo-600 hover:text-indigo-900">Edit<span class="sr-only">, Dries Vincent</span></a>
               </td>
             </tr>
           </tbody>

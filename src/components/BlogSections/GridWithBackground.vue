@@ -12,11 +12,11 @@ const htmlBlock = `
        <article class="flex max-w-xl flex-col items-start justify-between">
         <div class="flex items-center gap-x-4 text-xs">
           <time datetime="2020-03-16" class="text-gray-400">Mar 16, 2020</time>
-          <a href="#" class="relative z-10 rounded-full bg-gray-800 px-3 py-1.5 font-medium text-gray-300 hover:bg-gray-700">Marketing</a>
+          <a href="javascript:void(0)" class="relative z-10 rounded-full bg-gray-800 px-3 py-1.5 font-medium text-gray-300 hover:bg-gray-700">Marketing</a>
         </div>
         <div class="group relative">
           <h3 class="mt-3 text-lg font-semibold leading-6 text-white group-hover:text-gray-300">
-            <a href="#">
+            <a href="javascript:void(0)">
               <span class="absolute inset-0"></span>
               Boost your conversion rate
             </a>
@@ -27,11 +27,11 @@ const htmlBlock = `
       <article class="flex max-w-xl flex-col items-start justify-between">
         <div class="flex items-center gap-x-4 text-xs">
           <time datetime="2020-03-10" class="text-gray-400">Mar 10, 2020</time>
-          <a href="#" class="relative z-10 rounded-full bg-gray-800 px-3 py-1.5 font-medium text-gray-300 hover:bg-gray-700">Sales</a>
+          <a href="javascript:void(0)" class="relative z-10 rounded-full bg-gray-800 px-3 py-1.5 font-medium text-gray-300 hover:bg-gray-700">Sales</a>
         </div>
         <div class="group relative">
           <h3 class="mt-3 text-lg font-semibold leading-6 text-white group-hover:text-gray-300">
-            <a href="#">
+            <a href="javascript:void(0)">
               <span class="absolute inset-0"></span>
               How to use search engine optimization to drive sales
             </a>
@@ -42,11 +42,11 @@ const htmlBlock = `
       <article class="flex max-w-xl flex-col items-start justify-between">
         <div class="flex items-center gap-x-4 text-xs">
           <time datetime="2020-02-12" class="text-gray-400">Feb 12, 2020</time>
-          <a href="#" class="relative z-10 rounded-full bg-gray-800 px-3 py-1.5 font-medium text-gray-300 hover:bg-gray-700">Business</a>
+          <a href="javascript:void(0)" class="relative z-10 rounded-full bg-gray-800 px-3 py-1.5 font-medium text-gray-300 hover:bg-gray-700">Business</a>
         </div>
         <div class="group relative">
           <h3 class="mt-3 text-lg font-semibold leading-6 text-white group-hover:text-gray-300">
-            <a href="#">
+            <a href="javascript:void(0)">
               <span class="absolute inset-0"></span>
               Improve your customer experience
             </a>
@@ -72,11 +72,11 @@ const htmlBlock = `
            <article class="flex max-w-xl flex-col items-start justify-between">
             <div class="flex items-center gap-x-4 text-xs">
               <time datetime="2020-03-16" class="text-gray-400">Mar 16, 2020</time>
-              <a href="#" class="relative z-10 rounded-full bg-gray-800 px-3 py-1.5 font-medium text-gray-300 hover:bg-gray-700">Marketing</a>
+              <a href="javascript:void(0)" class="relative z-10 rounded-full bg-gray-800 px-3 py-1.5 font-medium text-gray-300 hover:bg-gray-700">Marketing</a>
             </div>
             <div class="group relative">
               <h3 class="mt-3 text-lg font-semibold leading-6 text-white group-hover:text-gray-300">
-                <a href="#">
+                <a href="javascript:void(0)">
                   <span class="absolute inset-0"></span>
                   Boost your conversion rate
                 </a>
@@ -87,11 +87,11 @@ const htmlBlock = `
           <article class="flex max-w-xl flex-col items-start justify-between">
             <div class="flex items-center gap-x-4 text-xs">
               <time datetime="2020-03-10" class="text-gray-400">Mar 10, 2020</time>
-              <a href="#" class="relative z-10 rounded-full bg-gray-800 px-3 py-1.5 font-medium text-gray-300 hover:bg-gray-700">Sales</a>
+              <a href="javascript:void(0)" class="relative z-10 rounded-full bg-gray-800 px-3 py-1.5 font-medium text-gray-300 hover:bg-gray-700">Sales</a>
             </div>
             <div class="group relative">
               <h3 class="mt-3 text-lg font-semibold leading-6 text-white group-hover:text-gray-300">
-                <a href="#">
+                <a href="javascript:void(0)">
                   <span class="absolute inset-0"></span>
                   How to use search engine optimization to drive sales
                 </a>
@@ -102,11 +102,11 @@ const htmlBlock = `
           <article class="flex max-w-xl flex-col items-start justify-between">
             <div class="flex items-center gap-x-4 text-xs">
               <time datetime="2020-02-12" class="text-gray-400">Feb 12, 2020</time>
-              <a href="#" class="relative z-10 rounded-full bg-gray-800 px-3 py-1.5 font-medium text-gray-300 hover:bg-gray-700">Business</a>
+              <a href="javascript:void(0)" class="relative z-10 rounded-full bg-gray-800 px-3 py-1.5 font-medium text-gray-300 hover:bg-gray-700">Business</a>
             </div>
             <div class="group relative">
               <h3 class="mt-3 text-lg font-semibold leading-6 text-white group-hover:text-gray-300">
-                <a href="#">
+                <a href="javascript:void(0)">
                   <span class="absolute inset-0"></span>
                   Improve your customer experience
                 </a>

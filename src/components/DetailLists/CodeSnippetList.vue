@@ -5,7 +5,7 @@ const htmlBlock = `
 <div class="bg-white rounded-xl border border-gray-200 shadow-sm overflow-hidden">
   <div class="px-6 py-4 border-b border-gray-100 flex items-center justify-between">
     <h3 class="text-sm font-semibold text-gray-900">API Credentials</h3>
-    <a href="#" class="text-xs font-medium text-blue-600 hover:text-blue-700">Rotate keys</a>
+    <a href="javascript:void(0)" class="text-xs font-medium text-blue-600 hover:text-blue-700">Rotate keys</a>
   </div>
   <div class="p-0 divide-y divide-gray-100">
     <div class="px-6 py-5">
@@ -36,7 +36,7 @@ const htmlBlock = `
       </div>
       <div class="flex items-center gap-2">
         <div class="flex-1 bg-gray-900 rounded-lg p-3 font-mono text-sm text-gray-300 truncate relative group cursor-pointer hover:bg-gray-800 transition-colors">
-          sk_test_...<span class="text-gray-600">••••••••••</span>
+          sk_test_...<span class="text-gray-600">â€¢â€¢â€¢â€¢â€¢â€¢â€¢â€¢â€¢â€¢</span>
            <div class="absolute inset-0 flex items-center justify-end px-3 opacity-0 group-hover:opacity-100 transition-opacity">
             <span class="text-xs text-gray-400">Click to reveal</span>
           </div>
@@ -73,7 +73,7 @@ const htmlBlock = `
     <div class="bg-white rounded-xl border border-gray-200 shadow-sm overflow-hidden">
       <div class="px-6 py-4 border-b border-gray-100 flex items-center justify-between">
         <h3 class="text-sm font-semibold text-gray-900">API Credentials</h3>
-        <a href="#" class="text-xs font-medium text-blue-600 hover:text-blue-700">Rotate keys</a>
+        <a href="javascript:void(0)" class="text-xs font-medium text-blue-600 hover:text-blue-700">Rotate keys</a>
       </div>
       <div class="p-0 divide-y divide-gray-100">
         <div class="px-6 py-5">
@@ -104,7 +104,7 @@ const htmlBlock = `
           </div>
           <div class="flex items-center gap-2">
             <div class="flex-1 bg-gray-900 rounded-lg p-3 font-mono text-sm text-gray-300 truncate relative group cursor-pointer hover:bg-gray-800 transition-colors">
-              sk_test_...<span class="text-gray-600">••••••••••</span>
+              sk_test_...<span class="text-gray-600">â€¢â€¢â€¢â€¢â€¢â€¢â€¢â€¢â€¢â€¢</span>
                <div class="absolute inset-0 flex items-center justify-end px-3 opacity-0 group-hover:opacity-100 transition-opacity">
                 <span class="text-xs text-gray-400">Click to reveal</span>
               </div>

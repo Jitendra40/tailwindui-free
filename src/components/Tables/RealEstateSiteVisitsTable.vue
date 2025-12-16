@@ -59,7 +59,7 @@ const htmlBlock = `
                 <span class="inline-flex items-center rounded-md bg-blue-50 px-2 py-1 text-xs font-medium text-blue-700 ring-1 ring-inset ring-blue-700/10">Scheduled</span>
               </td>
               <td class="relative whitespace-nowrap py-4 pl-3 pr-4 text-right text-sm font-medium sm:pr-0">
-                <a href="#" class="text-indigo-600 hover:text-indigo-900">Reschedule</a>
+                <a href="javascript:void(0)" class="text-indigo-600 hover:text-indigo-900">Reschedule</a>
               </td>
             </tr>
             <tr>
@@ -92,7 +92,7 @@ const htmlBlock = `
                 <span class="inline-flex items-center rounded-md bg-green-50 px-2 py-1 text-xs font-medium text-green-700 ring-1 ring-inset ring-green-600/20">Completed</span>
               </td>
               <td class="relative whitespace-nowrap py-4 pl-3 pr-4 text-right text-sm font-medium sm:pr-0">
-                <a href="#" class="text-indigo-600 hover:text-indigo-900">Feedback</a>
+                <a href="javascript:void(0)" class="text-indigo-600 hover:text-indigo-900">Feedback</a>
               </td>
             </tr>
           </tbody>

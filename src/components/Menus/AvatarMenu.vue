@@ -17,10 +17,10 @@ const htmlBlock = `
              <p class="text-sm font-semibold text-gray-900">Tom Cook</p>
              <p class="text-xs text-gray-500">tom@example.com</p>
         </div>
-      <a href="#" class="block rounded-lg px-4 py-2 text-sm text-gray-700 hover:bg-gray-50 hover:text-gray-900 transition-colors">Your Profile</a>
-      <a href="#" class="block rounded-lg px-4 py-2 text-sm text-gray-700 hover:bg-gray-50 hover:text-gray-900 transition-colors">Settings</a>
+      <a href="javascript:void(0)" class="block rounded-lg px-4 py-2 text-sm text-gray-700 hover:bg-gray-50 hover:text-gray-900 transition-colors">Your Profile</a>
+      <a href="javascript:void(0)" class="block rounded-lg px-4 py-2 text-sm text-gray-700 hover:bg-gray-50 hover:text-gray-900 transition-colors">Settings</a>
       <div class="my-1 h-px bg-gray-100"></div>
-      <a href="#" class="block rounded-lg px-4 py-2 text-sm text-gray-700 hover:bg-gray-50 hover:text-gray-900 transition-colors">Sign out</a>
+      <a href="javascript:void(0)" class="block rounded-lg px-4 py-2 text-sm text-gray-700 hover:bg-gray-50 hover:text-gray-900 transition-colors">Sign out</a>
     </div>
   </details>
 </div>

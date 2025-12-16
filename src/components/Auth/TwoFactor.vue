@@ -33,7 +33,7 @@ const htmlBlock = `
     
     <p class="mt-10 text-center text-sm text-gray-500">
       Didn't receive verified code?
-      <a href="#" class="font-semibold leading-6 text-indigo-600 hover:text-indigo-500">Resend Code</a>
+      <a href="javascript:void(0)" class="font-semibold leading-6 text-indigo-600 hover:text-indigo-500">Resend Code</a>
     </p>
 
   </div>

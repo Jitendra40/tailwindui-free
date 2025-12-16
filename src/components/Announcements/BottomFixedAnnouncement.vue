@@ -9,7 +9,7 @@ const htmlBlock = `
     </svg>
     Big news! We're excited to announce a brand new product.
   </p>
-  <a class="mt-4 block rounded-lg bg-white px-5 py-3 text-center text-sm font-semibold text-indigo-600 shadow-sm hover:bg-indigo-50 sm:mt-0" href="#">Check it out</a>
+  <a class="mt-4 block rounded-lg bg-white px-5 py-3 text-center text-sm font-semibold text-indigo-600 shadow-sm hover:bg-indigo-50 sm:mt-0" href="javascript:void(0)">Check it out</a>
 </div>
 `
 </script>
@@ -23,7 +23,7 @@ const htmlBlock = `
         </svg>
         Big news! We're excited to announce a brand new product.
       </p>
-      <a class="mt-4 block rounded-lg bg-white px-5 py-3 text-center text-sm font-semibold text-indigo-600 shadow-sm hover:bg-indigo-50 sm:mt-0" href="#">Check it out</a>
+      <a class="mt-4 block rounded-lg bg-white px-5 py-3 text-center text-sm font-semibold text-indigo-600 shadow-sm hover:bg-indigo-50 sm:mt-0" href="javascript:void(0)">Check it out</a>
     </div>
   </PreviewWrapper>
 </template>

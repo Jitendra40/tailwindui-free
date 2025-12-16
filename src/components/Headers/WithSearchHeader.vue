@@ -12,10 +12,10 @@ const htmlBlock = `
       <span class="text-sm font-semibold text-gray-900">Signal</span>
     </div>
     <div class="hidden lg:flex items-center gap-5 text-sm font-medium text-gray-700">
-      <a href="#" class="text-indigo-600">Dashboard</a>
-      <a href="#" class="hover:text-indigo-600">Analytics</a>
-      <a href="#" class="hover:text-indigo-600">Inbox</a>
-      <a href="#" class="hover:text-indigo-600">Settings</a>
+      <a href="javascript:void(0)" class="text-indigo-600">Dashboard</a>
+      <a href="javascript:void(0)" class="hover:text-indigo-600">Analytics</a>
+      <a href="javascript:void(0)" class="hover:text-indigo-600">Inbox</a>
+      <a href="javascript:void(0)" class="hover:text-indigo-600">Settings</a>
     </div>
     <div class="flex flex-1 items-center justify-end gap-3">
       <div class="w-full max-w-sm">
@@ -29,7 +29,7 @@ const htmlBlock = `
           <input id="search" name="search" class="block w-full rounded-full border border-gray-200 bg-white py-2 pl-9 pr-3 text-sm text-gray-900 placeholder:text-gray-400 shadow-sm focus:border-indigo-300 focus:outline-none focus:ring-2 focus:ring-indigo-200" placeholder="Search dashboards, teams..." type="search">
         </div>
       </div>
-      <a href="#" class="hidden sm:inline-flex rounded-full bg-gray-900 px-3 py-2 text-xs font-semibold text-white hover:bg-gray-800">New report</a>
+      <a href="javascript:void(0)" class="hidden sm:inline-flex rounded-full bg-gray-900 px-3 py-2 text-xs font-semibold text-white hover:bg-gray-800">New report</a>
       <button type="button" class="lg:hidden inline-flex items-center rounded-md p-2 text-gray-600 ring-1 ring-gray-200">
         <span class="sr-only">Open main menu</span>
         <svg class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke-width="1.6" stroke="currentColor" aria-hidden="true">
@@ -54,10 +54,10 @@ const htmlBlock = `
           <span class="text-sm font-semibold text-gray-900">Signal</span>
         </div>
         <div class="hidden lg:flex items-center gap-5 text-sm font-medium text-gray-700">
-          <a href="#" class="text-indigo-600">Dashboard</a>
-          <a href="#" class="hover:text-indigo-600">Analytics</a>
-          <a href="#" class="hover:text-indigo-600">Inbox</a>
-          <a href="#" class="hover:text-indigo-600">Settings</a>
+          <a href="javascript:void(0)" class="text-indigo-600">Dashboard</a>
+          <a href="javascript:void(0)" class="hover:text-indigo-600">Analytics</a>
+          <a href="javascript:void(0)" class="hover:text-indigo-600">Inbox</a>
+          <a href="javascript:void(0)" class="hover:text-indigo-600">Settings</a>
         </div>
         <div class="flex flex-1 items-center justify-end gap-3">
           <div class="w-full max-w-sm">
@@ -71,7 +71,7 @@ const htmlBlock = `
               <input id="search" name="search" class="block w-full rounded-full border border-gray-200 bg-white py-2 pl-9 pr-3 text-sm text-gray-900 placeholder:text-gray-400 shadow-sm focus:border-indigo-300 focus:outline-none focus:ring-2 focus:ring-indigo-200" placeholder="Search dashboards, teams..." type="search">
             </div>
           </div>
-          <a href="#" class="hidden sm:inline-flex rounded-full bg-gray-900 px-3 py-2 text-xs font-semibold text-white hover:bg-gray-800">New report</a>
+          <a href="javascript:void(0)" class="hidden sm:inline-flex rounded-full bg-gray-900 px-3 py-2 text-xs font-semibold text-white hover:bg-gray-800">New report</a>
           <button type="button" class="lg:hidden inline-flex items-center rounded-md p-2 text-gray-600 ring-1 ring-gray-200">
             <span class="sr-only">Open main menu</span>
             <svg class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke-width="1.6" stroke="currentColor" aria-hidden="true">

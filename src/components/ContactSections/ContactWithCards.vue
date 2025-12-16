@@ -18,7 +18,7 @@ const htmlBlock = `
             <h3 class="text-base font-semibold leading-7 text-gray-900">Sales</h3>
             <p class="mt-2 leading-7 text-gray-600">Consectetur vel non. Rerum ut consequatur nobis unde. Enim est quo corrupti consequatur.</p>
             <p class="mt-4">
-                <a href="#" class="text-sm font-semibold leading-6 text-indigo-600">Contact sales <span aria-hidden="true">&rarr;</span></a>
+                <a href="javascript:void(0)" class="text-sm font-semibold leading-6 text-indigo-600">Contact sales <span aria-hidden="true">&rarr;</span></a>
             </p>
         </div>
     </div>
@@ -32,7 +32,7 @@ const htmlBlock = `
             <h3 class="text-base font-semibold leading-7 text-gray-900">Technical Support</h3>
             <p class="mt-2 leading-7 text-gray-600">Quod cupiditate ad. Voluptas omnis at. Quia quo sit quam. Doloremque rem omnis.</p>
             <p class="mt-4">
-                <a href="#" class="text-sm font-semibold leading-6 text-indigo-600">Get support <span aria-hidden="true">&rarr;</span></a>
+                <a href="javascript:void(0)" class="text-sm font-semibold leading-6 text-indigo-600">Get support <span aria-hidden="true">&rarr;</span></a>
             </p>
         </div>
     </div>
@@ -46,7 +46,7 @@ const htmlBlock = `
             <h3 class="text-base font-semibold leading-7 text-gray-900">Media Inquiries</h3>
             <p class="mt-2 leading-7 text-gray-600">Eos cumque aut. Voluptatem cumque sit. Ut ut tamen amet reiciendis.</p>
             <p class="mt-4">
-                <a href="#" class="text-sm font-semibold leading-6 text-indigo-600">Contact media <span aria-hidden="true">&rarr;</span></a>
+                <a href="javascript:void(0)" class="text-sm font-semibold leading-6 text-indigo-600">Contact media <span aria-hidden="true">&rarr;</span></a>
             </p>
         </div>
     </div>
@@ -73,7 +73,7 @@ const htmlBlock = `
                 <h3 class="text-base font-semibold leading-7 text-gray-900">Sales</h3>
                 <p class="mt-2 leading-7 text-gray-600">Consectetur vel non. Rerum ut consequatur nobis unde. Enim est quo corrupti consequatur.</p>
                 <p class="mt-4">
-                    <a href="#" class="text-sm font-semibold leading-6 text-indigo-600">Contact sales <span aria-hidden="true">&rarr;</span></a>
+                    <a href="javascript:void(0)" class="text-sm font-semibold leading-6 text-indigo-600">Contact sales <span aria-hidden="true">&rarr;</span></a>
                 </p>
             </div>
         </div>
@@ -87,7 +87,7 @@ const htmlBlock = `
                 <h3 class="text-base font-semibold leading-7 text-gray-900">Technical Support</h3>
                 <p class="mt-2 leading-7 text-gray-600">Quod cupiditate ad. Voluptas omnis at. Quia quo sit quam. Doloremque rem omnis.</p>
                 <p class="mt-4">
-                    <a href="#" class="text-sm font-semibold leading-6 text-indigo-600">Get support <span aria-hidden="true">&rarr;</span></a>
+                    <a href="javascript:void(0)" class="text-sm font-semibold leading-6 text-indigo-600">Get support <span aria-hidden="true">&rarr;</span></a>
                 </p>
             </div>
         </div>
@@ -101,7 +101,7 @@ const htmlBlock = `
                 <h3 class="text-base font-semibold leading-7 text-gray-900">Media Inquiries</h3>
                 <p class="mt-2 leading-7 text-gray-600">Eos cumque aut. Voluptatem cumque sit. Ut ut tamen amet reiciendis.</p>
                 <p class="mt-4">
-                    <a href="#" class="text-sm font-semibold leading-6 text-indigo-600">Contact media <span aria-hidden="true">&rarr;</span></a>
+                    <a href="javascript:void(0)" class="text-sm font-semibold leading-6 text-indigo-600">Contact media <span aria-hidden="true">&rarr;</span></a>
                 </p>
             </div>
         </div>

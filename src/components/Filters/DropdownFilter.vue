@@ -53,13 +53,13 @@ const htmlBlock = `
                 <p class="text-[10px] font-semibold text-gray-500 uppercase tracking-wider">Sort options</p>
             </div>
             <div class="py-1">
-            <a href="#" class="group flex items-center px-4 py-2 text-xs text-gray-700 hover:bg-gray-50 hover:text-gray-900">
+            <a href="javascript:void(0)" class="group flex items-center px-4 py-2 text-xs text-gray-700 hover:bg-gray-50 hover:text-gray-900">
                 <svg class="mr-3 h-4 w-4 text-gray-400 group-hover:text-gray-500 transition-colors" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M3 4.5h14.25M3 9h9.75M3 13.5h9.75m4.5-4.5v12m0 0l-3.75-3.75M17.25 21L21 17.25" />
                 </svg>
                 Most Popular
             </a>
-            <a href="#" class="group flex items-center bg-indigo-50/50 px-4 py-2 text-xs text-indigo-700 font-medium border-l-2 border-indigo-600">
+            <a href="javascript:void(0)" class="group flex items-center bg-indigo-50/50 px-4 py-2 text-xs text-indigo-700 font-medium border-l-2 border-indigo-600">
                 <svg class="mr-3 h-4 w-4 text-indigo-500" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M11.48 3.499a.562.562 0 011.04 0l2.125 5.111a.563.563 0 00.475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 00-.182.557l1.285 5.385a.562.562 0 01-.84.61l-4.725-2.885a.563.563 0 00-.586 0L6.982 20.54a.562.562 0 01-.84-.61l1.285-5.386a.562.562 0 00-.182-.557l-4.204-3.602a.563.563 0 01.321-.988l5.518-.442a.563.563 0 00.475-.345L11.48 3.5z" />
                 </svg>
@@ -68,7 +68,7 @@ const htmlBlock = `
                     <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd" />
                 </svg>
             </a>
-            <a href="#" class="group flex items-center px-4 py-2 text-xs text-gray-700 hover:bg-gray-50 hover:text-gray-900">
+            <a href="javascript:void(0)" class="group flex items-center px-4 py-2 text-xs text-gray-700 hover:bg-gray-50 hover:text-gray-900">
                 <svg class="mr-3 h-4 w-4 text-gray-400 group-hover:text-gray-500 transition-colors" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
                     <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v12m-3-2.818l.879.659c1.171.879 3.07.879 4.242 0 1.172-.879 1.172-2.303 0-3.182C13.536 12.219 12.768 12 12 12c-.725 0-1.45-.22-2.003-.659-1.106-.879-1.106-2.303 0-3.182s2.9-.879 4.006 0l.415.33M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
                 </svg>
@@ -76,7 +76,7 @@ const htmlBlock = `
             </a>
             </div>
             <div class="py-1 border-t border-gray-100">
-                <a href="#" class="flex px-4 py-2 text-xs text-red-600 hover:bg-red-50">
+                <a href="javascript:void(0)" class="flex px-4 py-2 text-xs text-red-600 hover:bg-red-50">
                     <span class="ml-7">Reset Filters</span>
                 </a>
             </div>

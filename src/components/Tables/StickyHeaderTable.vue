@@ -35,7 +35,7 @@ const htmlBlock = `
                 <td class="whitespace-nowrap px-3 py-4 text-sm text-gray-500">lindsay.walton@example.com</td>
                 <td class="whitespace-nowrap px-3 py-4 text-sm text-gray-500">Member</td>
                 <td class="relative whitespace-nowrap py-4 pl-3 pr-4 text-right text-sm font-medium sm:pr-6">
-                  <a href="#" class="text-indigo-600 hover:text-indigo-900">Edit<span class="sr-only">, Lindsay Walton</span></a>
+                  <a href="javascript:void(0)" class="text-indigo-600 hover:text-indigo-900">Edit<span class="sr-only">, Lindsay Walton</span></a>
                 </td>
               </tr>
               <tr>
@@ -44,7 +44,7 @@ const htmlBlock = `
                 <td class="whitespace-nowrap px-3 py-4 text-sm text-gray-500">courtney.henry@example.com</td>
                 <td class="whitespace-nowrap px-3 py-4 text-sm text-gray-500">Admin</td>
                 <td class="relative whitespace-nowrap py-4 pl-3 pr-4 text-right text-sm font-medium sm:pr-6">
-                  <a href="#" class="text-indigo-600 hover:text-indigo-900">Edit<span class="sr-only">, Courtney Henry</span></a>
+                  <a href="javascript:void(0)" class="text-indigo-600 hover:text-indigo-900">Edit<span class="sr-only">, Courtney Henry</span></a>
                 </td>
               </tr>
               <tr>
@@ -53,7 +53,7 @@ const htmlBlock = `
                 <td class="whitespace-nowrap px-3 py-4 text-sm text-gray-500">tom.cook@example.com</td>
                 <td class="whitespace-nowrap px-3 py-4 text-sm text-gray-500">Member</td>
                 <td class="relative whitespace-nowrap py-4 pl-3 pr-4 text-right text-sm font-medium sm:pr-6">
-                  <a href="#" class="text-indigo-600 hover:text-indigo-900">Edit<span class="sr-only">, Tom Cook</span></a>
+                  <a href="javascript:void(0)" class="text-indigo-600 hover:text-indigo-900">Edit<span class="sr-only">, Tom Cook</span></a>
                 </td>
               </tr>
                <tr>
@@ -62,7 +62,7 @@ const htmlBlock = `
                 <td class="whitespace-nowrap px-3 py-4 text-sm text-gray-500">whitney.francis@example.com</td>
                 <td class="whitespace-nowrap px-3 py-4 text-sm text-gray-500">Admin</td>
                 <td class="relative whitespace-nowrap py-4 pl-3 pr-4 text-right text-sm font-medium sm:pr-6">
-                  <a href="#" class="text-indigo-600 hover:text-indigo-900">Edit<span class="sr-only">, Whitney Francis</span></a>
+                  <a href="javascript:void(0)" class="text-indigo-600 hover:text-indigo-900">Edit<span class="sr-only">, Whitney Francis</span></a>
                 </td>
               </tr>
               <tr>
@@ -71,7 +71,7 @@ const htmlBlock = `
                 <td class="whitespace-nowrap px-3 py-4 text-sm text-gray-500">leonard.krasner@example.com</td>
                 <td class="whitespace-nowrap px-3 py-4 text-sm text-gray-500">Owner</td>
                 <td class="relative whitespace-nowrap py-4 pl-3 pr-4 text-right text-sm font-medium sm:pr-6">
-                  <a href="#" class="text-indigo-600 hover:text-indigo-900">Edit<span class="sr-only">, Leonard Krasner</span></a>
+                  <a href="javascript:void(0)" class="text-indigo-600 hover:text-indigo-900">Edit<span class="sr-only">, Leonard Krasner</span></a>
                 </td>
               </tr>
                <tr>
@@ -80,7 +80,7 @@ const htmlBlock = `
                 <td class="whitespace-nowrap px-3 py-4 text-sm text-gray-500">floyd.miles@example.com</td>
                 <td class="whitespace-nowrap px-3 py-4 text-sm text-gray-500">Member</td>
                 <td class="relative whitespace-nowrap py-4 pl-3 pr-4 text-right text-sm font-medium sm:pr-6">
-                  <a href="#" class="text-indigo-600 hover:text-indigo-900">Edit<span class="sr-only">, Floyd Miles</span></a>
+                  <a href="javascript:void(0)" class="text-indigo-600 hover:text-indigo-900">Edit<span class="sr-only">, Floyd Miles</span></a>
                 </td>
               </tr>
                <tr>
@@ -89,7 +89,7 @@ const htmlBlock = `
                 <td class="whitespace-nowrap px-3 py-4 text-sm text-gray-500">emily.selman@example.com</td>
                 <td class="whitespace-nowrap px-3 py-4 text-sm text-gray-500">Member</td>
                 <td class="relative whitespace-nowrap py-4 pl-3 pr-4 text-right text-sm font-medium sm:pr-6">
-                  <a href="#" class="text-indigo-600 hover:text-indigo-900">Edit<span class="sr-only">, Emily Selman</span></a>
+                  <a href="javascript:void(0)" class="text-indigo-600 hover:text-indigo-900">Edit<span class="sr-only">, Emily Selman</span></a>
                 </td>
               </tr>
                <tr>
@@ -98,7 +98,7 @@ const htmlBlock = `
                 <td class="whitespace-nowrap px-3 py-4 text-sm text-gray-500">kristin.watson@example.com</td>
                 <td class="whitespace-nowrap px-3 py-4 text-sm text-gray-500">Admin</td>
                 <td class="relative whitespace-nowrap py-4 pl-3 pr-4 text-right text-sm font-medium sm:pr-6">
-                  <a href="#" class="text-indigo-600 hover:text-indigo-900">Edit<span class="sr-only">, Kristin Watson</span></a>
+                  <a href="javascript:void(0)" class="text-indigo-600 hover:text-indigo-900">Edit<span class="sr-only">, Kristin Watson</span></a>
                 </td>
               </tr>
                <tr>
@@ -107,7 +107,7 @@ const htmlBlock = `
                 <td class="whitespace-nowrap px-3 py-4 text-sm text-gray-500">cody.fisher@example.com</td>
                 <td class="whitespace-nowrap px-3 py-4 text-sm text-gray-500">Member</td>
                 <td class="relative whitespace-nowrap py-4 pl-3 pr-4 text-right text-sm font-medium sm:pr-6">
-                  <a href="#" class="text-indigo-600 hover:text-indigo-900">Edit<span class="sr-only">, Cody Fisher</span></a>
+                  <a href="javascript:void(0)" class="text-indigo-600 hover:text-indigo-900">Edit<span class="sr-only">, Cody Fisher</span></a>
                 </td>
               </tr>
             </tbody>

@@ -7,7 +7,7 @@ const htmlBlock = `
     <div class="lg:grid lg:grid-cols-12 lg:gap-8">
       <div class="lg:col-span-5">
         <h2 class="text-2xl font-bold leading-10 tracking-tight text-gray-900">Frequently asked questions</h2>
-        <p class="mt-4 text-base leading-7 text-gray-600">Can’t find the answer you’re looking for? Reach out to our <a href="#" class="font-semibold text-indigo-600 hover:text-indigo-500">customer support</a> team.</p>
+        <p class="mt-4 text-base leading-7 text-gray-600">Canâ€™t find the answer youâ€™re looking for? Reach out to our <a href="javascript:void(0)" class="font-semibold text-indigo-600 hover:text-indigo-500">customer support</a> team.</p>
       </div>
       <div class="mt-10 lg:col-span-7 lg:mt-0">
         <dl class="space-y-10">
@@ -38,7 +38,7 @@ const htmlBlock = `
         <div class="lg:grid lg:grid-cols-12 lg:gap-8">
           <div class="lg:col-span-5">
             <h2 class="text-2xl font-bold leading-10 tracking-tight text-gray-900">Frequently asked questions</h2>
-            <p class="mt-4 text-base leading-7 text-gray-600">Can’t find the answer you’re looking for? Reach out to our <a href="#" class="font-semibold text-indigo-600 hover:text-indigo-500">customer support</a> team.</p>
+            <p class="mt-4 text-base leading-7 text-gray-600">Canâ€™t find the answer youâ€™re looking for? Reach out to our <a href="javascript:void(0)" class="font-semibold text-indigo-600 hover:text-indigo-500">customer support</a> team.</p>
           </div>
           <div class="mt-10 lg:col-span-7 lg:mt-0">
             <dl class="space-y-10">

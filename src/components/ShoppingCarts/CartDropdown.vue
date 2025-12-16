@@ -22,7 +22,7 @@ const htmlBlock = `
             </div>
             <div class="ml-4 flex flex-1 flex-col">
                 <div class="flex justify-between text-base font-medium text-gray-900">
-                    <h3><a href="#">Throwback Hip Bag</a></h3>
+                    <h3><a href="javascript:void(0)">Throwback Hip Bag</a></h3>
                     <p class="ml-4">$90.00</p>
                 </div>
                 <p class="mt-1 text-sm text-gray-500">Salmon</p>
@@ -35,7 +35,7 @@ const htmlBlock = `
             <p>$90.00</p>
         </div>
         <div class="mt-6">
-            <a href="#" class="flex items-center justify-center rounded-md border border-transparent bg-indigo-600 px-6 py-3 text-base font-medium text-white shadow-sm hover:bg-indigo-700">Checkout</a>
+            <a href="javascript:void(0)" class="flex items-center justify-center rounded-md border border-transparent bg-indigo-600 px-6 py-3 text-base font-medium text-white shadow-sm hover:bg-indigo-700">Checkout</a>
         </div>
       </div>
     </div>
@@ -67,7 +67,7 @@ const htmlBlock = `
                     </div>
                     <div class="ml-4 flex flex-1 flex-col">
                         <div class="flex justify-between text-base font-medium text-gray-900">
-                            <h3><a href="#">Throwback Hip Bag</a></h3>
+                            <h3><a href="javascript:void(0)">Throwback Hip Bag</a></h3>
                             <p class="ml-4">$90.00</p>
                         </div>
                         <p class="mt-1 text-sm text-gray-500">Salmon</p>
@@ -80,7 +80,7 @@ const htmlBlock = `
                     <p>$90.00</p>
                 </div>
                 <div class="mt-6">
-                    <a href="#" class="flex items-center justify-center rounded-md border border-transparent bg-indigo-600 px-6 py-3 text-base font-medium text-white shadow-sm hover:bg-indigo-700">Checkout</a>
+                    <a href="javascript:void(0)" class="flex items-center justify-center rounded-md border border-transparent bg-indigo-600 px-6 py-3 text-base font-medium text-white shadow-sm hover:bg-indigo-700">Checkout</a>
                 </div>
               </div>
             </div>

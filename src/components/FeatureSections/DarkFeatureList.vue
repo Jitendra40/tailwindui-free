@@ -23,7 +23,7 @@ const htmlBlock = `
           <dd class="mt-1 flex flex-auto flex-col text-base leading-7 text-gray-300">
             <p class="flex-auto">Morbi viverra dui mi arcu sed. Tellus semper adipiscing suspendisse semper morbi. Odio urna massa nunc massa.</p>
             <p class="mt-6">
-              <a href="#" class="text-sm font-semibold leading-6 text-indigo-400">Learn more <span aria-hidden="true">→</span></a>
+              <a href="javascript:void(0)" class="text-sm font-semibold leading-6 text-indigo-400">Learn more <span aria-hidden="true">â†’</span></a>
             </p>
           </dd>
         </div>
@@ -39,7 +39,7 @@ const htmlBlock = `
           <dd class="mt-1 flex flex-auto flex-col text-base leading-7 text-gray-300">
             <p class="flex-auto">Sit quis amet rutrum tellus ullamcorper ultricies libero dolor eget. Sem sodales gravida quam turpis enim lacus amet.</p>
             <p class="mt-6">
-              <a href="#" class="text-sm font-semibold leading-6 text-indigo-400">Learn more <span aria-hidden="true">→</span></a>
+              <a href="javascript:void(0)" class="text-sm font-semibold leading-6 text-indigo-400">Learn more <span aria-hidden="true">â†’</span></a>
             </p>
           </dd>
         </div>
@@ -55,7 +55,7 @@ const htmlBlock = `
           <dd class="mt-1 flex flex-auto flex-col text-base leading-7 text-gray-300">
             <p class="flex-auto">Quisque est vel vulputate cursus. Risus proin diam nunc commodo. Lobortis auctor congue commodo diam neque.</p>
             <p class="mt-6">
-              <a href="#" class="text-sm font-semibold leading-6 text-indigo-400">Learn more <span aria-hidden="true">→</span></a>
+              <a href="javascript:void(0)" class="text-sm font-semibold leading-6 text-indigo-400">Learn more <span aria-hidden="true">â†’</span></a>
             </p>
           </dd>
         </div>
@@ -89,7 +89,7 @@ const htmlBlock = `
               <dd class="mt-1 flex flex-auto flex-col text-base leading-7 text-gray-300">
                 <p class="flex-auto">Morbi viverra dui mi arcu sed. Tellus semper adipiscing suspendisse semper morbi. Odio urna massa nunc massa.</p>
                 <p class="mt-6">
-                  <a href="#" class="text-sm font-semibold leading-6 text-indigo-400">Learn more <span aria-hidden="true">→</span></a>
+                  <a href="javascript:void(0)" class="text-sm font-semibold leading-6 text-indigo-400">Learn more <span aria-hidden="true">â†’</span></a>
                 </p>
               </dd>
             </div>
@@ -105,7 +105,7 @@ const htmlBlock = `
               <dd class="mt-1 flex flex-auto flex-col text-base leading-7 text-gray-300">
                 <p class="flex-auto">Sit quis amet rutrum tellus ullamcorper ultricies libero dolor eget. Sem sodales gravida quam turpis enim lacus amet.</p>
                 <p class="mt-6">
-                  <a href="#" class="text-sm font-semibold leading-6 text-indigo-400">Learn more <span aria-hidden="true">→</span></a>
+                  <a href="javascript:void(0)" class="text-sm font-semibold leading-6 text-indigo-400">Learn more <span aria-hidden="true">â†’</span></a>
                 </p>
               </dd>
             </div>
@@ -121,7 +121,7 @@ const htmlBlock = `
               <dd class="mt-1 flex flex-auto flex-col text-base leading-7 text-gray-300">
                 <p class="flex-auto">Quisque est vel vulputate cursus. Risus proin diam nunc commodo. Lobortis auctor congue commodo diam neque.</p>
                 <p class="mt-6">
-                  <a href="#" class="text-sm font-semibold leading-6 text-indigo-400">Learn more <span aria-hidden="true">→</span></a>
+                  <a href="javascript:void(0)" class="text-sm font-semibold leading-6 text-indigo-400">Learn more <span aria-hidden="true">â†’</span></a>
                 </p>
               </dd>
             </div>

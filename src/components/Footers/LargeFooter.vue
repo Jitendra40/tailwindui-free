@@ -17,47 +17,47 @@ const htmlBlock = `
         </div>
         <p class="text-sm text-gray-600">Tools for modern product teams shipping SaaS faster.</p>
         <div class="flex gap-3 text-gray-500">
-          <a href="#" class="hover:text-indigo-600 text-xs font-medium">Status</a>
-          <span class="text-xs text-gray-300">•</span>
-          <a href="#" class="hover:text-indigo-600 text-xs font-medium">Release notes</a>
+          <a href="javascript:void(0)" class="hover:text-indigo-600 text-xs font-medium">Status</a>
+          <span class="text-xs text-gray-300">â€¢</span>
+          <a href="javascript:void(0)" class="hover:text-indigo-600 text-xs font-medium">Release notes</a>
         </div>
       </div>
       <div class="grid grid-cols-2 gap-8 lg:col-span-3 sm:grid-cols-3">
         <div>
           <h3 class="text-sm font-semibold text-gray-900">Product</h3>
           <ul class="mt-4 space-y-2 text-sm text-gray-600">
-            <li><a href="#" class="hover:text-indigo-600">Features</a></li>
-            <li><a href="#" class="hover:text-indigo-600">Integrations</a></li>
-            <li><a href="#" class="hover:text-indigo-600">Changelog</a></li>
-            <li><a href="#" class="hover:text-indigo-600">Roadmap</a></li>
+            <li><a href="javascript:void(0)" class="hover:text-indigo-600">Features</a></li>
+            <li><a href="javascript:void(0)" class="hover:text-indigo-600">Integrations</a></li>
+            <li><a href="javascript:void(0)" class="hover:text-indigo-600">Changelog</a></li>
+            <li><a href="javascript:void(0)" class="hover:text-indigo-600">Roadmap</a></li>
           </ul>
         </div>
         <div>
           <h3 class="text-sm font-semibold text-gray-900">Resources</h3>
           <ul class="mt-4 space-y-2 text-sm text-gray-600">
-            <li><a href="#" class="hover:text-indigo-600">Docs</a></li>
-            <li><a href="#" class="hover:text-indigo-600">API</a></li>
-            <li><a href="#" class="hover:text-indigo-600">Playbooks</a></li>
-            <li><a href="#" class="hover:text-indigo-600">Templates</a></li>
+            <li><a href="javascript:void(0)" class="hover:text-indigo-600">Docs</a></li>
+            <li><a href="javascript:void(0)" class="hover:text-indigo-600">API</a></li>
+            <li><a href="javascript:void(0)" class="hover:text-indigo-600">Playbooks</a></li>
+            <li><a href="javascript:void(0)" class="hover:text-indigo-600">Templates</a></li>
           </ul>
         </div>
         <div>
           <h3 class="text-sm font-semibold text-gray-900">Company</h3>
           <ul class="mt-4 space-y-2 text-sm text-gray-600">
-            <li><a href="#" class="hover:text-indigo-600">About</a></li>
-            <li><a href="#" class="hover:text-indigo-600">Careers</a></li>
-            <li><a href="#" class="hover:text-indigo-600">Press</a></li>
-            <li><a href="#" class="hover:text-indigo-600">Contact</a></li>
+            <li><a href="javascript:void(0)" class="hover:text-indigo-600">About</a></li>
+            <li><a href="javascript:void(0)" class="hover:text-indigo-600">Careers</a></li>
+            <li><a href="javascript:void(0)" class="hover:text-indigo-600">Press</a></li>
+            <li><a href="javascript:void(0)" class="hover:text-indigo-600">Contact</a></li>
           </ul>
         </div>
       </div>
     </div>
     <div class="mt-10 flex flex-wrap items-center gap-3 text-xs text-gray-500">
       <span>&copy; 2025 Northwind Inc.</span>
-      <span class="text-gray-300">•</span>
-      <a href="#" class="hover:text-indigo-600">Privacy</a>
-      <a href="#" class="hover:text-indigo-600">Terms</a>
-      <a href="#" class="hover:text-indigo-600">EU Compliance</a>
+      <span class="text-gray-300">â€¢</span>
+      <a href="javascript:void(0)" class="hover:text-indigo-600">Privacy</a>
+      <a href="javascript:void(0)" class="hover:text-indigo-600">Terms</a>
+      <a href="javascript:void(0)" class="hover:text-indigo-600">EU Compliance</a>
     </div>
   </div>
 </footer>
@@ -81,47 +81,47 @@ const htmlBlock = `
             </div>
             <p class="text-sm text-gray-600">Tools for modern product teams shipping SaaS faster.</p>
             <div class="flex gap-3 text-gray-500">
-              <a href="#" class="hover:text-indigo-600 text-xs font-medium">Status</a>
-              <span class="text-xs text-gray-300">•</span>
-              <a href="#" class="hover:text-indigo-600 text-xs font-medium">Release notes</a>
+              <a href="javascript:void(0)" class="hover:text-indigo-600 text-xs font-medium">Status</a>
+              <span class="text-xs text-gray-300">â€¢</span>
+              <a href="javascript:void(0)" class="hover:text-indigo-600 text-xs font-medium">Release notes</a>
             </div>
           </div>
           <div class="grid grid-cols-2 gap-8 lg:col-span-3 sm:grid-cols-3">
             <div>
               <h3 class="text-sm font-semibold text-gray-900">Product</h3>
               <ul class="mt-4 space-y-2 text-sm text-gray-600">
-                <li><a href="#" class="hover:text-indigo-600">Features</a></li>
-                <li><a href="#" class="hover:text-indigo-600">Integrations</a></li>
-                <li><a href="#" class="hover:text-indigo-600">Changelog</a></li>
-                <li><a href="#" class="hover:text-indigo-600">Roadmap</a></li>
+                <li><a href="javascript:void(0)" class="hover:text-indigo-600">Features</a></li>
+                <li><a href="javascript:void(0)" class="hover:text-indigo-600">Integrations</a></li>
+                <li><a href="javascript:void(0)" class="hover:text-indigo-600">Changelog</a></li>
+                <li><a href="javascript:void(0)" class="hover:text-indigo-600">Roadmap</a></li>
               </ul>
             </div>
             <div>
               <h3 class="text-sm font-semibold text-gray-900">Resources</h3>
               <ul class="mt-4 space-y-2 text-sm text-gray-600">
-                <li><a href="#" class="hover:text-indigo-600">Docs</a></li>
-                <li><a href="#" class="hover:text-indigo-600">API</a></li>
-                <li><a href="#" class="hover:text-indigo-600">Playbooks</a></li>
-                <li><a href="#" class="hover:text-indigo-600">Templates</a></li>
+                <li><a href="javascript:void(0)" class="hover:text-indigo-600">Docs</a></li>
+                <li><a href="javascript:void(0)" class="hover:text-indigo-600">API</a></li>
+                <li><a href="javascript:void(0)" class="hover:text-indigo-600">Playbooks</a></li>
+                <li><a href="javascript:void(0)" class="hover:text-indigo-600">Templates</a></li>
               </ul>
             </div>
             <div>
               <h3 class="text-sm font-semibold text-gray-900">Company</h3>
               <ul class="mt-4 space-y-2 text-sm text-gray-600">
-                <li><a href="#" class="hover:text-indigo-600">About</a></li>
-                <li><a href="#" class="hover:text-indigo-600">Careers</a></li>
-                <li><a href="#" class="hover:text-indigo-600">Press</a></li>
-                <li><a href="#" class="hover:text-indigo-600">Contact</a></li>
+                <li><a href="javascript:void(0)" class="hover:text-indigo-600">About</a></li>
+                <li><a href="javascript:void(0)" class="hover:text-indigo-600">Careers</a></li>
+                <li><a href="javascript:void(0)" class="hover:text-indigo-600">Press</a></li>
+                <li><a href="javascript:void(0)" class="hover:text-indigo-600">Contact</a></li>
               </ul>
             </div>
           </div>
         </div>
         <div class="mt-10 flex flex-wrap items-center gap-3 text-xs text-gray-500">
           <span>&copy; 2025 Northwind Inc.</span>
-          <span class="text-gray-300">•</span>
-          <a href="#" class="hover:text-indigo-600">Privacy</a>
-          <a href="#" class="hover:text-indigo-600">Terms</a>
-          <a href="#" class="hover:text-indigo-600">EU Compliance</a>
+          <span class="text-gray-300">â€¢</span>
+          <a href="javascript:void(0)" class="hover:text-indigo-600">Privacy</a>
+          <a href="javascript:void(0)" class="hover:text-indigo-600">Terms</a>
+          <a href="javascript:void(0)" class="hover:text-indigo-600">EU Compliance</a>
         </div>
       </div>
     </footer>

@@ -13,11 +13,11 @@ const htmlBlock = `
       <span class="text-base font-semibold text-gray-900">Marketly</span>
     </div>
     <div class="hidden lg:flex items-center gap-5 text-sm font-medium text-gray-700">
-      <a href="#" class="hover:text-emerald-700">New</a>
-      <a href="#" class="hover:text-emerald-700">Men</a>
-      <a href="#" class="hover:text-emerald-700">Women</a>
-      <a href="#" class="hover:text-emerald-700">Home</a>
-      <a href="#" class="text-emerald-700">Sale</a>
+      <a href="javascript:void(0)" class="hover:text-emerald-700">New</a>
+      <a href="javascript:void(0)" class="hover:text-emerald-700">Men</a>
+      <a href="javascript:void(0)" class="hover:text-emerald-700">Women</a>
+      <a href="javascript:void(0)" class="hover:text-emerald-700">Home</a>
+      <a href="javascript:void(0)" class="text-emerald-700">Sale</a>
     </div>
     <div class="flex flex-1 items-center justify-end gap-3">
       <div class="hidden sm:block w-full max-w-sm">
@@ -31,7 +31,7 @@ const htmlBlock = `
           <input id="search-store" name="search-store" class="block w-full rounded-full border border-gray-200 bg-white py-2 pl-9 pr-3 text-sm text-gray-900 placeholder:text-gray-400 shadow-sm focus:border-emerald-200 focus:outline-none focus:ring-2 focus:ring-emerald-200" placeholder="Search shoes, sofa, lamp..." type="search">
         </div>
       </div>
-      <a href="#" class="hidden sm:inline-flex text-sm font-semibold text-gray-700 hover:text-emerald-700">Stores</a>
+      <a href="javascript:void(0)" class="hidden sm:inline-flex text-sm font-semibold text-gray-700 hover:text-emerald-700">Stores</a>
       <div class="flex items-center gap-2 rounded-full bg-emerald-50 px-3 py-1.5 text-xs font-semibold text-emerald-800 ring-1 ring-emerald-100">$15 off today</div>
       <button type="button" class="inline-flex items-center rounded-full bg-gray-900 px-3 py-2 text-xs font-semibold text-white hover:bg-gray-800">Cart (2)</button>
       <button type="button" class="lg:hidden inline-flex items-center rounded-md p-2 text-gray-600 ring-1 ring-gray-200">
@@ -59,11 +59,11 @@ const htmlBlock = `
           <span class="text-base font-semibold text-gray-900">Marketly</span>
         </div>
         <div class="hidden lg:flex items-center gap-5 text-sm font-medium text-gray-700">
-          <a href="#" class="hover:text-emerald-700">New</a>
-          <a href="#" class="hover:text-emerald-700">Men</a>
-          <a href="#" class="hover:text-emerald-700">Women</a>
-          <a href="#" class="hover:text-emerald-700">Home</a>
-          <a href="#" class="text-emerald-700">Sale</a>
+          <a href="javascript:void(0)" class="hover:text-emerald-700">New</a>
+          <a href="javascript:void(0)" class="hover:text-emerald-700">Men</a>
+          <a href="javascript:void(0)" class="hover:text-emerald-700">Women</a>
+          <a href="javascript:void(0)" class="hover:text-emerald-700">Home</a>
+          <a href="javascript:void(0)" class="text-emerald-700">Sale</a>
         </div>
         <div class="flex flex-1 items-center justify-end gap-3">
           <div class="hidden sm:block w-full max-w-sm">
@@ -77,7 +77,7 @@ const htmlBlock = `
               <input id="search-store" name="search-store" class="block w-full rounded-full border border-gray-200 bg-white py-2 pl-9 pr-3 text-sm text-gray-900 placeholder:text-gray-400 shadow-sm focus:border-emerald-200 focus:outline-none focus:ring-2 focus:ring-emerald-200" placeholder="Search shoes, sofa, lamp..." type="search">
             </div>
           </div>
-          <a href="#" class="hidden sm:inline-flex text-sm font-semibold text-gray-700 hover:text-emerald-700">Stores</a>
+          <a href="javascript:void(0)" class="hidden sm:inline-flex text-sm font-semibold text-gray-700 hover:text-emerald-700">Stores</a>
           <div class="flex items-center gap-2 rounded-full bg-emerald-50 px-3 py-1.5 text-xs font-semibold text-emerald-800 ring-1 ring-emerald-100">$15 off today</div>
           <button type="button" class="inline-flex items-center rounded-full bg-gray-900 px-3 py-2 text-xs font-semibold text-white hover:bg-gray-800">Cart (2)</button>
           <button type="button" class="lg:hidden inline-flex items-center rounded-md p-2 text-gray-600 ring-1 ring-gray-200">

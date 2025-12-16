@@ -13,7 +13,7 @@ const htmlBlock = `
       </svg>
       <div>
         <div class="text-sm font-semibold leading-tight">DocsKit</div>
-        <div class="text-[11px] font-medium text-indigo-200/80">v2.4.1 • Updated today</div>
+        <div class="text-[11px] font-medium text-indigo-200/80">v2.4.1 â€¢ Updated today</div>
       </div>
     </div>
     <div class="flex flex-1 items-center justify-end gap-3">
@@ -29,12 +29,12 @@ const htmlBlock = `
         </div>
       </div>
       <div class="hidden md:flex items-center gap-4 text-sm font-medium text-indigo-100">
-        <a href="#" class="hover:text-white">Guides</a>
-        <a href="#" class="hover:text-white">API</a>
-        <a href="#" class="hover:text-white">Changelog</a>
-        <a href="#" class="hover:text-white">Status</a>
+        <a href="javascript:void(0)" class="hover:text-white">Guides</a>
+        <a href="javascript:void(0)" class="hover:text-white">API</a>
+        <a href="javascript:void(0)" class="hover:text-white">Changelog</a>
+        <a href="javascript:void(0)" class="hover:text-white">Status</a>
       </div>
-      <a href="#" class="inline-flex items-center rounded-md bg-indigo-500 px-3 py-2 text-xs font-semibold text-white shadow hover:bg-indigo-400">Open in GitHub</a>
+      <a href="javascript:void(0)" class="inline-flex items-center rounded-md bg-indigo-500 px-3 py-2 text-xs font-semibold text-white shadow hover:bg-indigo-400">Open in GitHub</a>
       <button type="button" class="md:hidden inline-flex items-center rounded-md p-2 text-indigo-100 ring-1 ring-white/15">
         <span class="sr-only">Open main menu</span>
         <svg class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke-width="1.6" stroke="currentColor" aria-hidden="true">
@@ -60,7 +60,7 @@ const htmlBlock = `
           </svg>
           <div>
             <div class="text-sm font-semibold leading-tight">DocsKit</div>
-            <div class="text-[11px] font-medium text-indigo-200/80">v2.4.1 • Updated today</div>
+            <div class="text-[11px] font-medium text-indigo-200/80">v2.4.1 â€¢ Updated today</div>
           </div>
         </div>
         <div class="flex flex-1 items-center justify-end gap-3">
@@ -76,12 +76,12 @@ const htmlBlock = `
             </div>
           </div>
           <div class="hidden md:flex items-center gap-4 text-sm font-medium text-indigo-100">
-            <a href="#" class="hover:text-white">Guides</a>
-            <a href="#" class="hover:text-white">API</a>
-            <a href="#" class="hover:text-white">Changelog</a>
-            <a href="#" class="hover:text-white">Status</a>
+            <a href="javascript:void(0)" class="hover:text-white">Guides</a>
+            <a href="javascript:void(0)" class="hover:text-white">API</a>
+            <a href="javascript:void(0)" class="hover:text-white">Changelog</a>
+            <a href="javascript:void(0)" class="hover:text-white">Status</a>
           </div>
-          <a href="#" class="inline-flex items-center rounded-md bg-indigo-500 px-3 py-2 text-xs font-semibold text-white shadow hover:bg-indigo-400">Open in GitHub</a>
+          <a href="javascript:void(0)" class="inline-flex items-center rounded-md bg-indigo-500 px-3 py-2 text-xs font-semibold text-white shadow hover:bg-indigo-400">Open in GitHub</a>
           <button type="button" class="md:hidden inline-flex items-center rounded-md p-2 text-indigo-100 ring-1 ring-white/15">
             <span class="sr-only">Open main menu</span>
             <svg class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke-width="1.6" stroke="currentColor" aria-hidden="true">

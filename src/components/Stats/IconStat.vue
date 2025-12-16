@@ -24,7 +24,7 @@ const htmlBlock = `
     </div>
     <div class="bg-gray-50/50 px-4 py-3 border-t border-gray-100">
       <div class="text-xs">
-        <a href="#" class="font-medium text-indigo-600 hover:text-indigo-500 flex items-center gap-1 group">
+        <a href="javascript:void(0)" class="font-medium text-indigo-600 hover:text-indigo-500 flex items-center gap-1 group">
           View all candidates
           <span class="inline-block transition-transform group-hover:translate-x-0.5">&rarr;</span>
         </a>
@@ -53,7 +53,7 @@ const htmlBlock = `
     </div>
     <div class="bg-gray-50/50 px-4 py-3 border-t border-gray-100">
       <div class="text-xs">
-        <a href="#" class="font-medium text-emerald-600 hover:text-emerald-500 flex items-center gap-1 group">
+        <a href="javascript:void(0)" class="font-medium text-emerald-600 hover:text-emerald-500 flex items-center gap-1 group">
           View salary report
           <span class="inline-block transition-transform group-hover:translate-x-0.5">&rarr;</span>
         </a>
@@ -82,7 +82,7 @@ const htmlBlock = `
     </div>
     <div class="bg-gray-50/50 px-4 py-3 border-t border-gray-100">
       <div class="text-xs">
-        <a href="#" class="font-medium text-amber-600 hover:text-amber-500 flex items-center gap-1 group">
+        <a href="javascript:void(0)" class="font-medium text-amber-600 hover:text-amber-500 flex items-center gap-1 group">
           Open calendar
           <span class="inline-block transition-transform group-hover:translate-x-0.5">&rarr;</span>
         </a>

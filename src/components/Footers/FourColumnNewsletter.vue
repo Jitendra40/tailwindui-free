@@ -21,27 +21,27 @@ const htmlBlock = `
         <div>
           <h3 class="text-sm font-semibold">Product</h3>
           <ul class="mt-3 space-y-2 text-sm text-gray-300">
-            <li><a href="#" class="hover:text-indigo-200">Overview</a></li>
-            <li><a href="#" class="hover:text-indigo-200">Pricing</a></li>
-            <li><a href="#" class="hover:text-indigo-200">Integrations</a></li>
-            <li><a href="#" class="hover:text-indigo-200">Status</a></li>
+            <li><a href="javascript:void(0)" class="hover:text-indigo-200">Overview</a></li>
+            <li><a href="javascript:void(0)" class="hover:text-indigo-200">Pricing</a></li>
+            <li><a href="javascript:void(0)" class="hover:text-indigo-200">Integrations</a></li>
+            <li><a href="javascript:void(0)" class="hover:text-indigo-200">Status</a></li>
           </ul>
         </div>
         <div>
           <h3 class="text-sm font-semibold">Company</h3>
           <ul class="mt-3 space-y-2 text-sm text-gray-300">
-            <li><a href="#" class="hover:text-indigo-200">About</a></li>
-            <li><a href="#" class="hover:text-indigo-200">Careers</a></li>
-            <li><a href="#" class="hover:text-indigo-200">Press</a></li>
-            <li><a href="#" class="hover:text-indigo-200">Contact</a></li>
+            <li><a href="javascript:void(0)" class="hover:text-indigo-200">About</a></li>
+            <li><a href="javascript:void(0)" class="hover:text-indigo-200">Careers</a></li>
+            <li><a href="javascript:void(0)" class="hover:text-indigo-200">Press</a></li>
+            <li><a href="javascript:void(0)" class="hover:text-indigo-200">Contact</a></li>
           </ul>
         </div>
         <div>
           <h3 class="text-sm font-semibold">Legal</h3>
           <ul class="mt-3 space-y-2 text-sm text-gray-300">
-            <li><a href="#" class="hover:text-indigo-200">Privacy</a></li>
-            <li><a href="#" class="hover:text-indigo-200">Terms</a></li>
-            <li><a href="#" class="hover:text-indigo-200">DPA</a></li>
+            <li><a href="javascript:void(0)" class="hover:text-indigo-200">Privacy</a></li>
+            <li><a href="javascript:void(0)" class="hover:text-indigo-200">Terms</a></li>
+            <li><a href="javascript:void(0)" class="hover:text-indigo-200">DPA</a></li>
           </ul>
         </div>
       </div>
@@ -57,9 +57,9 @@ const htmlBlock = `
     </div>
     <div class="mt-12 flex flex-wrap items-center gap-3 text-xs text-gray-400">
       <span>&copy; 2025 Northwind</span>
-      <span class="text-gray-600">•</span>
-      <a href="#" class="hover:text-indigo-200">Security</a>
-      <a href="#" class="hover:text-indigo-200">Cookie policy</a>
+      <span class="text-gray-600">â€¢</span>
+      <a href="javascript:void(0)" class="hover:text-indigo-200">Security</a>
+      <a href="javascript:void(0)" class="hover:text-indigo-200">Cookie policy</a>
     </div>
   </div>
 </footer>
@@ -87,27 +87,27 @@ const htmlBlock = `
             <div>
               <h3 class="text-sm font-semibold">Product</h3>
               <ul class="mt-3 space-y-2 text-sm text-gray-300">
-                <li><a href="#" class="hover:text-indigo-200">Overview</a></li>
-                <li><a href="#" class="hover:text-indigo-200">Pricing</a></li>
-                <li><a href="#" class="hover:text-indigo-200">Integrations</a></li>
-                <li><a href="#" class="hover:text-indigo-200">Status</a></li>
+                <li><a href="javascript:void(0)" class="hover:text-indigo-200">Overview</a></li>
+                <li><a href="javascript:void(0)" class="hover:text-indigo-200">Pricing</a></li>
+                <li><a href="javascript:void(0)" class="hover:text-indigo-200">Integrations</a></li>
+                <li><a href="javascript:void(0)" class="hover:text-indigo-200">Status</a></li>
               </ul>
             </div>
             <div>
               <h3 class="text-sm font-semibold">Company</h3>
               <ul class="mt-3 space-y-2 text-sm text-gray-300">
-                <li><a href="#" class="hover:text-indigo-200">About</a></li>
-                <li><a href="#" class="hover:text-indigo-200">Careers</a></li>
-                <li><a href="#" class="hover:text-indigo-200">Press</a></li>
-                <li><a href="#" class="hover:text-indigo-200">Contact</a></li>
+                <li><a href="javascript:void(0)" class="hover:text-indigo-200">About</a></li>
+                <li><a href="javascript:void(0)" class="hover:text-indigo-200">Careers</a></li>
+                <li><a href="javascript:void(0)" class="hover:text-indigo-200">Press</a></li>
+                <li><a href="javascript:void(0)" class="hover:text-indigo-200">Contact</a></li>
               </ul>
             </div>
             <div>
               <h3 class="text-sm font-semibold">Legal</h3>
               <ul class="mt-3 space-y-2 text-sm text-gray-300">
-                <li><a href="#" class="hover:text-indigo-200">Privacy</a></li>
-                <li><a href="#" class="hover:text-indigo-200">Terms</a></li>
-                <li><a href="#" class="hover:text-indigo-200">DPA</a></li>
+                <li><a href="javascript:void(0)" class="hover:text-indigo-200">Privacy</a></li>
+                <li><a href="javascript:void(0)" class="hover:text-indigo-200">Terms</a></li>
+                <li><a href="javascript:void(0)" class="hover:text-indigo-200">DPA</a></li>
               </ul>
             </div>
           </div>
@@ -123,9 +123,9 @@ const htmlBlock = `
         </div>
         <div class="mt-12 flex flex-wrap items-center gap-3 text-xs text-gray-400">
           <span>&copy; 2025 Northwind</span>
-          <span class="text-gray-600">•</span>
-          <a href="#" class="hover:text-indigo-200">Security</a>
-          <a href="#" class="hover:text-indigo-200">Cookie policy</a>
+          <span class="text-gray-600">â€¢</span>
+          <a href="javascript:void(0)" class="hover:text-indigo-200">Security</a>
+          <a href="javascript:void(0)" class="hover:text-indigo-200">Cookie policy</a>
         </div>
       </div>
     </footer>
