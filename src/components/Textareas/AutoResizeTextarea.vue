@@ -1,15 +1,6 @@
 <script setup lang="ts">
 import PreviewWrapper from "@/components/PreviewWrapper.vue"
-import { ref } from 'vue'
 
-const textareaRef = ref<HTMLTextAreaElement | null>(null)
-
-const resize = () => {
-  if (textareaRef.value) {
-    textareaRef.value.style.height = 'auto'
-    textareaRef.value.style.height = `${textareaRef.value.scrollHeight}px`
-  }
-}
 
 const htmlBlock = `
 <div class="w-full max-w-lg">

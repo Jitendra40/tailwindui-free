@@ -87,7 +87,7 @@ const filteredNavMain = computed(() => {
                // Check if this item is already in results (avoid duplicates if we linked them in nav)
                // The nav links are generally /pages etc, not deep links.
                
-               componentMatches[groupTitle].push({
+               componentMatches[groupTitle]!.push({
                   title: variant.label,
                   url: `/view/${category}/${variant.id}`
                })
