@@ -35,12 +35,7 @@ import {
 } from 'lucide-vue-next'
 
 export const navigationData = [
-    {
-        title: "Pages",
-        items: [
-            { name: 'Pages', href: '/pages', icon: Layout, color: 'text-indigo-500', bg: 'bg-indigo-50' },
-        ]
-    },
+
     {
         title: "Forms",
         items: [
@@ -112,6 +107,12 @@ export const navigationData = [
             { name: 'Shopping Carts', href: '/shopping-carts', icon: Layout, color: 'text-indigo-500', bg: 'bg-indigo-50' },
             { name: 'Product Overviews', href: '/product-overviews', icon: Layout, color: 'text-indigo-500', bg: 'bg-indigo-50' },
 
+        ]
+    },
+    {
+        title: "Pages",
+        items: [
+            { name: 'Pages', href: '/pages', icon: Layout, color: 'text-indigo-500', bg: 'bg-indigo-50' },
         ]
     }
 
