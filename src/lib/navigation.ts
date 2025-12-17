@@ -36,6 +36,12 @@ import {
 
 export const navigationData = [
     {
+        title: "Pages",
+        items: [
+            { name: 'Pages', href: '/pages', icon: Layout, color: 'text-indigo-500', bg: 'bg-indigo-50' },
+        ]
+    },
+    {
         title: "Forms",
         items: [
             { name: 'Buttons', href: '/buttons', icon: MousePointer2, color: 'text-sky-500', bg: 'bg-sky-50' },
@@ -107,11 +113,6 @@ export const navigationData = [
             { name: 'Product Overviews', href: '/product-overviews', icon: Layout, color: 'text-indigo-500', bg: 'bg-indigo-50' },
 
         ]
-    },
-    {
-        title: "Pages",
-        items: [
-            { name: 'Pages', href: '/pages', icon: Layout, color: 'text-indigo-500', bg: 'bg-indigo-50' },
-        ]
     }
+
 ]
