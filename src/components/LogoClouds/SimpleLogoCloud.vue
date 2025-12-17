@@ -1,5 +1,20 @@
 <script setup lang="ts">
 import PreviewWrapper from "@/components/PreviewWrapper.vue"
+import tupleLogo from '@/assets/logos/tuple.svg'
+import mirageLogo from '@/assets/logos/mirage.svg'
+import staticKitLogo from '@/assets/logos/statickit.svg'
+import transistorLogo from '@/assets/logos/transistor.svg'
+import workcationLogo from '@/assets/logos/workcation.svg'
+import laravelLogo from '@/assets/logos/laravel.svg'
+
+const logos = [
+  { name: 'Tuple', src: tupleLogo },
+  { name: 'Mirage', src: mirageLogo },
+  { name: 'StaticKit', src: staticKitLogo },
+  { name: 'Transistor', src: transistorLogo },
+  { name: 'Workcation', src: workcationLogo },
+  { name: 'Laravel', src: laravelLogo },
+]
 
 const htmlBlock = `
 <div class="bg-white py-12">
@@ -7,29 +22,41 @@ const htmlBlock = `
     <h2 class="text-center text-sm font-semibold tracking-wide text-gray-500 uppercase">Trusted by product teams</h2>
     <p class="mt-2 text-center text-base text-gray-700">Quick, compact logo rail for landing pages.</p>
     <div class="mt-8 flex flex-wrap items-center justify-center gap-6 sm:gap-8">
+      <!-- Tuple -->
       <div class="flex h-12 w-32 items-center justify-center rounded-md border border-gray-200 bg-gray-50 px-3 shadow-sm">
-        <img class="h-8 w-auto object-contain" src="https://images.unsplash.com/featured?auto=format&fit=crop&w=200&h=80&q=80&sig=101" alt="Placeholder 1" width="160" height="64">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 158 48" fill="none" class="h-8 w-auto">
+          <text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" font-family="sans-serif" font-size="24" font-weight="bold" fill="#111827">Tuple</text>
+        </svg>
       </div>
+      <!-- Mirage -->
       <div class="flex h-12 w-32 items-center justify-center rounded-md border border-gray-200 bg-gray-50 px-3 shadow-sm">
-        <img class="h-8 w-auto object-contain" src="https://images.unsplash.com/featured?auto=format&fit=crop&w=200&h=80&q=80&sig=102" alt="Placeholder 2" width="160" height="64">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 158 48" fill="none" class="h-8 w-auto">
+          <text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" font-family="sans-serif" font-size="24" font-weight="bold" fill="#111827">Mirage</text>
+        </svg>
       </div>
+      <!-- StaticKit -->
       <div class="flex h-12 w-32 items-center justify-center rounded-md border border-gray-200 bg-gray-50 px-3 shadow-sm">
-        <img class="h-8 w-auto object-contain" src="https://images.unsplash.com/featured?auto=format&fit=crop&w=200&h=80&q=80&sig=103" alt="Placeholder 3" width="160" height="64">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 158 48" fill="none" class="h-8 w-auto">
+          <text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" font-family="sans-serif" font-size="24" font-weight="bold" fill="#111827">StaticKit</text>
+        </svg>
       </div>
+      <!-- Transistor -->
       <div class="flex h-12 w-32 items-center justify-center rounded-md border border-gray-200 bg-gray-50 px-3 shadow-sm">
-        <img class="h-8 w-auto object-contain" src="https://images.unsplash.com/featured?auto=format&fit=crop&w=200&h=80&q=80&sig=104" alt="Placeholder 4" width="160" height="64">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 158 48" fill="none" class="h-8 w-auto">
+          <text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" font-family="sans-serif" font-size="24" font-weight="bold" fill="#111827">Transistor</text>
+        </svg>
       </div>
+      <!-- Workcation -->
       <div class="flex h-12 w-32 items-center justify-center rounded-md border border-gray-200 bg-gray-50 px-3 shadow-sm">
-        <img class="h-8 w-auto object-contain" src="https://images.unsplash.com/featured?auto=format&fit=crop&w=200&h=80&q=80&sig=105" alt="Placeholder 5" width="160" height="64">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 158 48" fill="none" class="h-8 w-auto">
+          <text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" font-family="sans-serif" font-size="24" font-weight="bold" fill="#111827">Workcation</text>
+        </svg>
       </div>
+      <!-- Laravel -->
       <div class="flex h-12 w-32 items-center justify-center rounded-md border border-gray-200 bg-gray-50 px-3 shadow-sm">
-        <img class="h-8 w-auto object-contain" src="https://images.unsplash.com/featured?auto=format&fit=crop&w=200&h=80&q=80&sig=106" alt="Placeholder 6" width="160" height="64">
-      </div>
-      <div class="flex h-12 w-32 items-center justify-center rounded-md border border-gray-200 bg-gray-50 px-3 shadow-sm">
-        <img class="h-8 w-auto object-contain" src="https://images.unsplash.com/featured?auto=format&fit=crop&w=200&h=80&q=80&sig=107" alt="Placeholder 7" width="160" height="64">
-      </div>
-      <div class="flex h-12 w-32 items-center justify-center rounded-md border border-gray-200 bg-gray-50 px-3 shadow-sm">
-        <img class="h-8 w-auto object-contain" src="https://images.unsplash.com/featured?auto=format&fit=crop&w=200&h=80&q=80&sig=108" alt="Placeholder 8" width="160" height="64">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 158 48" fill="none" class="h-8 w-auto">
+          <text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" font-family="sans-serif" font-size="24" font-weight="bold" fill="#111827">Laravel</text>
+        </svg>
       </div>
     </div>
   </div>
@@ -44,29 +71,8 @@ const htmlBlock = `
         <h2 class="text-center text-sm font-semibold tracking-wide text-gray-500 uppercase">Trusted by product teams</h2>
         <p class="mt-2 text-center text-base text-gray-700">Quick, compact logo rail for landing pages.</p>
         <div class="mt-8 flex flex-wrap items-center justify-center gap-6 sm:gap-8">
-          <div class="flex h-12 w-32 items-center justify-center rounded-md border border-gray-200 bg-gray-50 px-3 shadow-sm">
-            <img class="h-8 w-auto object-contain" src="https://images.unsplash.com/featured?auto=format&fit=crop&w=200&h=80&q=80&sig=111" alt="Placeholder 1" width="160" height="64">
-          </div>
-          <div class="flex h-12 w-32 items-center justify-center rounded-md border border-gray-200 bg-gray-50 px-3 shadow-sm">
-            <img class="h-8 w-auto object-contain" src="https://images.unsplash.com/featured?auto=format&fit=crop&w=200&h=80&q=80&sig=112" alt="Placeholder 2" width="160" height="64">
-          </div>
-          <div class="flex h-12 w-32 items-center justify-center rounded-md border border-gray-200 bg-gray-50 px-3 shadow-sm">
-            <img class="h-8 w-auto object-contain" src="https://images.unsplash.com/featured?auto=format&fit=crop&w=200&h=80&q=80&sig=113" alt="Placeholder 3" width="160" height="64">
-          </div>
-          <div class="flex h-12 w-32 items-center justify-center rounded-md border border-gray-200 bg-gray-50 px-3 shadow-sm">
-            <img class="h-8 w-auto object-contain" src="https://images.unsplash.com/featured?auto=format&fit=crop&w=200&h=80&q=80&sig=114" alt="Placeholder 4" width="160" height="64">
-          </div>
-          <div class="flex h-12 w-32 items-center justify-center rounded-md border border-gray-200 bg-gray-50 px-3 shadow-sm">
-            <img class="h-8 w-auto object-contain" src="https://images.unsplash.com/featured?auto=format&fit=crop&w=200&h=80&q=80&sig=115" alt="Placeholder 5" width="160" height="64">
-          </div>
-          <div class="flex h-12 w-32 items-center justify-center rounded-md border border-gray-200 bg-gray-50 px-3 shadow-sm">
-            <img class="h-8 w-auto object-contain" src="https://images.unsplash.com/featured?auto=format&fit=crop&w=200&h=80&q=80&sig=116" alt="Placeholder 6" width="160" height="64">
-          </div>
-          <div class="flex h-12 w-32 items-center justify-center rounded-md border border-gray-200 bg-gray-50 px-3 shadow-sm">
-            <img class="h-8 w-auto object-contain" src="https://images.unsplash.com/featured?auto=format&fit=crop&w=200&h=80&q=80&sig=117" alt="Placeholder 7" width="160" height="64">
-          </div>
-          <div class="flex h-12 w-32 items-center justify-center rounded-md border border-gray-200 bg-gray-50 px-3 shadow-sm">
-            <img class="h-8 w-auto object-contain" src="https://images.unsplash.com/featured?auto=format&fit=crop&w=200&h=80&q=80&sig=118" alt="Placeholder 8" width="160" height="64">
+          <div v-for="logo in logos" :key="logo.name" class="flex h-12 w-32 items-center justify-center rounded-md border border-gray-200 bg-gray-50 px-3 shadow-sm">
+            <img class="h-8 w-auto object-contain" :src="logo.src" :alt="logo.name" width="160" height="64">
           </div>
         </div>
       </div>

@@ -6,7 +6,6 @@ import {
     CheckSquare,
     List,
     SeparatorHorizontal,
-    Menu,
     Box,
     UploadCloud,
     Filter,
@@ -32,9 +31,7 @@ import {
     Star,
     Table2,
     Users,
-    Lock,
     Settings,
-    AppWindow,
 } from 'lucide-vue-next'
 
 export const navigationData = [
@@ -81,17 +78,11 @@ export const navigationData = [
             { name: 'Modals', href: '/modals', icon: PanelTop, color: 'text-rose-500', bg: 'bg-rose-50' },
         ]
     },
-    {
-        title: "Application UI",
-        items: [
-            { name: 'Authentication', href: '/auth', icon: Lock, color: 'text-indigo-500', bg: 'bg-indigo-50' },
-            { name: 'Dashboards', href: '/dashboards', icon: AppWindow, color: 'text-blue-600', bg: 'bg-blue-50' },
-            { name: 'Settings', href: '/settings', icon: Settings, color: 'text-slate-600', bg: 'bg-slate-50' },
-        ]
-    },
+
     {
         title: "Marketing",
         items: [
+            { name: 'Settings', href: '/settings', icon: Settings, color: 'text-slate-600', bg: 'bg-slate-50' },
             { name: 'Announcements', href: '/announcements', icon: Megaphone, color: 'text-orange-500', bg: 'bg-orange-50' },
             { name: 'Blog Sections', href: '/blog-sections', icon: Newspaper, color: 'text-pink-500', bg: 'bg-pink-50' },
             { name: 'Pricing', href: '/pricing', icon: CreditCard, color: 'text-emerald-600', bg: 'bg-emerald-50' },
@@ -114,7 +105,7 @@ export const navigationData = [
             { name: 'Product Cards', href: '/product-cards', icon: Layout, color: 'text-indigo-500', bg: 'bg-indigo-50' },
             { name: 'Shopping Carts', href: '/shopping-carts', icon: Layout, color: 'text-indigo-500', bg: 'bg-indigo-50' },
             { name: 'Product Overviews', href: '/product-overviews', icon: Layout, color: 'text-indigo-500', bg: 'bg-indigo-50' },
-            { name: 'Category Previews', href: '/category-previews', icon: Layout, color: 'text-indigo-500', bg: 'bg-indigo-50' },
+
         ]
     },
     {

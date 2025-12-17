@@ -2,7 +2,7 @@
 import PreviewWrapper from "@/components/PreviewWrapper.vue"
 
 const htmlBlock = `
-<div class="relative inline-block text-left">
+<div class="relative inline-flex w-full justify-end">
     <button type="button" class="group -m-2 flex items-center p-2">
        <svg class="h-6 w-6 flex-shrink-0 text-gray-400 group-hover:text-gray-500" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z" />
@@ -10,7 +10,7 @@ const htmlBlock = `
        <span class="ml-2 text-sm font-medium text-gray-700 group-hover:text-gray-800">2</span>
     </button>
   
-  <div class="absolute right-0 z-10 mt-2 w-80 origin-top-right rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none">
+  <div class="absolute right-0 z-10 mt-10 w-80 origin-top-right rounded-md bg-white shadow-lg ring-1 ring-gray-100 ring-opacity-5 focus:outline-none">
     <div class="py-1">
       <div class="px-4 py-2">
         <h3 class="text-sm font-medium text-gray-900">Shopping Cart</h3>

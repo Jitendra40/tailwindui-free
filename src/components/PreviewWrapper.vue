@@ -10,6 +10,7 @@ const props = defineProps<{
     description?: string
     htmlBlock: string
     defaultViewport?: "Mobile" | "small" | "medium" | "large" | "full"
+    fullScreen?: boolean
 }>()
 
 const {
@@ -40,24 +41,8 @@ onMounted(() => {
 })
 
 const iframeSrcDoc = computed(() => {
-    return `
-        <!DOCTYPE html>
-        <html class="antialiased">
-        <head>
-            <meta charset="utf-8">
-            <meta name="viewport" content="width=device-width, initial-scale=1">
-            ${extractedStyles.value}
-            <style>
-                body { background-color: transparent; padding: 1.5rem; }
-                /* Hide main scrollbar */
-                ::-webkit-scrollbar { width: 0; background: transparent; }
-            </style>
-        </head>
-        <body class="bg-gray-50/50 min-h-screen">
-            <div id="app-content">
-                ${props.htmlBlock}
-            </div>
-            
+    // Only include auto-resize script if NOT in fullScreen mode
+    const script = !props.fullScreen ? `
             <script>
                 function updateHeight() {
                     const app = document.getElementById('app-content');
@@ -71,6 +56,26 @@ const iframeSrcDoc = computed(() => {
                 window.addEventListener('resize', updateHeight);
                 new ResizeObserver(updateHeight).observe(document.body);
             <\/script>
+    ` : '';
+
+    return `
+        <!DOCTYPE html>
+        <html class="antialiased${props.fullScreen ? ' h-full' : ''}">
+        <head>
+            <meta charset="utf-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+            ${extractedStyles.value}
+            <style>
+                body { background-color: transparent; ${props.fullScreen ? 'padding: 0; margin: 0; height: 100%; overflow: auto;' : 'padding: 1.5rem;'} }
+                /* Hide main scrollbar */
+                ::-webkit-scrollbar { width: 0; background: transparent; }
+            </style>
+        </head>
+        <body class="bg-gray-50/50 min-h-screen${props.fullScreen ? ' h-full' : ''}">
+            <div id="app-content" class="${props.fullScreen ? 'h-full' : ''}">
+                ${props.htmlBlock}
+            </div>
+            ${script}
         </body>
         </html>
     `
@@ -79,13 +84,17 @@ const iframeSrcDoc = computed(() => {
 </script>
 
 <template>
-    <section class="space-y-4 rounded-xl border border-gray-200 bg-white shadow-sm p-5 w-full">
-        <div class="space-y-1" v-if="title || description">
+    <section :class="[
+        'w-full bg-white transition-all',
+        fullScreen ? 'h-screen border-none flex flex-col' : 'space-y-4 rounded-xl border border-gray-200 shadow-sm p-5'
+    ]">
+        <div class="space-y-1 flex-none" v-if="title || description" :class="{ 'mb-4': fullScreen, 'px-5 pt-5': fullScreen }">
             <h3 v-if="title" class="text-base font-semibold text-gray-900">{{ title }}</h3>
             <p v-if="description" class="text-sm text-gray-500">{{ description }}</p>
         </div>
 
-        <div class="flex flex-wrap items-center justify-between gap-3 p-1 bg-gray-50/50 rounded-lg border border-gray-100">
+        <div class="sticky top-0 z-20 flex flex-wrap items-center justify-between gap-3 p-1 bg-gray-50/50 rounded-lg border border-gray-100 backdrop-blur-sm flex-none"
+             :class="{ 'mx-5': fullScreen, 'mb-2': fullScreen }">
             <div class="flex items-center gap-1 text-xs font-medium">
                 <button v-for="size in VIEWPORT_SIZES" :key="size" type="button"
                     class="rounded-md px-3 py-1.5 transition-all outline-none focus-visible:ring-2 focus-visible:ring-indigo-500"
@@ -96,6 +105,7 @@ const iframeSrcDoc = computed(() => {
             </div>
 
             <div class="flex items-center gap-1 text-xs font-medium">
+              <slot name="extra-nav" />
                 <button type="button"
                     class="rounded-md px-3 py-1.5 transition-all outline-none focus-visible:ring-2 focus-visible:ring-indigo-500"
                     :class="showPreview ? 'bg-indigo-50 text-indigo-700 shadow-sm ring-1 ring-indigo-200' : 'text-gray-500 hover:text-gray-900 hover:bg-gray-100/50'" 
@@ -124,8 +134,11 @@ const iframeSrcDoc = computed(() => {
             </div>
         </div>
         
-        <div v-if="showPreview" class="relative group/preview bg-gray-100/50 rounded-xl border border-gray-200 overflow-hidden">
-        <div class="w-full flex justify-center py-8 min-h-[300px] overflow-x-auto relative">
+        <div v-if="showPreview" 
+             class="relative group/preview bg-gray-100/50 border-gray-200"
+             :class="[fullScreen ? 'flex-1 border-t border-b' : 'rounded-xl border overflow-hidden']">
+        <div class="w-full flex justify-center py-8 overflow-x-auto relative"
+             :class="[fullScreen ? 'h-full !p-0' : 'min-h-[300px]']">
                 <div v-if="isLoading" class="absolute inset-0 z-10 flex items-center justify-center bg-gray-50/50">
                     <div class="w-full max-w-lg p-4 space-y-4">
                         <div class="h-8 bg-gray-200 rounded w-1/4 animate-pulse"></div>
@@ -136,18 +149,20 @@ const iframeSrcDoc = computed(() => {
                         </div>
                     </div>
                 </div>
+                <!-- In fullScreen, force h-full to fill container. Iframe handles scroll. -->
                 <iframe
                     :srcdoc="iframeSrcDoc"
-                    class="transition-all duration-300 ease-in-out bg-white shadow-sm rounded-lg border border-gray-200"
-                    :class="{ 'opacity-0': isLoading }"
-                    :style="[previewWidthStyle, { minHeight: '300px' }]"
+                    class="transition-all duration-300 ease-in-out bg-white shadow-sm border-gray-200"
+                    :class="[{ 'opacity-0': isLoading }, fullScreen ? 'h-full rounded-none border-0' : 'rounded-lg border']"
+                    :style="[previewWidthStyle, !fullScreen && { minHeight: '300px' }]"
                     @load="isLoading = false"
                 ></iframe>
             </div>
         </div>
         
         <div v-else-if="showCode"
-            class="rounded-xl border border-gray-800 bg-[#1e1e1e] p-4 overflow-y-auto overflow-x-hidden max-h-[500px] shadow-inner">
+            class="rounded-xl border border-gray-800 bg-[#1e1e1e] p-4 overflow-y-auto overflow-x-hidden shadow-inner"
+            :class="[fullScreen ? 'flex-1' : 'max-h-[500px]']">
             <pre class="whitespace-pre-wrap wrap-break-word break-all text-xs leading-relaxed font-mono w-full text-gray-300"><code v-html="highlightedCode" class="whitespace-pre-wrap wrap-break-word break-all text-xs leading-relaxed font-mono w-full"></code></pre>
         </div>
     </section>

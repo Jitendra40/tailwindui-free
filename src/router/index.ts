@@ -138,6 +138,12 @@ const routes = [
   { path: '/product-overviews', component: ProductOverviews, meta: { layout: 'Default' } },
   { path: '/category-previews', component: CategoryPreviews, meta: { layout: 'Default' } },
   { path: '/pages', component: Pages, meta: { layout: 'Default' } },
+  {
+    path: '/view/:category/:component',
+    name: 'SingleView',
+    component: () => import('@/pages/SingleView.vue'),
+    meta: { layout: 'Empty' }
+  },
 ]
 
 export const router = createRouter({
