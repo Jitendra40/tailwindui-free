@@ -157,4 +157,25 @@ export const router = createRouter({
   },
 })
 
+router.beforeEach((to, _from, next) => {
+  const defaultTitle = 'Tailwind UI Components'
+
+  // 1. Check for explicit meta title
+  let title = to.meta.title as string
+
+  // 2. Auto-generate from path if not SingleView or Home
+  if (!title && to.name !== 'SingleView' && to.path !== '/') {
+    const pathName = to.path.split('/').pop()
+    if (pathName) {
+      title = pathName.split('-')
+        .map(word => word.charAt(0).toUpperCase() + word.slice(1))
+        .join(' ')
+    }
+  }
+
+  // 3. Set title
+  document.title = title ? `${title} | ${defaultTitle}` : defaultTitle
+  next()
+})
+
 export default router

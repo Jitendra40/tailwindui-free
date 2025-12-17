@@ -97,7 +97,7 @@ const iframeSrcDoc = computed(() => {
              :class="{ 'mx-5': fullScreen, 'mb-2': fullScreen }">
             <div class="flex items-center gap-1 text-xs font-medium">
                 <button v-for="size in VIEWPORT_SIZES" :key="size" type="button"
-                    class="rounded-md px-3 py-1.5 transition-all outline-none focus-visible:ring-2 focus-visible:ring-indigo-500"
+                    class="cursor-pointer rounded-md px-3 py-1.5 transition-all outline-none focus-visible:ring-2 focus-visible:ring-indigo-500"
                     :class="activeViewport === size ? 'bg-white text-gray-900 shadow-sm ring-1 ring-gray-200' : 'text-gray-500 hover:text-gray-900 hover:bg-gray-100/50'" 
                     @click="activeViewport = size">
                     {{ size === 'full' ? 'Full Width' : size.charAt(0).toUpperCase() + size.slice(1) }}
@@ -107,20 +107,20 @@ const iframeSrcDoc = computed(() => {
             <div class="flex items-center gap-1 text-xs font-medium">
               <slot name="extra-nav" />
                 <button type="button"
-                    class="rounded-md px-3 py-1.5 transition-all outline-none focus-visible:ring-2 focus-visible:ring-indigo-500"
+                    class="cursor-pointer rounded-md px-3 py-1.5 transition-all outline-none focus-visible:ring-2 focus-visible:ring-indigo-500"
                     :class="showPreview ? 'bg-indigo-50 text-indigo-700 shadow-sm ring-1 ring-indigo-200' : 'text-gray-500 hover:text-gray-900 hover:bg-gray-100/50'" 
                     @click="setPreview">
                     Preview
                 </button>
                 <div class="w-px h-4 bg-gray-200 mx-1"></div>
                 <button type="button"
-                    class="rounded-md px-3 py-1.5 transition-all outline-none focus-visible:ring-2 focus-visible:ring-indigo-500"
+                    class="cursor-pointer rounded-md px-3 py-1.5 transition-all outline-none focus-visible:ring-2 focus-visible:ring-indigo-500"
                     :class="showCode ? 'bg-gray-900 text-white shadow-sm' : 'text-gray-500 hover:text-gray-900 hover:bg-gray-100/50'" 
                     @click="setCode">
                     Source
                 </button>
                 <button type="button"
-                    class="rounded-md px-3 py-1.5 transition-all text-gray-600 hover:bg-gray-100 hover:text-gray-900 outline-none focus-visible:ring-2 focus-visible:ring-indigo-500"
+                    class="cursor-pointer rounded-md px-3 py-1.5 transition-all text-gray-600 hover:bg-gray-100 hover:text-gray-900 outline-none focus-visible:ring-2 focus-visible:ring-indigo-500"
                     @click="copyMarkup">
                     <span v-if="copied" class="text-green-600 flex items-center gap-1">
                         <svg class="w-3 h-3" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg>

@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { computed } from 'vue';
+import { computed, watch } from 'vue';
 import { useRoute, useRouter } from 'vue-router';
 import { componentMap } from '@/lib/componentMap';
 
@@ -52,6 +52,14 @@ function goBack() {
         }
     }
 }
+
+watch([currentIndex, category], () => {
+    const item = currentList.value[currentIndex.value];
+    if (item) {
+        document.title = `${item.label} | Tailwind UI Components`;
+    }
+}, { immediate: true });
+
 </script>
 
 <template>
@@ -63,7 +71,7 @@ function goBack() {
                 <div class="flex items-center gap-1 border-r border-gray-200 pr-2 mr-2">
                     <button 
                         @click="goBack" 
-                        class="p-1.5 rounded-md hover:bg-gray-100 text-gray-500 hover:text-gray-900 mr-2 flex items-center gap-1"
+                        class="p-1.5 cursor-pointer rounded-md hover:bg-gray-100 text-gray-500 hover:text-gray-900 mr-2 flex items-center gap-1"
                         title="Close View">
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
                         <span class="text-xs font-medium">Close</span>
@@ -72,7 +80,7 @@ function goBack() {
                     <button 
                         @click="goPrev" 
                         :disabled="!prevItem"
-                        class="p-1.5 rounded-md hover:bg-gray-100 text-gray-500 hover:text-gray-900 disabled:opacity-30 disabled:hover:bg-transparent"
+                        class="p-1.5 cursor-pointer rounded-md hover:bg-gray-100 text-gray-500 hover:text-gray-900 disabled:opacity-30 disabled:hover:bg-transparent"
                         title="Previous Component">
                         <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
@@ -84,7 +92,7 @@ function goBack() {
                     <button 
                         @click="goNext" 
                         :disabled="!nextItem"
-                        class="p-1.5 rounded-md hover:bg-gray-100 text-gray-500 hover:text-gray-900 disabled:opacity-30 disabled:hover:bg-transparent"
+                        class="p-1.5 cursor-pointer rounded-md hover:bg-gray-100 text-gray-500 hover:text-gray-900 disabled:opacity-30 disabled:hover:bg-transparent"
                         title="Next Component">
                         <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
