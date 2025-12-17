@@ -138,18 +138,18 @@ const filteredNavMain = computed(() => {
       </div>
       <SearchForm v-model="searchQuery" />
     </SidebarHeader>
-    <SidebarContent class="gap-1 px-3 py-6 bg-slate-950 [&::-webkit-scrollbar]:w-1.5 [&::-webkit-scrollbar-track]:bg-transparent [&::-webkit-scrollbar-thumb]:bg-slate-800 [&::-webkit-scrollbar-thumb]:rounded-full hover:[&::-webkit-scrollbar-thumb]:bg-slate-700">
+    <SidebarContent class="gap-1 px-3 py-3 bg-slate-950 [&::-webkit-scrollbar]:w-1.5 [&::-webkit-scrollbar-track]:bg-transparent [&::-webkit-scrollbar-thumb]:bg-slate-800 [&::-webkit-scrollbar-thumb]:rounded-full hover:[&::-webkit-scrollbar-thumb]:bg-slate-700">
       <Collapsible
         v-for="item in filteredNavMain"
         :key="item.title"
         :title="item.title"
         default-open
-        class="group/collapsible mb-6"
+        class="group/collapsible mb-0"
       >
         <SidebarGroup>
           <SidebarGroupLabel
             as-child
-            class="group/label flex items-center justify-between text-[11px] font-bold text-slate-500 uppercase tracking-widest mb-3 px-3 cursor-pointer select-none hover:text-slate-400 transition-colors"
+            class="group/label flex items-center justify-between text-[11px] font-bold text-slate-500 uppercase tracking-widest  px-3 cursor-pointer select-none hover:text-slate-400 transition-colors"
           >
             <CollapsibleTrigger class="flex items-center w-full">
               {{ item.title }}

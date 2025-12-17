@@ -39,7 +39,7 @@ const categories = computed(() => {
       <div class="mx-auto max-w-4xl px-6 relative z-10 space-y-6">
         <div class="inline-flex items-center rounded-full border border-indigo-500/30 bg-indigo-500/10 px-3 py-1 text-sm font-medium text-indigo-300 backdrop-blur-sm mb-4">
            <span class="flex h-2 w-2 rounded-full bg-indigo-400 mr-2 animate-pulse"></span>
-           v4.0 Ready
+           v4.1 Ready
         </div>
 
         <h1 class="text-4xl font-extrabold tracking-tight text-white sm:text-6xl leading-tight">

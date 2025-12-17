@@ -6,7 +6,7 @@
 
 A collection of free, open-source UI components built with **Vue 3** and **Tailwind CSS v4**. Free Tailwind CSS v4 components for your next project, designed to enhance your web development with the latest features and styles 🚀.
 
-**Live Demo:** [https://tailwindui-free.vercel.app](https://tailwindui-free.vercel.app)
+**Live Demo:** [https://tailui.in/](https://tailui.in/)
 
 ## 🚀 Features
 
