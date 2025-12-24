@@ -7,6 +7,7 @@ export const description = "A sidebar with collapsible sections."
 import AppSidebar from "@/components/Sidebar.vue"
 import RightSidebar from "@/components/RightSidebar.vue"
 import { computed, watch } from "vue"
+import { Star } from "lucide-vue-next"
 import { useTOC } from '@/composables/useTOC'
 import { useRoute } from "vue-router"
 import {
@@ -65,6 +66,13 @@ watch(() => route.path, () => {
   setItems([])
 })
 
+const releaseDate = new Date('2025-12-24')
+const today = new Date()
+const targetDate = new Date(releaseDate.getTime() + (30 * 24 * 60 * 60 * 1000))
+const diffTime = targetDate.getTime() - today.getTime()
+const daysLeft = Math.ceil(diffTime / (1000 * 60 * 60 * 24))
+const showBadge = daysLeft > 0
+
 </script>
 
 <template>
@@ -88,9 +96,22 @@ watch(() => route.path, () => {
           </BreadcrumbList>
         </Breadcrumb>
         <div class="ml-auto flex items-center gap-2">
-            <Button as="a" href="https://github.com/Jitendra40/tailwindui-free" target="_blank" variant="outline" size="sm">
-              
-              Open in GitHub
+            <RouterLink v-if="showBadge" to="/pages" class="hidden md:flex">
+             	<span class="relative inline-flex items-center gap-2 rounded-lg bg-white px-4 py-2 text-sm font-semibold text-gray-900 ring-1 ring-gray-200 shadow-sm hover:bg-gray-50">
+		Pages
+		<span class="inline-flex h-5 min-w-5 items-center justify-center rounded-full bg-green-500 px-1.5 text-[8px] font-semibold text-white leading-none  block">NEW</span>
+	</span>
+            </RouterLink>
+                        <RouterLink v-if="showBadge" to="/empty-states" class="hidden md:flex">
+             	<span class="relative inline-flex items-center gap-2 rounded-lg bg-white px-4 py-2 text-sm font-semibold text-gray-900 ring-1 ring-gray-200 shadow-sm hover:bg-gray-50">
+		Empty States
+		<span class="inline-flex h-5 min-w-5 items-center justify-center rounded-full bg-green-500 px-1.5 text-[8px] font-semibold text-white leading-none  block">NEW</span>
+	</span>
+            </RouterLink>
+       
+            <Button as="a" href="https://github.com/Jitendra40/tailwindui-free" target="_blank"  class="gap-2 group border-yellow-200/50 hover:border-yellow-400/60 hover:bg-black transition-all ">
+              <Star class="size-3 fill-yellow-400 text-yellow-500 animate-star" />
+              <span class="font-medium text-whitegroup-hover:text-gray-900">GitHub</span>
             </Button>
         </div>
       </header>
@@ -107,3 +128,13 @@ watch(() => route.path, () => {
     </SidebarInset>
   </SidebarProvider>
 </template>
+
+<style scoped>
+@keyframes star-pulse {
+  0%, 100% { transform: scale(1); filter: drop-shadow(0 0 0 rgba(234, 179, 8, 0)); }
+  50% { transform: scale(1.2); filter: drop-shadow(0 0 3px rgba(234, 179, 8, 0.5)); }
+}
+.animate-star {
+  animation: star-pulse 2s ease-in-out infinite;
+}
+</style>
