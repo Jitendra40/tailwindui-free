@@ -60,9 +60,46 @@ We welcome contributions! This project is open source and community-driven. Whet
 2.  **Clone** your fork locally.
 3.  **Create a new branch** for your feature or fix (`git checkout -b feature/amazing-new-component`).
 4.  **Add your component**:
-    *   Create the Vue component in `src/components/MyCategory/MyComponent.vue`.
-    *   Add a preview page in `src/pages/MyCategory.vue`.
-    *   Register the route in `src/router/index.ts`.
+    *   **1. Create the Component:**
+        Create your new Vue component in `src/components/MyCategory/MyComponent.vue`.
+        ```vue
+        <template>
+          <div class="p-6 bg-white rounded-xl shadow-sm ring-1 ring-gray-900/5">
+            <h2 class="text-lg font-semibold text-gray-900">New Component</h2>
+          </div>
+        </template>
+        ```
+
+    *   **2. Create the Preview Page:**
+        Create `src/pages/MyCategory.vue` to showcase your component.
+        ```vue
+        <script setup lang="ts">
+        import MyComponent from '@/components/MyCategory/MyComponent.vue'
+        </script>
+        <template>
+           <MyComponent />
+        </template>
+        ```
+
+    *   **3. Register the Route:**
+        Add the route in `src/router/index.ts`.
+        ```ts
+        const MyCategory = () => import('@/pages/MyCategory.vue')
+        // ... inside routes array:
+        { path: '/my-category', component: MyCategory, meta: { layout: 'Default' } },
+        ```
+
+    *   **4. Update Sidebar Navigation:**
+        Add your new page to `src/lib/navigation.ts` so it appears in the sidebar.
+        ```ts
+        { 
+          name: 'My Category', 
+          href: '/my-category', 
+          icon: YourIcon, 
+          color: 'text-indigo-500', 
+          bg: 'bg-indigo-50' 
+        },
+        ```
 5.  **Commit** your changes (`git commit -m 'Add Amazing New Component'`).
 6.  **Push** to your branch (`git push origin feature/amazing-new-component`).
 7.  **Open a Pull Request**.
