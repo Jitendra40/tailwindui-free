@@ -27,7 +27,7 @@ const categories = computed(() => {
 <template>
   
   <div class="max-w-[1400px] mx-auto">
-    <div class="relative overflow-hidden rounded-2xl bg-slate-950 py-10 text-center lg:py-16 shadow-2xl isolate ring-1 ring-white/10 mb-8">
+    <div class="relative overflow-hidden rounded-2xl bg-slate-950 py-10 text-center lg:py-10 shadow-2xl isolate ring-1 ring-white/10 mb-8">
       
       <!-- Techy Grid Background -->
       <div class="absolute inset-0 -z-10 h-full w-full bg-[linear-gradient(to_right,#80808012_1px,transparent_1px),linear-gradient(to_bottom,#80808012_1px,transparent_1px)] bg-[size:24px_24px] [mask-image:radial-gradient(ellipse_60%_50%_at_50%_0%,#000_70%,transparent_100%)]"></div>
@@ -42,13 +42,14 @@ const categories = computed(() => {
            v4.1 Ready
         </div>
 
-        <h1 class="text-4xl font-extrabold tracking-tight text-white sm:text-6xl leading-tight">
-          Free Open Source <br/> 
-          <span class="text-transparent bg-clip-text bg-gradient-to-r from-indigo-300 via-purple-300 to-pink-300">Tailwind CSS v4 Components</span>
+        <h1 class="text-3xl font-extrabold tracking-tight text-white sm:text-3xl leading-tight">
+          Open Source & AI-Friendly <br>
+          <span class="text-transparent bg-clip-text bg-gradient-to-r from-indigo-300 via-purple-300 to-pink-300">Tailwind CSS v4 HTML Components</span>
         </h1>
         
-        <p class="mx-auto max-w-2xl text-base text-gray-400 leading-relaxed">
-          A collection of free, copy-paste Tailwind CSS components for building modern web applications. From marketing pages to admin dashboards, find ready-to-use UI components that speed up your development. No installation required.
+        <p class="mx-auto max-w-4xl text-base text-gray-400 leading-relaxed">
+          A collection of copy-paste Tailwind CSS components for building modern web applications. From marketing pages to admin dashboards, find ready-to-use UI components that speed up your development <br><br> perfect for
+      ChatGPT, Cursor, and Copilot-driven development.. No installation required.
         </p>
         
         <div class="flex flex-wrap justify-center gap-x-8 gap-y-4 pt-4">
