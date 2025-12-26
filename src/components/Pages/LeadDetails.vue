@@ -22,8 +22,7 @@ const htmlBlock = `
                 <div class="flex h-16 items-center justify-between">
                     <div class="flex items-center">
                         <div class="flex-shrink-0 flex items-center">
-                            <img class="h-8 w-8" src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=300" alt="TailwindUI Free">
-                            <span class="ml-2 text-white font-bold text-lg">CRM</span>
+                           <span class="ml-2 text-white font-bold text-lg">CRM</span>
                         </div>
                         <div class="hidden md:block">
                             <div class="ml-10 flex items-baseline space-x-4">

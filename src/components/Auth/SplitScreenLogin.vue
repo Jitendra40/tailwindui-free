@@ -5,21 +5,15 @@ defineProps<{ isFullScreen?: boolean }>()
 
 const htmlBlock = `
 <!DOCTYPE html>
-<html lang="en" class="h-full bg-white">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sign In - Split Screen</title>
-    <script src="https://cdn.tailwindcss.com"><\/script>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <style> body { font-family: 'Inter', sans-serif; } </style>
-</head>
+
 <body class="h-full">
     <div class="flex min-h-full">
         <div class="flex flex-1 flex-col justify-center px-4 py-12 sm:px-6 lg:flex-none lg:px-20 xl:px-24">
             <div class="mx-auto w-full max-w-sm lg:w-96">
                 <div>
-                    <img class="h-10 w-auto" src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600" alt="TailwindUI Free">
+                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 158 48" fill="none" class="h-10 w-auto bg-gray-50">
+          <text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" font-family="sans-serif" font-size="24" font-weight="bold" fill="#111827">StaticKit</text>
+        </svg>
                     <h2 class="mt-8 text-2xl font-bold leading-9 tracking-tight text-gray-900">Sign in to your account</h2>
                     <p class="mt-2 text-sm leading-6 text-gray-500">
                         Not a member?
@@ -96,9 +90,7 @@ const htmlBlock = `
             </div>
         </div>
         <div class="relative hidden w-0 flex-1 lg:block">
-            <div class="absolute inset-0 h-full w-full bg-gradient-to-br from-indigo-500 to-purple-600 flex items-center justify-center">
-                <span class="text-white text-opacity-50 text-2xl font-bold tracking-widest uppercase">Feature Image</span>
-            </div>
+            <img class="absolute inset-0 h-full w-full object-cover" src="https://images.unsplash.com/photo-1496917756835-20cb06e75b4e?ixlib=rb-1.2.1&auto=format&fit=crop&w=1908&q=80" alt="">
         </div>
     </div>
 </body>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" xmlns="http://www.w3.org/2000/svg" width="156.43" height="33.08" viewBox="0 0 156.43 33.08">
+  <defs>
+    <style>
+      .cls-1 {
+        font-family: Anton-Regular, Anton;
+        font-size: 24px;
+      }
+    </style>
+  </defs>
+  <text class="cls-1" transform="translate(36.56 25.26)"><tspan x="0" y="0">DUMMY LOGO</tspan></text>
+  <rect x="4.39" y="4.39" width="21.21" height="21.21" transform="translate(15 -6.21) rotate(45)"/>
+</svg>
