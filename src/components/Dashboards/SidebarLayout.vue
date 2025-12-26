@@ -20,8 +20,7 @@ const htmlBlock = `
         <div class="hidden md:flex md:w-64 md:flex-col">
             <div class="flex flex-col flex-1 min-h-0 bg-gray-800">
                 <div class="flex items-center h-16 flex-shrink-0 px-4 bg-gray-900">
-                    <img class="h-8 w-auto" src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=500" alt="TailwindUI Free">
-                    <span class="ml-2 text-white font-bold text-lg">Sidebar Layout</span>
+                  <span class="ml-2 text-white font-bold text-lg">Sidebar Layout</span>
                 </div>
                 <div class="flex-1 flex flex-col overflow-y-auto">
                     <nav class="flex-1 px-2 py-4 space-y-1">
