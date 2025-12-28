@@ -42,12 +42,12 @@ const categories = computed(() => {
            v4.1 Ready
         </div>
 
-        <h1 class="text-3xl font-extrabold tracking-tight text-white sm:text-3xl leading-tight">
+        <h1 class="text-lg font-extrabold tracking-tight text-white sm:text-3xl leading-tight">
           Open Source & AI-Friendly <br>
           <span class="text-transparent bg-clip-text bg-gradient-to-r from-indigo-300 via-purple-300 to-pink-300">Tailwind CSS v4 HTML Components</span>
         </h1>
         
-        <p class="mx-auto max-w-4xl text-base text-gray-400 leading-relaxed">
+        <p class="mx-auto max-w-4xl text-sm text-gray-400 leading-relaxed">
           A collection of copy-paste Tailwind CSS components for building modern web applications. From marketing pages to admin dashboards, find ready-to-use UI components that speed up your development <br><br> perfect for
       ChatGPT, Cursor, and Copilot-driven development.. No installation required.
         </p>

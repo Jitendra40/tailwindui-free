@@ -19,7 +19,10 @@ import {
   SidebarMenuButton,
   SidebarMenuItem,
   SidebarRail,
+  useSidebar,
 } from "@/components/ui/sidebar"
+
+const { setOpenMobile, isMobile } = useSidebar()
 
 const componentFiles = import.meta.glob('@/components/**/*.vue')
 
@@ -122,13 +125,19 @@ const filteredNavMain = computed(() => {
   
   return results
 })
+
+const handleLinkClick = () => {
+  if (isMobile.value) {
+    setOpenMobile(false)
+  }
+}
 </script>
 
 <template>
   <Sidebar v-bind="props" class="bg-slate-950 border-r border-white/10 text-slate-100 font-sans">
     <SidebarHeader class="px-6 py-5 border-b border-white/5 bg-slate-950 z-10">
       <div class="flex items-center gap-3 mb-6">
-         <RouterLink to="/" class="flex items-center gap-3 group px-2">
+         <RouterLink to="/" class="flex items-center gap-3 group px-2" @click="handleLinkClick">
        
              <div class="flex flex-col">
                 <span class="font-bold text-lg text-white tracking-tight leading-none">Tailwind v4</span>
@@ -173,7 +182,7 @@ const filteredNavMain = computed(() => {
                       group
                     "
                   >
-                    <RouterLink :to="childItem.url" class="flex items-center !justify-between w-full">
+                    <RouterLink :to="childItem.url" class="flex items-center !justify-between w-full" @click="handleLinkClick">
                       <span class="line-clamp-1 flex-1">{{ childItem.title }}</span>
                       <span v-if="getComponentCount(childItem.url) > 0" class="shrink-0 ml-2 text-xs font-mono font-medium bg-slate-800 text-slate-400 py-0.5 px-2 rounded-full group-hover:bg-slate-700 group-hover:text-slate-200 group-data-[active=true]:bg-indigo-500/20 group-data-[active=true]:text-indigo-200 transition-colors">
                         {{ getComponentCount(childItem.url) }}

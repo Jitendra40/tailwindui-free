@@ -117,7 +117,7 @@ const showBadge = daysLeft > 0
       </header>
       <div class="flex flex-1 flex-col gap-4 p-4">
         <main class="flex w-full max-w-[1600px] mx-auto items-start gap-4">
-          <section class="w-full min-w-0 p-6">
+          <section class="w-full min-w-0 md:p-6">
             <article class="bg-white">
               <slot />
             </article>

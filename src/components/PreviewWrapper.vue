@@ -95,7 +95,7 @@ const iframeSrcDoc = computed(() => {
 
         <div class="sticky top-0 z-20 flex flex-wrap items-center justify-between gap-3 p-1 bg-gray-50/50 rounded-lg border border-gray-100 backdrop-blur-sm flex-none"
              :class="{ 'mx-5': fullScreen, 'mb-2': fullScreen }">
-            <div class="flex items-center gap-1 text-xs font-medium">
+            <div class="hidden md:flex items-center gap-1 text-xs font-medium">
                 <button v-for="size in VIEWPORT_SIZES" :key="size" type="button"
                     class="cursor-pointer rounded-md px-3 py-1.5 transition-all outline-none focus-visible:ring-2 focus-visible:ring-indigo-500"
                     :class="activeViewport === size ? 'bg-white text-gray-900 shadow-sm ring-1 ring-gray-200' : 'text-gray-500 hover:text-gray-900 hover:bg-gray-100/50'" 
